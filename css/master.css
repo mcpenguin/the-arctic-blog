@@ -1,0 +1,226 @@
+body {
+    font-family: 'nunito', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'nunito', sans-serif;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: 'nunito', sans-serif;
+    font-weight: 400;
+}
+
+li {
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container-fluid {
+    padding: 0 50px;
+}
+
+/* Header */
+.section-header {
+    background-color: #000031;
+    color: white;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+#my-navbar {
+    font-family: 'nunito', sans-serif;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+/* About Me */
+.section-about-me {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #9fb8c2;
+}
+
+#about-me-title {
+    padding-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#personal-photo {
+    width: 80%;
+    max-width: 80%;
+}
+
+.personal-desc-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #f5f5f5;
+}
+
+#personal-description {
+    width: 75%;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: auto;
+}
+
+@media (max-width: 1200px) {
+
+    #about-me-title {
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .personal-desc-section {
+        margin: 10px auto;
+    }
+
+}
+
+/* Notes */
+.section-notes {
+    background-color: #f5f5f5;
+    padding-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+#personal-notes-title {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#personal-notes-description {
+    padding-bottom: 15px;
+}
+
+.notes-subject-section {
+    padding: 15px 0;
+}
+
+.notes-subject-heading {
+    padding: auto;
+    height: 50px;
+}
+
+.notes-subject-link {
+    height: 30px;
+}
+
+/* Contact Me */
+.section-contact-me {
+    background-color: #000031;
+    color: #f5f5f5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.contact-me-details {
+    padding-top: 10px;
+}
+
+.contact-me-link {
+    color: #9fb8c2;
+    font-weight: 700;
+}
+
+.contact-me-link:hover {
+    color: #f5f5f5;
+}
+
+.contact-me-logo {
+    padding-right: 5px;
+    color: #f5f5f5;
+    transform: scale(1.2);
+}
+
+.contact-me-box {
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+/* Sections To Be Added  */
+
+/* Programming Expertise */
+.section-programming-expertise {
+    background-color: #000031;
+    color: white;
+    display: none;
+}
+
+.programming-subheading {
+    font-family: 'nunito', sans-serif;
+    font-weight: 400;
+}
+
+/* Projects */
+.section-projects {
+    background-color: #f5f5f5;
+    display: none;
+
+}
+
+/* Past Experience */
+.section-past-experience {
+    background-color: #000031;
+    color: white;
+    display: none;
+
+}
+
+/* Education */
+.section-education {
+    background-color: #f5f5f5;
+    display: none;
+}
+
+/* Notable Awards */
+.section-notable-awards {
+    background-color: #000031;
+    color: white;
+    display: none;
+}
+
+/* Extracurriculars */
+.section-extracurriculars {
+    background-color: #f5f5f5;
+    display: none;
+}
+
+#trombone-photo {
+
+}
+
+#trombone-section-photo {
+
+}
+
+/* Timeline */
+.section-timeline {
+    background-color: #000031;
+    color: white;
+    display: none;
+}
