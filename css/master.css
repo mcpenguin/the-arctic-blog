@@ -94,6 +94,17 @@ li {
 
 }
 
+/* Education */
+.section-education {
+    background-color: #ffddff;
+    display: none;
+}
+
+#education-title {
+    padding-top: 50px;
+    text-align: center;
+}
+
 /* Notes */
 .section-notes {
     background-color: #f5f5f5;
@@ -189,12 +200,6 @@ li {
     color: white;
     display: none;
 
-}
-
-/* Education */
-.section-education {
-    background-color: #f5f5f5;
-    display: none;
 }
 
 /* Notable Awards */
