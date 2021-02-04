@@ -38,10 +38,13 @@
 
     <!-- Import Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
 
     <!-- Import Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Import Font Awesome -->
     <script src="https://kit.fontawesome.com/dc797bf305.js" crossorigin="anonymous"></script>
@@ -65,7 +68,8 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="">The Arctic Blog</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -477,6 +481,10 @@
                 since I use many light colours in my notes, and these may not show if you
                 print in grayscale/B&W.
             </p>
+            <p>
+                Click each course link to see the expanded details of that particular
+                course. Click the top hyperlink to access my notes for that course.
+            </p>
 
             <!-- TODO:
                 - add course descriptions
@@ -489,64 +497,594 @@
 
                 <div class="notes-subject-section col-lg-4 col-md-6">
 
-                    <h4 class="notes-subject-heading">1B - UW (in progress)</h4>
-                    <p class="notes-subject-link"><a href="notes/1B/MATH146.pdf">MATH 146</a></p>
-                    <p class="notes-subject-link"><a href="notes/1B/MATH148.pdf">MATH 148</a></p>
-                    <!-- <p class="notes-subject-link"><a href="notes/1B/CS146.pdf">CS 146</a></p> -->
-                    <p class="notes-subject-link"><a href="notes/1B/PSYCH101.pdf">PSYCH 101</a></p>
-                    <!-- <p class="notes-subject-link"><a href="notes/1B/SPCOM223.pdf">SPCOM 223</a></p> -->
+                    <h4 class="notes-subject-heading">1B (W2021)</h4>
+
+                    <div class="notes-subject-link dropdown">
+                        <a id="math146-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            MATH 146
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="math146-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/1B/MATH146.pdf">
+                                        MATH 146 - Linear Algebra 1 (Advanced Level)
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in 1B (Winter 2021) (Online) <br>
+                                    <i>Notes up to Week 4</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Professors: Ross Willard & Giang Tran
+                                </p>
+                                <hr>
+                                <p><i>
+                                        MATH 146 is an advanced-level version of MATH 136.
+                                </p></i>
+                                <p><i>
+                                        MATH 136: Systems of linear equations,
+                                        matrix algebra, elementary matrices, computational issues.
+                                        Real n-space, vector spaces and subspaces, basis and dimension,
+                                        rank of a matrix, linear transformations, and matrix representations.
+                                        Determinants, eigenvalues and diagonalization, applications.
+                                    </i></p>
+
+                            </span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="notes-subject-link dropdown">
+                        <a id="math148-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            MATH 148
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="math148-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/1B/MATH148.pdf">
+                                        MATH 148 - Algebra (Advanced Level)
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in 1B (Winter 2021) (Online) <br>
+                                    <i>Notes up to Chapter 3</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Professor: Stephen New
+                                </p>
+                                <hr>
+                                <p><i>
+                                        MATH 148 is an advanced-level version of MATH 138.
+                                </p></i>
+                                <p><i>
+                                        MATH 138: Introduction to the Riemann integral and approximations.
+                                        Antiderivatives and the Fundamental theorem of calculus.
+                                        Change of variables, Methods of integration. Applications of the integral.
+                                        Improper integrals. Linear and separable differential equations and
+                                        applications. Tests for convergence for series. Binomial series,
+                                        Functions defined as power series and Taylor series.
+                                        Vector (parametric) curves in R2. Suitable topics are illustrated
+                                        using computer software.
+                                    </i></p>
+
+                            </span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="notes-subject-link dropdown">
+                        <a id="psych101-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            PSYCH 101
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="psych101-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/1B/PSYCH101.pdf">
+                                        PSYCH 101 - Introductory Psychology
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in 1B (Winter 2021) (Online) <br>
+                                    <i>Notes up to Week 4</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Professor: Paul Wehr
+                                </p>
+                                <hr>
+                                <p><i>
+                                        A general survey course designed to provide the student with an
+                                        understanding of the basic concepts
+                                        and techniques of modern psychology as a behavioural science.
+                                    </i></p>
+
+                            </span>
+
+
+                        </div>
+                    </div>
+
 
                 </div>
 
                 <div class="notes-subject-section col-lg-4 col-md-6">
 
-                    <h4 class="notes-subject-heading">1A - UW</h4>
+                    <h4 class="notes-subject-heading">1A (F2020)</h4>
 
-                    <!-- <div class="dropdown">
-                        <a id="math145-link" class="notes-subject-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                    <div class="notes-subject-link dropdown">
+                        <a id="math145-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
                             MATH 145
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="math145-link">
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="math145-link">
                             <span class="dropdown-item-text">
                                 <h6>
                                     <a href="notes/1A/MATH145.pdf">
                                         MATH 145 - Algebra (Advanced Level)
                                     </a>
                                 </h6>
+                                <p>
+                                    Taken in 1A (Fall 2020) (Online) <br>
+                                    <i>Notes Complete</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Professor: Nicholas Rollick
+                                </p>
                                 <hr>
                                 <p><i>
                                     MATH 145 is an advanced-level version of MATH 135.
                                 </p></i>
-                                <p>
-                                    Professor: Nickolas Rollick
-                                </p>
+                                <p><i>
+                                    MATH 135: An introduction to the language of mathematics and proof techniques
+                                    through a study of the basic algebraic systems of mathematics:
+                                    the integers, the integers modulo n, the rational numbers,
+                                    the real numbers, the complex numbers and polynomials.
+                                </i></p>
+
                             </span>
 
 
                         </div>
-                    </div> -->
-                    <p class="notes-subject-link"><a href="notes/1A/MATH145.pdf">MATH 145</a></p>
+                    </div>
 
-                    <p class="notes-subject-link"><a href="notes/1A/MATH147.pdf">MATH 147</a></p>
+                    <div class="notes-subject-link dropdown">
+                        <a id="math147-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            MATH 147
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="math147-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/1A/MATH147.pdf">
+                                        MATH 147 - Calculus 1 (Advanced Level)
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in 1A (Fall 2020) (Online) <br>
+                                    <i>Notes Complete</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Professor: Brian Forrest
+                                </p>
+                                <hr>
+                                <p><i>
+                                        MATH 147 is an advanced-level version of MATH 137.
+                                </p></i>
+                                <p><i>
+                                        MATH 137: Absolute values and inequalities. Sequences and their limits.
+                                        Introduction to series.
+                                        Limits of functions and continuity. The Intermediate Value theorem and
+                                        approximate solutions to equations.
+                                        Derivatives, linear approximation, and Newton's method. The Mean Value theorem
+                                        and error bounds.
+                                        Applications of the Mean Value theorem,
+                                        Taylor polynomials, and Taylor's theorem, Big-O notation. Suitable topics are
+                                        illustrated using computer software.
+                                    </i></p>
 
-                    <p class="notes-subject-link"><a href="notes/1A/CS145.pdf">CS 145</a></p>
+                            </span>
 
-                    <p class="notes-subject-link"><a href="notes/1A/GEOG101.pdf">GEOG 101</a></p>
 
-                    <p class="notes-subject-link"><a href="notes/1A/PHIL145.pdf">PHIL 145</a></p>
+                        </div>
+                    </div>
+
+                    <div class="notes-subject-link dropdown">
+                        <a id="cs145-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            CS 145
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="math145-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/1A/CS145.pdf">
+                                        CS 145 - Designing Functional Programs (Advanced Level)
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in 1A (Fall 2020) (Online) <br>
+                                    <i>Notes only for Computer History</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Professor: Gordon Cormack
+                                </p>
+                                <hr>
+                                <p><i>
+                                        CS 145 is an advanced-level version of CS 135.
+                                </p></i>
+                                <p><i>
+                                        CS 135: An introduction to the fundamentals of computer science through the
+                                        application
+                                        of elementary programming patterns in the functional style of programming.
+                                        Syntax and semantics of a functional programming language. Tracing via
+                                        substitution.
+                                        Design, testing, and documentation. Linear and nonlinear data structures.
+                                        Recursive data definitions. Abstraction and encapsulation. Generative and
+                                        structural recursion.
+                                        Historical context.
+                                    </i></p>
+
+                            </span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="notes-subject-link dropdown">
+                        <a id="phil145-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            PHIL 145
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="phil145-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/1A/PHIL145.pdf">
+                                        PHIL 145 - Critical Thinking
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in 1A (Fall 2020) (Online) <br>
+                                    <i>Notes Complete</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Professor: Greg Andres
+                                </p>
+                                <hr>
+                                <p><i>
+                                        An analysis of basic types of reasoning, structure of arguments,
+                                        critical assessment of information, common fallacies, problems of clarity and
+                                        meaning.
+                                    </i></p>
+
+                            </span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="notes-subject-link dropdown">
+                        <a id="geog101-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            GEOG 101
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="geog101-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/1A/GEOG101.pdf">
+                                        GEOG 101 - Human Geographies: People, Space and Change
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in 1A (Fall 2020) (Online) <br>
+                                    <i>Notes Complete</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Professor: Brent Doberstein
+                                </p>
+                                <hr>
+                                <p><i>
+                                        An introduction to human geography through key subfields of the discipline,
+                                        examining population change, the rise of cities, our relationship to nature,
+                                        social inequalities, economic forms, cultural difference and environmental
+                                        change at the local and global scale.
+                                    </i></p>
+
+                            </span>
+
+
+                        </div>
+                    </div>
+
 
                 </div>
 
                 <div class="notes-subject-section col-lg-4 col-md-6">
 
-                    <h4 class="notes-subject-heading">A-Levels - Sunway College</h4>
-                    <p class="notes-subject-link"><a href="notes/AL/Chem.pdf">Chemistry (9701) (AS/A2)</a></p>
-                    <p class="notes-subject-link"><a href="notes/AL/FPM1.pdf">Further Pure Mathematics 1 (9231/1)</a></p>
-                    <p class="notes-subject-link"><a href="notes/AL/FPM2.pdf">Further Pure Mathematics 2 (9231/2)</a></p>
-                    <p class="notes-subject-link"><a href="notes/AL/FPS.pdf">Further Pure Mathematics 4 (Statistics) (9231/4)</a></p>
-                    <p class="notes-subject-link"><a href="notes/AL/M1.pdf">Mechanics 1 (9709/6)</a></p>
-                    <p class="notes-subject-link"><a href="notes/AL/PM3.pdf">Pure Mathematics 3 (9709/3)</a></p>
+                    <h4 class="notes-subject-heading">A-Levels (F2018-S2020)</h4>
 
+                    <div class="notes-subject-link dropdown">
+                        <a id="AL-Chem-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            Chemistry (9701)
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="AL-Chem-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/AL/Chem.pdf">
+                                        Chemistry (AS/A2)
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in Sunway College (F2018-S2020) <br>
+                                    <i>Notes Complete</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Lecturer: Jing Ying Hoo
+                                </p>
+                                <hr>
+                                <p><i>
+                                        Cambridge International AS and A Level Chemistry builds
+                                        on the skills acquired at Cambridge IGCSE (or equivalent) level. The syllabus
+                                        includes the main theoretical concepts which are fundamental to the subject,
+                                        some
+                                        current applications of chemistry, and a strong emphasis on advanced practical
+                                        skills. Practical skills are assessed in a timetabled practical examination.
+                                        <br>
+                                        The emphasis throughout is on the understanding of concepts and the
+                                        application of chemistry ideas in novel contexts as well as on the
+                                        acquisition of knowledge. The course encourages creative thinking and
+                                        problem-solving skills which are transferable to any future career path.
+                                        Cambridge International AS and A Level Chemistry is ideal for learners who
+                                        want to study chemistry or a wide variety of related subjects at university or
+                                        to follow a career in science.
+                                    </i></p>
+
+                            </span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="notes-subject-link dropdown">
+                        <a id="AL-FPM1-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            FPM1 (9231/1)
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="AL-FPM1-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/AL/FPM1.pdf">
+                                        Further Pure Mathematics 1 (9231/1)
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in Sunway College (F2018-S2020) <br>
+                                    <i>Notes Complete</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Lecturer: Yong Yau
+                                </p>
+                                <hr>
+                                <p><i>
+                                        Cambridge International A Level Further Mathematics develops and extends
+                                        a set of transferable skills. These include the skill of working with
+                                        mathematical
+                                        information, as well as the ability to think logically and independently,
+                                        consider accuracy, model situations mathematically, analyse results and
+                                        reflect on findings.
+                                        <br>
+                                        Learners can apply these skills across a wide range of subjects and these
+                                        skills equip them well for progression to higher education or directly into
+                                        employment. Some universities prefer applicants for degrees in mathematics
+                                        and mathematical/scientific subjects to have an AS or A Level Further
+                                        Mathematics
+                                        or equivalent qualification.
+                                        <br>
+                                        This syllabus is intended for high ability learners who have achieved, or
+                                        are likely to achieve, a high grade in the Cambridge International A Level
+                                        Mathematics examination. Knowledge of the whole content of the Cambridge
+                                        International A Level Mathematics syllabus is assumed. Learners will find
+                                        that the additional time spent studying Further Mathematics will support
+                                        their understanding of A Level Mathematics.
+                                    </i></p>
+
+
+                            </span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="notes-subject-link dropdown">
+                        <a id="AL-FPM2-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            FPM2 (9231/2)
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="AL-FPM2-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/AL/FPM1.pdf">
+                                        Further Pure Mathematics 2 (9231/1)
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in Sunway College (F2018-S2020) <br>
+                                    <i>Notes Complete</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Lecturer: Yong Yau
+                                </p>
+                                <hr>
+                                <p><i>
+                                        Cambridge International A Level Further Mathematics develops and extends
+                                        a set of transferable skills. These include the skill of working with
+                                        mathematical
+                                        information, as well as the ability to think logically and independently,
+                                        consider accuracy, model situations mathematically, analyse results and
+                                        reflect on findings.
+                                        <br>
+                                        Learners can apply these skills across a wide range of subjects and these
+                                        skills equip them well for progression to higher education or directly into
+                                        employment. Some universities prefer applicants for degrees in mathematics
+                                        and mathematical/scientific subjects to have an AS or A Level Further
+                                        Mathematics
+                                        or equivalent qualification.
+                                        <br>
+                                        This syllabus is intended for high ability learners who have achieved, or
+                                        are likely to achieve, a high grade in the Cambridge International A Level
+                                        Mathematics examination. Knowledge of the whole content of the Cambridge
+                                        International A Level Mathematics syllabus is assumed. Learners will find
+                                        that the additional time spent studying Further Mathematics will support
+                                        their understanding of A Level Mathematics.
+                                    </i></p>
+
+
+                            </span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="notes-subject-link dropdown">
+                        <a id="AL-FPS-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            FPS (9231/4)
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="AL-FPS-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/AL/FPS.pdf">
+                                        Further Probability and Statistics (9231/4)
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in Sunway College (F2018-S2020) <br>
+                                    <i>Notes Complete</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Lecturer: Madam Lim
+                                </p>
+                                <hr>
+                                <p><i>
+                                        Cambridge International A Level Further Mathematics develops and extends
+                                        a set of transferable skills. These include the skill of working with
+                                        mathematical
+                                        information, as well as the ability to think logically and independently,
+                                        consider accuracy, model situations mathematically, analyse results and
+                                        reflect on findings.
+                                        <br>
+                                        Learners can apply these skills across a wide range of subjects and these
+                                        skills equip them well for progression to higher education or directly into
+                                        employment. Some universities prefer applicants for degrees in mathematics
+                                        and mathematical/scientific subjects to have an AS or A Level Further
+                                        Mathematics
+                                        or equivalent qualification.
+                                        <br>
+                                        This syllabus is intended for high ability learners who have achieved, or
+                                        are likely to achieve, a high grade in the Cambridge International A Level
+                                        Mathematics examination. Knowledge of the whole content of the Cambridge
+                                        International A Level Mathematics syllabus is assumed. Learners will find
+                                        that the additional time spent studying Further Mathematics will support
+                                        their understanding of A Level Mathematics.
+                                    </i></p>
+
+
+                            </span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="notes-subject-link dropdown">
+                        <a id="AL-PM3-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            PM3 (9709/3)
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="AL-PM3-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/AL/PM3.pdf">
+                                        Pure Mathematics 3 (9709/3)
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in Sunway College (F2018-S2020) <br>
+                                    <i>Notes Complete</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Lecturer: Yong Yau
+                                </p>
+                                <hr>
+                                <p><i>
+                                    Cambridge International A Level Mathematics develops a set of transferable
+                                    skills. These include the skill of working with mathematical information,
+                                    as well as the ability to think logically and independently, consider accuracy,
+                                    model situations mathematically, analyse results and reflect on findings.
+                                    <br>
+                                    Learners can apply these skills across a wide range of subjects and 
+                                    these skills equip them well for progression to higher education or directly 
+                                    into employment.
+                                </i></p>
+
+
+                            </span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="notes-subject-link dropdown">
+                        <a id="AL-M1-link" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                            M1 (9709/6)
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="AL-M1-link">
+                            <span class="dropdown-item-text">
+                                <h6>
+                                    <a href="notes/AL/M1.pdf">
+                                        Mechanics 1 (9709/6)
+                                    </a>
+                                </h6>
+                                <p>
+                                    Taken in 1A (Fall 2020) (Online) <br>
+                                    <i>Notes Complete</i>
+                                </p>
+                                <hr>
+                                <p>
+                                    Lecturer: Amy Khoo
+                                </p>
+                                <hr>
+                                <p><i>
+                                    Cambridge International A Level Mathematics develops a set of transferable
+                                    skills. These include the skill of working with mathematical information,
+                                    as well as the ability to think logically and independently, consider accuracy,
+                                    model situations mathematically, analyse results and reflect on findings.
+                                    <br>
+                                    Learners can apply these skills across a wide range of subjects and 
+                                    these skills equip them well for progression to higher education or directly 
+                                    into employment. 
+                                </i></p>
+
+                            </span>
+
+
+                        </div>
+                    </div> 
 
                 </div>
 
@@ -577,7 +1115,8 @@
                     <div class="contact-me-box col-md-4">
                         <p>
                             <i class="contact-me-logo fas fa-envelope"></i>
-                            <a class="contact-me-link" href="mailto:marcus.chanwc@gmail.com":>marcus.chanwc@gmail.com</a>
+                            <a class="contact-me-link" href="mailto:marcus.chanwc@gmail.com"
+                                :>marcus.chanwc@gmail.com</a>
                         </p>
                     </div>
                     <div class="contact-me-box col-md-2">
@@ -595,13 +1134,13 @@
                     <div class="contact-me-box col-md-2">
                         <p>
                             <i class="contact-me-logo fab fa-youtube"></i>
-                            <a class="contact-me-link" href="https://www.youtube.com/channel/UCIAQzTXPVtht2H0hoz8NNAg">YouTube</a>
+                            <a class="contact-me-link"
+                                href="https://www.youtube.com/channel/UCIAQzTXPVtht2H0hoz8NNAg">YouTube</a>
                         </p>
                     </div>
 
 
                 </div>
-
 
             </footer>
 
@@ -610,9 +1149,15 @@
     </section>
 
     <!-- JavaScript / jQuery scripts for Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
 </body>
 
