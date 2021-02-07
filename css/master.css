@@ -49,11 +49,11 @@ li {
 }
 
 /* Notes Update Jumbotron */
-.section-notes-updates {
+/* .section-notes-updates {
     /* background-color: #ffddff; */
     /* padding-top: 30px; */
-    /* position: relative; */
-}
+    /* position: relative; 
+} */
 
 .notes-updates-container {
     background-color: #ffddff;
@@ -65,11 +65,6 @@ li {
 
 .notes-update-subject {
     text-decoration: underline;
-}
-
-.notes-update-link {
-    /* color: #f5f5f5; */
-    /* text-decoration: underline; */
 }
 
 .notes-update-link:hover {
@@ -253,13 +248,13 @@ li {
     display: none;
 }
 
-#trombone-photo {
+/* #trombone-photo {
 
 }
 
 #trombone-section-photo {
 
-}
+} */
 
 /* Timeline */
 .section-timeline {
