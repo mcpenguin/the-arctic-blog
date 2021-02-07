@@ -48,11 +48,48 @@ li {
     font-weight: 700;
 }
 
+/* Notes Update Jumbotron */
+.section-notes-updates {
+    /* background-color: #ffddff; */
+    /* padding-top: 30px; */
+    /* position: relative; */
+}
+
+.notes-updates-container {
+    background-color: #ffddff;
+    /* background-color: #5d707f;
+    color: #f5f5f5; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.notes-update-subject {
+    text-decoration: underline;
+}
+
+.notes-update-link {
+    /* color: #f5f5f5; */
+    /* text-decoration: underline; */
+}
+
+.notes-update-link:hover {
+    color: #8e4162;
+}
+
+#notes-updates-h1 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    /* position: relative;
+    bottom: 20px; */
+}
+
 /* About Me */
 .section-about-me {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #9fb8c2;
+    /* position: relative;
+    bottom: 33px; */
 }
 
 #about-me-title {
