@@ -1,50 +1,50 @@
 {
     "AL": {
-        "title": "A-Levels (Fall 2018 - Spring 2020)",
+        "title": "A-Levels (F2018 - S2020)",
         "courses": {
             "Chem": {
-                "shortTitle": "Chemistry (9701)",
-                "longTitle": "Chemistry (9701)",
+                "shortTitle": "Chemistry",
+                "longTitle": "9701",
                 "description": "Cambridge International AS and A Level Chemistry builds on the skills acquired at Cambridge IGCSE (or equivalent) level. The syllabus includes the main theoretical concepts which are fundamental to the subject, some current applications of chemistry, and a strong emphasis on advanced practical skills. Practical skills are assessed in a timetabled practical examination.",
                 "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
                 "professors": "Lecturer: Jing Ying Hoo",
                 "notesStatus": "Notes Complete"
             },
             "FPM1": {
-                "shortTitle": "Further Pure Mathematics 1 (9231/1)",
-                "longTitle": "Further Pure Mathematics 1 (9231/1)",
+                "shortTitle": "Further Pure Mathematics 1",
+                "longTitle": "9231/1",
                 "description": "Cambridge International A Level Further Mathematics develops and extends a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
                 "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
                 "professors": "Lecturer: Yong Yau",
                 "notesStatus": "Notes Complete"
             },
             "FPM2": {
-                "shortTitle": "Further Pure Mathematics 2 (9231/2)",
-                "longTitle": "Further Pure Mathematics 2 (9231/2)",
+                "shortTitle": "Further Pure Mathematics 2",
+                "longTitle": "9231/2",
                 "description": "Cambridge International A Level Further Mathematics develops and extends a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
                 "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
                 "professors": "Lecturer: Yong Yau",
                 "notesStatus": "Notes Complete"
             },
             "FPS": {
-                "shortTitle": "Further Pure Statistics (9231/4)",
-                "longTitle": "Further Pure Statistics (9231/4)",
+                "shortTitle": "Further Pure Statistics",
+                "longTitle": "9231/4",
                 "description": "Cambridge International A Level Further Mathematics develops and extends a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
                 "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
                 "professors": "Lecturer: Madam Lim",
                 "notesStatus": "Notes Complete"
             },
             "PM3": {
-                "shortTitle": "Pure Mathematics 3 (9709/3)",
-                "longTitle": "Pure Mathematics 3 (9709/3)",
+                "shortTitle": "Pure Mathematics 3",
+                "longTitle": "9709/3",
                 "description": "Cambridge International A Level Mathematics develops a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
                 "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
                 "professors": "Lecturer: Yong Yau",
                 "notesStatus": "Notes Complete"
             },
             "M1": {
-                "shortTitle": "Mechanics 1 (9709/6)",
-                "longTitle": "Mechanics 1 (9709/6)",
+                "shortTitle": "Mechanics 1",
+                "longTitle": "9709/6",
                 "description": "Cambridge International A Level Mathematics develops a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
                 "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
                 "professors": "Lecturer: Amy Khoo",
@@ -53,7 +53,7 @@
         }
     },
     "1A": {
-        "title": "1A (Fall 2020)",
+        "title": "1A (F2020)",
         "courses": {
             "MATH145": {
                 "shortTitle": "MATH 145",
@@ -98,7 +98,7 @@
         }
     },
     "1B": {
-        "title": "1B (Winter 2021)",
+        "title": "1B (W2021)",
         "courses": {
             "MATH146": {
                 "shortTitle": "MATH 146",

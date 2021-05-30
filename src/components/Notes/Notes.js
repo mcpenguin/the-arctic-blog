@@ -31,7 +31,7 @@ import PSYCH101 from "./notes/1B/PSYCH101.pdf";
 import './Notes.css';
 
 // get JS object of pdfs
-const pdfs = {Chem,FPM1,FPM2,FPS,PM3,M1,MATH145,MATH147,CS145,PHIL145,GEOG101,MATH146,MATH148,PSYCH101};
+const pdfs = { Chem, FPM1, FPM2, FPS, PM3, M1, MATH145, MATH147, CS145, PHIL145, GEOG101, MATH146, MATH148, PSYCH101 };
 
 // class for individual course notes
 // props: 
@@ -47,34 +47,35 @@ class CourseNotes extends Component {
 
     render() {
         return (
-            <Card>
+            <Card className="notes-card">
                 <Card.Header>
                     <Accordion.Toggle
                         as={Button}
                         variant="link"
                         eventKey={this.props.eventKey}
+                        className="notes-card-link"
                     >
                         {this.props.shortTitle}
                     </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey={this.props.eventKey}>
                     <Card.Body>
-                        <h6>
-                            <a href={pdfs[this.props.eventKey]}  without rel="noopener noreferrer" target="_blank">
-                                {this.props.longTitle}
+                        <Card.Title className="notes-subject-link">
+                            <a href={pdfs[this.props.eventKey]} without rel="noopener noreferrer" target="_blank">
+                                {this.props.shortTitle} - {this.props.longTitle}
                             </a>
-                        </h6>
-                        <p>
+                        </Card.Title>
+                        <p className="notes-taken-when">
                             {this.props.takenWhen}
                             <br />
                             {this.props.notesStatus}
                         </p>
                         <hr />
-                        <p>
+                        <p className="notes-professors">
                             {this.props.professors}
                         </p>
                         <hr />
-                        <p>
+                        <p className="notes-description">
                             {this.props.description}
                         </p>
                     </Card.Body>
@@ -94,7 +95,7 @@ export default class Notes extends Component {
             const courses = classData[term].courses;
             for (let course in courses) {
                 const courseObject = courses[course];
-                cards.push(<CourseNotes 
+                cards.push(<CourseNotes
                     shortTitle={courseObject['shortTitle']}
                     longTitle={courseObject['longTitle']}
                     description={courseObject['description']}
@@ -105,7 +106,13 @@ export default class Notes extends Component {
                     eventKey={course}
                 />)
             }
-            cols.push(<Col><Accordion>{cards}</Accordion></Col>)
+            cols.push(
+                <Col lg={4}>
+                    <h4 className="notes-subject-heading">{classData[term].title}</h4>
+                    <Accordion className="notes-accordion">
+                        {cards}
+                    </Accordion>
+                </Col>)
         }
         return cols;
     }
@@ -113,7 +120,7 @@ export default class Notes extends Component {
     render() {
         return (
             <section className="section-notes">
-                <Container>
+                <Container fluid>
                     <Row>
                         <Col>
                             <h2 id="personal-notes-title">My Personal Notes</h2>

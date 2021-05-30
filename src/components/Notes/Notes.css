@@ -13,16 +13,46 @@
     padding-bottom: 15px;
 }
 
+.notes-card {
+    height: 80%;
+    padding: 0px;
+}
+
+.notes-card-link {
+    color: #000031;
+    font-size: 1.05rem;
+}
+
+.notes-card-link:hover {
+    color: #8e4162;
+}
+
 .notes-subject-section {
     padding: 15px 0;
 }
 
 .notes-subject-heading {
-    padding: auto;
-    height: 25px;
+    padding: 5px 0;
 }
 
 .notes-subject-link {
-    padding: 25px;
-    height: 30px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.notes-taken-when {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.notes-professors {
+    font-size: 1rem;
+    font-style: italic;
+    text-align: left;
+}
+
+.notes-description {
+    font-size: 1rem;
+    font-style: italic;
+    text-align: justify;
 }

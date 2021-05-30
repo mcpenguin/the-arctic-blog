@@ -26,7 +26,7 @@ li {
 }
 
 .container-fluid {
-    padding: 0;
+    padding: 0 10%;
 }
 
 .notes-updates-container {
@@ -61,36 +61,6 @@ li {
 #education-title {
     padding-top: 50px;
     text-align: center;
-}
-
-/* Notes */
-.section-notes {
-    background-color: #f5f5f5;
-    padding-bottom: 50px;
-    font-size: 1.1rem;
-}
-
-#personal-notes-title {
-    padding-top: 30px;
-    padding-bottom: 15px;
-}
-
-#personal-notes-description {
-    padding-bottom: 15px;
-}
-
-.notes-subject-section {
-    padding: 15px 0;
-}
-
-.notes-subject-heading {
-    padding: auto;
-    height: 25px;
-}
-
-.notes-subject-link {
-    padding: 25px;
-    height: 30px;
 }
 
 /* Contact Me */
