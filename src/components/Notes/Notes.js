@@ -9,11 +9,15 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-// import get course function 
-import { getCourse } from './get-course-data';
+// import class data from json file
+import classData from './courses.json';
+// import class data pdfs
+import pdfs from './notes-export-file';
 
 // import stylesheet
 import './Notes.css';
+
+console.log(classData);
 
 // class for individual course notes
 // props: 
@@ -42,7 +46,7 @@ class CourseNotes extends Component {
                 <Accordion.Collapse eventKey={this.props.eventKey}>
                     <Card.Body>
                         <h6>
-                            <a href={this.props.notesLink}>
+                            <a href={pdfs[this.props.eventKey]}>
                                 {this.props.longTitle}
                             </a>
                         </h6>
@@ -66,73 +70,32 @@ class CourseNotes extends Component {
     }
 }
 
-// course notes but for waterloo
-// props:
-// - course: string in the form of "<subject code> <catalog number>"
-// - takenWhen: string corresponding to when course was taken (e.g. "Taken in 1B (Winter 2021) (Online)")
-// - notesStatus: how complete notes are, as a string (e.g. "Notes Complete")
-// - professors: course professors, as a string (e.g. "Lecturer: Yong Yau")
-// - notesLink: (relative) link to notes pdf
-// - eventKey: the key corresponding to the subject
-class WaterlooCourseNotes extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            courseData: undefined,
-        }
-    }
-
-    componentDidMount() {
-        const course = this.props.course.split(" ");
-        const subjectCode = course[0];
-        const catalogNumber = course[1];
-        getCourse(subjectCode, catalogNumber).then((result) => {
-            this.setState(({ courseData }) => {
-                return {
-                    courseData: result.data[0],
-                }
-            })
-        })
-    }
-
-    componentDidUpdate(prevProps, prevState) {
-        if (prevProps.course !== this.props.course) {
-            const course = this.props.course.split(" ");
-            const subjectCode = course[0];
-            const catalogNumber = course[1];
-            getCourse(subjectCode, catalogNumber).then((result) => {
-                this.setState(({ courseData }) => {
-                    return {
-                        courseData: result.data[0],
-                    }
-                })
-            })
-        }
-    }
-
-    render() {
-        console.log(this.state.courseData);
-        if (typeof this.state.courseNotes !== "undefined") {
-            return (
-                <CourseNotes
-                    shortTitle={this.props.course}
-                    longTitle={`${this.props.course} (${this.state.courseData.title})`}
-                    description={this.state.courseData.description}
-                    takenWhen={this.props.takenWhen}
-                    notesStatus={this.props.notesStatus}
-                    professors={this.props.professors}
-                    eventKey={this.props.eventKey}
-                />
-            )
-        }
-        else {
-            return (<p></p>)
-        }
-    }
-}
-
 export default class Notes extends Component {
+
+    // transforms class data from json into list of Card JSX objects
+    transformClassData() {
+        const cols = [];
+        for (let term in classData) {
+            console.log(term);
+            const cards = [];
+            for (let course in classData[term]) {
+                console.log(course);
+                cards.push(<CourseNotes 
+                    shortTitle={classData[term][course]['shortTitle']}
+                    longTitle={classData[term][course]['longTitle']}
+                    description={classData[term][course]['description']}
+                    takenWhen={classData[term][course]['takenWhen']}
+                    notesStatus={classData[term][course]['notesStatus']}
+                    professors={classData[term][course]['professors']}
+                    notesLink={`src/notes/${term}/${course}.pdf`}
+                    eventKey={course}
+                />)
+            }
+            cols.push(<Col><Accordion>{cards}</Accordion></Col>)
+        }
+        return cols;
+    }
+
     render() {
         return (
             <section className="section-notes">
@@ -154,16 +117,7 @@ export default class Notes extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <Accordion>
-                                <CourseNotes 
-                                    shortTitle="MATH 146"
-                                    longTitle="MATH 146 (Linear Algebra 1 (Advanced))"
-                                    description="Hello world!"
-                                    eventKey="MATH146"
-                                />
-                            </Accordion>
-                        </Col>
+                        {this.transformClassData()}
                     </Row>
                 </Container>
             </section>

@@ -1,0 +1,16 @@
+import Chem from "./notes/AL/Chem.pdf";
+import FPM1 from "./notes/AL/FPM1.pdf";
+import FPM2 from "./notes/AL/FPM2.pdf";
+import FPS from "./notes/AL/FPS.pdf";
+import PM3 from "./notes/AL/PM3.pdf";
+import M1 from "./notes/AL/M1.pdf";
+import MATH145 from "./notes/1A/MATH145.pdf";
+import MATH147 from "./notes/1A/MATH147.pdf";
+import CS145 from "./notes/1A/CS145.pdf";
+import PHIL145 from "./notes/1A/PHIL145.pdf";
+import GEOG101 from "./notes/1A/GEOG101.pdf";
+import MATH146 from "./notes/1B/MATH146.pdf";
+import MATH148 from "./notes/1B/MATH148.pdf";
+import PSYCH101 from "./notes/1B/PSYCH101.pdf";
+const pdfs = {Chem,FPM1,FPM2,FPS,PM3,M1,MATH145,MATH147,CS145,PHIL145,GEOG101,MATH146,MATH148,PSYCH101};
+export default pdfs;
