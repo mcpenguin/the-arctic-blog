@@ -1,9 +1,9 @@
 import { Component } from 'react';
-import { Container } from 'react-bootstrap';
 
 // import components
 import Header from './components/Header/Header';
 import AboutMe from './components/AboutMe/AboutMe';
+import Notes from './components/Notes/Notes';
 
 export default class App extends Component {
     render() {
@@ -11,6 +11,7 @@ export default class App extends Component {
             <>
                 <Header />
                 <AboutMe />
+                <Notes />
             </>
         )
     }

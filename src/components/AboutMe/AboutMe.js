@@ -25,7 +25,7 @@ export default class AboutMe extends Component {
                             <img
                                 id="personal-photo"
                                 src={personal_photo}
-                                alt="personal photo goes here"
+                                alt="personal"
                             />
                         </Col>
                         <Col lg={5} className="personal-desc-section">
