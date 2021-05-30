@@ -1,11 +1,76 @@
 {
     "AL": {
-        
+        "Chem": {
+            "shortTitle": "Chemistry (9701)",
+            "longTitle": "Chemistry (9701)",
+            "description": "Cambridge International AS and A Level Chemistry builds on the skills acquired at Cambridge IGCSE (or equivalent) level. The syllabus includes the main theoretical concepts which are fundamental to the subject, some current applications of chemistry, and a strong emphasis on advanced practical skills. Practical skills are assessed in a timetabled practical examination.",
+            "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
+            "professors": "Lecturer: Jing Ying Hoo"
+        },
+        "FPM1": {
+            "shortTitle": "Further Pure Mathematics 1 (9231/1)",
+            "longTitle": "Further Pure Mathematics 1 (9231/1)",
+            "description": "Cambridge International A Level Further Mathematics develops and extends a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
+            "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
+            "professors": "Lecturer: Yong Yau"
+        },
+        "FPM2": {
+            "shortTitle": "Further Pure Mathematics 2 (9231/2)",
+            "longTitle": "Further Pure Mathematics 2 (9231/2)",
+            "description": "Cambridge International A Level Further Mathematics develops and extends a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
+            "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
+            "professors": "Lecturer: Yong Yau"
+        },
+        "FPS": {
+            "shortTitle": "Further Pure Statistics (9231/4)",
+            "longTitle": "Further Pure Statistics (9231/4)",
+            "description": "Cambridge International A Level Further Mathematics develops and extends a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
+            "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
+            "professors": "Lecturer: Madam Lim"
+        },
+        "PM3": {
+            "shortTitle": "Pure Mathematics 3 (9709/3)",
+            "longTitle": "Pure Mathematics 3 (9709/3)",
+            "description": "Cambridge International A Level Mathematics develops a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
+            "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
+            "professors": "Lecturer: Yong Yau"
+        },
+        "M1": {
+            "shortTitle": "Mechanics 1 (9709/6)",
+            "longTitle": "Mechanics 1 (9709/6)",
+            "description": "Cambridge International A Level Mathematics develops a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
+            "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
+            "professors": "Lecturer: Amy Khoo"
+        }
     },
     "1A": {
+        "MATH145": {
+
+        },
+        "MATH147": {
+
+        },
+        "CS145": {
+
+        },
+        "PHIL145": {
+
+        },
+        "GEOG101": {
+
+        }
 
     },
     "1B": {
+        "MATH146": {
 
+        },
+        "MATH148": {
+
+        },
+        "CS146": {
+
+        }
+        
     }
 }

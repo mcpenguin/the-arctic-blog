@@ -27,16 +27,6 @@ import './Notes.css';
 // - eventKey: the key corresponding to the subject
 class CourseNotes extends Component {
 
-    // componentDidMount() {
-    //     if (this.props.type === "WL") {
-    //         getCourse(this.props.subjectCode, this.props.catalogNumber).then((result) => {
-    //             this.setState({
-    //                 courseData: result.data[0],
-    //             })
-    //         })
-    //     }
-    // }
-
     render() {
         return (
             <Card>
@@ -132,7 +122,6 @@ class WaterlooCourseNotes extends Component {
                     takenWhen={this.props.takenWhen}
                     notesStatus={this.props.notesStatus}
                     professors={this.props.professors}
-                    notesLink={this.props.notesLink}
                     eventKey={this.props.eventKey}
                 />
             )

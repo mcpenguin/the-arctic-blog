@@ -74,6 +74,4 @@ export async function getClassSchedule(subjectCode, catalogNumber, termcode) {
     return axios.get(`${URL}/ClassSchedules/${termcode}/${subjectCode}/${catalogNumber}`, { headers: { "X-API-KEY": APIKEY } });
 }
 
-getCourse("MATH", "135").then(console.log);
-
 
