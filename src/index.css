@@ -1,13 +1,238 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'nunito', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'nunito', sans-serif;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: 'nunito', sans-serif;
+    font-weight: 400;
+}
+
+li {
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.notes-updates-container {
+    background-color: #ffddff;
+    /* background-color: #5d707f;
+    color: #f5f5f5; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.notes-update-subject {
+    text-decoration: underline;
+}
+
+.notes-update-link:hover {
+    color: #8e4162;
+}
+
+#notes-updates-h1 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    /* position: relative;
+    bottom: 20px; */
+}
+
+/* About Me */
+.section-about-me {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #9fb8c2;
+    /* position: relative;
+    bottom: 33px; */
+}
+
+#about-me-title {
+    padding-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#personal-photo {
+    width: 80%;
+    max-width: 80%;
+}
+
+.personal-desc-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #f5f5f5;
+}
+
+#personal-description {
+    width: 75%;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: auto;
+}
+
+@media (max-width: 1200px) {
+
+    #about-me-title {
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .personal-desc-section {
+        margin: 10px auto;
+    }
+
+}
+
+/* Education */
+.section-education {
+    background-color: #ffddff;
+    display: none;
+}
+
+#education-title {
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* Notes */
+.section-notes {
+    background-color: #f5f5f5;
+    padding-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+#personal-notes-title {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#personal-notes-description {
+    padding-bottom: 15px;
+}
+
+.notes-subject-section {
+    padding: 15px 0;
+}
+
+.notes-subject-heading {
+    padding: auto;
+    height: 25px;
+}
+
+.notes-subject-link {
+    padding: 25px;
+    height: 30px;
+}
+
+/* Contact Me */
+.section-contact-me {
+    background-color: #000031;
+    color: #f5f5f5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.contact-me-details {
+    padding-top: 10px;
+}
+
+.contact-me-link {
+    color: #9fb8c2;
+    font-weight: 700;
+}
+
+.contact-me-link:hover {
+    color: #f5f5f5;
+}
+
+.contact-me-logo {
+    padding-right: 5px;
+    color: #f5f5f5;
+    transform: scale(1.2);
+}
+
+.contact-me-box {
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+/* Sections To Be Added  */
+
+/* Programming Expertise */
+.section-programming-expertise {
+    background-color: #000031;
+    color: white;
+    display: none;
+}
+
+.programming-subheading {
+    font-family: 'nunito', sans-serif;
+    font-weight: 400;
+}
+
+/* Projects */
+.section-projects {
+    background-color: #f5f5f5;
+    display: none;
+
+}
+
+/* Past Experience */
+.section-past-experience {
+    background-color: #000031;
+    color: white;
+    display: none;
+
+}
+
+/* Notable Awards */
+.section-notable-awards {
+    background-color: #000031;
+    color: white;
+    display: none;
+}
+
+/* Extracurriculars */
+.section-extracurriculars {
+    background-color: #f5f5f5;
+    display: none;
+}
+
+/* #trombone-photo {
+
+}
+
+#trombone-section-photo {
+
+} */
+
+/* Timeline */
+.section-timeline {
+    background-color: #000031;
+    color: white;
+    display: none;
 }
