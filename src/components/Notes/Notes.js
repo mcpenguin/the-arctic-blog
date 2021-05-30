@@ -91,14 +91,16 @@ export default class Notes extends Component {
         const cols = [];
         for (let term in classData) {
             const cards = [];
-            for (let course in classData[term]) {
+            const courses = classData[term].courses;
+            for (let course in courses) {
+                const courseObject = courses[course];
                 cards.push(<CourseNotes 
-                    shortTitle={classData[term][course]['shortTitle']}
-                    longTitle={classData[term][course]['longTitle']}
-                    description={classData[term][course]['description']}
-                    takenWhen={classData[term][course]['takenWhen']}
-                    notesStatus={classData[term][course]['notesStatus']}
-                    professors={classData[term][course]['professors']}
+                    shortTitle={courseObject['shortTitle']}
+                    longTitle={courseObject['longTitle']}
+                    description={courseObject['description']}
+                    takenWhen={courseObject['takenWhen']}
+                    notesStatus={courseObject['notesStatus']}
+                    professors={courseObject['professors']}
                     notesLink={`src/notes/${term}/${course}.pdf`}
                     eventKey={course}
                 />)
