@@ -1,0 +1,31 @@
+.section-contact-me {
+    background-color: #000031;
+    color: #9fb8c2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.contact-me-details {
+    padding-top: 10px;
+}
+
+.contact-me-link {
+    color: #9fb8c2;
+    font-weight: 700;
+}
+
+.contact-me-link:hover {
+    color: #f5f5f5;
+}
+
+.contact-me-logo {
+    padding-right: 5px;
+    color: #c0c0c0;
+    transform: scale(1.2);
+}
+
+.contact-me-box {
+    padding: 5px 0;
+}
