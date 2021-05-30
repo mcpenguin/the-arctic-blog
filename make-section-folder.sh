@@ -11,8 +11,7 @@ mkdir src/components/${sectionName};
 cd src/components/${sectionName};
 touch ${sectionName}.js ${sectionName}.css;
 # Put "generic" lines into js file
-printf 
-"// React component class for ${sectionName} section
+printf "// React component class for ${sectionName} section
 import React, { Component } from 'react';\n
 // import Bootstrap components
 import Container from 'react-bootstrap/Container';
@@ -28,8 +27,7 @@ export default class ${sectionName} extends Component {
             </>
         ); 
     }
-}" 
->> ${sectionName}.js;
+}" >> ${sectionName}.js;
 
 
 

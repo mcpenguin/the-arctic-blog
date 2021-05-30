@@ -1,5 +1,5 @@
 .section-notes {
-    background-color: #f5f5f5;
+    background-color: #ecebeb;
     padding-bottom: 50px;
     font-size: 1.1rem;
 }
@@ -14,13 +14,18 @@
 }
 
 .notes-card {
-    height: 80%;
-    padding: 0px;
+    background-color: #b2d0db;
+    border: 1px solid;
+}
+
+.notes-card-body {
+    background-color: #ecebeb;
 }
 
 .notes-card-link {
     color: #000031;
     font-size: 1.05rem;
+    font-weight: bold;
 }
 
 .notes-card-link:hover {
@@ -53,6 +58,5 @@
 
 .notes-description {
     font-size: 1rem;
-    font-style: italic;
     text-align: justify;
 }

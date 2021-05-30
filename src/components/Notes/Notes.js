@@ -59,7 +59,7 @@ class CourseNotes extends Component {
                     </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey={this.props.eventKey}>
-                    <Card.Body>
+                    <Card.Body className="notes-card-body">
                         <Card.Title className="notes-subject-link">
                             <a href={pdfs[this.props.eventKey]} without rel="noopener noreferrer" target="_blank">
                                 {this.props.shortTitle} - {this.props.longTitle}
