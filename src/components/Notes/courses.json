@@ -94,13 +94,28 @@
     },
     "1B": {
         "MATH146": {
-
+            "shortTitle": "MATH 146",
+            "longTitle": "Linear Algebra 1 (Advanced Level)",
+            "description": "MATH 146 is an advanced level version of MATH 136.\n\nMATH 136: Systems of linear equations, matrix algebra, elementary matrices, computational issues. Real n-space, vector spaces and subspaces, basis and dimension, rank of a matrix, linear transformations, and matrix representations. Determinants, eigenvalues and diagonalization, applications.",
+            "takenWhen": "Taken in 1B (Winter 2021) (Online)",
+            "professors": "Professors: Ross Willard and Giang Tran",
+            "notesStatus": "Notes Complete"
         },
         "MATH148": {
-
+            "shortTitle": "MATH 148",
+            "longTitle": "Calculus 2 (Advanced Level)",
+            "description": "MATH 148 is an advanced level version of MATH 138.\n\nMATH 138: Introduction to the Riemann integral and approximations. Antiderivatives and the Fundamental theorem of calculus. Change of variables, Methods of integration. Applications of the integral. Improper integrals. Linear and separable differential equations and applications. Tests for convergence for series. Binomial series, Functions defined as power series and Taylor series. Vector (parametric) curves in R2. Suitable topics are illustrated using computer software.",
+            "takenWhen": "Taken in 1B (Winter 2021) (Online)",
+            "professors": "Professor: Stephen New",
+            "notesStatus": "Notes Complete"
         },
-        "CS146": {
-
+        "PSYCH101": {
+            "shortTitle": "PSYCH 101",
+            "longTitle": "Introductory Psychology",
+            "description": "A general survey course designed to provide the student with an understanding of the basic concepts and techniques of modern psychology as a behavioural science.",
+            "takenWhen":"Taken in 1B (Winter 2021) (Online)",
+            "professors": "Professor: Paul Wehr",
+            "notesStatus": "Notes Complete"
         }
         
     }
