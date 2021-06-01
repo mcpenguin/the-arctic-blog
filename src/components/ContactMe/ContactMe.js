@@ -25,7 +25,7 @@ class ContactMeBox extends Component {
 export default class ContactMe extends Component {
     render() {
         return (
-            <section className="section-contact-me">
+            <section className="section-contact-me" id="contact-me">
                 <footer>
                     <h2>Contact Me</h2>
                     <Container fluid className="contact-me-details">
@@ -56,39 +56,6 @@ export default class ContactMe extends Component {
                             />
                         </Row>
                     </Container>
-                    {/* <div class="contact-me-details row">
-                        <div class="contact-me-box col-md-2">
-                            <p>
-                                <i class="contact-me-logo fab fa-instagram"></i>
-                                <a class="contact-me-link" href="https://www.instagram.com/mcpenquin/?hl=en">Instagram</a>
-                            </p>
-                        </div>
-                        <div class="contact-me-box col-md-4">
-                            <p>
-                                <i class="contact-me-logo fas fa-envelope"></i>
-                                <a class="contact-me-link" href="mailto:marcus.chanwc@gmail.com">marcus.chanwc@gmail.com</a>
-                            </p>
-                        </div>
-                        <div class="contact-me-box col-md-2">
-                            <p>
-                                <i class="contact-me-logo fab fa-linkedin"></i>
-                                <a class="contact-me-link" href="https://www.linkedin.com/in/marcus-chanwc/">LinkedIn</a>
-                            </p>
-                        </div>
-                        <div class="contact-me-box col-md-2">
-                            <p>
-                                <i class="contact-me-logo fab fa-github"></i>
-                                <a class="contact-me-link" href="https://github.com/mcpenguin">GitHub</a>
-                            </p>
-                        </div>
-                        <div class="contact-me-box col-md-2">
-                            <p>
-                                <i class="contact-me-logo fab fa-youtube"></i>
-                                <a class="contact-me-link"
-                                    href="https://www.youtube.com/channel/UCIAQzTXPVtht2H0hoz8NNAg">YouTube</a>
-                            </p>
-                        </div>
-                    </div> */}
                 </footer>
             </section>
         );

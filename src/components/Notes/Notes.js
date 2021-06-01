@@ -1,5 +1,6 @@
 // React component class for Notes section
 import React, { Component } from 'react';
+import { Fade, Slide } from 'react-reveal';
 
 // import Bootstrap components
 import Accordion from 'react-bootstrap/Accordion';
@@ -95,23 +96,29 @@ export default class Notes extends Component {
             const courses = classData[term].courses;
             for (let course in courses) {
                 const courseObject = courses[course];
-                cards.push(<CourseNotes
-                    shortTitle={courseObject['shortTitle']}
-                    longTitle={courseObject['longTitle']}
-                    description={courseObject['description']}
-                    takenWhen={courseObject['takenWhen']}
-                    notesStatus={courseObject['notesStatus']}
-                    professors={courseObject['professors']}
-                    notesLink={`src/notes/${term}/${course}.pdf`}
-                    eventKey={course}
-                />)
+                cards.push(
+                    <Fade top>
+                        <CourseNotes
+                        shortTitle={courseObject['shortTitle']}
+                        longTitle={courseObject['longTitle']}
+                        description={courseObject['description']}
+                        takenWhen={courseObject['takenWhen']}
+                        notesStatus={courseObject['notesStatus']}
+                        professors={courseObject['professors']}
+                        notesLink={`src/notes/${term}/${course}.pdf`}
+                        eventKey={course}
+                    />  
+                    </Fade>                
+                    )
             }
             cols.push(
                 <Col lg={4}>
-                    <h4 className="notes-subject-heading">{classData[term].title}</h4>
-                    <Accordion className="notes-accordion">
-                        {cards}
-                    </Accordion>
+                    {/* <Fade top cascade> */}
+                        <h4 className="notes-subject-heading">{classData[term].title}</h4>
+                        <Accordion className="notes-accordion">
+                            {cards}
+                        </Accordion>
+                    {/* </Fade> */}
                 </Col>)
         }
         return cols;
@@ -119,22 +126,28 @@ export default class Notes extends Component {
 
     render() {
         return (
-            <section className="section-notes">
+            <section className="section-notes" id="notes">
                 <Container fluid>
                     <Row>
                         <Col>
-                            <h2 id="personal-notes-title">My Personal Notes</h2>
-                            <p id="personal-notes-description">
-                                Here I post my notes for my university courses, which were handwritten on my iPad.
-                                Be wary of downloading/viewing them, as since all my notes are handwritten,
-                                the file sizes are substantial. Moreover, try not to print them,
-                                since I use many light colours in my notes, and these may not show if you
-                                print in grayscale/B&W.
-                            </p>
-                            <p>
-                                Click each course link to see the expanded details of that particular
-                                course. Click the top hyperlink to access my notes for that course.
-                            </p>
+                            <Fade top>
+                                <h2 id="personal-notes-title">My Personal Notes</h2>
+                            </Fade>
+                            <Fade top>
+                                <p id="personal-notes-description">
+                                    Here I post my notes for my university courses, which were handwritten on my iPad.
+                                    Be wary of downloading/viewing them, as since all my notes are handwritten,
+                                    the file sizes are substantial. Moreover, try not to print them,
+                                    since I use many light colours in my notes, and these may not show if you
+                                    print in grayscale/B&W.
+                                </p>
+                            </Fade>
+                            <Fade top>
+                                <p>
+                                    Click each course link to see the expanded details of that particular
+                                    course. Click the top hyperlink to access my notes for that course.
+                                </p>
+                            </Fade>
                         </Col>
                     </Row>
                     <Row>
