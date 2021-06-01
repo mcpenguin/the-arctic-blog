@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/the-arctic-blog/static/css/main.64390caf.chunk.css",
-    "main.js": "/the-arctic-blog/static/js/main.03b53253.chunk.js",
-    "main.js.map": "/the-arctic-blog/static/js/main.03b53253.chunk.js.map",
+    "main.js": "/the-arctic-blog/static/js/main.cff5d711.chunk.js",
+    "main.js.map": "/the-arctic-blog/static/js/main.cff5d711.chunk.js.map",
     "runtime-main.js": "/the-arctic-blog/static/js/runtime-main.64de6867.js",
     "runtime-main.js.map": "/the-arctic-blog/static/js/runtime-main.64de6867.js.map",
     "static/js/2.9961c02b.chunk.js": "/the-arctic-blog/static/js/2.9961c02b.chunk.js",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.64de6867.js",
     "static/js/2.9961c02b.chunk.js",
     "static/css/main.64390caf.chunk.css",
-    "static/js/main.03b53253.chunk.js"
+    "static/js/main.cff5d711.chunk.js"
   ]
 }
