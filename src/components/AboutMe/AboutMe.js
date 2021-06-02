@@ -18,20 +18,16 @@ export default class AboutMe extends Component {
                 <Container id="container-about-me">
                     <Row>
                         <Col>
-                            <Fade top>
                                 <h2 id="about-me-title">About Me</h2>
-                            </Fade>
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col lg={7}>
-                            <Fade top>
                                 <img
                                     id="personal-photo"
                                     src={personal_photo}
                                     alt="personal"
                                 />
-                            </Fade>
                         </Col>
                         <Col lg={5} className="personal-desc-section">
                             <Fade top>

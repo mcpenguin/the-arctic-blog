@@ -10,6 +10,8 @@ import Carousel from 'react-bootstrap/Carousel';
 // import stylesheet
 import './TopCarousel.css';
 
+// proportion of carousel images: 1440x600
+
 // import images
 import image1 from './test-1440x600.jpg';
 
@@ -30,13 +32,6 @@ export default class TopCarousel extends Component {
                             <img fluid className="carousel-image" src={image1} alt="image1"></img>
                             <Carousel.Caption>
                                 <h3>Second slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img fluid className="carousel-image" src={image1} alt="image1"></img>
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
