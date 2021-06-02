@@ -13,7 +13,7 @@ import './TopCarousel.css';
 // proportion of carousel images: 1440x600
 
 // import images
-import image1 from './test-1440x600.jpg';
+import image1 from './piano-carousel.jpg';
 
 export default class TopCarousel extends Component {
     render() {
