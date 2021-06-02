@@ -1,0 +1,14 @@
+.section-top-carousel {
+    background-color: #000000;
+}
+
+.carousel-container {
+  padding: 0 !important;
+}
+
+/* @media (max-width: 1200px) {
+    .carousel-container {
+      width: auto;
+      height: auto;
+    }
+} */

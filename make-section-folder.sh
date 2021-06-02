@@ -1,10 +1,7 @@
 #!/bin/bash
-
 # Bash script to autogenerate section folder
 # Usage: bash make-section-folder.sh <section name>
-
 sectionName=$1;
-
 # Create components folder
 mkdir src/components/${sectionName};
 # Make files for components
@@ -28,6 +25,3 @@ export default class ${sectionName} extends Component {
         ); 
     }
 }" >> ${sectionName}.js;
-
-
-
