@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/the-arctic-blog/static/css/main.64390caf.chunk.css",
-    "main.js": "/the-arctic-blog/static/js/main.cff5d711.chunk.js",
-    "main.js.map": "/the-arctic-blog/static/js/main.cff5d711.chunk.js.map",
-    "runtime-main.js": "/the-arctic-blog/static/js/runtime-main.64de6867.js",
-    "runtime-main.js.map": "/the-arctic-blog/static/js/runtime-main.64de6867.js.map",
-    "static/js/2.9961c02b.chunk.js": "/the-arctic-blog/static/js/2.9961c02b.chunk.js",
-    "static/js/2.9961c02b.chunk.js.map": "/the-arctic-blog/static/js/2.9961c02b.chunk.js.map",
-    "static/js/3.8156363d.chunk.js": "/the-arctic-blog/static/js/3.8156363d.chunk.js",
-    "static/js/3.8156363d.chunk.js.map": "/the-arctic-blog/static/js/3.8156363d.chunk.js.map",
+    "main.css": "/the-arctic-blog/static/css/main.ab572156.chunk.css",
+    "main.js": "/the-arctic-blog/static/js/main.64ec4846.chunk.js",
+    "main.js.map": "/the-arctic-blog/static/js/main.64ec4846.chunk.js.map",
+    "runtime-main.js": "/the-arctic-blog/static/js/runtime-main.8590b78c.js",
+    "runtime-main.js.map": "/the-arctic-blog/static/js/runtime-main.8590b78c.js.map",
+    "static/js/2.537ed697.chunk.js": "/the-arctic-blog/static/js/2.537ed697.chunk.js",
+    "static/js/2.537ed697.chunk.js.map": "/the-arctic-blog/static/js/2.537ed697.chunk.js.map",
+    "static/js/3.047918f5.chunk.js": "/the-arctic-blog/static/js/3.047918f5.chunk.js",
+    "static/js/3.047918f5.chunk.js.map": "/the-arctic-blog/static/js/3.047918f5.chunk.js.map",
     "index.html": "/the-arctic-blog/index.html",
-    "static/css/main.64390caf.chunk.css.map": "/the-arctic-blog/static/css/main.64390caf.chunk.css.map",
-    "static/js/2.9961c02b.chunk.js.LICENSE.txt": "/the-arctic-blog/static/js/2.9961c02b.chunk.js.LICENSE.txt",
+    "static/css/main.ab572156.chunk.css.map": "/the-arctic-blog/static/css/main.ab572156.chunk.css.map",
+    "static/js/2.537ed697.chunk.js.LICENSE.txt": "/the-arctic-blog/static/js/2.537ed697.chunk.js.LICENSE.txt",
     "static/media/CS145.3e6a9481.pdf": "/the-arctic-blog/static/media/CS145.3e6a9481.pdf",
     "static/media/Chem.b1ab4431.pdf": "/the-arctic-blog/static/media/Chem.b1ab4431.pdf",
     "static/media/FPM1.68b9990c.pdf": "/the-arctic-blog/static/media/FPM1.68b9990c.pdf",
@@ -26,12 +26,19 @@
     "static/media/PHIL145.542670d0.pdf": "/the-arctic-blog/static/media/PHIL145.542670d0.pdf",
     "static/media/PM3.542db20c.pdf": "/the-arctic-blog/static/media/PM3.542db20c.pdf",
     "static/media/PSYCH101.931dbe8b.pdf": "/the-arctic-blog/static/media/PSYCH101.931dbe8b.pdf",
-    "static/media/personal-photo.55695f19.jpg": "/the-arctic-blog/static/media/personal-photo.55695f19.jpg"
+    "static/media/github_carousel.2ceff94f.jpg": "/the-arctic-blog/static/media/github_carousel.2ceff94f.jpg",
+    "static/media/graph_carousel.75569cc6.png": "/the-arctic-blog/static/media/graph_carousel.75569cc6.png",
+    "static/media/linkedin_carousel.ecb760e1.jpg": "/the-arctic-blog/static/media/linkedin_carousel.ecb760e1.jpg",
+    "static/media/notes_carousel.972d20a8.jpg": "/the-arctic-blog/static/media/notes_carousel.972d20a8.jpg",
+    "static/media/penguin_carousel.534783cb.png": "/the-arctic-blog/static/media/penguin_carousel.534783cb.png",
+    "static/media/personal-photo.55695f19.jpg": "/the-arctic-blog/static/media/personal-photo.55695f19.jpg",
+    "static/media/piano_carousel.ffd81a9e.jpg": "/the-arctic-blog/static/media/piano_carousel.ffd81a9e.jpg",
+    "static/media/rose_carousel.6416b31a.png": "/the-arctic-blog/static/media/rose_carousel.6416b31a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.64de6867.js",
-    "static/js/2.9961c02b.chunk.js",
-    "static/css/main.64390caf.chunk.css",
-    "static/js/main.cff5d711.chunk.js"
+    "static/js/runtime-main.8590b78c.js",
+    "static/js/2.537ed697.chunk.js",
+    "static/css/main.ab572156.chunk.css",
+    "static/js/main.64ec4846.chunk.js"
   ]
 }
