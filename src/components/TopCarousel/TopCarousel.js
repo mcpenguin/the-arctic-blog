@@ -18,6 +18,7 @@ import './TopCarousel.css';
 // import images
 import notes from './notes_carousel.jpg';
 import piano from './piano_carousel.jpg';
+import graph from './graph_carousel.png';
 import github from './github_carousel.jpg';
 import linkedin from './linkedin_carousel.jpg';
 
@@ -94,7 +95,7 @@ export default class TopCarousel extends Component {
                     </Carousel.Item>
                     <Carousel.Item>
                         <CustomCarouselContents
-                            image={github}
+                            image={graph}
                             heading={
                                 <h1 className="carousel-heading">
                                     Liked what you see here?
