@@ -21,6 +21,8 @@ import piano from './piano_carousel.jpg';
 import graph from './graph_carousel.png';
 import github from './github_carousel.jpg';
 import linkedin from './linkedin_carousel.jpg';
+import rose from './rose_carousel.png';
+import penguin from './penguin_carousel.png'
 
 // component for carousel item
 class CustomCarouselContents extends Component {
@@ -43,7 +45,6 @@ export default class TopCarousel extends Component {
     render() {
         return (
             <section class="section-top-carousel">
-                <h3 id="carousel-title">🧊 Featured 🧊</h3>
                 <Carousel>
                     <Carousel.Item>
                         <CustomCarouselContents
@@ -98,12 +99,12 @@ export default class TopCarousel extends Component {
                             image={graph}
                             heading={
                                 <h1 className="carousel-heading">
-                                    Liked what you see here?
+                                    Check out "My Course Graph"
                                 </h1>
                             }
                             subheading={
                                 <h4>
-                                    Check out my other projects
+                                    and my other projects
                                     on my <a className="carousel-link" href="https://github.com/mcpenguin">Github</a> page.
                                 </h4>
                             }
@@ -111,7 +112,7 @@ export default class TopCarousel extends Component {
                     </Carousel.Item>
                     <Carousel.Item>
                         <CustomCarouselContents
-                            image={linkedin}
+                            image={penguin}
                             heading={
                                 <h1 className="carousel-heading">
                                     Want to connect with me further?
@@ -119,7 +120,8 @@ export default class TopCarousel extends Component {
                             }
                             subheading={
                                 <h4>
-                                    Add me on <a className="carousel-link" href="https://www.linkedin.com/in/marcus-chanwc/">LinkedIn</a>
+                                    Add me on <a className="carousel-link" href="https://www.linkedin.com/in/marcus-chanwc/">LinkedIn</a> or
+                                    follow me on <a className="carousel-link" href="https://www.instagram.com/mcpenquin/?hl=en">Instagram</a>
                                 </h4>
                             }
                         />
