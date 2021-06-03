@@ -26,11 +26,11 @@ export default class Header extends Component {
         return (
             <section className="section-header">
                 <Navbar expand="lg" variant="dark">
-                    <Navbar.Brand href="" className="navbar-brand">The Arctic Blog</Navbar.Brand>
+                    <Navbar.Brand href="" className="navbar-brand">🐧 The Arctic Blog</Navbar.Brand>
                     <Navbar.Toggle aria-controls="my-navbar" />
                     <Navbar.Collapse>
                         <Nav id="my-navbar" className="ml-auto">
-                            <NavbarLink id="about-me" title="About Me" />
+                            <NavbarLink id="about-me" logo="fas fa-user" title="About Me" />
                             <NavbarLink id="notes" title="Notes" />
                             <NavbarLink id="contact-me" title="Contact Me" />
                         </Nav>

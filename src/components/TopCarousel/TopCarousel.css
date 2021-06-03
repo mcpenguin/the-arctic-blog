@@ -1,9 +1,36 @@
 .section-top-carousel {
-    background-color: #000000;
+  background-color: #5959af62;
+  padding: 3.5% 1% 3% 1% !important;
 }
 
-.carousel-container {
-  padding: 0 !important;
+#carousel-title {
+  color: #000031;
+  font-weight: 800;
+  padding: 3px 0 7px 0;
+}
+
+.carousel-inner {
+  height: 600px;
+}
+
+.carousel-caption {
+  background-color: rgba(245, 245, 245, 0.85) !important;
+  color: #000031;
+  padding: 20px;
+}
+
+.carousel-heading {
+  font-weight: 600;
+  size: 0.7rem;
+}
+
+.carousel-link {
+  color: #000031;
+  text-decoration: underline;
+}
+
+.carousel-link:hover {
+  color: #8e4162;
 }
 
 /* @media (max-width: 1200px) {
