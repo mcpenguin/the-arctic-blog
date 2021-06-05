@@ -133,8 +133,8 @@ export default class Timeline extends Component {
                     <TimelineElement
                         date="Apr 2021"
                         type="award"
-                        heading="Top 300, Putnam Mathematics Competition"
-                        subheading=""
+                        heading="Top 20% (20/120)"
+                        subheading="81st Putnam Mathematical Competition"
                         body={<></>}
                     />
                     <TimelineElement
@@ -243,14 +243,26 @@ export default class Timeline extends Component {
                         type="activity"
                         heading="Mathematics Tutor"
                         subheading="Dignity for Children Foundation"
-                        body={<></>}
+                        body={<>
+                            <p>
+                                I taught a class of Grade 5 students, many of whom were struggling with their studies.
+                                Hence, I employed a cornucopia of nascent and original methods,
+                                catering my teaching style to each student individually to maximize their
+                                learning potential and enjoyment.
+                            </p>
+                        </>}
                     />
                     <TimelineElement
                         date="Apr 2019 - Jan 2020"
                         type="activity"
                         heading="Piano Tutor"
                         subheading="Shelter Home for Children"
-                        body={<></>}
+                        body={<>
+                            <p>
+                                I taught 2 teenage boys (15 and 13 years old). Every week, I would give them new sheet music
+                                containing new music concepts and, or continue off a previous piece we had already started.
+                            </p>
+                        </>}
                     />
                     <TimelineElement
                         date="Mar 2019"
