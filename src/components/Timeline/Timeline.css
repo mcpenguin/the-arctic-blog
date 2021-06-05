@@ -3,20 +3,40 @@
     text-align: left;
 }
 
-.vertical-timeline-element-content {
-      color: rgb(0, 0, 0);
+#timeline-header {
+    font-weight: 800;
+    text-align: center;
+    padding: 30px 0;
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content {
+.vertical-timeline-element-content {
+    color: rgb(0, 0, 0);
+}
+
+/* .vertical-timeline-element--work .vertical-timeline-element-content {
     border-top: 3px solid #2196f3;
 }
 
-.vertical-timeline-element--education .vertical-timeline-element-content {
+.vertical-timeline-element--school .vertical-timeline-element-content {
     border-top: 3px solid #e91e63;
+} */
+
+.vertical-timeline-element-heading {
+    color:rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 1.7em;
+}
+
+.vertical-timeline-element-subheading {
+    font-size: 1.3em;
+}
+
+.vertical-timeline-element-body {
+
 }
 
 .vertical-timeline-element-date {
-  color: rgb(145, 62, 62);
+  color: rgb(0, 0, 0);
 }
 
 /* CUSTOM LINE COLOR */
