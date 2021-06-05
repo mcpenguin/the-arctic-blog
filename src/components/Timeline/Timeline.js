@@ -12,7 +12,6 @@ import Col from 'react-bootstrap/Col';
 import WorkIcon from '@material-ui/icons/WorkRounded';
 import SchoolIcon from '@material-ui/icons/School';
 import AwardIcon from '@material-ui/icons/Star';
-import StarIcon from '@material-ui/icons/Star';
 import ActivityIcon from '@material-ui/icons/LocalActivity';
 
 // vertical timeline cannot be wrapped in section or container
@@ -41,7 +40,7 @@ class TimelineElement extends Component {
         },
         award: {
             backgroundColor: "#400e96", // blue-purple
-            icon: <StarIcon />
+            icon: <AwardIcon />
         },
         activity: {
             backgroundColor: "#0757b3", // navy blue
@@ -90,6 +89,23 @@ export default class Timeline extends Component {
             <section className="section-timeline" id="timeline">
                 <h2 id="timeline-header">Timeline</h2>
                 <VerticalTimeline>
+                    {/* <TimelineElement
+                        date="Sep 2021 - Dec 2021"
+                        type="school"
+                        heading="2A - Data Science"
+                        subheading="University of Waterloo"
+                        body={<>
+                            <p>Planned Courses:</p>
+                            <ul>
+                                <li>MATH 245 - Linear Algebra 2 (Advanced)</li>
+                                <li>MATH 247 - Calculus 3 (Advanced)</li>
+                                <li>MATH 249 - Introduction to Combinatorics (Advanced)</li>
+                                <li>CS 245 - Logic and Computation</li>
+                                <li>CS 246e - Object-Oriented Programming (Enriched)</li>
+                                <li>STAT 240 - Probability (Advanced)</li>
+                            </ul>
+                        </>}
+                    /> */}
                     <TimelineElement
                         date="May 2021 - Aug 2021"
                         type="work"
@@ -168,7 +184,19 @@ export default class Timeline extends Component {
                         </>}
                     />
                     <TimelineElement
-                        date="Nov 2019 - June 2020"
+                        date="Nov 2019"
+                        type="award"
+                        heading="Top 1% (Honour Roll - Group IV)"
+                        subheading="Canadian Senior Mathematics Competition (CSMC)"
+                        body={<>
+                            <p>
+                                Ranked 200th out of 20000 participants, and scored
+                                the second highest score in Malaysia
+                            </p>
+                        </>}
+                    />
+                    <TimelineElement
+                        date="Nov 2019 - Jun 2020"
                         type="school"
                         heading="A2"
                         subheading="Sunway College"
@@ -183,18 +211,11 @@ export default class Timeline extends Component {
                         </>}
                     />
                     <TimelineElement
-                        date="Sept 2018 - Nov 2019"
-                        type="school"
-                        heading="AS"
-                        subheading="Sunway College"
-                        body={<>
-                            <p>Subjects Taken:</p>
-                            <ul>
-                                <li>Chemistry (9701) - A</li>
-                                <li>Physics (9702) - A</li>
-                                <li>Mathematics (9709) - A</li>
-                            </ul>
-                        </>}
+                        date="Oct 2019"
+                        type="award"
+                        heading="Perfect Score (600/600)"
+                        subheading="Malaysian Computing Challenge (MCC)"
+                        body={<></>}
                     />
                     <TimelineElement
                         date="Oct 2019"
@@ -204,7 +225,21 @@ export default class Timeline extends Component {
                         body={<></>}
                     />
                     <TimelineElement
-                        date="June 2019 - Dec 2019"
+                        date="Jul 2019"
+                        type="award"
+                        heading="Distinction"
+                        subheading="Kangaroo Mathematics Competition Second Round (KMC2) - Senior Division"
+                        body={<></>}
+                    />
+                    <TimelineElement
+                        date="Jun 2019"
+                        type="award"
+                        heading="Top 8% (73/100)"
+                        subheading="Mathematics Admission Test (MAT)"
+                        body={<></>}
+                    />
+                    <TimelineElement
+                        date="Jun 2019 - Dec 2019"
                         type="activity"
                         heading="Mathematics Tutor"
                         subheading="Dignity for Children Foundation"
@@ -215,6 +250,13 @@ export default class Timeline extends Component {
                         type="activity"
                         heading="Piano Tutor"
                         subheading="Shelter Home for Children"
+                        body={<></>}
+                    />
+                    <TimelineElement
+                        date="Mar 2019"
+                        type="award"
+                        heading="Gold Medallist (Top 1.3%)"
+                        subheading="Kangaroo Mathematics Competition (KMC) - Senior Division"
                         body={<></>}
                     />
                     <TimelineElement
@@ -243,6 +285,72 @@ export default class Timeline extends Component {
                         type="activity"
                         heading="Trombonist"
                         subheading="Sunway University Ensemble"
+                        body={<></>}
+                    />
+                    <TimelineElement
+                        date="Oct 2018"
+                        type="award"
+                        heading="Silver Award (540/600)"
+                        subheading="Malaysian Computing Challenge (MCC)"
+                        body={<></>}
+                    />
+                    <TimelineElement
+                        date="Sep 2018 - Nov 2019"
+                        type="school"
+                        heading="AS"
+                        subheading="Sunway College"
+                        body={<>
+                            <p>Subjects Taken:</p>
+                            <ul>
+                                <li>Chemistry (9701) - A</li>
+                                <li>Physics (9702) - A</li>
+                                <li>Mathematics (9709) - A</li>
+                            </ul>
+                        </>}
+                    />
+                    <TimelineElement
+                        date="Mar 2018"
+                        type="award"
+                        heading="Gold Medallist (Top 1.3%)"
+                        subheading="Kangaroo Mathematics Competition (KMC) - Junior Division"
+                        body={<></>}
+                    />
+                    <TimelineElement
+                        date="Feb 2018"
+                        type="award"
+                        heading="Top 5%"
+                        subheading="American Mathematics Competition 10 (AMC 10)"
+                        body={<></>}
+                    />
+                    <TimelineElement
+                        date="Sep 2017 - Nov 2018"
+                        type="school"
+                        heading="IGCSE"
+                        subheading="Private Candidate"
+                        body={<>
+                            <p>Subjects Taken:</p>
+                            <ul>
+                                <li>Chemistry (0620) - A*</li>
+                                <li>Physics (0625) - A*</li>
+                                <li>Mathematics (0607) - A*</li>
+                                <li>Additional Mathematics (0606) - A*</li>
+                                <li>Economics (0625) - A</li>
+                                <li>English (0500) - A</li>
+                            </ul>
+                        </>}
+                    />
+                    <TimelineElement
+                        date="Apr 2017"
+                        type="award"
+                        heading="Gold Medallist"
+                        subheading="Singaporean and Asian Schools Mathematics Olympiad (SASMO)"
+                        body={<></>}
+                    />
+                    <TimelineElement
+                        date="Mar 2017"
+                        type="award"
+                        heading="Bronze Medallist"
+                        subheading="Asia International Mathematics Olympiad (AIMO)"
                         body={<></>}
                     />
                 </VerticalTimeline>
