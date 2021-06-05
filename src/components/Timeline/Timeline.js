@@ -9,47 +9,37 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 // import material-ui icons
+import SchoolIcon from '@material-ui/icons/School';
+import WorkIcon from '@material-ui/icons/Work';
+import StarIcon from '@material-ui/icons/Star';
 
+// vertical timeline cannot be wrapped in section or container
 
 // import stylesheet
 import './Timeline.css';
 
-class WorkIcon extends Component {
-    render() {
-        return <i className="far fa-building"></i>
-    }
-}
-
-class SchoolIcon extends Component {
-    render() {
-        return <i className="far fa-building"></i>
-    }
-}
-
-class StarIcon extends Component {
-    render() {
-        return <i className="far fa-building"></i>
-    }
-}
-
 export default class Timeline extends Component {
     render() {
         return (
-            <Container fluid>
+            <section className="section-timeline">
                 <VerticalTimeline>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                        date="2011 - present"
+                        date="2011 - 2013"
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        icon={<WorkIcon />}
+                        icon={<WorkIcon onClick={() => alert('icon clicked')}/>}
+                        onTimelineElementClick={() => {
+                            // eslint-disable-next-line no-alert
+                            alert('onTimelineElementClick event fired');
+                          }}
                     >
                         <h3 className="vertical-timeline-element-title">Creative Director</h3>
                         <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
                         <p>
                             Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-    </p>
+                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -61,7 +51,7 @@ export default class Timeline extends Component {
                         <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
                         <p>
                             Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-    </p>
+                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -73,7 +63,7 @@ export default class Timeline extends Component {
                         <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
                         <p>
                             User Experience, Visual Design
-    </p>
+                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -85,7 +75,7 @@ export default class Timeline extends Component {
                         <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
                         <p>
                             User Experience, Visual Design
-    </p>
+                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
@@ -97,7 +87,7 @@ export default class Timeline extends Component {
                         <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
                         <p>
                             Strategy, Social Media
-    </p>
+                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
@@ -128,7 +118,7 @@ export default class Timeline extends Component {
                         icon={<StarIcon />}
                     />
                 </VerticalTimeline>
-            </Container>
+            </section>
         );
     }
 }
