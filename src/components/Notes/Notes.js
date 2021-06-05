@@ -99,22 +99,24 @@ export default class Notes extends Component {
                 cards.push(
                     <Fade top>
                         <CourseNotes
-                        shortTitle={courseObject['shortTitle']}
-                        longTitle={courseObject['longTitle']}
-                        description={courseObject['description']}
-                        takenWhen={courseObject['takenWhen']}
-                        notesStatus={courseObject['notesStatus']}
-                        professors={courseObject['professors']}
-                        notesLink={`src/notes/${term}/${course}.pdf`}
-                        eventKey={course}
-                    />  
+                            shortTitle={courseObject['shortTitle']}
+                            longTitle={courseObject['longTitle']}
+                            description={courseObject['description']}
+                            takenWhen={courseObject['takenWhen']}
+                            notesStatus={courseObject['notesStatus']}
+                            professors={courseObject['professors']}
+                            notesLink={`src/notes/${term}/${course}.pdf`}
+                            eventKey={course}
+                        />  
                     </Fade>                
                     )
             }
             cols.push(
                 <Col lg={4}>
                     {/* <Fade top cascade> */}
-                        <h4 className="notes-subject-heading">{classData[term].title}</h4>
+                        <Fade top>
+                            <h4 className="notes-subject-heading">{classData[term].title}</h4> 
+                        </Fade>
                         <Accordion className="notes-accordion">
                             {cards}
                         </Accordion>
