@@ -198,8 +198,8 @@ export default class Timeline extends Component {
                     />
                     <TimelineElement
                         date="Oct 2019"
-                        type="school"
-                        heading="Obtained Grade 6 in Trombone"
+                        type="award"
+                        heading="Grade 6 in Trombone"
                         subheading="Trinity College London"
                         body={<></>}
                     />
@@ -230,6 +230,13 @@ export default class Timeline extends Component {
                                 <li>Writing descriptions for the speakers and their topic(s)</li>
                             </ul>
                         </>}
+                    />
+                    <TimelineElement
+                        date="Dec 2018"
+                        type="award"
+                        heading="ATCL Diploma in Piano Recital"
+                        subheading="Trinity College London"
+                        body={<></>}
                     />
                     <TimelineElement
                         date="Nov 2018 - present"
