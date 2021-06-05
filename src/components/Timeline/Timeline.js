@@ -116,7 +116,7 @@ export default class Timeline extends Component {
                     <TimelineElement
                         date="May 2021 - Aug 2021"
                         type="activity"
-                        heading="MATHSOC Cartoons Writer"
+                        heading="Comic Writer"
                         subheading="MATHSOC Cartoons @ University of Waterloo"
                         body={<>
                             <p>Responsibilities:</p>
