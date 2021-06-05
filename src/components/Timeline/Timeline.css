@@ -13,14 +13,6 @@
     color: rgb(0, 0, 0);
 }
 
-/* .vertical-timeline-element--work .vertical-timeline-element-content {
-    border-top: 3px solid #2196f3;
-}
-
-.vertical-timeline-element--school .vertical-timeline-element-content {
-    border-top: 3px solid #e91e63;
-} */
-
 .vertical-timeline-element-heading {
     color:rgb(0, 0, 0);
     font-weight: 400;
@@ -29,10 +21,6 @@
 
 .vertical-timeline-element-subheading {
     font-size: 1.3em;
-}
-
-.vertical-timeline-element-body {
-
 }
 
 .vertical-timeline-element-date {

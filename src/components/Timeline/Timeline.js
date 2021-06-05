@@ -60,7 +60,7 @@ class TimelineElement extends Component {
                     "color": "#000031",
                 }}
                 contentArrowStyle={{
-                    borderRight: `7px solid ${this.options[nodeType].backgroundColor}`
+                    borderRight: `10px solid ${this.options[nodeType].backgroundColor}`
                 }}
                 date={this.props.date}
                 iconStyle={{
@@ -101,104 +101,142 @@ export default class Timeline extends Component {
                         date="May 2021 - Aug 2021"
                         type="activity"
                         heading="MATHSOC Cartoons Writer"
-                        subheading="MATHSOC Cartoons @ UW"
+                        subheading="MATHSOC Cartoons @ University of Waterloo"
                         body={<>
                             <p>Responsibilities:</p>
                             <ul>
                                 <li>Create storyboards for original mathematics-based cartoons</li>
                                 <li>Liaise with team to review each other's work and provide feedback</li>
-                            </ul> 
+                            </ul>
+                            <p>Comics drawn:</p>
+                            <ul>
+                                <li>Comic 21 - The Riemann Integral (not published yet)</li>
+                            </ul>
                         </>}
-                    /> 
+                    />
                     <TimelineElement
-                        date="May 2021 - Aug 2021"
+                        date="Apr 2021"
                         type="award"
-                        heading="Data Analyst @ eMedAsia"
-                        subheading="Kuala Lumpur, Malaysia"
+                        heading="Top 300, Putnam Mathematics Competition"
+                        subheading=""
                         body={<></>}
-                    /> 
+                    />
                     <TimelineElement
-                        date="May 2021 - Aug 2021"
-                        type="activity"
-                        heading="Data Analyst @ eMedAsia"
-                        subheading="Kuala Lumpur, Malaysia"
+                        date="Apr 2021"
+                        type="school"
+                        heading="Transferred to BMath Data Science"
+                        subheading="University of Waterloo"
                         body={<></>}
-                    />  
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date="2010 - 2011"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        icon={<WorkIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Art Director</h3>
-                        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                        <p>
-                            Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date="2008 - 2010"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        icon={<WorkIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                        <p>
-                            User Experience, Visual Design
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date="2006 - 2008"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        icon={<WorkIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                        <p>
-                            User Experience, Visual Design
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="April 2013"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                        icon={<SchoolIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                        <p>
-                            Strategy, Social Media
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="November 2012"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                        icon={<SchoolIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                        <p>
-                            Creative Direction, User Experience, Visual Design
-    </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="2002 - 2006"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                        icon={<SchoolIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                        <p>
-                            Creative Direction, Visual Design
-    </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                        icon={<StarIcon />}
+                    />
+                    <TimelineElement
+                        date="Jan 2021 - Apr 2021"
+                        type="school"
+                        heading="1B - Honours Mathematics"
+                        subheading="University of Waterloo"
+                        body={<>
+                            <h6>CGPA: 96</h6>
+                            <p>Courses Taken:</p>
+                            <ul>
+                                <li>MATH 146 - Linear Algebra 1 (Advanced)</li>
+                                <li>MATH 148 - Calculus 2 (Advanced)</li>
+                                <li>CS 145 - Elementary Algorithm Design and Data Abstraction (Advanced)</li>
+                                <li>PSYCH 101 - Introductory Psychology</li>
+                                <li>SPCOM 223 - Public Speaking</li>
+                            </ul>
+                        </>}
+                    />
+                    <TimelineElement
+                        date="Sep 2020 - Dec 2020"
+                        type="school"
+                        heading="1A - Honours Mathematics"
+                        subheading="University of Waterloo"
+                        body={<>
+                            <h6>CGPA: 93</h6>
+                            <p>Recipient of the Faculty of Mathematics Global Scholarship</p>
+                            <ul>
+                                <li>Only 10 scholarships given out per year</li>
+                                <li>Value of CAD$20,000</li>
+                            </ul>
+                            <p>Courses Taken:</p>
+                            <ul>
+                                <li>MATH 146 - Linear Algebra 1 (Advanced)</li>
+                                <li>MATH 148 - Calculus 2 (Advanced)</li>
+                                <li>CS 145 - Elementary Algorithm Design and Data Abstraction (Advanced)</li>
+                                <li>PSYCH 101 - Introductory Psychology</li>
+                                <li>SPCOM 223 - Public Speaking</li>
+                            </ul>
+                        </>}
+                    />
+                    <TimelineElement
+                        date="Nov 2019 - June 2020"
+                        type="school"
+                        heading="A2"
+                        subheading="Sunway College"
+                        body={<>
+                            <p>Subjects Taken:</p>
+                            <ul>
+                                <li>Chemistry (9701) - A*</li>
+                                <li>Physics (9702) - A*</li>
+                                <li>Mathematics (9709) - A*</li>
+                                <li>Further Mathematics (9231) - A*</li>
+                            </ul>
+                        </>}
+                    />
+                    <TimelineElement
+                        date="Sept 2018 - Nov 2019"
+                        type="school"
+                        heading="AS"
+                        subheading="Sunway College"
+                        body={<>
+                            <p>Subjects Taken:</p>
+                            <ul>
+                                <li>Chemistry (9701) - A</li>
+                                <li>Physics (9702) - A</li>
+                                <li>Mathematics (9709) - A</li>
+                            </ul>
+                        </>}
+                    />
+                    <TimelineElement
+                        date="Oct 2019"
+                        type="school"
+                        heading="Obtained Grade 6 in Trombone"
+                        subheading="Trinity College London"
+                        body={<></>}
+                    />
+                    <TimelineElement
+                        date="June 2019 - Dec 2019"
+                        type="activity"
+                        heading="Mathematics Tutor"
+                        subheading="Dignity for Children Foundation"
+                        body={<></>}
+                    />
+                    <TimelineElement
+                        date="Apr 2019 - Jan 2020"
+                        type="activity"
+                        heading="Piano Tutor"
+                        subheading="Shelter Home for Children"
+                        body={<></>}
+                    />
+                    <TimelineElement
+                        date="Jan 2019 - Jan 2020"
+                        type="activity"
+                        heading="Curator"
+                        subheading="TEDxSunwayUniversity"
+                        body={<>
+                            <p>Responsibilities:</p>
+                            <ul>
+                                <li>Finding the speakers, and working with them on the content/flow/delivery of their talks</li>
+                                <li>Constructing the themes for the TEDx events</li>
+                                <li>Writing descriptions for the speakers and their topic(s)</li>
+                            </ul>
+                        </>}
+                    />
+                    <TimelineElement
+                        date="Nov 2018 - present"
+                        type="activity"
+                        heading="Trombonist"
+                        subheading="Sunway University Ensemble"
+                        body={<></>}
                     />
                 </VerticalTimeline>
             </section>
