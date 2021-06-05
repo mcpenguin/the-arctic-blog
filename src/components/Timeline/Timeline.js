@@ -87,7 +87,7 @@ class TimelineElement extends Component {
 export default class Timeline extends Component {
     render() {
         return (
-            <section className="section-timeline">
+            <section className="section-timeline" id="timeline">
                 <h2 id="timeline-header">Timeline</h2>
                 <VerticalTimeline>
                     <TimelineElement

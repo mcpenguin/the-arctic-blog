@@ -30,7 +30,8 @@ export default class Header extends Component {
                     <Navbar.Toggle aria-controls="my-navbar" />
                     <Navbar.Collapse>
                         <Nav id="my-navbar" className="ml-auto">
-                            <NavbarLink id="about-me" logo="fas fa-user" title="About Me" />
+                            <NavbarLink id="about-me" title="About Me" />
+                            <NavbarLink id="timeline" title="Timeline" />
                             <NavbarLink id="notes" title="Notes" />
                             <NavbarLink id="contact-me" title="Contact Me" />
                         </Nav>
