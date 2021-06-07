@@ -8,7 +8,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import personal_photo from './personal-photo.png';
+import personal_photo from './personal-photo5.jpg';
+
+// import icons from material-ui
+import WorkIcon from '@material-ui/icons/WorkRounded';
+import SchoolIcon from '@material-ui/icons/School';
+import CodeIcon from '@material-ui/icons/CodeSharp';
+import ActivityIcon from '@material-ui/icons/SportsSoccerSharp';
 
 import './AboutMe.css';
 
@@ -34,7 +40,7 @@ export default class AboutMe extends Component {
                             <div className="personal-desc-section">
                                 <p className="personal-description">
                                     Welcome to the Arctic Blog!
-                                    My name is Marcus, and I am will be entering my 2A term as a Data
+                                    My name is Marcus Chan, and I am will be entering my 2A term as a Data
                                     Science student at the University of Waterloo, after my current coop
                                     term as a data analyst at eMedAsia.
                                 </p>
@@ -47,13 +53,15 @@ export default class AboutMe extends Component {
                             </div>
                             <div className="personal-facts">
                                 <h4 className="personal-facts-head">
-                                    Current Position
+                                    <WorkIcon className="personal-facts-icon"/>
+                                    Current Coop
                                 </h4>
                                 <p className="personal-facts-body">
-                                    Data Analyst, eMedAsia @ Kuala Lumpur, Malaysia
+                                    Data Analyst, eMedAsia @ Kuala Lumpur, Malaysia"
                                 </p>
 
                                 <h4 className="personal-facts-head">
+                                    <SchoolIcon className="personal-facts-icon" />
                                     Current Education
                                 </h4>
                                 <p className="personal-facts-body">
@@ -65,6 +73,7 @@ export default class AboutMe extends Component {
                                 </p>
 
                                 <h4 className="personal-facts-head">
+                                    <CodeIcon className="personal-facts-icon" />
                                     Programming Expertise
                                 </h4>
                                 <p className="personal-facts-body">
@@ -74,6 +83,7 @@ export default class AboutMe extends Component {
                                 </p>
 
                                 <h4 className="personal-facts-head">
+                                    <ActivityIcon className="personal-facts-icon" />
                                     Hobbies
                                 </h4>
                                 <p className="personal-facts-body">
