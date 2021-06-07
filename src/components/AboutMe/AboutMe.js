@@ -2,12 +2,13 @@
 
 import React, { Component } from 'react';
 import Fade from 'react-reveal';
+import TypeWriterEffect from 'react-typewriter-effect';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import personal_photo from './personal-photo.jpg';
+import personal_photo from './personal-photo2.jpg';
 
 import './AboutMe.css';
 
@@ -22,14 +23,14 @@ export default class AboutMe extends Component {
                         </Col>
                     </Row>
                     <Row className="align-items-center">
-                        <Col lg={7}>
+                        <Col lg={6}>
                             <img
                                 id="personal-photo"
                                 src={personal_photo}
                                 alt="personal"
                             />
                         </Col>
-                        <Col lg={5} className="personal-desc-section">
+                        <Col lg={6} className="personal-desc-section">
                             <p id="personal-description">
                                 Welcome to the Arctic Blog!
                                 I'm Marcus, a current Mathematics student at the University of waterloo
@@ -43,7 +44,7 @@ export default class AboutMe extends Component {
                                 Lastly, apart from programming and mathematics, I have side interests in
                                 music, rock climbing and basketball, and occasionally I might play
                                 Minecraft as well.
-                                </p>
+                            </p>
                         </Col>
                     </Row>
                 </Container>
