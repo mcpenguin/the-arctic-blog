@@ -10,8 +10,9 @@
 }
 
 #about-me-title {
-    color: #f5f5f5;
-    padding-bottom: 30px;
+    background-color: #f5f5f5cc;
+    color: #000031;
+    padding: 10px 0;
     font-weight: 800;
     text-align: center;
 }

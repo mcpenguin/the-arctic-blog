@@ -18,7 +18,7 @@ export default class AboutMe extends Component {
             <section className="section-about-me" id="about-me">
                 <Container id="container-about-me">
                     <Row>
-                        <Col>
+                        <Col className="w-50">
                             <h2 id="about-me-title">About Me</h2>
                         </Col>
                     </Row>
