@@ -53,6 +53,33 @@ export default class AboutMe extends Component {
                                     Data Analyst, eMedAsia @ Kuala Lumpur, Malaysia
                                 </p>
 
+                                <h4 className="personal-facts-head">
+                                    Current Education
+                                </h4>
+                                <p className="personal-facts-body">
+                                    Data Science, Honours, Co-op (2A in Fall 2021)
+                                    <br />
+                                    University of Waterloo @ Ontario, Canada
+                                    <br />
+                                    CAV: 94 | MAV: 96
+                                </p>
+
+                                <h4 className="personal-facts-head">
+                                    Programming Expertise
+                                </h4>
+                                <p className="personal-facts-body">
+                                    HTML, CSS, JS, Node.js, JQuery, React, Python
+                                    (Pandas, Numpy, Scipy, Matplotlib), Java, MySQL,
+                                    Racket/Scheme/Lisp, C
+                                </p>
+
+                                <h4 className="personal-facts-head">
+                                    Hobbies
+                                </h4>
+                                <p className="personal-facts-body">
+                                    Mathematics, coding, arranging/composing piano pieces,
+                                    rock climbing, basketball, watching videos on YouTube
+                                </p>                             
                             </div>
                         </Col>
                     </Row>
