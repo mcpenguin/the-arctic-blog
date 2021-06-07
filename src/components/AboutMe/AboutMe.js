@@ -57,7 +57,7 @@ export default class AboutMe extends Component {
                                     Current Coop
                                 </h4>
                                 <p className="personal-facts-body">
-                                    Data Analyst, eMedAsia @ Kuala Lumpur, Malaysia"
+                                    Data Analyst, eMedAsia @ Kuala Lumpur, Malaysia
                                 </p>
 
                                 <h4 className="personal-facts-head">
