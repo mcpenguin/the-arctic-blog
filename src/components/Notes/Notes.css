@@ -21,6 +21,8 @@
 
 .notes-card-body {
     background-color: #ecebeb;
+    color: #000031;
+    font-weight: 400;
 }
 
 .notes-card-link {
@@ -45,6 +47,14 @@
 .notes-subject-link {
     font-size: 1.2rem;
     padding: 5px;
+}
+
+.notes-subject-link a {
+    color: #046c92;
+}
+
+.notes-subject-link a:hover {
+    color: #046c92c2;
 }
 
 .notes-taken-when {

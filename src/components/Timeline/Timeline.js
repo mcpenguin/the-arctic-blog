@@ -175,11 +175,11 @@ export default class Timeline extends Component {
                             </ul>
                             <p>Courses Taken:</p>
                             <ul>
-                                <li>MATH 146 - Linear Algebra 1 (Advanced)</li>
-                                <li>MATH 148 - Calculus 2 (Advanced)</li>
-                                <li>CS 145 - Elementary Algorithm Design and Data Abstraction (Advanced)</li>
-                                <li>PSYCH 101 - Introductory Psychology</li>
-                                <li>SPCOM 223 - Public Speaking</li>
+                                <li>MATH 145 - Algebra (Advanced)</li>
+                                <li>MATH 147 - Calculus 1 (Advanced)</li>
+                                <li>CS 145 - Introduction to Functional Programming (Advanced)</li>
+                                <li>PHIL 145 - Critical Thinking</li>
+                                <li>GEOG 101 - Human Geographies</li>
                             </ul>
                         </>}
                     />
