@@ -30,21 +30,30 @@ export default class AboutMe extends Component {
                                 alt="personal"
                             />
                         </Col>
-                        <Col lg={6} className="personal-desc-section">
-                            <p id="personal-description">
-                                Welcome to the Arctic Blog!
-                                I'm Marcus, a current Mathematics student at the University of waterloo
-                                in Ontario, Canada, where I am currently in my 1B term.
-                                I have decent experience with programming, most notably with the
-                                languages of Python and Java, and have utilised said experience
-                                to build a couple of personal projects.
-                                In addition, I have used my iPad to construct handwritten (and in my opinion,
-                                also aesthetically pleasing) notes that should help you learn and
-                                revise for the courses quicker.
-                                Lastly, apart from programming and mathematics, I have side interests in
-                                music, rock climbing and basketball, and occasionally I might play
-                                Minecraft as well.
-                            </p>
+                        <Col lg={6}>
+                            <div className="personal-desc-section">
+                                <p className="personal-description">
+                                    Welcome to the Arctic Blog!
+                                    My name is Marcus, and I am will be entering my 2A term as a Data
+                                    Science student at the University of Waterloo, after my current coop
+                                    term as a data analyst at eMedAsia.
+                                </p>
+                                <p className="personal-description">
+                                    I am extremely passionate about mathematics and software
+                                    development, with an aspiration to build a career in data science 
+                                    and artificial intelligence after I graduate with a Master's degree or my
+                                    doctorate.
+                                </p>
+                            </div>
+                            <div className="personal-facts">
+                                <h4 className="personal-facts-head">
+                                    Current Position
+                                </h4>
+                                <p className="personal-facts-body">
+                                    Data Analyst, eMedAsia @ Kuala Lumpur, Malaysia
+                                </p>
+
+                            </div>
                         </Col>
                     </Row>
                 </Container>
