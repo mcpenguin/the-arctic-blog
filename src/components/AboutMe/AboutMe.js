@@ -8,7 +8,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import personal_photo from './personal-photo5.jpg';
+import personal_photo from './personal-photo.jpg';
 
 // import icons from material-ui
 import WorkIcon from '@material-ui/icons/WorkRounded';
