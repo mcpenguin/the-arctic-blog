@@ -35,26 +35,6 @@ import './Notes.css';
 // get JS object of pdfs
 const pdfs = { Chem, FPM1, FPM2, FPS, PM3, M1, MATH145, MATH147, CS145, PHIL145, GEOG101, MATH146, MATH148, PSYCH101 };
 
-// react class to for "typing animated" body text
-class AnimatedBodyText extends Component {
-    render() {
-        return (
-            <TypeWriterEffect 
-                textStyle={{ 
-                    fontFamily: 'nunito',
-                    fontWeight: '600',
-                    fontSize: '2rem',
-                    textAlign: 'center',
-                }}
-                startDelay={100}
-                cursorColor="#000031"
-                text={this.props.text}
-                typeSpeed={50}
-            />
-        )
-    }
-}
-
 // class for individual course notes
 // props: 
 // - shortTitle: subject short title (e.g. "MATH 146")
