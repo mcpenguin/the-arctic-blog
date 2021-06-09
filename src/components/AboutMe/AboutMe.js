@@ -40,7 +40,7 @@ export default class AboutMe extends Component {
                             <div className="personal-desc-section">
                                 <p className="personal-description">
                                     Welcome to the Arctic Blog!
-                                    My name is Marcus Chan, and I am will be entering my 2A term as a Data
+                                    My name is Marcus Chan, and I will be entering my 2A term as a Data
                                     Science student at the University of Waterloo, after my current coop
                                     term as a data analyst at eMedAsia.
                                 </p>
