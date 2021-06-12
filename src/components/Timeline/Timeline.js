@@ -152,6 +152,12 @@ export default class Timeline extends Component {
                         heading="Comic Writer"
                         subheading="MATHSOC Cartoons @ University of Waterloo"
                         body={<>
+                            <h6><i>
+                                MathSoc Cartoons is a student-run comic series explaining undergraduate 
+                                math and computer science concepts. All of our comics can be 
+                                found on our <a href="https://mathsoc.uwaterloo.ca/cartoons/">website</a>, as 
+                                well as on our <a href="https://www.instagram.com/mathsoccartoons/">Instagram</a> and <a href="http://www.facebook.com/mathsoccartoons">Facebook</a> pages.
+                            </i></h6>
                             <h6>Responsibilities:</h6>
                             <ul>
                                 <li>Create storyboards for original mathematics-based cartoons</li>
@@ -174,6 +180,11 @@ export default class Timeline extends Component {
                         type="school"
                         heading="Transferred to BMath Data Science"
                         subheading="University of Waterloo"
+                        body={
+                            <h6>
+                                Only 16 out of 500+ applicants are accepted each term
+                            </h6>
+                        }
     
                     />
                     <TimelineElement
@@ -182,7 +193,7 @@ export default class Timeline extends Component {
                         heading="1B - Honours Mathematics"
                         subheading="University of Waterloo"
                         body={<>
-                            <h6>CGPA: 96</h6>
+                            <h6><b>CGPA: 96</b></h6>
                             <p>Courses Taken:</p>
                             <ul>
                                 <li>MATH 146 - Linear Algebra 1 (Advanced)</li>
@@ -199,7 +210,7 @@ export default class Timeline extends Component {
                         heading="1A - Honours Mathematics"
                         subheading="University of Waterloo"
                         body={<>
-                            <h6>CGPA: 93</h6>
+                            <h6><b>CGPA: 93</b></h6>
                             <h6>Recipient of the Faculty of Mathematics Global Scholarship</h6>
                             <ul>
                                 <li>Only 10 scholarships given out per year</li>
