@@ -12,7 +12,7 @@
 
 .vertical-timeline-element-content {
     color: rgb(0, 0, 0);
-    padding: 1em 1em 0em 1em !important;
+    padding: 1em 1em 0.3em 1.3em !important;
 }
 
 .vertical-timeline-element-heading {
@@ -24,6 +24,7 @@
 .vertical-timeline-element-subheading {
     color: #181e58;
     font-size: 1.2em;
+    padding: 0 0 0.3em 0;
 }
 
 .vertical-timeline-element-date {
