@@ -1,6 +1,7 @@
 .section-timeline {
-    background-color: #f3d4ee;
-    text-align: left;
+    /* background-color: #f3d4ee; */
+    background: rgb(77,149,214);
+    background: linear-gradient(180deg, rgb(141, 182, 218) 0%, rgba(197,153,237,1) 49%, rgba(236,168,232,1) 100%);
 }
 
 #timeline-header {

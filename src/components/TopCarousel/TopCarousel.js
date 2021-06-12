@@ -24,7 +24,7 @@ import linkedin from './linkedin_carousel.jpg';
 import rose from './rose_carousel.png';
 import penguin from './penguin_carousel.png'
 
-// component for carousel item
+// component for carousel items
 class CustomCarouselContents extends Component {
     render() {
         return (
