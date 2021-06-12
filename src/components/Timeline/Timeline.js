@@ -1,12 +1,14 @@
 // React component class for Timeline section
 import React, { Component } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import Slide from 'react-reveal/Slide'
 import 'react-vertical-timeline-component/style.min.css';
 
 // import Bootstrap components
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Collapse from 'react-bootstrap/Collapse';
 
 // import material-ui icons
 import WorkIcon from '@material-ui/icons/WorkRounded';
@@ -48,6 +50,13 @@ class TimelineElement extends Component {
         }
     };
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            showMore: false, // whether body text is shown
+        }
+    }
+
     render() {
         const nodeType = this.props.type;
         return (
@@ -74,10 +83,35 @@ class TimelineElement extends Component {
                         "activity": <ActivityIcon />,
                     }[this.props.type]
                 }
+                onTimelineElementClick={() => {
+                    this.setState({ showMore: !this.state.showMore });
+                }}
             >
                 <h3 className="vertical-timeline-element-heading">{this.props.heading}</h3>
                 <h4 className="vertical-timeline-element-subheading">{this.props.subheading}</h4>
-                <div className="vertical-timeline-element-body">{this.props.body}</div>
+                {/* show collapsible content if body is not empty */}
+                {
+                    !!(this.props.body)
+                        ? <>
+                            <Collapse in={this.state.showMore}>
+                                <div className="vertical-timeline-element-body">
+                                    {this.props.body}
+                                </div>
+                            </Collapse>
+                            <div className="vertical-timeline-element-arrow">
+                                {/* animate arrow when clicked */}
+                                <i
+                                    className="fas fa-chevron-down fa-xs"
+                                    style={{
+                                        "transform": this.state.showMore ? "rotate(180deg)" : "",
+                                        "transition": "transform 0.4s ease", // smooth animation
+                                    }}
+                                >
+                                </i>
+                            </div>
+                        </>
+                        : <></>
+                }
             </VerticalTimelineElement >
         )
     }
@@ -111,7 +145,6 @@ export default class Timeline extends Component {
                         type="work"
                         heading="Data Analyst"
                         subheading="eMedAsia @ Kuala Lumpur, Malaysia"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="May 2021 - Aug 2021"
@@ -119,12 +152,12 @@ export default class Timeline extends Component {
                         heading="Comic Writer"
                         subheading="MATHSOC Cartoons @ University of Waterloo"
                         body={<>
-                            <p>Responsibilities:</p>
+                            <h6>Responsibilities:</h6>
                             <ul>
                                 <li>Create storyboards for original mathematics-based cartoons</li>
                                 <li>Liaise with team to review each other's work and provide feedback</li>
                             </ul>
-                            <p>Comics drawn:</p>
+                            <h6>Comics drawn:</h6>
                             <ul>
                                 <li>Comic 21 - The Riemann Integral (not published yet)</li>
                             </ul>
@@ -135,14 +168,13 @@ export default class Timeline extends Component {
                         type="award"
                         heading="Top 20% (20/120)"
                         subheading="81st Putnam Mathematical Competition"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="Apr 2021"
                         type="school"
                         heading="Transferred to BMath Data Science"
                         subheading="University of Waterloo"
-                        body={<></>}
+    
                     />
                     <TimelineElement
                         date="Jan 2021 - Apr 2021"
@@ -155,7 +187,7 @@ export default class Timeline extends Component {
                             <ul>
                                 <li>MATH 146 - Linear Algebra 1 (Advanced)</li>
                                 <li>MATH 148 - Calculus 2 (Advanced)</li>
-                                <li>CS 145 - Elementary Algorithm Design and Data Abstraction (Advanced)</li>
+                                <li>CS 146 - Elementary Algorithm Design and Data Abstraction (Advanced)</li>
                                 <li>PSYCH 101 - Introductory Psychology</li>
                                 <li>SPCOM 223 - Public Speaking</li>
                             </ul>
@@ -168,12 +200,12 @@ export default class Timeline extends Component {
                         subheading="University of Waterloo"
                         body={<>
                             <h6>CGPA: 93</h6>
-                            <p>Recipient of the Faculty of Mathematics Global Scholarship</p>
+                            <h6>Recipient of the Faculty of Mathematics Global Scholarship</h6>
                             <ul>
                                 <li>Only 10 scholarships given out per year</li>
                                 <li>Value of CAD$20,000</li>
                             </ul>
-                            <p>Courses Taken:</p>
+                            <h6>Courses Taken:</h6>
                             <ul>
                                 <li>MATH 145 - Algebra (Advanced)</li>
                                 <li>MATH 147 - Calculus 1 (Advanced)</li>
@@ -189,10 +221,10 @@ export default class Timeline extends Component {
                         heading="Top 1% (Honour Roll - Group IV)"
                         subheading="Canadian Senior Mathematics Competition (CSMC)"
                         body={<>
-                            <p>
+                            <h6>
                                 Ranked 200th out of 20000 participants, and scored
                                 the second highest score in Malaysia
-                            </p>
+                            </h6>
                         </>}
                     />
                     <TimelineElement
@@ -201,7 +233,7 @@ export default class Timeline extends Component {
                         heading="A2"
                         subheading="Sunway College"
                         body={<>
-                            <p>Subjects Taken:</p>
+                            <h6>Subjects Taken:</h6>
                             <ul>
                                 <li>Chemistry (9701) - A*</li>
                                 <li>Physics (9702) - A*</li>
@@ -215,28 +247,24 @@ export default class Timeline extends Component {
                         type="award"
                         heading="Perfect Score (600/600)"
                         subheading="Malaysian Computing Challenge (MCC)"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="Oct 2019"
                         type="award"
                         heading="Grade 6 in Trombone"
                         subheading="Trinity College London"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="Jul 2019"
                         type="award"
                         heading="Distinction"
                         subheading="Kangaroo Mathematics Competition Second Round (KMC2) - Senior Division"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="Jun 2019"
                         type="award"
                         heading="Top 8% (73/100)"
                         subheading="Mathematics Admission Test (MAT)"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="Jun 2019 - Dec 2019"
@@ -244,12 +272,12 @@ export default class Timeline extends Component {
                         heading="Mathematics Tutor"
                         subheading="Dignity for Children Foundation"
                         body={<>
-                            <p>
+                            <h6>
                                 I taught a class of Grade 5 students, many of whom were struggling with their studies.
                                 Hence, I employed a cornucopia of nascent and original methods,
                                 catering my teaching style to each student individually to maximize their
                                 learning potential and enjoyment.
-                            </p>
+                            </h6>
                         </>}
                     />
                     <TimelineElement
@@ -258,10 +286,10 @@ export default class Timeline extends Component {
                         heading="Piano Tutor"
                         subheading="Shelter Home for Children"
                         body={<>
-                            <p>
+                            <h6>
                                 I taught 2 teenage boys (15 and 13 years old). Every week, I would give them new sheet music
                                 containing new music concepts and, or continue off a previous piece we had already started.
-                            </p>
+                            </h6>
                         </>}
                     />
                     <TimelineElement
@@ -269,7 +297,6 @@ export default class Timeline extends Component {
                         type="award"
                         heading="Gold Medallist (Top 1.3%)"
                         subheading="Kangaroo Mathematics Competition (KMC) - Senior Division"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="Jan 2019 - Jan 2020"
@@ -277,7 +304,7 @@ export default class Timeline extends Component {
                         heading="Curator"
                         subheading="TEDxSunwayUniversity"
                         body={<>
-                            <p>Responsibilities:</p>
+                            <h6>Responsibilities:</h6>
                             <ul>
                                 <li>Finding the speakers, and working with them on the content/flow/delivery of their talks</li>
                                 <li>Constructing the themes for the TEDx events</li>
@@ -290,21 +317,18 @@ export default class Timeline extends Component {
                         type="award"
                         heading="ATCL Diploma in Piano Recital"
                         subheading="Trinity College London"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="Nov 2018 - present"
                         type="activity"
                         heading="Trombonist"
                         subheading="Sunway University Ensemble"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="Oct 2018"
                         type="award"
                         heading="Silver Award (540/600)"
                         subheading="Malaysian Computing Challenge (MCC)"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="Sep 2018 - Nov 2019"
@@ -312,7 +336,7 @@ export default class Timeline extends Component {
                         heading="AS"
                         subheading="Sunway College"
                         body={<>
-                            <p>Subjects Taken:</p>
+                            <h6>Subjects Taken:</h6>
                             <ul>
                                 <li>Chemistry (9701) - A</li>
                                 <li>Physics (9702) - A</li>
@@ -325,14 +349,12 @@ export default class Timeline extends Component {
                         type="award"
                         heading="Gold Medallist (Top 1.3%)"
                         subheading="Kangaroo Mathematics Competition (KMC) - Junior Division"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="Feb 2018"
                         type="award"
                         heading="Top 5%"
                         subheading="American Mathematics Competition 10 (AMC 10)"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="Sep 2017 - Nov 2018"
@@ -340,7 +362,7 @@ export default class Timeline extends Component {
                         heading="IGCSE"
                         subheading="Private Candidate"
                         body={<>
-                            <p>Subjects Taken:</p>
+                            <h6>Subjects Taken:</h6>
                             <ul>
                                 <li>Chemistry (0620) - A*</li>
                                 <li>Physics (0625) - A*</li>
@@ -356,14 +378,12 @@ export default class Timeline extends Component {
                         type="award"
                         heading="Gold Medallist"
                         subheading="Singaporean and Asian Schools Mathematics Olympiad (SASMO)"
-                        body={<></>}
                     />
                     <TimelineElement
                         date="Mar 2017"
                         type="award"
                         heading="Bronze Medallist"
                         subheading="Asia International Mathematics Olympiad (AIMO)"
-                        body={<></>}
                     />
                 </VerticalTimeline>
             </section>

@@ -1,6 +1,7 @@
 .section-timeline {
-    background-color: #f3d4ee;
-    text-align: left;
+    /* background-color: #f3d4ee; */
+    background: rgb(77,149,214);
+    background: linear-gradient(180deg, rgb(141, 182, 218) 0%, rgba(197,153,237,1) 49%, rgba(236,168,232,1) 100%);
 }
 
 #timeline-header {
@@ -11,20 +12,27 @@
 
 .vertical-timeline-element-content {
     color: rgb(0, 0, 0);
+    padding: 1em 1em 0.3em 1.3em !important;
 }
 
 .vertical-timeline-element-heading {
-    color:rgb(0, 0, 0);
+    color: #000031;
     font-weight: 400;
-    font-size: 1.7em;
+    font-size: 1.55em;
 }
 
 .vertical-timeline-element-subheading {
-    font-size: 1.3em;
+    color: #181e58;
+    font-size: 1.2em;
+    padding: 0 0 0.3em 0;
 }
 
 .vertical-timeline-element-date {
   color: rgb(0, 0, 0);
+}
+
+.vertical-timeline-element-arrow {
+  text-align: center;
 }
 
 /* CUSTOM LINE COLOR */
@@ -32,15 +40,6 @@
 .vertical-timeline.vertical-timeline-custom-line::before {
   background: #424242;
 }
-
-/* Icon container's border */
-.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
-  box-shadow: 0 0 0 4px #1976d2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-}
-
-.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--education .vertical-timeline-element-icon {
-  box-shadow: 0 0 0 4px #c2185b, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-} 
 
 @media only screen and (min-width: 1170px) {
     .vertical-timeline-element-content {
