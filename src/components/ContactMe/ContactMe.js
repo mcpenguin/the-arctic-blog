@@ -41,12 +41,6 @@ export default class ContactMe extends Component {
                             logo="fas fa-envelope"
                         />
                         <ContactMePage 
-                            class="facebook"
-                            title="Facebook"
-                            link="https://www.facebook.com/marcus.chanwc/"
-                            logo="fab fa-facebook-f"
-                        />
-                        <ContactMePage 
                             class="instagram"
                             title="Instagram"
                             link="https://www.instagram.com/mcpenquin"

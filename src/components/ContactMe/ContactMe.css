@@ -79,6 +79,12 @@
     }
 }
 
+@media (max-width: 500px) {
+    .wrapper .icon {
+        margin: 10px 2px;
+    }
+}
+
 .wrapper .tooltip {
     position: absolute;
     top: 0;
