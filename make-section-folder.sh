@@ -5,7 +5,7 @@ sectionName=$1;
 # Create components folder
 mkdir src/components/${sectionName};
 # Make files for components
-cd src/components/${sectionName};
+cd src/pages/${sectionName};
 touch ${sectionName}.js ${sectionName}.css;
 # Put "generic" lines into js file
 printf "// React component class for ${sectionName} section

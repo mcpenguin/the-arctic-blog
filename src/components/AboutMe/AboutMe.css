@@ -1,7 +1,7 @@
 .section-about-me {
     padding: 30px 0 50px 0;
     /* background-color: #332e3f; */
-    background-image: url("./light-blue-geometric.jpg");
+    background-image: url("./geometric-1920x1080.svg");
     background-repeat: repeat-y;
     text-align: center;
 }
@@ -42,7 +42,7 @@
 
 @media only screen and (max-width: 768px) {
     .personal-facts {
-        margin-top: 50px;
+        margin-top: 25px;
     }
 }
 
