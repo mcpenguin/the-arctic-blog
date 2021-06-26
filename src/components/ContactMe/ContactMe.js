@@ -60,13 +60,13 @@ export default class ContactMe extends Component {
                         />
                         <ContactMePage 
                             class="github"
-                            title="Github"
+                            title="GitHub"
                             link="https://github.com/"
                             logo="fab fa-github"
                         />
                         <ContactMePage 
                             class="youtube"
-                            title="Youtube"
+                            title="YouTube"
                             link="https://www.youtube.com/channel/UCIAQzTXPVtht2H0hoz8NNAg"
                             logo="fab fa-youtube"
                         />
