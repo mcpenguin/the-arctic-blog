@@ -27,19 +27,23 @@ export default class ContactMe extends Component {
         return (
             <section className="section-contact-me" id="contact-me">
                 <footer>
-                    <h2>Contact Me</h2>
-                    <Container fluid className="contact-me-details wrapper">
+                    <h2 id="contact-me-heading">Contact Me</h2>
+                    <div fluid className="contact-me-details wrapper">
+                    <div class="icon email">
+                            <div class="tooltip">Email</div>
+                            <span><i class="fas fa-envelope"></i></span>
+                        </div>
                         <div class="icon facebook">
                             <div class="tooltip">Facebook</div>
                             <span><i class="fab fa-facebook-f"></i></span>
                         </div>
-                        <div class="icon twitter">
-                            <div class="tooltip">Twitter</div>
-                            <span><i class="fab fa-twitter"></i></span>
-                        </div>
                         <div class="icon instagram">
                             <div class="tooltip">Instagram</div>
                             <span><i class="fab fa-instagram"></i></span>
+                        </div>
+                        <div class="icon linkedin">
+                            <div class="tooltip">LinkedIn</div>
+                            <span><i class="fab fa-linkedin"></i></span>
                         </div>
                         <div class="icon github">
                             <div class="tooltip">Github</div>
@@ -75,7 +79,7 @@ export default class ContactMe extends Component {
                                 width={3}
                             />
                         </Row> */}
-                    </Container>
+                    </div>
                 </footer>
             </section>
         );
