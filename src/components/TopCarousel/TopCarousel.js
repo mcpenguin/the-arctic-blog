@@ -44,7 +44,7 @@ class CustomCarouselContents extends Component {
 export default class TopCarousel extends Component {
     render() {
         return (
-            <section class="section-top-carousel">
+            <section className="section-top-carousel">
                 <Carousel>
                     <Carousel.Item>
                         <CustomCarouselContents
