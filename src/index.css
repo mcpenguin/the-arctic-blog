@@ -59,6 +59,13 @@ li {
     font-weight: 400;
 }
 
+/* Projects */
+.section-projects {
+    background-color: #f5f5f5;
+    display: none;
+
+}
+
 /* Past Experience */
 .section-past-experience {
     background-color: #000031;
