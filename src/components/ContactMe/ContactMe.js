@@ -9,15 +9,20 @@ import Col from 'react-bootstrap/Col';
 // import stylesheet
 import './ContactMe.css';
 
-class ContactMeBox extends Component {
+// props: class, title, link, logo
+class ContactMePage extends Component {
     render() {
         return (
-            <Col md={this.props.width} className="contact-me-box">
-                <p>
-                    <i class={`contact-me-logo ${this.props.logo}`}></i>
-                    <a class="contact-me-link" href={this.props.link}>{this.props.name}</a>
-                </p>
-            </Col>
+            <a href={this.props.link}>
+                <div 
+                    class={`icon ${this.props.class}`}
+                >
+                    <div class="tooltip">{this.props.title}</div>
+                    <span>
+                        <i class={this.props.logo}></i>
+                    </span>
+                </div>
+            </a>
         )
     }
 }
@@ -29,56 +34,42 @@ export default class ContactMe extends Component {
                 <footer>
                     <h2 id="contact-me-heading">Contact Me</h2>
                     <div fluid className="contact-me-details wrapper">
-                    <div class="icon email">
-                            <div class="tooltip">Email</div>
-                            <span><i class="fas fa-envelope"></i></span>
-                        </div>
-                        <div class="icon facebook">
-                            <div class="tooltip">Facebook</div>
-                            <span><i class="fab fa-facebook-f"></i></span>
-                        </div>
-                        <div class="icon instagram">
-                            <div class="tooltip">Instagram</div>
-                            <span><i class="fab fa-instagram"></i></span>
-                        </div>
-                        <div class="icon linkedin">
-                            <div class="tooltip">LinkedIn</div>
-                            <span><i class="fab fa-linkedin"></i></span>
-                        </div>
-                        <div class="icon github">
-                            <div class="tooltip">Github</div>
-                            <span><i class="fab fa-github"></i></span>
-                        </div>
-                        <div class="icon youtube">
-                            <div class="tooltip">Youtube</div>
-                            <span><i class="fab fa-youtube"></i></span>
-                        </div>
-                        {/* <Row>
-                            <ContactMeBox
-                                name="Email"
-                                link="mailto:marcus.chanwc@gmail.com"
-                                logo="fas fa-envelope"
-                                width={3}
-                            />
-                            <ContactMeBox
-                                name="Instagram"
-                                link="https://www.instagram.com/mcpenquin/?hl=en"
-                                logo="fab fa-instagram"
-                                width={3}
-                            />
-                            <ContactMeBox
-                                name="LinkedIn"
-                                link="https://www.linkedin.com/in/marcus-chanwc/"
-                                logo="fab fa-linkedin"
-                                width={3}
-                            />
-                            <ContactMeBox
-                                name="Github"
-                                link="https://github.com/mcpenguin"
-                                logo="fab fa-github"
-                                width={3}
-                            />
-                        </Row> */}
+                        <ContactMePage 
+                            class="email"
+                            title="Email"
+                            link="mailto:marcus.chanwc@gmail.com"
+                            logo="fas fa-envelope"
+                        />
+                        <ContactMePage 
+                            class="facebook"
+                            title="Facebook"
+                            link="https://www.facebook.com/marcus.chanwc/"
+                            logo="fab fa-facebook-f"
+                        />
+                        <ContactMePage 
+                            class="instagram"
+                            title="Instagram"
+                            link="https://www.instagram.com/mcpenquin"
+                            logo="fab fa-instagram"
+                        />
+                        <ContactMePage 
+                            class="linkedin"
+                            title="LinkedIn"
+                            link="https://www.linkedin.com/in/marcus-chanwc/"
+                            logo="fab fa-linkedin"
+                        />
+                        <ContactMePage 
+                            class="github"
+                            title="Github"
+                            link="https://github.com/"
+                            logo="fab fa-github"
+                        />
+                        <ContactMePage 
+                            class="youtube"
+                            title="Youtube"
+                            link="https://www.youtube.com/channel/UCIAQzTXPVtht2H0hoz8NNAg"
+                            logo="fab fa-youtube"
+                        />
                     </div>
                 </footer>
             </section>
