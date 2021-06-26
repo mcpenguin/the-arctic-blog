@@ -55,7 +55,7 @@ export default class ContactMe extends Component {
                         <ContactMePage 
                             class="github"
                             title="GitHub"
-                            link="https://github.com/mcpenguin"
+                            link="https://github.com/"
                             logo="fab fa-github"
                         />
                         <ContactMePage 
