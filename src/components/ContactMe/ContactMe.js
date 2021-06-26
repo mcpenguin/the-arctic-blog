@@ -28,8 +28,28 @@ export default class ContactMe extends Component {
             <section className="section-contact-me" id="contact-me">
                 <footer>
                     <h2>Contact Me</h2>
-                    <Container fluid className="contact-me-details">
-                        <Row>
+                    <Container fluid className="contact-me-details wrapper">
+                        <div class="icon facebook">
+                            <div class="tooltip">Facebook</div>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </div>
+                        <div class="icon twitter">
+                            <div class="tooltip">Twitter</div>
+                            <span><i class="fab fa-twitter"></i></span>
+                        </div>
+                        <div class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </div>
+                        <div class="icon github">
+                            <div class="tooltip">Github</div>
+                            <span><i class="fab fa-github"></i></span>
+                        </div>
+                        <div class="icon youtube">
+                            <div class="tooltip">Youtube</div>
+                            <span><i class="fab fa-youtube"></i></span>
+                        </div>
+                        {/* <Row>
                             <ContactMeBox
                                 name="Email"
                                 link="mailto:marcus.chanwc@gmail.com"
@@ -54,7 +74,7 @@ export default class ContactMe extends Component {
                                 logo="fab fa-github"
                                 width={3}
                             />
-                        </Row>
+                        </Row> */}
                     </Container>
                 </footer>
             </section>
