@@ -5,7 +5,6 @@ import Fade from 'react-reveal';
 import Header from './components/Header/Header';
 import TopCarousel from './components/TopCarousel/TopCarousel';
 import AboutMe from './components/AboutMe/AboutMe';
-import Projects from './components/Projects/Projects';
 import Timeline from './components/Timeline/Timeline';
 import Notes from './components/Notes/Notes';
 import ContactMe from './components/ContactMe/ContactMe';
@@ -18,7 +17,6 @@ export default class App extends Component {
                 <Header />
                 <TopCarousel/>
                 <AboutMe/>
-                <Projects />
                 <Timeline />
                 <Notes/>
                 <ContactMe/>
