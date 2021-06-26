@@ -1,6 +1,6 @@
 .section-projects {
     background-color: #7389ae;
-    height: 500px;
+    height: 450px;
 }
 
 .projects-header {
@@ -10,13 +10,60 @@
     color: #000031;
 }
 
-.projects-image {
-    height: 60%;
-
-}
-
 .project-network {
     background-color: #f5f5f5;
-    height: 400px;
-    border: 5px solid black;
+    height: 250px;
+    border: 3px solid black;
+    margin: 0 10px 0 0;
+}
+
+.project-caption {
+    background-color: #f5f5f5cc;
+    padding: 10px 15px;
+    margin: 10px 10px 0 0;
+    border: 3px solid black;
+    font-weight: 600;
+}
+
+.project-text {
+    background-color: #f5f5f5cc;
+    padding: 10px 15px;
+    margin: 60px 0 10px 0;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/* Code taken from https://codepen.io/joebocock/pen/ZEWoMPb */
+/* Slide button styling */
+.slide {
+    padding: 13px 30px 13px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.slide i {
+    opacity: 0;
+    font-size: 17px;
+    transition: 0.05s;
+    position: absolute;
+    right: 3px;
+    top: 18.5px;
+    transition: transform 1;
+    padding: 0 2px;
+}
+
+.slide div {
+    transition: transform 0.2s;
+}
+
+.slide:hover div {
+    transform: translateX(-6px);
+}
+
+.slide:hover i {
+    opacity: 1;
+    transform: translateX(-6px);
 }

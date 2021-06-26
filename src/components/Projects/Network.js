@@ -26,7 +26,7 @@ function makeEdge(num1, num2) {
         from: num1,
         to: num2,
         arrows: 'to',
-        color: "#cccccc"
+        color: "#999999"
     }
 }
 
@@ -192,7 +192,6 @@ export default class Network extends Component {
             nodes.push(makeNode(e, i, nodeList.length));
             edges.push(makeEdge(e, this.getDestination(e)));
         }
-        console.log(nodes, edges);
 
         this.setState(({ graph, ...rest }) => {
             return {
