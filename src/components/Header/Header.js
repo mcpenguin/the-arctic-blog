@@ -7,6 +7,8 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import './Header.css';
 
+import lightbulb from './lightbulb.png';
+
 class NavbarLink extends Component {
     render() {
         const str = `#${this.props.id}`;
@@ -26,7 +28,9 @@ export default class Header extends Component {
         return (
             <section className="section-header">
                 <Navbar expand="lg" variant="dark">
-                    <Navbar.Brand href="/" className="navbar-brand">🐧 The Arctic Blog</Navbar.Brand>
+                    <Navbar.Brand href="/" className="navbar-brand">
+                        <img src={lightbulb} id="navbar-img" /> The Arctic Blog
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="my-navbar" />
                     <Navbar.Collapse>
                         <Nav id="my-navbar" className="ml-auto">
