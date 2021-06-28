@@ -165,7 +165,9 @@ export default class Timeline extends Component {
                             </ul>
                             <h6>Comics drawn:</h6>
                             <ul>
-                                <li>Comic 21 - The Riemann Integral (not published yet)</li>
+                                <li>
+                                    <a href="https://www.instagram.com/p/CQWYix6gv5n/">Comic 21 - The Riemann Integral</a>
+                                </li>
                             </ul>
                         </>}
                     />
