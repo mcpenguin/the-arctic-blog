@@ -10,8 +10,18 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 // import stylesheet
 import './AdBlockerJumbotron.css';
 
+// is this necessary?? excluded for now
+
 export default class AdBlockerJumbotron extends Component {
     render() { 
+        // if user is blocking ads, display banner
+        if (!window.hasOwnProperty('google_render_ad') || window.google_render_ad === undefined) { 
+            console.log("Blocking ads!")
+        }
+        else {
+            console.log("Not blocking ads!")
+        }
+
         return (
             <section class="section-adblocker-jumbotron">
                 <Jumbotron fluid>

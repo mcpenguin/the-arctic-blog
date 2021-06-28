@@ -16,7 +16,7 @@ export default class App extends Component {
         return (
             <>
                 <Header />
-                <AdBlockerJumbotron />
+                {/* <AdBlockerJumbotron /> */}
                 <TopCarousel/>
                 <AboutMe/>
                 <Timeline />
