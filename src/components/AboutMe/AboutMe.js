@@ -77,9 +77,9 @@ export default class AboutMe extends Component {
                                     Programming Expertise
                                 </h4>
                                 <p className="personal-facts-body">
-                                    HTML, CSS, JS, Node.js, JQuery, React, Python
-                                    (Pandas, Numpy, Scipy, Matplotlib), Java, MySQL,
-                                    Racket/Scheme/Lisp, C
+                                    HTML, CSS, JS (Node.js, Express.js, React), Python
+                                    (Pandas, Numpy, Scipy, Matplotlib, BeautifulSoup), Java (Joget DX), MySQL,
+                                    Racket/Scheme/Lisp, C, Tableau, Metabase
                                 </p>
 
                                 <h4 className="personal-facts-head">
