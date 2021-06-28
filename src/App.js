@@ -2,6 +2,7 @@ import { Component } from 'react';
 import Fade from 'react-reveal';
 
 // import components
+import AdBlockerJumbotron from './components/AdBlockerJumbotron/AdBlockerJumbotron';
 import Header from './components/Header/Header';
 import TopCarousel from './components/TopCarousel/TopCarousel';
 import AboutMe from './components/AboutMe/AboutMe';
@@ -15,6 +16,7 @@ export default class App extends Component {
         return (
             <>
                 <Header />
+                <AdBlockerJumbotron />
                 <TopCarousel/>
                 <AboutMe/>
                 <Timeline />

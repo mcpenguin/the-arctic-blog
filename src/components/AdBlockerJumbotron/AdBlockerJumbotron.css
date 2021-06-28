@@ -1,0 +1,21 @@
+.jumbotron {
+    background-color: #586BA4;
+    margin: 0 !important;
+}
+
+.section-adblocker-jumbotron {
+    background-color: #9fb8c2;
+}
+
+.adblocker-text {
+    background-color: #f5f5f5bb;
+    padding: 15px 3%;
+}
+
+.adblocker-text h3 {
+    font-weight: 600;
+}
+
+.adblocker-text p {
+    font-weight: 400;
+}
