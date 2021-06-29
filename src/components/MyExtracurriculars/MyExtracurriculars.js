@@ -25,7 +25,7 @@ export default class MyExtracurriculars extends Component {
                         </Col>
                         <Col lg={6} className="col-lg-pull-6 my-extracurriculars-text">
                             <div className="my-extracurriculars-text-div">
-                                <h2>My extracurriculars</h2>
+                                <h2>My Hobbies & Extracurriculars</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing 
                                     elit, sed do eiusmod tempor incididunt ut labore 
