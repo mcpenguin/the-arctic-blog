@@ -14,7 +14,7 @@
 
 .my-timeline-image {
     background: url('./blob-timeline.svg');
-    background-size: 110%;
+    background-size: 105%;
     background-position: 0;
     width: 100%;
     max-width: 500px;
@@ -56,12 +56,12 @@
     font-weight: 300;
 	font-size: 25px;
 	border-radius: 4px;
-    background: #57b9e4ad;
+    background: #8596f5ad;
 	transition: 0.3s;
 }
 
 .my-timeline-view button:hover {
-    background: #8cd3f1d0;
+    background: #abb7f8ad;
 }
 
 @media (max-width: 992px) {

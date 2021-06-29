@@ -56,12 +56,12 @@
     font-weight: 300;
 	font-size: 25px;
 	border-radius: 4px;
-    background: #57b9e4ad;
+    background: #a880e9ad;
 	transition: 0.3s;
 }
 
 .my-education-view button:hover {
-    background: #8cd3f1d0;
+    background: #bea7e4ad;
 }
 
 @media (max-width: 992px) {

@@ -1,5 +1,5 @@
 .section-credits {
-    background-color: #c8f5f3;
+    background-color: #c0d2f3;
     padding: 20px 12%;
     display: inline-flex;
 }
@@ -58,12 +58,12 @@
     font-weight: 300;
 	font-size: 25px;
 	border-radius: 4px;
-    background: #2eb0b3c9;
+    background: #4faeeec9;
 	transition: 0.3s;
 }
 
 .credits-view button:hover {
-    background: #78dbdbe0;
+    background: #77bdebc9;
 }
 
 @media (max-width: 992px) {
