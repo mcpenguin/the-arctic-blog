@@ -1,5 +1,5 @@
 .section-my-experience {
-    background-color: #f5f5f5;
+    background-color: #c8f5f3;
     padding: 20px 12%;
     display: inline-flex;
 }
@@ -58,12 +58,12 @@
     font-weight: 300;
 	font-size: 25px;
 	border-radius: 4px;
-    background: #74e2c6ad;
+    background: #2eb0b3c9;
 	transition: 0.3s;
 }
 
 .my-experience-view button:hover {
-    background: #a0dacb96;
+    background: #78dbdbe0;
 }
 
 @media (max-width: 992px) {
