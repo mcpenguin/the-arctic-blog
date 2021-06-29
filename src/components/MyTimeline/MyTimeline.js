@@ -25,7 +25,7 @@ export default class MyTimeline extends Component {
                         </Col>
                         <Col lg={6} className="my-timeline-text">
                             <div className="my-timeline-text-div">
-                                <h2>My timeline</h2>
+                                <h2>My Timeline</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing 
                                     elit, sed do eiusmod tempor incididunt ut labore 
