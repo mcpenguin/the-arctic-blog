@@ -91,4 +91,8 @@
     .my-projects-image {
         margin-bottom: 20px;
     }
+
+    .my-projects-text-div h2 {
+        font-size: 2em;
+    }
 }

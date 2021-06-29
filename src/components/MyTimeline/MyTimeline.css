@@ -91,4 +91,8 @@
     .my-timeline-image {
         margin-bottom: 20px;
     }
+
+    .my-timeline-text-div h2 {
+        font-size: 2em;
+    }
 }

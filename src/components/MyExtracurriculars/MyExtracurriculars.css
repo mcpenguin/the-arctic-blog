@@ -93,4 +93,8 @@
     .my-extracurriculars-image {
         margin-bottom: 20px;
     }
+
+    .my-extracurriculars-text-div h2 {
+        font-size: 2em;
+    }
 }

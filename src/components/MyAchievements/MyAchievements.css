@@ -91,4 +91,8 @@
     .my-achievements-image {
         margin-bottom: 20px;
     }
+
+    .my-achievements-text-div h2 {
+        font-size: 2em;
+    }
 }

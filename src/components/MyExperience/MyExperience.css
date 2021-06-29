@@ -93,4 +93,8 @@
     .my-experience-image {
         margin-bottom: 20px;
     }
+
+    .my-experience-text-div h2 {
+        font-size: 2em;
+    }
 }

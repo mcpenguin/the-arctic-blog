@@ -91,4 +91,8 @@
     .my-education-image {
         margin-bottom: 20px;
     }
+
+    .my-education-text-div h2 {
+        font-size: 2em;
+    }
 }

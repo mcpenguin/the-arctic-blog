@@ -34,7 +34,7 @@ export default class Credits extends Component {
                                     ut aliquip ex ea commodo consequat.
                                 </p>
                                 <div className="credits-view">
-                                    <button class="noselect">View my experience</button>
+                                    <button class="noselect">View credits</button>
                                 </div>
                             </div>
                         </Col>

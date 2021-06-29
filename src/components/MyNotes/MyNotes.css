@@ -93,4 +93,8 @@
     .my-notes-image {
         margin-bottom: 20px;
     }
+
+    .my-notes-text-div h2 {
+        font-size: 2em;
+    }
 }
