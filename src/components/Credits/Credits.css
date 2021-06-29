@@ -1,0 +1,96 @@
+.section-credits {
+    background-color: #c8f5f3;
+    padding: 20px 12%;
+    display: inline-flex;
+}
+
+.section-credits .container-fluid .col-lg-6 {
+    display: flex;
+}
+
+.credits-text, .credits-image-div {
+    justify-content: center;
+    align-items: center;
+}
+
+.credits-image {
+    background: url('./blob-credits.svg');
+    background-size: 105%;
+    background-position: 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+.credits-text-div {
+    flex-direction: row-reverse; 
+    padding: 0 3%;
+}
+
+.credits-text-div h2 {
+    font-family: 'Comic Neue', sans-serif;
+    font-weight: 400;
+    margin-bottom: 5%;
+    font-size: 3em;
+}
+
+/* button modified from https://codepen.io/chancesq/pen/GRovMQq */
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+	-webkit-tap-highlight-color: transparent;
+
+}
+
+.credits-view button {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 250px;
+	height: 50px;
+	cursor: pointer;
+	border: none;
+	font-family: 'comic neue', sans-serif;
+	color: #000000;
+    font-weight: 300;
+	font-size: 25px;
+	border-radius: 4px;
+    background: #2eb0b3c9;
+	transition: 0.3s;
+}
+
+.credits-view button:hover {
+    background: #78dbdbe0;
+}
+
+@media (max-width: 992px) {
+
+    .section-credits {
+        padding: 30px 10%;
+    }
+
+    .credits-text-div h2 {
+        margin-bottom: 10px;
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 680px) {
+    .credits-text-div h2 {
+        margin-bottom: 5px;
+    }
+
+    .credits-image {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .credits-image {
+        margin-bottom: 20px;
+    }
+}

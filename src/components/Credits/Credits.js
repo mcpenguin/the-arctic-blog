@@ -13,7 +13,7 @@ import test_img from '../penguin-test.png'
 import './Credits.css';
 
 export default class Credits extends Component {
-    render() { 
+    render() {
         return (
             <section class="section-credits">
                 <Container fluid>
@@ -27,10 +27,10 @@ export default class Credits extends Component {
                             <div className="credits-text-div">
                                 <h2>Credits & Acknowledgements</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                    elit, sed do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad minim veniam, 
-                                    quis nostrud exercitation ullamco laboris nisi 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi
                                     ut aliquip ex ea commodo consequat.
                                 </p>
                                 <div className="credits-view">
@@ -41,6 +41,6 @@ export default class Credits extends Component {
                     </Row>
                 </Container>
             </section>
-        ); 
+        );
     }
 }
