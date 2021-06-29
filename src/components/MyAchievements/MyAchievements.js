@@ -25,7 +25,7 @@ export default class MyAchievements extends Component {
                         </Col>
                         <Col lg={6} className="my-achievements-text">
                             <div className="my-achievements-text-div">
-                                <h2>My achievements</h2>
+                                <h2>My Achievements</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing 
                                     elit, sed do eiusmod tempor incididunt ut labore 

@@ -1,0 +1,94 @@
+.section-my-education {
+    background-color: #f5f5f5;
+    padding: 20px 10%;
+}
+
+.section-my-education .container-fluid .col-lg-6 {
+    display: flex;
+}
+
+.my-education-text, .my-education-image-div {
+    justify-content: center;
+    align-items: center;
+}
+
+.my-education-image {
+    background: url('./blob-education.svg');
+    background-size: 110%;
+    background-position: 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+.my-education-text-div {
+    padding: 0 3%;
+}
+
+.my-education-text-div h2 {
+    font-family: 'Comic Neue', sans-serif;
+    font-weight: 400;
+    margin-bottom: 5%;
+    font-size: 3em;
+}
+
+/* button modified from https://codepen.io/chancesq/pen/GRovMQq */
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+	-webkit-tap-highlight-color: transparent;
+
+}
+
+.my-education-view button {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 250px;
+	height: 50px;
+	cursor: pointer;
+	border: none;
+	font-family: 'comic neue', sans-serif;
+	color: #000000;
+    font-weight: 300;
+	font-size: 25px;
+	border-radius: 4px;
+    background: #57b9e4ad;
+	transition: 0.3s;
+}
+
+.my-education-view button:hover {
+    background: #8cd3f1d0;
+}
+
+@media (max-width: 992px) {
+
+    .section-my-education {
+        padding: 30px 10%;
+    }
+
+    .my-education-text-div h2 {
+        margin-bottom: 10px;
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 680px) {
+    .my-education-text-div h2 {
+        margin-bottom: 5px;
+    }
+
+    .my-education-image {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .my-education-image {
+        margin-bottom: 20px;
+    }
+}

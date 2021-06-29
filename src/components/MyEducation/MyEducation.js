@@ -25,7 +25,7 @@ export default class MyEducation extends Component {
                         </Col>
                         <Col lg={6} className="my-education-text">
                             <div className="my-education-text-div">
-                                <h2>My education</h2>
+                                <h2>My Education</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing 
                                     elit, sed do eiusmod tempor incididunt ut labore 
