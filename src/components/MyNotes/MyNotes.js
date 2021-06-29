@@ -13,7 +13,7 @@ import test_img from '../penguin-test.png'
 import './MyNotes.css';
 
 export default class MyNotes extends Component {
-    render() { 
+    render() {
         return (
             <section class="section-my-notes">
                 <Container fluid>
@@ -25,12 +25,12 @@ export default class MyNotes extends Component {
                         </Col>
                         <Col lg={6} className="col-lg-pull-6 my-notes-text">
                             <div className="my-notes-text-div">
-                                <h2>My notes</h2>
+                                <h2>My Notes</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                    elit, sed do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad minim veniam, 
-                                    quis nostrud exercitation ullamco laboris nisi 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi
                                     ut aliquip ex ea commodo consequat.
                                 </p>
                                 <div className="my-notes-view">
@@ -41,6 +41,6 @@ export default class MyNotes extends Component {
                     </Row>
                 </Container>
             </section>
-        ); 
+        );
     }
 }
