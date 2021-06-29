@@ -31,13 +31,6 @@
     font-size: 3em;
 }
 
-/* button {
-    width: 250px;
-    height: 50px;
-    background: rgb(97,183,227);
-background: linear-gradient(90deg, rgba(97,183,227,1) 0%, rgba(158,159,219,1) 100%);
-} */
-
 /* button modified from https://codepen.io/chancesq/pen/GRovMQq */
 .noselect {
   -webkit-touch-callout: none;
@@ -63,37 +56,13 @@ button {
     font-weight: 300;
 	font-size: 25px;
 	border-radius: 4px;
-	/* box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15); */
-	/* background: #0075a2; */
     background: #74c1e2ad;
-    /* background: linear-gradient(
-        45deg, rgba(0, 8, 36, 0) 5%, 
-        rgba(255,255,255,.5) 6%, 
-        rgba(255,255,255,0) 9%, 
-        rgba(255,255,255,.5) 10%, 
-        rgba(255,255,255,0) 17%, 
-        rgba(255,255,255,.5) 19%, 
-        rgba(255,255,255,0) 21%); */
-        /* background: rgb(97,183,227); */
-        /* background: linear-gradient(90deg, rgba(97,183,227,1) 0%, rgba(158,159,219,1) 100%); */
-	/* background-size: 150%;
-	background-position: right; */
 	transition: 0.3s;
 }
 
 button:hover {
     background: #a3d3e796;
 }
-/* 
-button:hover {
-	background-position: left;
-    font-weight: 600;
-	box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
-}
-
-button:focus {
-	outline: none;
-} */
 
 @media (max-width: 992px) {
 
