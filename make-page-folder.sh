@@ -2,6 +2,8 @@
 # Bash script to autogenerate page folder
 # Usage: bash make-page-folder.sh <page name>
 sectionName=$1;
+# Make page folder
+mkdir src/pages/${sectionName};
 # Create components folder
 mkdir src/pages/${sectionName}/components;
 # Make files for components
