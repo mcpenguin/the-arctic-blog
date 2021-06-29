@@ -35,10 +35,6 @@ li {
     scroll-behavior: smooth;
 }
 
-.container-fluid {
-    padding: 0 10%;
-}
-
 /* Education */
 .section-education {
     background-color: #ffddff;

@@ -1,0 +1,49 @@
+.section-my-projects {
+    margin: 20px 10%;
+}
+
+.section-my-projects .container-fluid .col-md-6 {
+    display: flex;
+}
+
+.my-projects-text {
+    justify-content: center;
+    align-items: center;
+}
+
+.my-projects-image {
+    width: 100%;
+    max-width: 500px;
+}
+
+.my-projects-text-div h2 {
+    font-family: 'Comic Neue', sans-serif;
+    font-weight: 400;
+    margin-bottom: 5%;
+    font-size: 3em;
+}
+
+@media (max-width: 992px) {
+    .my-projects-text-div h2 {
+        margin-bottom: 10px;
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 680px) {
+    .my-projects-text-div h2 {
+        margin-bottom: 5px;
+        font-size: 2em;
+    }
+
+    .my-projects-image {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .my-projects-image {
+        margin-bottom: 20px;
+    }
+}
