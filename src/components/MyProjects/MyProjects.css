@@ -21,7 +21,7 @@
 }
 
 .my-projects-text-div {
-    /* background: url('./blob-projects.svg'); */
+    padding: 0 3%;
 }
 
 .my-projects-text-div h2 {
@@ -43,7 +43,7 @@
 
 }
 
-button {
+.my-projects-view button {
     margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -60,8 +60,8 @@ button {
 	transition: 0.3s;
 }
 
-button:hover {
-    background: #a3d3e796;
+.my-projects-view button:hover {
+    background: #92c0d396;
 }
 
 @media (max-width: 992px) {
