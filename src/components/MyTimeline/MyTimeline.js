@@ -15,16 +15,16 @@ import './MyTimeline.css';
 export default class MyTimeline extends Component {
     render() { 
         return (
-            <section class="section-my-timeline">
+            <section class="section-page section-my-timeline">
                 <Container fluid>
                     <Row>
-                        <Col lg={6} className="my-timeline-image-div">
+                        <Col lg={6} className="page-image-div my-timeline-image-div">
                             <div>
-                                <img className="my-timeline-image" src={test_img} />
+                                <img className="page-image my-timeline-image" src={test_img} />
                             </div>
                         </Col>
-                        <Col lg={6} className="my-timeline-text">
-                            <div className="my-timeline-text-div">
+                        <Col lg={6} className="page-text my-timeline-text">
+                            <div className="page-text-div my-timeline-text-div">
                                 <h2>My Timeline</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -33,7 +33,7 @@ export default class MyTimeline extends Component {
                                     quis nostrud exercitation ullamco laboris nisi 
                                     ut aliquip ex ea commodo consequat.
                                 </p>
-                                <div className="my-timeline-view">
+                                <div className="page-view my-timeline-view">
                                     <button class="noselect">View my timeline</button>
                                 </div>
                             </div>

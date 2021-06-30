@@ -15,16 +15,16 @@ import './MyProjects.css';
 export default class MyProjects extends Component {
     render() { 
         return (
-            <section class="section-my-projects">
+            <section class="section-page section-my-projects">
                 <Container fluid>
                     <Row>
-                        <Col lg={6} className="my-projects-image-div">
+                        <Col lg={6} className="page-image-div my-projects-image-div">
                             <div>
-                                <img className="my-projects-image" src={test_img} />
+                                <img className="page-image my-projects-image" src={test_img} />
                             </div>
                         </Col>
-                        <Col lg={6} className="my-projects-text">
-                            <div className="my-projects-text-div">
+                        <Col lg={6} className="page-text my-projects-text">
+                            <div className="page-text-div my-projects-text-div">
                                 <h2>My Projects</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -33,7 +33,7 @@ export default class MyProjects extends Component {
                                     quis nostrud exercitation ullamco laboris nisi 
                                     ut aliquip ex ea commodo consequat.
                                 </p>
-                                <div className="my-projects-view">
+                                <div className="page-view my-projects-view">
                                     <button class="noselect">View my projects</button>
                                 </div>
                             </div>

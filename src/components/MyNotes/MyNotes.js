@@ -15,16 +15,16 @@ import './MyNotes.css';
 export default class MyNotes extends Component {
     render() {
         return (
-            <section class="section-my-notes">
+            <section class="section-page section-my-notes">
                 <Container fluid>
                     <Row className="flex-row-reverse">
-                        <Col lg={6} className="col-lg-push-6 my-notes-image-div">
+                        <Col lg={6} className="page-image-div col-lg-push-6 my-notes-image-div">
                             <div>
-                                <img className="my-notes-image" src={test_img} />
+                                <img className="page-image my-notes-image" src={test_img} />
                             </div>
                         </Col>
-                        <Col lg={6} className="col-lg-pull-6 my-notes-text">
-                            <div className="my-notes-text-div">
+                        <Col lg={6} className="page-text col-lg-pull-6 my-notes-text">
+                            <div className="page-text-div my-notes-text-div">
                                 <h2>My Notes</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -33,7 +33,7 @@ export default class MyNotes extends Component {
                                     quis nostrud exercitation ullamco laboris nisi
                                     ut aliquip ex ea commodo consequat.
                                 </p>
-                                <div className="my-notes-view">
+                                <div className="page-view my-notes-view">
                                     <button class="noselect">View my notes</button>
                                 </div>
                             </div>

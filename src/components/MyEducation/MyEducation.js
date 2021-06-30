@@ -15,16 +15,16 @@ import './MyEducation.css';
 export default class MyEducation extends Component {
     render() { 
         return (
-            <section class="section-my-education">
+            <section class="section-page section-my-education">
                 <Container fluid>
                     <Row>
-                        <Col lg={6} className="my-education-image-div">
+                        <Col lg={6} className="page-image-div my-education-image-div">
                             <div>
-                                <img className="my-education-image" src={test_img} />
+                                <img className="page-image my-education-image" src={test_img} />
                             </div>
                         </Col>
-                        <Col lg={6} className="my-education-text">
-                            <div className="my-education-text-div">
+                        <Col lg={6} className="page-text my-education-text">
+                            <div className="page-text-div my-education-text-div">
                                 <h2>My Education</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -33,7 +33,7 @@ export default class MyEducation extends Component {
                                     quis nostrud exercitation ullamco laboris nisi 
                                     ut aliquip ex ea commodo consequat.
                                 </p>
-                                <div className="my-education-view">
+                                <div className="page-view my-education-view">
                                     <button class="noselect">View my education</button>
                                 </div>
                             </div>

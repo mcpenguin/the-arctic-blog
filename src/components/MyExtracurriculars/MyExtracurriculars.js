@@ -15,16 +15,16 @@ import './MyExtracurriculars.css';
 export default class MyExtracurriculars extends Component {
     render() { 
         return (
-            <section class="section-my-extracurriculars">
+            <section class="section-page section-my-extracurriculars">
                 <Container fluid>
                     <Row className="flex-row-reverse">
-                        <Col lg={6} className="col-lg-push-6 my-extracurriculars-image-div">
+                        <Col lg={6} className="page-image-div col-lg-push-6 my-extracurriculars-image-div">
                             <div>
-                                <img className="my-extracurriculars-image" src={test_img} />
+                                <img className="page-image my-extracurriculars-image" src={test_img} />
                             </div>
                         </Col>
-                        <Col lg={6} className="col-lg-pull-6 my-extracurriculars-text">
-                            <div className="my-extracurriculars-text-div">
+                        <Col lg={6} className="col-lg-pull-6 page-text my-extracurriculars-text">
+                            <div className="page-text-div my-extracurriculars-text-div">
                                 <h2>My Hobbies & Extracurriculars</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -33,7 +33,7 @@ export default class MyExtracurriculars extends Component {
                                     quis nostrud exercitation ullamco laboris nisi 
                                     ut aliquip ex ea commodo consequat.
                                 </p>
-                                <div className="my-extracurriculars-view">
+                                <div className="page-view my-extracurriculars-view">
                                     <button class="noselect">View my extracurriculars</button>
                                 </div>
                             </div>

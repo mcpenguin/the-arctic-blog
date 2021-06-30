@@ -15,16 +15,16 @@ import './MyExperience.css';
 export default class MyExperience extends Component {
     render() { 
         return (
-            <section class="section-my-experience">
+            <section class="section-page section-my-experience">
                 <Container fluid>
                     <Row className="flex-row-reverse">
-                        <Col lg={6} className="col-lg-push-6 my-experience-image-div">
+                        <Col lg={6} className="page-image-div col-lg-push-6 my-experience-image-div">
                             <div>
-                                <img className="my-experience-image" src={test_img} />
+                                <img className="page-image my-experience-image" src={test_img} />
                             </div>
                         </Col>
-                        <Col lg={6} className="col-lg-pull-6 my-experience-text">
-                            <div className="my-experience-text-div">
+                        <Col lg={6} className="col-lg-pull-6 page-text my-experience-text">
+                            <div className="page-text-div my-experience-text-div">
                                 <h2>My Experience</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -33,7 +33,7 @@ export default class MyExperience extends Component {
                                     quis nostrud exercitation ullamco laboris nisi 
                                     ut aliquip ex ea commodo consequat.
                                 </p>
-                                <div className="my-experience-view">
+                                <div className="page-view my-experience-view">
                                     <button class="noselect">View my experience</button>
                                 </div>
                             </div>
