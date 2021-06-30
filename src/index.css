@@ -104,12 +104,7 @@ li {
     font-weight: 300;
 	font-size: 25px;
 	border-radius: 4px;
-    background: #4faeeec9;
 	transition: 0.3s;
-}
-
-.page-view button:hover {
-    background: #77bdebc9;
 }
 
 @media (max-width: 992px) {

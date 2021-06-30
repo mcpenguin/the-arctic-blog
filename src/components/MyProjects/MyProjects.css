@@ -3,7 +3,7 @@
 }
 
 .my-projects-image {
-    background: url('./blob-projects.svg');
+    background-image: url('./blob-projects.svg');
     background-size: 110%;
     background-position: 0;
 }
