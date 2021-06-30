@@ -25,7 +25,7 @@ export default class Credits extends Component {
                         </Col>
                         <Col lg={6} className="page-text col-lg-pull-6 credits-text">
                             <div className="page-text-div credits-text-div">
-                                <h2>Credits & Acknowledgements</h2>
+                                <h2>Credits</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit, sed do eiusmod tempor incididunt ut labore

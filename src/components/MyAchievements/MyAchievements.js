@@ -25,7 +25,7 @@ export default class MyAchievements extends Component {
                         </Col>
                         <Col lg={6} className="page-text my-achievements-text">
                             <div className="page-text-div my-achievements-text-div">
-                                <h2>My Achievements</h2>
+                                <h2>My Awards</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing 
                                     elit, sed do eiusmod tempor incididunt ut labore 
@@ -34,7 +34,7 @@ export default class MyAchievements extends Component {
                                     ut aliquip ex ea commodo consequat.
                                 </p>
                                 <div className="page-view my-achievements-view">
-                                    <button class="noselect">View my achievements</button>
+                                    <button class="noselect">View my awards</button>
                                 </div>
                             </div>
                         </Col>

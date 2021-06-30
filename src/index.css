@@ -95,7 +95,7 @@ li {
     margin: 0;
     padding: 0;
 	box-sizing: border-box;
-	width: 250px;
+	width: 250px !important;
 	height: 50px;
 	cursor: pointer;
 	border: none;
@@ -139,6 +139,11 @@ li {
 }
 
 @media (max-width: 680px) {
+
+    .section-page {
+        padding: 40px 10px;
+    }
+
     .page-text-div h2 {
         margin-bottom: 5px;
     }

@@ -34,7 +34,7 @@ export default class MyEducation extends Component {
                                     ut aliquip ex ea commodo consequat.
                                 </p>
                                 <div className="page-view my-education-view">
-                                    <button class="noselect">View my education</button>
+                                    <button class="noselect">View my schools</button>
                                 </div>
                             </div>
                         </Col>

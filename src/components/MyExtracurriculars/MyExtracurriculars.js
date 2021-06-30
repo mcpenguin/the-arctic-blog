@@ -34,7 +34,7 @@ export default class MyExtracurriculars extends Component {
                                     ut aliquip ex ea commodo consequat.
                                 </p>
                                 <div className="page-view my-extracurriculars-view">
-                                    <button class="noselect">View my extracurriculars</button>
+                                    <button class="noselect">View my ECs</button>
                                 </div>
                             </div>
                         </Col>
