@@ -69,7 +69,7 @@ li {
 }
 
 .page-text-div {
-    padding: 0 3%;
+    padding: 0 5%;
 }
 
 .page-text-div h2 {
@@ -143,4 +143,14 @@ li {
     .page-text-div h2 {
         font-size: 2em;
     }
+}
+
+.section-my-projects, .section-my-education,
+.section-my-achievements, .section-my-timeline {
+    padding: 10px 7%;
+}
+
+.section-my-experience, .section-my-extracurriculars, 
+.section-my-notes, .section-credits {
+    padding: 10px 9% 10px 13%;
 }
