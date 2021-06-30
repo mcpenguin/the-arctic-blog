@@ -1,5 +1,5 @@
 .section-my-extracurriculars {
-    background-color: #dddcf3;
+    background-color: #d0e2f8;
 }
 
 .my-extracurriculars-image {
@@ -15,9 +15,9 @@
 .my-extracurriculars-view button {
 	width: 300px;
 	color: #000000;
-    background: #a399f8c9;
+    background: #5ab6e0c9;
 }
 
 .my-extracurriculars-view button:hover {
-    background: #b0a9eec9;
+    background: #8fc9e4c9;
 }

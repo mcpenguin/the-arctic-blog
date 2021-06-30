@@ -5,15 +5,15 @@
 .my-timeline-image {
     background: url('./blob-timeline.svg');
     background-size: 105%;
-    background-position: 0;
+    background-position: -20px -10px;
 }
 
 .my-timeline-view button {
 	width: 250px;
 	color: #000000;
-    background: #8596f5ad;
+    background: #8aa5f0ad;
 }
 
 .my-timeline-view button:hover {
-    background: #abb7f8ad;
+    background: #a5afe7ad;
 }

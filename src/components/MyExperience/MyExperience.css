@@ -1,5 +1,5 @@
 .section-my-experience {
-    background-color: #c8dcf5c7;
+    background-color: #cdeaf1;
 }
 
 .my-experience-image {
@@ -15,9 +15,9 @@
 .my-experience-view button {
 	width: 250px;
 	color: #000000;
-    background: #2eb0b3c9;
+    background: #1f77a07c;
 }
 
 .my-experience-view button:hover {
-    background: #78dbdbe0;
+    background: #63a0bd7c;
 }

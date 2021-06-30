@@ -76,7 +76,7 @@ li {
     font-family: 'nunito', sans-serif;
     font-weight: 300;
     margin-bottom: 5%;
-    font-size: 3em;
+    font-size: 2.6em;
 }
 
 /* button modified from https://codepen.io/chancesq/pen/GRovMQq */
@@ -110,13 +110,14 @@ li {
 @media (max-width: 992px) {
 
     .section-page {
-        padding: 30px 10%;
+        padding: 40px 10%;
     }
 
     .page-text-div h2 {
         margin-bottom: 10px;
         font-size: 2.4em;
     }
+
 }
 
 @media (max-width: 680px) {
@@ -142,10 +143,13 @@ li {
 
 .section-my-projects, .section-my-education,
 .section-my-achievements, .section-my-timeline {
-    padding: 10px 7%;
+    /* padding: 10px 7%; */
+    padding-left: 9%;
+    padding-right: 13%;
 }
 
 .section-my-experience, .section-my-extracurriculars, 
 .section-my-notes, .section-credits {
-    padding: 10px 9% 10px 13%;
+    padding-left: 9%;
+    padding-right: 13%;
 }

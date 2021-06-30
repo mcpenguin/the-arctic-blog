@@ -5,7 +5,7 @@
 .my-achievements-image {
     background: url('./blob-achievements.svg');
     background-size: 110%;
-    background-position: 0;
+    background-position: -20px 0;
 }
 
 .my-achievements-text-div {
