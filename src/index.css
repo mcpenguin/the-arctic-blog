@@ -107,10 +107,28 @@ li {
 	transition: 0.3s;
 }
 
+@media (min-width: 992px) {
+    .section-my-projects, .section-my-education,
+    .section-my-achievements, .section-my-timeline {
+        /* padding: 10px 7%; */
+        padding-left: 9%;
+        padding-right: 11%;
+    }
+
+    .section-my-experience, .section-my-extracurriculars, 
+    .section-my-notes, .section-credits {
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+}
+
 @media (max-width: 992px) {
 
     .section-page {
-        padding: 40px 10%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 9%;
+        padding-right: 11%;
     }
 
     .page-text-div h2 {
@@ -139,17 +157,4 @@ li {
     .page-text-div h2 {
         font-size: 2em;
     }
-}
-
-.section-my-projects, .section-my-education,
-.section-my-achievements, .section-my-timeline {
-    /* padding: 10px 7%; */
-    padding-left: 9%;
-    padding-right: 13%;
-}
-
-.section-my-experience, .section-my-extracurriculars, 
-.section-my-notes, .section-credits {
-    padding-left: 9%;
-    padding-right: 13%;
 }
