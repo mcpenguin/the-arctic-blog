@@ -26,7 +26,7 @@ import penguin_projects from './penguins/penguin-projects.png'
 // import penguin_education from './penguins/penguin-education.png'
 import penguin_extracurriculars from './penguins/penguin-extracurriculars.png'
 import penguin_achievements from './penguins/penguin-achievements.png'
-// import penguin_notes from './penguins/penguin-notes.png'
+import penguin_notes from './penguins/penguin-notes.png'
 // import penguin_timeline from './penguins/penguin-timeline.png'
 // import penguin_credits from './penguins/penguin-credits.png'
 
@@ -97,7 +97,7 @@ const pageSectionData = [
     },
     {
         class: 'my-notes',
-        image: penguin_projects,
+        image: penguin_notes,
         title: 'My Notes',
         desc: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
