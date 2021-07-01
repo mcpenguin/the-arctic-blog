@@ -148,7 +148,7 @@ class PageSection extends Component {
         const psClass = this.props.psClass;
         return (
             <section class={`section-page section-${psClass}`} style={{
-                backgroundColor: !this.props.psIsRight ? "#f5f5f5" : "#a2c7e6d5",
+                backgroundColor: !this.props.psIsRight ? "#f5f5f5" : "#d5d5d5aa",
             }}>
                 <Container fluid>
                     <Row className={this.props.psIsRight ? "flex-row-reverse" : ""}>
