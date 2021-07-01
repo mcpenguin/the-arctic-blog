@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ChevronRight from '@material-ui/icons/ChevronRightTwoTone';
 
 // import test image
 import test_img from '../penguin-test.png'
@@ -25,7 +26,7 @@ export default class Credits extends Component {
                         </Col>
                         <Col lg={6} className="page-text col-lg-pull-6 credits-text">
                             <div className="page-text-div credits-text-div">
-                                <h2>Credits</h2>
+                                <h2>Credits & References</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit, sed do eiusmod tempor incididunt ut labore
@@ -34,7 +35,7 @@ export default class Credits extends Component {
                                     ut aliquip ex ea commodo consequat.
                                 </p>
                                 <div className="page-view credits-view">
-                                    <button class="noselect">View credits</button>
+                                    <button class="noselect">Find out more <ChevronRight className="page-icon"/></button>
                                 </div>
                             </div>
                         </Col>

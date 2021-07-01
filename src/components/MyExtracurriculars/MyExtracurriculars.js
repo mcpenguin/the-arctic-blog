@@ -5,9 +5,10 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ChevronRight from '@material-ui/icons/ChevronRightTwoTone';
 
 // import test image
-import test_img from '../penguin-test.png'
+import penguin_extracurriculars from './penguin-extracurriculars.png'
 
 // import stylesheet
 import './MyExtracurriculars.css';
@@ -20,7 +21,7 @@ export default class MyExtracurriculars extends Component {
                     <Row className="flex-row-reverse">
                         <Col lg={6} className="page-image-div col-lg-push-6 my-extracurriculars-image-div">
                             <div>
-                                <img className="page-image my-extracurriculars-image" src={test_img} />
+                                <img className="page-image my-extracurriculars-image" src={penguin_extracurriculars} />
                             </div>
                         </Col>
                         <Col lg={6} className="col-lg-pull-6 page-text my-extracurriculars-text">
@@ -34,7 +35,7 @@ export default class MyExtracurriculars extends Component {
                                     ut aliquip ex ea commodo consequat.
                                 </p>
                                 <div className="page-view my-extracurriculars-view">
-                                    <button class="noselect">View my ECs</button>
+                                    <button class="noselect">Find out more <ChevronRight className="page-icon"/></button>
                                 </div>
                             </div>
                         </Col>

@@ -99,12 +99,35 @@ li {
 	height: 50px;
 	cursor: pointer;
 	border: none;
-	font-family: 'comic neue', sans-serif;
-	color: #000000;
+	font-family: 'nunito', sans-serif;
     font-weight: 300;
+	color: #000000;
 	font-size: 25px;
 	border-radius: 4px;
 	transition: 0.3s;
+}
+
+.page-view button .page-icon {
+    font-size: 110%;
+}
+
+.page-view button:hover .page-icon {
+    animation-name: test;
+    animation-duration: 0.5s; 
+    /* animation-direction: alternate-reverse; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes test {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 @media (min-width: 992px) {

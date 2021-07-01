@@ -5,9 +5,10 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ChevronRight from '@material-ui/icons/ChevronRightTwoTone';
 
 // import test image
-import test_img from '../penguin-test.png'
+import penguin_achievements from './penguin-achievements.png'
 
 // import stylesheet
 import './MyAchievements.css';
@@ -20,7 +21,7 @@ export default class MyAchievements extends Component {
                     <Row>
                         <Col lg={6} className="page-image-div my-achievements-image-div">
                             <div>
-                                <img className="page-image my-achievements-image" src={test_img} />
+                                <img className="page-image my-achievements-image" src={penguin_achievements} />
                             </div>
                         </Col>
                         <Col lg={6} className="page-text my-achievements-text">
@@ -34,7 +35,7 @@ export default class MyAchievements extends Component {
                                     ut aliquip ex ea commodo consequat.
                                 </p>
                                 <div className="page-view my-achievements-view">
-                                    <button class="noselect">View my awards</button>
+                                    <button class="noselect">Find out more <ChevronRight className="page-icon"/></button>
                                 </div>
                             </div>
                         </Col>

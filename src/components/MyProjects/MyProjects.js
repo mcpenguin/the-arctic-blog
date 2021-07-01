@@ -7,7 +7,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 // import test image
-import test_img from '../penguin-test.png'
+import penguin_projects from './penguin-projects.png'
+import ProjectsIcon from '@material-ui/icons/Code'
+import VisibilityTwoToneIcon from '@material-ui/icons/VisibilityTwoTone';
+import ChevronRight from '@material-ui/icons/ChevronRightTwoTone';
 
 // import stylesheet
 import './MyProjects.css';
@@ -20,7 +23,8 @@ export default class MyProjects extends Component {
                     <Row>
                         <Col lg={6} className="page-image-div my-projects-image-div">
                             <div>
-                                <img className="page-image my-projects-image" src={test_img} />
+                                {/* <ProjectsIcon className="page-icon my-projects-icon" /> */}
+                                <img className="page-image my-projects-image" src={penguin_projects} />
                             </div>
                         </Col>
                         <Col lg={6} className="page-text my-projects-text">
@@ -34,7 +38,7 @@ export default class MyProjects extends Component {
                                     ut aliquip ex ea commodo consequat.
                                 </p>
                                 <div className="page-view my-projects-view">
-                                    <button class="noselect">View my projects</button>
+                                    <button class="noselect">Find out more <ChevronRight className="page-icon"/></button>
                                 </div>
                             </div>
                         </Col>
