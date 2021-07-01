@@ -48,7 +48,8 @@
 	width: 250px !important;
 	height: 50px;
 	cursor: pointer;
-	border: none;
+    border: 0;
+	box-shadow: 2px 2px #000031;
 	font-family: 'nunito', sans-serif;
     font-weight: 300;
 	color: #000000;
@@ -57,18 +58,22 @@
 	transition: 0.3s;
 }
 
+.page-view button:hover {
+    box-shadow: 4px 4px #000031;
+}
+
 .page-view button .page-icon {
     font-size: 110%;
 }
 
 .page-view button:hover .page-icon {
-    animation-name: test;
+    animation-name: bounce_arrow;
     animation-duration: 0.5s; 
     /* animation-direction: alternate-reverse; */
     animation-iteration-count: infinite;
 }
 
-@keyframes test {
+@keyframes bounce_arrow {
     0% {
         transform: translateX(0);
     }
@@ -161,18 +166,14 @@
     background-position: 0;
 }
 
-.my-experience-text-div {
-    flex-direction: row-reverse; 
-}
-
 .my-experience-view button {
 	width: 250px;
 	color: #000000;
-    background: #1f77a07c;
+    background: #7CB9E8;
 }
 
 .my-experience-view button:hover {
-    background: #63a0bd7c;
+    background: #a2ccec;
 }
 
 /* Education */
@@ -200,10 +201,6 @@
     background-position: 0;
 }
 
-.my-extracurriculars-text-div {
-    flex-direction: row-reverse; 
-}
-
 .my-extracurriculars-view button {
 	width: 300px;
 	color: #000000;
@@ -221,10 +218,6 @@
     background-position: -20px 0;
 }
 
-.my-achievements-text-div {
-    padding: 0 3%;
-}
-
 .my-achievements-view button {
 	width: 280px;
 	color: #000000;
@@ -240,10 +233,6 @@
     background: url('./blobs/blob-notes.svg');
     background-size: 110%;
     background-position: 10px 0;
-}
-
-.my-notes-text-div {
-    flex-direction: row-reverse; 
 }
 
 .my-notes-view button {
@@ -266,11 +255,11 @@
 .my-timeline-view button {
 	width: 250px;
 	color: #000000;
-    background: #8aa5f0ad;
+    background: #B0C4DE;
 }
 
 .my-timeline-view button:hover {
-    background: #a5afe7ad;
+    background: #bfd6f5;
 }
 
 /* Credits */
