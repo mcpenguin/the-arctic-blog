@@ -12,6 +12,8 @@ import Timeline from './components/Timeline/Timeline';
 import Notes from './components/Notes/Notes';
 import ContactMe from './components/ContactMe/ContactMe';
 
+import PageSections from './components/PageSections/PageSections';
+
 // import sections to link to pages
 import MyProjects from './components/MyProjects/MyProjects';
 import MyExperience from './components/MyExperience/MyExperience';
@@ -31,6 +33,7 @@ export default class App extends Component {
                 {/* <AdBlockerJumbotron /> */}
                 <TopCarousel/>
                 <AboutMe/>
+                <PageSections />
                 <MyProjects />
                 <MyExperience />
                 <MyEducation />
