@@ -167,9 +167,7 @@ class PageSection extends Component {
                                     {this.props.psDesc}
                                 </p>
                                 <div className={`page-view ${psClass}-view`}>
-                                    <button class="noselect" style={{
-                                        backgroundColor: this.props.psIsRight ? "#f5f5f5" : "#a2c7e6d5",
-                                    }}>Find out more <ChevronRight className="page-icon" /></button>
+                                    <button class="noselect">Find out more <ChevronRight className="page-icon" /></button>
                                 </div>
                             </div>
                         </Col>
