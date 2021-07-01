@@ -1,5 +1,17 @@
+/* Page Sections Wrapper */
+.section-page-sections {
+    background: rgb(245,245,245);
+    background: linear-gradient(
+        180deg, 
+        rgba(245,245,245,1) 0%, 
+        rgb(187, 206, 219) 32%, 
+        rgb(165, 213, 235) 61%, 
+        rgb(155, 184, 211) 100%
+    );
+}
+
+/* General Page Sections */
 .section-page {
-    background-color: #c0d2f3;
     padding: 20px 12%;
     display: inline-flex;
 }
@@ -28,6 +40,10 @@
     font-weight: 300;
     margin-bottom: 5%;
     font-size: 2.6em;
+}
+
+.page-text-div p {
+    font-weight: 300;
 }
 
 .noselect {
@@ -152,11 +168,11 @@
 .my-projects-view button {
 	width: 250px;
 	color: #000000;
-    background: #2da9dfad;
+    background: #b9d3f0;
 }
 
 .my-projects-view button:hover {
-    background: #8cd3f1d0;
+    background: #b9d3f099;
 }
 
 /* Experience */
@@ -169,11 +185,11 @@
 .my-experience-view button {
 	width: 250px;
 	color: #000000;
-    background: #7CB9E8;
+    background: #9ec5f0;
 }
 
 .my-experience-view button:hover {
-    background: #a2ccec;
+    background: #9ec5f099;
 }
 
 /* Education */
@@ -187,11 +203,11 @@
 .my-education-view button {
 	width: 250px;
 	color: #000000;
-    background: #41a8d8ad;
+    background: #89baf0;
 }
 
 .my-education-view button:hover {
-    background: #6fc0e6ad;
+    background: #89baf099;
 }
 
 /* Extracurriculars */
@@ -204,11 +220,11 @@
 .my-extracurriculars-view button {
 	width: 300px;
 	color: #000000;
-    background: #5ab6e0c9;
+    background: #6daaed;
 }
 
 .my-extracurriculars-view button:hover {
-    background: #8fc9e4c9;
+    background: #6daaed99;
 }
 
 /* Awards/Achievements */
@@ -221,11 +237,11 @@
 .my-achievements-view button {
 	width: 280px;
 	color: #000000;
-    background: #57b9e4ad;
+    background: #5797de;
 }
 
 .my-achievements-view button:hover {
-    background: #8cd3f1d0;
+    background: #5797de99;
 }
 
 /* Notes */
@@ -238,11 +254,11 @@
 .my-notes-view button {
 	width: 250px;
 	color: #000000;
-    background: #7db7e7c9;
+    background: #468ddb;
 }
 
 .my-notes-view button:hover {
-    background: #a2c7e6d5;
+    background: #468ddb99;
 }
 
 /* Timeline */
@@ -255,11 +271,11 @@
 .my-timeline-view button {
 	width: 250px;
 	color: #000000;
-    background: #B0C4DE;
+    background: #3276c2;
 }
 
 .my-timeline-view button:hover {
-    background: #bfd6f5;
+    background: #3276c299;
 }
 
 /* Credits */
@@ -276,9 +292,9 @@
 .credits-view button {
 	width: 250px;
 	color: #000000;
-    background: #4faeeec9;
+    background: #135eb0;
 }
 
 .credits-view button:hover {
-    background: #77bdebc9;
+    background: #135eb099;
 }

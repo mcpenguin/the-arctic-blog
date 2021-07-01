@@ -148,11 +148,11 @@ class PageSection extends Component {
         const psClass = this.props.psClass;
         return (
             <section class={`section-page section-${psClass}`} style={{
-                backgroundColor: !this.props.psIsRight 
-                    ? "#f5f5f5" 
-                    // : "#f8f8f8",
-                    // : "#d5d5d5aa",
-                    : "#dfe7f0",
+                // backgroundColor: !this.props.psIsRight 
+                //     ? "#f5f5f5" 
+                //     : "#e7e7e7",
+                //     // : "#d5d5d5aa",
+                //     // : "#dfe7f0",
             }}>
                 <Container fluid>
                     <Row className={this.props.psIsRight ? "flex-row-reverse" : ""}>
@@ -197,6 +197,10 @@ export default class PageSections extends Component {
                 />
             )
         }
-        return result;
+        return (
+            <div class="section-page-sections">
+                {result}
+            </div>
+        );
     }
 }
