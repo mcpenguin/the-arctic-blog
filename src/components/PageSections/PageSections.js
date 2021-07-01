@@ -9,8 +9,26 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ChevronRight from '@material-ui/icons/ChevronRightTwoTone';
 
+// import blobs
+import blob_projects from './blobs/blob-projects.svg'
+import blob_experience from './blobs/blob-experience.svg'
+import blob_education from './blobs/blob-education.svg'
+import blob_extracurriculars from './blobs/blob-extracurriculars.svg'
+import blob_achievements from './blobs/blob-achievements.svg'
+import blob_notes from './blobs/blob-notes.svg'
+import blob_timeline from './blobs/blob-timeline.svg'
+import blob_credits from './blobs/blob-credits.svg'
+
 // import penguins
-import penguin_projects from './penguins/penguin-projects.png';
+// commented out = not drawn yet 
+import penguin_projects from './penguins/penguin-projects.png'
+// import penguin_experience from './penguins/penguin-experience.png'
+// import penguin_education from './penguins/penguin-education.png'
+import penguin_extracurriculars from './penguins/penguin-extracurriculars.png'
+import penguin_achievements from './penguins/penguin-achievements.png'
+// import penguin_notes from './penguins/penguin-notes.png'
+// import penguin_timeline from './penguins/penguin-timeline.png'
+// import penguin_credits from './penguins/penguin-credits.png'
 
 // import stylesheet
 import './PageSections.css';
@@ -55,7 +73,7 @@ const pageSectionData = [
     },
     {
         class: 'my-extracurriculars',
-        image: penguin_projects,
+        image: penguin_extracurriculars,
         title: 'My Extracurriculars',
         desc: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
@@ -67,7 +85,7 @@ const pageSectionData = [
     },
     {
         class: 'my-achievements',
-        image: penguin_projects,
+        image: penguin_achievements,
         title: 'My Awards',
         desc: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
@@ -121,6 +139,7 @@ const pageSectionData = [
 // or to the right
 // - psClass: class name for page section (e.g. my-projects)
 // - psImage: image (of penguin) corresponding to page section
+// - psBlob: svg image of blob corresponding to page section
 // - psTitle: title for page section (e.g. My Projects) (as string)
 // - psDesc: description for page section (as string)
 class PageSection extends Component {
@@ -128,12 +147,17 @@ class PageSection extends Component {
         // class of page section
         const psClass = this.props.psClass;
         return (
-            <section class={`section-page section-${psClass}`}>
+            <section class={`section-page section-${psClass}`} style={{
+                backgroundColor: !this.props.psIsRight ? "#f5f5f5" : "#a2c7e6d5",
+            }}>
                 <Container fluid>
                     <Row className={this.props.psIsRight ? "flex-row-reverse" : ""}>
                         <Col lg={6} className={`page-image-div ${psClass}-image-div`}>
                             <div>
-                                <img className={`page-image ${psClass}-image`} src={this.props.psImage} />
+                                <img 
+                                    className={`page-image ${psClass}-image`} 
+                                    src={this.props.psImage} 
+                                />
                             </div>
                         </Col>
                         <Col lg={6} className={`page-text ${psClass}-text`}>
@@ -143,7 +167,9 @@ class PageSection extends Component {
                                     {this.props.psDesc}
                                 </p>
                                 <div className={`page-view ${psClass}-view`}>
-                                    <button class="noselect">Find out more <ChevronRight className="page-icon"/></button>
+                                    <button class="noselect" style={{
+                                        backgroundColor: this.props.psIsRight ? "#f5f5f5" : "#a2c7e6d5",
+                                    }}>Find out more <ChevronRight className="page-icon" /></button>
                                 </div>
                             </div>
                         </Col>
@@ -155,12 +181,12 @@ class PageSection extends Component {
 }
 
 export default class PageSections extends Component {
-    render() { 
+    render() {
         let result = [];
         for (let i in pageSectionData) {
             let pageSection = pageSectionData[i];
             result.push(
-                <PageSection 
+                <PageSection
                     psIsRight={i % 2}
                     psClass={pageSection.class}
                     psDesc={pageSection.desc}

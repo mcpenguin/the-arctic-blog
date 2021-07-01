@@ -15,14 +15,14 @@ import ContactMe from './components/ContactMe/ContactMe';
 import PageSections from './components/PageSections/PageSections';
 
 // import sections to link to pages
-import MyProjects from './components/MyProjects/MyProjects';
-import MyExperience from './components/MyExperience/MyExperience';
-import MyEducation from './components/MyEducation/MyEducation';
-import MyExtracurriculars from './components/MyExtracurriculars/MyExtracurriculars';
-import MyAchievements from './components/MyAchievements/MyAchievements';
-import MyNotes from './components/MyNotes/MyNotes';
-import MyTimeline from './components/MyTimeline/MyTimeline';
-import Credits from './components/Credits/Credits';
+// import MyProjects from './components/MyProjects/MyProjects';
+// import MyExperience from './components/MyExperience/MyExperience';
+// import MyEducation from './components/MyEducation/MyEducation';
+// import MyExtracurriculars from './components/MyExtracurriculars/MyExtracurriculars';
+// import MyAchievements from './components/MyAchievements/MyAchievements';
+// import MyNotes from './components/MyNotes/MyNotes';
+// import MyTimeline from './components/MyTimeline/MyTimeline';
+// import Credits from './components/Credits/Credits';
 
 
 export default class App extends Component {
@@ -34,14 +34,14 @@ export default class App extends Component {
                 <TopCarousel/>
                 <AboutMe/>
                 <PageSections />
-                <MyProjects />
+                {/* <MyProjects />
                 <MyExperience />
                 <MyEducation />
                 <MyExtracurriculars />
                 <MyAchievements />
                 <MyNotes />
                 <MyTimeline />
-                <Credits />
+                <Credits /> */}
                 {/* <Timeline /> */}
                 {/* <Notes/> */}
                 <ContactMe/>

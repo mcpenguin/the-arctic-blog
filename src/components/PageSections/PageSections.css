@@ -1,0 +1,139 @@
+.section-page {
+    background-color: #c0d2f3;
+    padding: 20px 12%;
+    display: inline-flex;
+}
+
+.section-page .container-fluid .col-lg-6 {
+    display: flex;
+}
+
+.page-text, .page-image-div {
+    justify-content: center;
+    align-items: center;
+}
+
+.page-image {
+    background-position: 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+.page-text-div {
+    padding: 0 5%;
+}
+
+.page-text-div h2 {
+    font-family: 'nunito', sans-serif;
+    font-weight: 300;
+    margin-bottom: 5%;
+    font-size: 2.6em;
+}
+
+/* button modified from https://codepen.io/chancesq/pen/GRovMQq */
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+	-webkit-tap-highlight-color: transparent;
+
+}
+
+.page-view button {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	width: 250px !important;
+	height: 50px;
+	cursor: pointer;
+	border: none;
+	font-family: 'nunito', sans-serif;
+    font-weight: 300;
+	color: #000000;
+	font-size: 25px;
+	border-radius: 4px;
+	transition: 0.3s;
+}
+
+.page-view button .page-icon {
+    font-size: 110%;
+}
+
+.page-view button:hover .page-icon {
+    animation-name: test;
+    animation-duration: 0.5s; 
+    /* animation-direction: alternate-reverse; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes test {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 992px) {
+    .section-my-projects, .section-my-education,
+    .section-my-achievements, .section-my-timeline {
+        /* padding: 10px 7%; */
+        padding-left: 9%;
+        padding-right: 11%;
+    }
+
+    .section-my-experience, .section-my-extracurriculars, 
+    .section-my-notes, .section-credits {
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .section-page {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 9%;
+        padding-right: 11%;
+    }
+
+    .page-text-div h2 {
+        margin-bottom: 10px;
+        font-size: 2.4em;
+    }
+
+}
+
+@media (max-width: 680px) {
+
+    .section-page {
+        padding: 40px 10px;
+    }
+
+    .page-text-div h2 {
+        margin-bottom: 5px;
+    }
+
+    .page-image {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .page-image {
+        margin-bottom: 20px;
+    }
+
+    .page-text-div h2 {
+        font-size: 2em;
+    }
+}
