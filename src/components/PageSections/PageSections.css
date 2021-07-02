@@ -1,11 +1,20 @@
 /* Page Sections Wrapper */
 .section-page-sections {
     background: rgb(245,245,245);
-    background: linear-gradient(
+    /* background: linear-gradient(
         180deg, 
         rgb(245, 245, 245) 0%, 
         rgb(197, 226, 238) 40%,
         rgb(163, 217, 240) 100%
+    ); */
+    background: rgb(245,245,245);
+    background: linear-gradient(
+        180deg, 
+        rgba(245,245,245,1) 0%, 
+        rgba(165,236,233,1) 35%, 
+        rgba(165,213,236,1) 64%, 
+        rgb(198, 212, 238) 90%, 
+        rgb(173, 183, 221) 100%
     );
         /* #bbdbf0 100% */
         /* rgb(216, 180, 223) 0%,

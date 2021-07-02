@@ -37,7 +37,7 @@ import './PageSections.css';
 const pageSectionData = [
     {
         class: 'my-projects',
-        image: penguin_projects,
+        image: penguin_extracurriculars,
         title: 'My Projects',
         desc: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
@@ -49,7 +49,7 @@ const pageSectionData = [
     },
     {
         class: 'my-experience',
-        image: penguin_projects,
+        image: penguin_extracurriculars,
         title: 'My Experience',
         desc: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
@@ -61,7 +61,7 @@ const pageSectionData = [
     },
     {
         class: 'my-education',
-        image: penguin_projects,
+        image: penguin_extracurriculars,
         title: 'My Education',
         desc: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
@@ -109,7 +109,7 @@ const pageSectionData = [
     },
     {
         class: 'my-timeline',
-        image: penguin_projects,
+        image: penguin_extracurriculars,
         title: 'My Timeline',
         desc: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
@@ -121,7 +121,7 @@ const pageSectionData = [
     },
     {
         class: 'credits',
-        image: penguin_projects,
+        image: penguin_extracurriculars,
         title: 'Credits and References',
         desc: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
