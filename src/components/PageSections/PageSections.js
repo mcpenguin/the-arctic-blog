@@ -60,8 +60,8 @@ const pageSectionData = [
         desc: <p>
             {/* Check out my work and volunteer experience, both for technical and
             non-technical roles. */}
-            Learn about my responsiblities and accomplishments at my first coop
-            as a Data Analyst at eMedAsia, Malaysia, as well as a list of my other
+            Learn about my responsiblities and accomplishments at my first coop job
+            as a Data Analyst at eMedAsia, alongside a list of my other
             internships and volunteer experiences.
         </p>,
     },
@@ -70,8 +70,9 @@ const pageSectionData = [
         image: penguin_extracurriculars,
         title: 'My Education',
         desc: <p>
-            View my educational record, which includes both the activities I
-            participated in and the grades I have obtained over my academic life.
+            View the subjects I took in Waterloo, the grades I achieved for my
+            A-Level subjects as well as a list of the clubs I joined in both high school
+            and university.
         </p>,
     },
     {
@@ -79,8 +80,11 @@ const pageSectionData = [
         image: penguin_extracurriculars,
         title: 'My Hobbies & Extracurriculars',
         desc: <p>
-            Explore my various hobbies and the extracurricular activities I participated
-            in outside of my academic life.
+            Enjoy a gallery of my cornucopia of hobbies and extracurriculars,
+            including my piano arrangements 
+            of <i>Unravel</i> and <i>Shinzo wo Sasageyo</i> and my 
+            roles and experiences as a Curator 
+            in TEDxSunwayUniversity. 
         </p>,
     },
     {
