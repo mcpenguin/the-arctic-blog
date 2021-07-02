@@ -102,7 +102,7 @@ const pageSectionData = [
         image: penguin_notes,
         title: 'My Notes',
         desc: <p>
-            Read and download my personal notes for my university courses and high school studies,
+            Read and download the notes I curated for my university courses and high school studies,
             including my notes for MATH 145/6/7/8 and Cambridge GCE A-Level Further Mathematics.
         </p>,
     },
