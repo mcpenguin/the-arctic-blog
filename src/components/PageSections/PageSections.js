@@ -38,98 +38,86 @@ const pageSectionData = [
     {
         class: 'my-projects',
         image: penguin_extracurriculars,
-        title: 'My Projects',
-        desc: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-            do eiusmod tempor incididunt ut labore et dolore magna 
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-            ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
-        `,
+        title: 'My Coding Projects',
+        // desc: `
+        //     Explore the various coding projects I am working on now and have
+            // completed over my programming career, including the languages, libraries
+            // and tools I used to make them.
+            // A React website that displays Waterloo courses as
+            // a network, a Python-based application that fetches Malaysian COVID-19 data
+            // automatically using the BeautifulSoup library, and more!
+        // `,
+        desc: <p>
+            Check out <i>My Course Graph</i>, a React website I designed which displays Waterloo courses 
+            as a network to help students easily visualize the prerequisites for each course, 
+            alongside my countless other projects.
+        </p>,
     },
     {
         class: 'my-experience',
         image: penguin_extracurriculars,
         title: 'My Experience',
-        desc: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-            do eiusmod tempor incididunt ut labore et dolore magna 
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-            ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
-        `,
+        desc: <p>
+            {/* Check out my work and volunteer experience, both for technical and
+            non-technical roles. */}
+            Learn about my responsiblities and accomplishments at my first coop
+            as a Data Analyst at eMedAsia, Malaysia, as well as a list of my other
+            internships and volunteer experiences.
+        </p>,
     },
     {
         class: 'my-education',
         image: penguin_extracurriculars,
         title: 'My Education',
-        desc: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-            do eiusmod tempor incididunt ut labore et dolore magna 
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-            ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
-        `,
+        desc: <p>
+            View my educational record, which includes both the activities I
+            participated in and the grades I have obtained over my academic life.
+        </p>,
     },
     {
         class: 'my-extracurriculars',
         image: penguin_extracurriculars,
         title: 'My Hobbies & Extracurriculars',
-        desc: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-            do eiusmod tempor incididunt ut labore et dolore magna 
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-            ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
-        `,
+        desc: <p>
+            Explore my various hobbies and the extracurricular activities I participated
+            in outside of my academic life.
+        </p>,
     },
     {
         class: 'my-achievements',
         image: penguin_achievements,
         title: 'My Awards',
-        desc: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-            do eiusmod tempor incididunt ut labore et dolore magna 
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-            ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
-        `,
+        desc: <p>
+            Check out the awards and achievements I have received in the last
+            4 years, both in my academic life and in my extracurriculars.
+        </p>,
     },
     {
         class: 'my-notes',
         image: penguin_notes,
         title: 'My Notes',
-        desc: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-            do eiusmod tempor incididunt ut labore et dolore magna 
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-            ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
-        `,
+        desc: <p>
+            Read the notes I have curated for both my university courses and
+            the A-Level subjects I took in high school.
+        </p>,
     },
     {
         class: 'my-timeline',
         image: penguin_extracurriculars,
         title: 'My Timeline',
-        desc: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-            do eiusmod tempor incididunt ut labore et dolore magna 
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-            ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
-        `,
+        desc: <p>
+            Here, you can find a comprehensive timeline of everything mentioned in
+            the previous sections.
+        </p>,
     },
     {
         class: 'credits',
         image: penguin_extracurriculars,
         title: 'Credits and References',
-        desc: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-            do eiusmod tempor incididunt ut labore et dolore magna 
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-            ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
-        `,
+        desc: <p>
+            View the languages, frameworks, references, libraries and tools I used
+            to design and develop this website.
+        </p>,
     },
 ]
 
@@ -167,9 +155,7 @@ class PageSection extends Component {
                         <Col lg={6} className={`page-text ${psClass}-text`}>
                             <div className={`page-text-div ${psClass}-text-div`}>
                                 <h2>{this.props.psTitle}</h2>
-                                <p>
-                                    {this.props.psDesc}
-                                </p>
+                                {this.props.psDesc}
                                 <div className={`page-view ${psClass}-view`}>
                                     <button class="noselect">Find out more <ChevronRight className="page-icon" /></button>
                                 </div>
