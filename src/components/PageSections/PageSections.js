@@ -80,9 +80,9 @@ const pageSectionData = [
         image: penguin_extracurriculars,
         title: 'My Hobbies & Extracurriculars',
         desc: <p>
-            Enjoy a gallery of my cornucopia of hobbies and extracurriculars,
+            Enjoy a gallery of my hobbies and extracurriculars,
             including my piano arrangements 
-            of <i>Unravel</i> and <i>Shinzo wo Sasageyo</i> and my 
+            of <i>Unravel</i> and <i>Shinzo wo Sasageyo</i> as well as my 
             roles and experiences as a Curator 
             in TEDxSunwayUniversity. 
         </p>,
@@ -92,8 +92,9 @@ const pageSectionData = [
         image: penguin_achievements,
         title: 'My Awards',
         desc: <p>
-            Check out the awards and achievements I have received in the last
-            4 years, both in my academic life and in my extracurriculars.
+            Check out my various achievements, including my ATCL Diploma in Piano Recital, 
+            my Grade 6 in Trombone, and the collection of mathematics
+            and computer science competition awards I amassed over the past 4 years.
         </p>,
     },
     {
@@ -101,8 +102,8 @@ const pageSectionData = [
         image: penguin_notes,
         title: 'My Notes',
         desc: <p>
-            Read the notes I have curated for both my university courses and
-            the A-Level subjects I took in high school.
+            Read and download my personal notes for my university courses and high school studies,
+            including my notes for MATH 145/6/7/8 and Cambridge GCE A-Level Further Mathematics.
         </p>,
     },
     {
