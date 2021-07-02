@@ -3,11 +3,15 @@
     background: rgb(245,245,245);
     background: linear-gradient(
         180deg, 
-        rgba(245,245,245,1) 0%, 
-        rgb(187, 206, 219) 32%, 
-        rgb(165, 213, 235) 61%, 
-        rgb(155, 184, 211) 100%
+        rgb(245, 245, 245) 0%, 
+        rgb(197, 221, 238) 40%,
+        rgb(180, 203, 247) 100%
     );
+        /* #bbdbf0 100% */
+        /* rgb(216, 180, 223) 0%,
+        rgb(255, 255, 255) 50%,
+        rgb(162, 230, 192) 100%
+    /* /* ); */
 }
 
 /* General Page Sections */
@@ -32,7 +36,12 @@
 }
 
 .page-text-div {
-    padding: 0 5%;
+    /* background-color: #f5f5f5cc; */
+    /* background: url('./bg-page-section-text.svg'); */
+    /* color: #dce4db; */
+    /* color: #f5f5f5; */
+    border-radius: 10%;
+    padding: 20px 5%;
 }
 
 .page-text-div h2 {
@@ -65,9 +74,9 @@
 	height: 50px;
 	cursor: pointer;
     border: 0;
+    /* border: 2px solid #000031; */
 	box-shadow: 2px 2px #000031;
 	font-family: 'nunito', sans-serif;
-    font-weight: 300;
 	color: #000000;
 	font-size: 25px;
 	border-radius: 4px;
@@ -76,6 +85,7 @@
 
 .page-view button:hover {
     box-shadow: 4px 4px #000031;
+    font-weight: 400;
 }
 
 .page-view button .page-icon {
@@ -185,11 +195,11 @@
 .my-experience-view button {
 	width: 250px;
 	color: #000000;
-    background: #9ec5f0;
+    background: #afcff5;
 }
 
 .my-experience-view button:hover {
-    background: #9ec5f099;
+    background: #bbd4f099;
 }
 
 /* Education */
@@ -203,11 +213,11 @@
 .my-education-view button {
 	width: 250px;
 	color: #000000;
-    background: #89baf0;
+    background: #97c3f1;
 }
 
 .my-education-view button:hover {
-    background: #89baf099;
+    background: #9cc4f099;
 }
 
 /* Extracurriculars */
@@ -220,7 +230,7 @@
 .my-extracurriculars-view button {
 	width: 300px;
 	color: #000000;
-    background: #6daaed;
+    background: #8abaee;
 }
 
 .my-extracurriculars-view button:hover {
@@ -237,11 +247,11 @@
 .my-achievements-view button {
 	width: 280px;
 	color: #000000;
-    background: #5797de;
+    background: #81b7f1;
 }
 
 .my-achievements-view button:hover {
-    background: #5797de99;
+    background: #8aa1eb99;
 }
 
 /* Notes */
@@ -254,7 +264,7 @@
 .my-notes-view button {
 	width: 250px;
 	color: #000000;
-    background: #468ddb;
+    background: #74b2f3;
 }
 
 .my-notes-view button:hover {
@@ -271,7 +281,7 @@
 .my-timeline-view button {
 	width: 250px;
 	color: #000000;
-    background: #3276c2;
+    background: #5fa5f0;
 }
 
 .my-timeline-view button:hover {
@@ -285,14 +295,10 @@
     background-position: 0;
 }
 
-.credits-text-div {
-    flex-direction: row-reverse; 
-}
-
 .credits-view button {
 	width: 250px;
 	color: #000000;
-    background: #135eb0;
+    background: #5497df;
 }
 
 .credits-view button:hover {

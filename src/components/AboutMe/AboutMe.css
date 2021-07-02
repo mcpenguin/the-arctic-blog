@@ -1,6 +1,6 @@
 .section-about-me {
     padding: 30px 0 50px 0;
-    /* background-color: #332e3f; */
+    /* background-color: #c7cdf0; */
     background-image: url("./geometric-1920x1080.svg");
     background-repeat: repeat-y;
     text-align: center;
@@ -15,7 +15,8 @@
     background-color: #f5f5f5cc;
     color: #000031;
     padding: 10px 0;
-    font-weight: 800;
+    font-weight: 600;
+    font-size: 2em;
     text-align: center;
 }
 
