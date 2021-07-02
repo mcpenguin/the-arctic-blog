@@ -4,8 +4,8 @@
     background: linear-gradient(
         180deg, 
         rgb(245, 245, 245) 0%, 
-        rgb(197, 221, 238) 40%,
-        rgb(180, 203, 247) 100%
+        rgb(197, 226, 238) 40%,
+        rgb(163, 217, 240) 100%
     );
         /* #bbdbf0 100% */
         /* rgb(216, 180, 223) 0%,
@@ -85,7 +85,6 @@
 
 .page-view button:hover {
     box-shadow: 4px 4px #000031;
-    font-weight: 400;
 }
 
 .page-view button .page-icon {
@@ -199,7 +198,7 @@
 }
 
 .my-experience-view button:hover {
-    background: #bbd4f099;
+    background: #afcff599;
 }
 
 /* Education */
@@ -217,7 +216,7 @@
 }
 
 .my-education-view button:hover {
-    background: #9cc4f099;
+    background: #97c3f199;
 }
 
 /* Extracurriculars */
@@ -234,7 +233,7 @@
 }
 
 .my-extracurriculars-view button:hover {
-    background: #6daaed99;
+    background: #8abaee99;
 }
 
 /* Awards/Achievements */
@@ -251,7 +250,7 @@
 }
 
 .my-achievements-view button:hover {
-    background: #8aa1eb99;
+    background: #81b7f199;
 }
 
 /* Notes */
@@ -268,7 +267,7 @@
 }
 
 .my-notes-view button:hover {
-    background: #468ddb99;
+    background: #74b2f399;
 }
 
 /* Timeline */
@@ -281,11 +280,11 @@
 .my-timeline-view button {
 	width: 250px;
 	color: #000000;
-    background: #5fa5f0;
+    background: #73b4f8;
 }
 
 .my-timeline-view button:hover {
-    background: #3276c299;
+    background: #73b4f899;
 }
 
 /* Credits */
@@ -298,9 +297,9 @@
 .credits-view button {
 	width: 250px;
 	color: #000000;
-    background: #5497df;
+    background: #70adee;
 }
 
 .credits-view button:hover {
-    background: #135eb099;
+    background: #70adee99;
 }

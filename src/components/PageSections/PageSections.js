@@ -74,7 +74,7 @@ const pageSectionData = [
     {
         class: 'my-extracurriculars',
         image: penguin_extracurriculars,
-        title: 'My Extracurriculars',
+        title: 'My Hobbies & Extracurriculars',
         desc: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
             do eiusmod tempor incididunt ut labore et dolore magna 
