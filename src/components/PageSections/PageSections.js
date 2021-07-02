@@ -48,7 +48,7 @@ const pageSectionData = [
             // automatically using the BeautifulSoup library, and more!
         // `,
         desc: <p>
-            Check out <i>My Course Graph</i>, a React website I designed which displays Waterloo courses 
+            Explore <i>My Course Graph</i>, a React website I designed which displays Waterloo courses 
             as a network to help students easily visualize the prerequisites for each course, 
             alongside my countless other projects.
         </p>,
@@ -107,21 +107,13 @@ const pageSectionData = [
         </p>,
     },
     {
-        class: 'my-timeline',
-        image: penguin_extracurriculars,
-        title: 'My Timeline',
-        desc: <p>
-            Here, you can find a comprehensive timeline of everything mentioned in
-            the previous sections.
-        </p>,
-    },
-    {
         class: 'credits',
         image: penguin_extracurriculars,
         title: 'Credits and References',
         desc: <p>
-            View the languages, frameworks, references, libraries and tools I used
-            to design and develop this website.
+            Go behind the scenes and learn how I designed this website, including
+            the languages, libraries and tools I used, and view my acknowledgements to the
+            people which made this website possible.
         </p>,
     },
 ]
