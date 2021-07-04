@@ -28,6 +28,10 @@
     .project-folder {
         clip-path: polygon(0% 0%, 80% 0%, 82% 10%, 100% 10%, 100% 100%, 0% 100%);
     }
+
+    .project-folder .tools-used img {
+        height: 55%;
+    }
 }
 
 .project-folder .title h4 {
@@ -59,10 +63,16 @@
 .project-folder .tools-used img {
     position: relative;
     right: -17%;
-    top: 6px;
-    font-size: 2em;
-    height: 70%;
+    top: 8px;
+    height: 65%;
     margin: 0 3px;
+}
+
+@media (max-width: 480px) {
+    .project-folder .tools-used img {
+        top: 12px;
+        height: 50%;
+    }
 }
 
 /* tool icons */ 
