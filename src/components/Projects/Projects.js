@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 // import stylesheet
 import './Projects.css';
@@ -12,7 +14,31 @@ import './Projects.css';
 import test_img from './test-img.png';
 
 // import icons dict
-import icons_dict from './tool_icons/tool_icons';
+import { icons_dict, icons_names_dict } from './tool_icons/tool_icons';
+
+// tooltip for icon images
+// props:
+// - iconId: id of icon
+// - iconName: name of icon 
+class IconTooltip extends Component {
+    renderTooltip = (props) => (
+        <Tooltip {...props}>
+          {this.props.iconName}
+        </Tooltip>
+    );
+
+    render() {
+        return (
+            <OverlayTrigger
+                placement="bottom"
+                delay={{show: 100, hide: 100}}
+                overlay={this.renderTooltip}
+            >
+                <img className={icons_dict[this.props.iconId]} src={icons_dict[this.props.iconId]} />
+            </OverlayTrigger>
+        )
+    }
+}
 
 // class for 'folder' to 'store' the project
 // props:
@@ -26,9 +52,17 @@ class ProjectFolder extends Component {
                     <h4>{this.props.projectName}</h4>
                 </div>
                 {/* image has to be at least twice as long as high */}
-                <img src={test_img} />
+                <div className="project-image">
+                    <img src={test_img} />
+                </div>
                 <div className="tools-used">
-                    {this.props.iconsUsed.map(id => <img className={icons_dict[id]} src={icons_dict[id]} />)}
+                    {this.props.iconsUsed.map(id => 
+                        // <img className={icons_dict[id]} src={icons_dict[id]} />
+                        <IconTooltip 
+                            iconId={id}
+                            iconName={icons_names_dict[id]}
+                        />
+                    )}
                 </div>
             </div>
         )

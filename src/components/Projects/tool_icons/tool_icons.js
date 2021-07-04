@@ -18,4 +18,19 @@ const icons_dict = {
     pandas
 }
 
-export default icons_dict;
+const icons_names_dict = {
+    html: "HTML",
+    css: "CSS",
+    js: "JavaScript",
+    mongodb: "MongoDB",
+    react: "ReactJS",
+    nodejs: "NodeJS",
+    expressjs: "ExpressJS",
+    python: "Python",
+    mysql: "MySQL",
+    java: "Java",
+    joget: "Joget DX",
+    pandas: "Pandas",
+}
+
+export { icons_dict, icons_names_dict };

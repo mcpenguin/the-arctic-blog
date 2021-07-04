@@ -48,12 +48,23 @@
     }
 }
 
-.project-folder img {
+.project-folder .project-image, .project-folder .project-image img {
     position: relative;
     top: 3px;
     display: inline-block;
     height: 100%;
+}
 
+.project-folder .project-image:hover .find-me-more {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
+
+.project-folder .find-out-more {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #000000cc;
 }
 
 .project-folder .tools-used {
