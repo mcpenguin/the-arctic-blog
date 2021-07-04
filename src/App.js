@@ -1,0 +1,144 @@
+// React components for pages
+
+import { Component } from 'react';
+import Fade from 'react-reveal';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
+
+// import components
+import Header from './components/Header/Header';
+import TopCarousel from './components/TopCarousel/TopCarousel';
+import AboutMe from './components/AboutMe/AboutMe';
+import PageSections from './components/PageSections/PageSections';
+// import Timeline from './components/Timeline/Timeline';
+import ContactMe from './components/ContactMe/ContactMe';
+
+// import components for pages
+import Achievements from './components/Achievements/Achievements';
+import Credits from './components/Credits/Credits';
+import Education from './components/Education/Education';
+import Experience from './components/Experience/Experience';
+import Extracurriculars from './components/Extracurriculars/Extracurriculars';
+import Notes from './components/Notes/Notes';
+import Projects from './components/Projects/Projects';
+
+// home page
+class HomePage extends Component {
+    render() {
+        return ( 
+            <>
+                <Header />
+                <TopCarousel />
+                <AboutMe />
+                <PageSections />
+                <ContactMe />
+            </>
+        );
+    }
+}
+
+class AchievementsPage extends Component {
+    render() {
+        return ( 
+            <>
+                <Header />
+                <Achievements />
+                <ContactMe />
+            </>
+        );
+    }
+}
+
+class CreditsPage extends Component {
+    render() {
+        return ( 
+            <>
+                <Header />
+                <Credits />
+                <ContactMe />
+            </>
+        );
+    }
+}
+
+class EducationPage extends Component {
+    render() {
+        return ( 
+            <>
+                <Header />
+                <Education />
+                <ContactMe />
+            </>
+        );
+    }
+}
+
+class ExperiencePage extends Component {
+    render() {
+        return ( 
+            <>
+                <Header />
+                <Experience />
+                <ContactMe />
+            </>
+        );
+    }
+}
+
+class ExtracurricularsPage extends Component {
+    render() {
+        return ( 
+            <>
+                <Header />
+                <Extracurriculars />
+                <ContactMe />
+            </>
+        );
+    }
+}
+
+class NotesPage extends Component {
+    render() {
+        return ( 
+            <>
+                <Header />
+                <Notes />
+                <ContactMe />
+            </>
+        );
+    }
+}
+
+class ProjectsPage extends Component {
+    render() {
+        return ( 
+            <>
+                <Header />
+                <Projects />
+                <ContactMe />
+            </>
+        );
+    }
+}
+
+export default class App extends Component {
+    render() {
+        return (
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={HomePage} />
+                    <Route exact path="/projects" component={ProjectsPage} />
+                    <Route exact path="/experience" component={ExperiencePage} />
+                    <Route exact path="/education" component={EducationPage} />
+                    <Route exact path="/extracurriculars" component={ExtracurricularsPage} />
+                    <Route exact path="/achievements" component={AchievementsPage} />
+                    <Route exact path="/notes" component={NotesPage} />
+                    <Route exact path="/credits" component={CreditsPage} />
+                </Switch>
+            </Router>
+        )
+    }
+}

@@ -15,11 +15,9 @@ class NavbarLink extends Component {
         const str = `#${this.props.id}`;
         return (
             <Nav.Item>
-                <Nav.Link>
-                    <Link to={`/${this.props.id}`} className="nav-item">
-                        {this.props.title}
-                    </Link>
-                </Nav.Link>
+                <Link to={`/${this.props.id}`} className="nav-item">
+                    {this.props.title}
+                </Link>
             </Nav.Item>
         )
     }

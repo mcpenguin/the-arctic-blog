@@ -34,3 +34,31 @@ li {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+@media (min-width: 992px) {
+
+    section {
+        /* padding: 10px 7%; */
+        padding-left: 9%;
+        padding-right: 11%;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 9%;
+        padding-right: 11%;
+    }
+
+}
+
+@media (max-width: 680px) {
+
+    section {
+        padding: 40px 10px;
+    }
+}
