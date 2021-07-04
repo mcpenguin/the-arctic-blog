@@ -11,11 +11,12 @@ import mysql from './mysql.png'
 import java from './java.png'
 import joget from './joget.png'
 import pandas from './pandas.png'
+import metabase from './metabase.svg'
 
 const icons_dict = {
     html, css, js, mongodb, react, nodejs, 
     expressjs, python, mysql, java, joget, 
-    pandas
+    pandas, metabase
 }
 
 const icons_names_dict = {
@@ -31,6 +32,7 @@ const icons_names_dict = {
     java: "Java",
     joget: "Joget DX",
     pandas: "Pandas",
+    metabase: "Metabase",
 }
 
 export { icons_dict, icons_names_dict };

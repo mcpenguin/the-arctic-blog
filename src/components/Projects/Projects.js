@@ -85,49 +85,49 @@ export default class Projects extends Component {
                         duis. Eu augue ut lectus arcu bibendum at varius vel.
                     </p>
                     <Row>
-                        <Col lg={4} md={6}>
+                        <Col xl={4} md={6}>
                             <ProjectFolder 
                                 projectName="My Course Graph"
                                 iconsUsed={['mongodb', 'expressjs', 'react', 'nodejs']}
                             />
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col xl={4} md={6}>
                             <ProjectFolder 
                                 projectName="Hypixel Skyblock Calculator"
                                 iconsUsed={['html', 'css', 'js']}
                             />
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col xl={4} md={6}>
                             <ProjectFolder 
                                 projectName="Malaysia COVID-19 Data"
-                                iconsUsed={['python', 'pandas', 'mysql']}
+                                iconsUsed={['python', 'pandas', 'mysql', 'metabase']}
                             />
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col xl={4} md={6}>
                             <ProjectFolder 
                                 projectName="Student Attendance GUI"
                                 iconsUsed={['joget', 'java', 'mysql']}
                             />
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col xl={4} md={6}>
                             <ProjectFolder 
                                 projectName="Linear Collatz"
                                 iconsUsed={['html']}
                             />
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col xl={4} md={6}>
                             <ProjectFolder 
                                 projectName="Joget FB Marketplace"
                                 iconsUsed={['html']}
                             />
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col xl={4} md={6}>
                             <ProjectFolder 
                                 projectName="Pure Math Club Website"
                                 iconsUsed={['html']}
                             />
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col xl={4} md={6}>
                             <ProjectFolder 
                                 projectName="Compass Initiative Website"
                                 iconsUsed={['html']}
