@@ -1,7 +1,13 @@
+// React component for home page
+
 import { Component } from 'react';
 import Fade from 'react-reveal';
-
-// React component for home page
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 // import components
 import AdBlockerJumbotron from './components/AdBlockerJumbotron/AdBlockerJumbotron';
@@ -28,11 +34,11 @@ import PageSections from './components/PageSections/PageSections';
 export default class App extends Component {
     render() {
         return (
-            <>
+            <Router>
                 <Header />
                 {/* <AdBlockerJumbotron /> */}
-                <TopCarousel/>
-                <AboutMe/>
+                <TopCarousel />
+                <AboutMe />
                 <PageSections />
                 {/* <MyProjects />
                 <MyExperience />
@@ -44,8 +50,32 @@ export default class App extends Component {
                 <Credits /> */}
                 {/* <Timeline /> */}
                 {/* <Notes/> */}
-                <ContactMe/>
-            </>
+                <ContactMe />
+
+                <Switch>
+                    <Route path="/projects">
+                        <></>
+                    </Route>
+                    <Route path="/experience">
+                        <></>
+                    </Route>
+                    <Route path="/education">
+                        <></>
+                    </Route>
+                    <Route path="/extracurriculars">
+                        <></>
+                    </Route>
+                    <Route path="/achievements">
+                        <></>
+                    </Route>
+                    <Route path="/notes">
+                        <></>
+                    </Route>
+                    <Route path="/credits">
+                        <></>
+                    </Route>
+                </Switch>
+            </Router>
         )
     }
 }
