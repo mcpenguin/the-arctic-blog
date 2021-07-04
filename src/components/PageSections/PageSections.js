@@ -1,5 +1,6 @@
 // React component class for PageSections section
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 // "merges" the different page section pages together 
 
@@ -36,37 +37,27 @@ import './PageSections.css';
 // data for page sections as list of objects
 const pageSectionData = [
     {
-        class: 'my-projects',
+        class: 'projects',
         image: penguin_extracurriculars,
         title: 'My Coding Projects',
-        // desc: `
-        //     Explore the various coding projects I am working on now and have
-            // completed over my programming career, including the languages, libraries
-            // and tools I used to make them.
-            // A React website that displays Waterloo courses as
-            // a network, a Python-based application that fetches Malaysian COVID-19 data
-            // automatically using the BeautifulSoup library, and more!
-        // `,
         desc: <p>
-            Explore <i>My Course Graph</i>, a React website I designed which displays Waterloo courses 
-            as a network to help students easily visualize the prerequisites for each course, 
+            Explore <i>My Course Graph</i>, a React website I designed which displays Waterloo courses
+            as a network to help students easily visualize the prerequisites for each course,
             alongside my countless other projects.
         </p>,
     },
     {
-        class: 'my-experience',
+        class: 'experience',
         image: penguin_extracurriculars,
         title: 'My Experience',
         desc: <p>
-            {/* Check out my work and volunteer experience, both for technical and
-            non-technical roles. */}
             Learn about my responsiblities and accomplishments at my first coop job
             as a Data Analyst at eMedAsia, alongside a list of my other
             internships and volunteer experiences.
         </p>,
     },
     {
-        class: 'my-education',
+        class: 'education',
         image: penguin_extracurriculars,
         title: 'My Education',
         desc: <p>
@@ -76,29 +67,29 @@ const pageSectionData = [
         </p>,
     },
     {
-        class: 'my-extracurriculars',
+        class: 'extracurriculars',
         image: penguin_extracurriculars,
         title: 'My Hobbies & Extracurriculars',
         desc: <p>
             Enjoy a gallery of my hobbies and extracurriculars,
-            including my piano arrangements 
-            of <i>Unravel</i> and <i>Shinzo wo Sasageyo</i> as well as my 
-            roles and experiences as a Curator 
-            in TEDxSunwayUniversity. 
+            including my piano arrangements
+            of <i>Unravel</i> and <i>Shinzo wo Sasageyo</i> as well as my
+            roles and experiences as a Curator
+            in TEDxSunwayUniversity.
         </p>,
     },
     {
-        class: 'my-achievements',
+        class: 'achievements',
         image: penguin_achievements,
         title: 'My Awards',
         desc: <p>
-            Check out my various achievements, including my ATCL Diploma in Piano Recital, 
+            Check out my various achievements, including my ATCL Diploma in Piano Recital,
             my Grade 6 in Trombone, and the collection of mathematics
             and computer science competition awards I amassed over the past 4 years.
         </p>,
     },
     {
-        class: 'my-notes',
+        class: 'notes',
         image: penguin_notes,
         title: 'My Notes',
         desc: <p>
@@ -132,20 +123,14 @@ class PageSection extends Component {
         // class of page section
         const psClass = this.props.psClass;
         return (
-            <section class={`section-page section-${psClass}`} style={{
-                // backgroundColor: !this.props.psIsRight 
-                //     ? "#f5f5f5" 
-                //     : "#e7e7e7",
-                //     // : "#d5d5d5aa",
-                //     // : "#dfe7f0",
-            }}>
+            <section class={`section-page section-${psClass}`} >
                 <Container fluid>
                     <Row className={this.props.psIsRight ? "flex-row-reverse" : ""}>
                         <Col lg={6} className={`page-image-div ${psClass}-image-div`}>
                             <div>
-                                <img 
-                                    className={`page-image ${psClass}-image`} 
-                                    src={this.props.psImage} 
+                                <img
+                                    className={`page-image ${psClass}-image`}
+                                    src={this.props.psImage}
                                 />
                             </div>
                         </Col>
@@ -154,7 +139,11 @@ class PageSection extends Component {
                                 <h2>{this.props.psTitle}</h2>
                                 {this.props.psDesc}
                                 <div className={`page-view ${psClass}-view`}>
-                                    <button class="noselect">Find out more <ChevronRight className="page-icon" /></button>
+                                    <Link to={`/${psClass}`}>
+                                        <button class="noselect">
+                                            Find out more <ChevronRight className="page-icon" />
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </Col>

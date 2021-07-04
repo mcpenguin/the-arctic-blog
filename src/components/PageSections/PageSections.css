@@ -121,15 +121,15 @@
 }
 
 @media (min-width: 992px) {
-    .section-my-projects, .section-my-education,
-    .section-my-achievements, .section-my-timeline {
+    .section-projects, .section-education,
+    .section-achievements, .section-my-timeline {
         /* padding: 10px 7%; */
         padding-left: 9%;
         padding-right: 11%;
     }
 
-    .section-my-experience, .section-my-extracurriculars, 
-    .section-my-notes, .section-credits {
+    .section-experience, .section-extracurriculars, 
+    .section-notes, .section-credits {
         padding-left: 13%;
         padding-right: 13%;
     }
@@ -178,105 +178,105 @@
 }
 
 /* Projects */
-.my-projects-image {
+.projects-image {
     background-image: url('./blobs/blob-projects.svg');
     background-size: 110%;
     background-position: 0;
 }
 
-.my-projects-view button {
+.projects-view button {
 	width: 250px;
 	color: #000000;
     background: #b9d3f0;
 }
 
-.my-projects-view button:hover {
+.projects-view button:hover {
     background: #b9d3f099;
 }
 
 /* Experience */
-.my-experience-image {
+.experience-image {
     background: url('./blobs/blob-experience.svg');
     background-size: 110%;
     background-position: 0;
 }
 
-.my-experience-view button {
+.experience-view button {
 	width: 250px;
 	color: #000000;
     background: #afcff5;
 }
 
-.my-experience-view button:hover {
+.experience-view button:hover {
     background: #afcff599;
 }
 
 /* Education */
 
-.my-education-image {
+.education-image {
     background: url('./blobs/blob-education.svg');
     background-size: 110%;
     background-position: 0;
 }
 
-.my-education-view button {
+.education-view button {
 	width: 250px;
 	color: #000000;
     background: #97c3f1;
 }
 
-.my-education-view button:hover {
+.education-view button:hover {
     background: #97c3f199;
 }
 
 /* Extracurriculars */
-.my-extracurriculars-image {
+.extracurriculars-image {
     background: url('./blobs/blob-extracurriculars.svg');
     background-size: 110%;
     background-position: 0;
 }
 
-.my-extracurriculars-view button {
+.extracurriculars-view button {
 	width: 300px;
 	color: #000000;
     background: #8abaee;
 }
 
-.my-extracurriculars-view button:hover {
+.extracurriculars-view button:hover {
     background: #8abaee99;
 }
 
 /* Awards/Achievements */
-.my-achievements-image {
+.achievements-image {
     background: url('./blobs/blob-achievements.svg');
     background-size: 110%;
     background-position: -20px 0;
 }
 
-.my-achievements-view button {
+.achievements-view button {
 	width: 280px;
 	color: #000000;
     background: #81b7f1;
 }
 
-.my-achievements-view button:hover {
+.achievements-view button:hover {
     background: #81b7f199;
 }
 
 /* Notes */
-.my-notes-image {
+.notes-image {
     background: url('./blobs/blob-notes.svg');
     background-size: 110%;
     background-position: 10px 0;
 }
 
-.my-notes-view button {
+.notes-view button {
 	width: 250px;
 	color: #000000;
     background: #74b2f3;
 }
 
-.my-notes-view button:hover {
+.notes-view button:hover {
     background: #74b2f399;
 }
 

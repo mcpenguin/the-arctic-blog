@@ -129,7 +129,7 @@ export default class Notes extends Component {
 
     render() {
         return (
-            <section className="section-notes" id="notes">
+            <section className="section-notes-page" id="notes">
                 <Container fluid>
                     <Row>
                         <Col>
