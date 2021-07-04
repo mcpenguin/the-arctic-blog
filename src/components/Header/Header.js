@@ -1,6 +1,7 @@
 // React component class for header (title and navbar)
 
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -14,8 +15,10 @@ class NavbarLink extends Component {
         const str = `#${this.props.id}`;
         return (
             <Nav.Item>
-                <Nav.Link className="nav-item" href={str}>
-                    {this.props.title}
+                <Nav.Link>
+                    <Link to={`/${this.props.id}`} className="nav-item">
+                        {this.props.title}
+                    </Link>
                 </Nav.Link>
             </Nav.Item>
         )
@@ -34,10 +37,12 @@ export default class Header extends Component {
                     <Navbar.Toggle aria-controls="my-navbar" />
                     <Navbar.Collapse>
                         <Nav id="my-navbar" className="ml-auto">
-                            <NavbarLink id="about-me" title="About Me" />
-                            <NavbarLink id="timeline" title="Timeline" />
+                            <NavbarLink id="projects" title="Projects" />
+                            <NavbarLink id="experience" title="Experience" />
+                            <NavbarLink id="education" title="Education" />
+                            <NavbarLink id="achievements" title="Achievements" />
                             <NavbarLink id="notes" title="Notes" />
-                            <NavbarLink id="contact-me" title="Contact Me" />
+                            <NavbarLink id="credits" title="Credits" />
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
