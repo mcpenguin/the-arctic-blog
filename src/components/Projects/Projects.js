@@ -93,7 +93,7 @@ export default class Projects extends Component {
                         </Col>
                         <Col xl={4} md={6}>
                             <ProjectFolder 
-                                projectName="Hypixel Skyblock Calculator"
+                                projectName="Skyblock Calculator"
                                 iconsUsed={['html', 'css', 'js']}
                             />
                         </Col>
@@ -112,7 +112,7 @@ export default class Projects extends Component {
                         <Col xl={4} md={6}>
                             <ProjectFolder 
                                 projectName="Linear Collatz"
-                                iconsUsed={['html']}
+                                iconsUsed={['html', 'tableau']}
                             />
                         </Col>
                         <Col xl={4} md={6}>
@@ -130,7 +130,7 @@ export default class Projects extends Component {
                         <Col xl={4} md={6}>
                             <ProjectFolder 
                                 projectName="Compass Initiative Website"
-                                iconsUsed={['html']}
+                                iconsUsed={['wordpress', 'bluehost']}
                             />
                         </Col>
                     </Row>

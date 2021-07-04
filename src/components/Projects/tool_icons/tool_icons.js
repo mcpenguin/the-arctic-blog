@@ -12,11 +12,15 @@ import java from './java.png'
 import joget from './joget.png'
 import pandas from './pandas.png'
 import metabase from './metabase.svg'
+import wordpress from './wordpress.png'
+import tableau from './tableau.png'
+import bluehost from './bluehost.png'
 
 const icons_dict = {
     html, css, js, mongodb, react, nodejs, 
     expressjs, python, mysql, java, joget, 
-    pandas, metabase
+    pandas, metabase, wordpress, tableau,
+    bluehost
 }
 
 const icons_names_dict = {
@@ -33,6 +37,9 @@ const icons_names_dict = {
     joget: "Joget DX",
     pandas: "Pandas",
     metabase: "Metabase",
+    wordpress: "WordPress",
+    tableau: "Tableau",
+    bluehost: "Bluehost"
 }
 
 export { icons_dict, icons_names_dict };
