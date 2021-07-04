@@ -1,0 +1,12 @@
+.section-projects-page {
+    background-color: #f5f5f5;
+    padding: 20px 10%;
+}
+
+.section-projects-page h2, .section-projects-page p {
+    text-align: center;
+}
+
+.section-projects-page h2 {
+    font-weight: 600;
+}
