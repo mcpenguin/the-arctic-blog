@@ -13,7 +13,11 @@ import test_img from './test-img.png';
 
 // icons dict
 const icons = {
-    html: <i class="fab fa-html5"></i>
+    html: "fab fa-html5",
+    css: "fab fa-css3-alt",
+    js: "fab fa-js-square",
+    node_js: "fab fa-node-js",
+
 }
 
 // class for 'folder' to 'store' the project
@@ -30,7 +34,7 @@ class ProjectFolder extends Component {
                 <img src={test_img} />
                 <div className="tools-used">
                     <h5>
-                        {this.props.iconsUsed.map(id => icons[id])}
+                        {this.props.iconsUsed.map(id => <i class={icons[id]}></i>)}
                     </h5>
                 </div>
             </div>
@@ -57,7 +61,7 @@ export default class Projects extends Component {
                         <Col lg={4} md={6}>
                             <ProjectFolder 
                                 projectName="Project Project 1"
-                                iconsUsed={['html']}
+                                iconsUsed={['html', 'css', 'js', 'node_js']}
                             />
                         </Col>
                         <Col lg={4} md={6}>
