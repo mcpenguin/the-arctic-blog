@@ -11,14 +11,8 @@ import './Projects.css';
 
 import test_img from './test-img.png';
 
-// icons dict
-const icons = {
-    html: "fab fa-html5",
-    css: "fab fa-css3-alt",
-    js: "fab fa-js-square",
-    node_js: "fab fa-node-js",
-
-}
+// import icons dict
+import icons_dict from './tool_icons/tool_icons';
 
 // class for 'folder' to 'store' the project
 // props:
@@ -33,9 +27,7 @@ class ProjectFolder extends Component {
                 {/* image has to be at least twice as long as high */}
                 <img src={test_img} />
                 <div className="tools-used">
-                    <h5>
-                        {this.props.iconsUsed.map(id => <i class={icons[id]}></i>)}
-                    </h5>
+                    {this.props.iconsUsed.map(id => <img className={icons_dict[id]} src={icons_dict[id]} />)}
                 </div>
             </div>
         )
@@ -61,13 +53,13 @@ export default class Projects extends Component {
                         <Col lg={4} md={6}>
                             <ProjectFolder 
                                 projectName="Project Project 1"
-                                iconsUsed={['html', 'css', 'js', 'node_js']}
+                                iconsUsed={['mongodb', 'expressjs', 'react', 'nodejs']}
                             />
                         </Col>
                         <Col lg={4} md={6}>
                             <ProjectFolder 
-                                projectName="Project 2"
-                                iconsUsed={['html']}
+                                projectName="How Long Can Project 2?"
+                                iconsUsed={['html', 'css', 'js']}
                             />
                         </Col>
                         <Col lg={4} md={6}>

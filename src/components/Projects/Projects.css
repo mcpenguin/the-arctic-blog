@@ -1,5 +1,5 @@
 .section-projects-page {
-    background-color: #f5f5f5;
+    background-color: #bbeff3;
     padding: 30px 5%;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .project-folder {
-    background-color: #abdaec;
+    background-color: #5cbbe0;
     height: 300px;
     /* width: 80%; */
     margin: 10px 10px;
@@ -56,15 +56,17 @@
     clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 15% 0);
 }
 
-.project-folder .tools-used h5 {
+.project-folder .tools-used img {
     position: relative;
     right: -17%;
     top: 6px;
     font-size: 2em;
+    height: 70%;
+    margin: 0 3px;
 }
 
 /* tool icons */ 
-.project-folder i {
+/* .project-folder i {
     margin: 0 4px;
 }
 
@@ -83,3 +85,7 @@
 .fa-node-js {
     color: #68A063;
 }
+
+.fa-react {
+    color: #35c0e2;
+} */
