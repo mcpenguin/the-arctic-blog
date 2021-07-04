@@ -16,7 +16,8 @@ import icons_dict from './tool_icons/tool_icons';
 
 // class for 'folder' to 'store' the project
 // props:
-// - projectName: project name (as string)
+// - projectName: project name (as string, max length = 25 chars)
+// - iconsUsed: list of tools used (as list, max length = 4)
 class ProjectFolder extends Component {
     render() {
         return (
@@ -65,13 +66,13 @@ export default class Projects extends Component {
                         <Col lg={4} md={6}>
                             <ProjectFolder 
                                 projectName="Project 3"
-                                iconsUsed={['html']}
+                                iconsUsed={['python', 'pandas', 'mysql']}
                             />
                         </Col>
                         <Col lg={4} md={6}>
                             <ProjectFolder 
                                 projectName="Project 4"
-                                iconsUsed={['html']}
+                                iconsUsed={['joget', 'java', 'mysql']}
                             />
                         </Col>
                         <Col lg={4} md={6}>
