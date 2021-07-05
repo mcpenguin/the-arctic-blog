@@ -5,7 +5,8 @@ import Fade from 'react-reveal';
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+    useLocation
 } from "react-router-dom";
 
 // import components
@@ -41,6 +42,11 @@ class HomePage extends Component {
 }
 
 class AchievementsPage extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return ( 
             <>
@@ -53,6 +59,11 @@ class AchievementsPage extends Component {
 }
 
 class CreditsPage extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return ( 
             <>
@@ -65,6 +76,11 @@ class CreditsPage extends Component {
 }
 
 class EducationPage extends Component {
+    
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return ( 
             <>
@@ -77,6 +93,12 @@ class EducationPage extends Component {
 }
 
 class ExperiencePage extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
+
     render() {
         return ( 
             <>
@@ -89,6 +111,11 @@ class ExperiencePage extends Component {
 }
 
 class ExtracurricularsPage extends Component {
+    
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return ( 
             <>
@@ -101,6 +128,11 @@ class ExtracurricularsPage extends Component {
 }
 
 class NotesPage extends Component {
+
+    componentDidMount() {
+        window.scroll(0, 0);
+    }
+
     render() {
         return ( 
             <>
@@ -113,6 +145,11 @@ class NotesPage extends Component {
 }
 
 class ProjectsPage extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return ( 
             <>
@@ -125,6 +162,7 @@ class ProjectsPage extends Component {
 }
 
 export default class App extends Component {
+
     render() {
         return (
             <Router>
