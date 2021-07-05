@@ -16,7 +16,7 @@
 }
 
 .project-folder {
-    background-color: #5cbbe0;
+    background-color: #75d0f5;
     height: 300px;
     /* width: 80%; */
     margin: 10px 10px;
@@ -74,7 +74,10 @@
     position: absolute;
     bottom: 0px;
     right: 0px;
-    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 15% 0);
+    /* clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 15% 0); */
+    border-top-left-radius: 100px;
+
+    border-top: 3px solid #000031;
 }
 
 .project-folder .tools-used img {

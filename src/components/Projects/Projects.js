@@ -15,6 +15,8 @@ import test_img from './test-img.png';
 
 // import icons dict
 import { icons_dict, icons_names_dict } from './tool_icons/tool_icons';
+// import images
+import project_images from './project_images/project_images';
 
 // tooltip for icon images
 // props:
@@ -42,6 +44,7 @@ class IconTooltip extends Component {
 
 // class for 'folder' to 'store' the project
 // props:
+// - projectId: project id (determines image used)
 // - projectName: project name (as string, max length = 25 chars)
 // - iconsUsed: list of tools used (as list, max length = 4)
 class ProjectFolder extends Component {
@@ -54,7 +57,7 @@ class ProjectFolder extends Component {
                     </div>
                     {/* image has to be at least twice as long as high */}
                     <div className="project-image">
-                        <img src={test_img} />
+                        <img src={project_images[this.props.projectId] || test_img} />
                     </div>
                     <div className="tools-used">
                         {this.props.iconsUsed.map(id =>
@@ -89,6 +92,7 @@ export default class Projects extends Component {
                     </p>
                     <Row>
                         <ProjectFolder
+                            projectId="my_course_graph"
                             projectName="My Course Graph"
                             iconsUsed={['mongodb', 'expressjs', 'react', 'nodejs']}
                         />
