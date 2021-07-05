@@ -97,10 +97,12 @@ export default class Projects extends Component {
                             iconsUsed={['mongodb', 'expressjs', 'react', 'nodejs']}
                         />
                         <ProjectFolder
+                            projectId="skyblock_calculator"
                             projectName="Skyblock Calculator"
                             iconsUsed={['java', 'excel']}
                         />
                         <ProjectFolder
+                            projectId="malaysia_covid"
                             projectName="Malaysia COVID-19 Data"
                             iconsUsed={['mysql', 'beautifulsoup', 'jupyter', 'python']}
                         />

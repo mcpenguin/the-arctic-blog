@@ -48,10 +48,17 @@
     }
 }
 
-.project-folder .project-image, .project-folder .project-image img {
+.project-folder .project-image {
     position: relative;
     top: 3px;
     display: inline-block;
+    height: 100%;
+}
+
+.project-folder .project-image img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
 }
 
