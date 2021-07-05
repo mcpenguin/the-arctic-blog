@@ -15,12 +15,18 @@ import metabase from './metabase.svg'
 import wordpress from './wordpress.png'
 import tableau from './tableau.png'
 import bluehost from './bluehost.png'
+import beautifulsoup from './beautifulsoup.png'
+import excel from './excel.png'
+import jupyter from './jupyter.png'
+import reactbootstrap from './reactbootstrap.jpg'
+import tkinter from './tkinter.png'
 
 const icons_dict = {
     html, css, js, mongodb, react, nodejs, 
     expressjs, python, mysql, java, joget, 
     pandas, metabase, wordpress, tableau,
-    bluehost
+    bluehost, beautifulsoup, excel, jupyter,
+    reactbootstrap, tkinter
 }
 
 const icons_names_dict = {
@@ -39,7 +45,12 @@ const icons_names_dict = {
     metabase: "Metabase",
     wordpress: "WordPress",
     tableau: "Tableau",
-    bluehost: "Bluehost"
+    bluehost: "Bluehost",
+    beautifulsoup: "BeautifulSoup",
+    excel: "Excel",
+    jupyter: "Jupyter Notebook",
+    reactbootstrap: "React Bootstrap",
+    tkinter: "Tkinter",
 }
 
 export { icons_dict, icons_names_dict };
