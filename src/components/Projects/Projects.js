@@ -107,10 +107,12 @@ export default class Projects extends Component {
                             iconsUsed={['mysql', 'beautifulsoup', 'jupyter', 'python']}
                         />
                         <ProjectFolder
+                            projectId="student_reg_gui"
                             projectName="Student Attendance GUI"
                             iconsUsed={['java']}
                         />
                         <ProjectFolder
+                            projectId="linear_collatz"
                             projectName="Linear Collatz"
                             iconsUsed={['react', 'reactbootstrap', 'node']}
                         />
@@ -123,10 +125,12 @@ export default class Projects extends Component {
                             iconsUsed={['react', 'reactbootstrap', 'node']}
                         />
                         <ProjectFolder
+                            projectId="compass_initiative"
                             projectName="Compass Initiative Website"
                             iconsUsed={['wordpress', 'bluehost']}
                         />
                         <ProjectFolder 
+                            projectId="calculator"
                             projectName="Tkinter Calculator"
                             iconsUsed={['tkinter', 'python']}
                         />

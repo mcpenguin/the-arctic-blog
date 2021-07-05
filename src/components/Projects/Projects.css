@@ -51,7 +51,6 @@
 .project-folder .project-image {
     position: relative;
     top: 3px;
-    display: inline-block;
     height: 100%;
 }
 
