@@ -1,5 +1,6 @@
 // React component class for Projects section
 import React, { Component } from 'react';
+import { Switch, Route, Link } from 'react-router-dom';
 
 // import Bootstrap components
 import Container from 'react-bootstrap/Container';
@@ -55,13 +56,13 @@ class ProjectFolder extends Component {
                     <div className="title">
                         <h4>{this.props.projectName}</h4>
                     </div>
-                    {/* image has to be at least twice as long as high */}
                     <div className="project-image">
-                        <img src={project_images[this.props.projectId] || test_img} />
+                        <Link exact to={`/projects/${this.props.projectId}`}>
+                            <img src={project_images[this.props.projectId] || test_img} />
+                        </Link>
                     </div>
                     <div className="tools-used">
                         {this.props.iconsUsed.map(id =>
-                            // <img className={icons_dict[id]} src={icons_dict[id]} />
                             <IconTooltip
                                 iconId={id}
                                 iconName={icons_names_dict[id]}
@@ -78,65 +79,71 @@ class ProjectFolder extends Component {
 export default class Projects extends Component {
     render() {
         return (
-            <section class="section-projects-page">
-                <Container fluid>
-                    <h2>My Projects</h2>
-                    <p>
-                        Projects description would go here.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ac odio tempor orci dapibus ultrices in
-                        iaculis nunc sed. Amet risus nullam eget felis eget nunc
-                        lobortis mattis aliquam. Orci a scelerisque purus semper eget
-                        duis. Eu augue ut lectus arcu bibendum at varius vel.
-                    </p>
-                    <Row>
-                        <ProjectFolder
-                            projectId="my_course_graph"
-                            projectName="My Course Graph"
-                            iconsUsed={['mongodb', 'expressjs', 'react', 'nodejs']}
-                        />
-                        <ProjectFolder
-                            projectId="skyblock_calculator"
-                            projectName="Skyblock Calculator"
-                            iconsUsed={['java', 'excel']}
-                        />
-                        <ProjectFolder
-                            projectId="malaysia_covid"
-                            projectName="Malaysia COVID-19 Data"
-                            iconsUsed={['mysql', 'beautifulsoup', 'jupyter', 'python']}
-                        />
-                        <ProjectFolder
-                            projectId="student_reg_gui"
-                            projectName="Student Attendance GUI"
-                            iconsUsed={['java']}
-                        />
-                        <ProjectFolder
-                            projectId="linear_collatz"
-                            projectName="Linear Collatz"
-                            iconsUsed={['react', 'reactbootstrap', 'node']}
-                        />
-                        <ProjectFolder
-                            projectName="Joget FB Marketplace"
-                            iconsUsed={['joget', 'java', 'mysql', 'js']}
-                        />
-                        <ProjectFolder
-                            projectName="Pure Math Club Website"
-                            iconsUsed={['react', 'reactbootstrap', 'node']}
-                        />
-                        <ProjectFolder
-                            projectId="compass_initiative"
-                            projectName="Compass Initiative Website"
-                            iconsUsed={['wordpress', 'bluehost']}
-                        />
-                        <ProjectFolder 
-                            projectId="calculator"
-                            projectName="Tkinter Calculator"
-                            iconsUsed={['tkinter', 'python']}
-                        />
-                    </Row>
-                </Container>
-            </section>
+            <>
+                <section class="section-projects-page">
+                    <Container fluid>
+                        <h2>My Projects</h2>
+                        <p>
+                            Projects description would go here.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ac odio tempor orci dapibus ultrices in
+                            iaculis nunc sed. Amet risus nullam eget felis eget nunc
+                            lobortis mattis aliquam. Orci a scelerisque purus semper eget
+                            duis. Eu augue ut lectus arcu bibendum at varius vel.
+                        </p>
+                        <Row>
+                            <ProjectFolder
+                                projectId="my_course_graph"
+                                projectName="My Course Graph"
+                                iconsUsed={['mongodb', 'expressjs', 'react', 'nodejs']}
+                            />
+                            <ProjectFolder
+                                projectId="skyblock_calculator"
+                                projectName="Skyblock Calculator"
+                                iconsUsed={['java', 'excel']}
+                            />
+                            <ProjectFolder
+                                projectId="malaysia_covid"
+                                projectName="Malaysia COVID-19 Data"
+                                iconsUsed={['mysql', 'beautifulsoup', 'jupyter', 'python']}
+                            />
+                            <ProjectFolder
+                                projectId="student_reg_gui"
+                                projectName="Student Attendance GUI"
+                                iconsUsed={['java']}
+                            />
+                            <ProjectFolder
+                                projectId="linear_collatz"
+                                projectName="Linear Collatz"
+                                iconsUsed={['react', 'reactbootstrap', 'node']}
+                            />
+                            <ProjectFolder
+                                projectId="joget_fb_marketplace"
+                                projectName="Joget FB Marketplace"
+                                iconsUsed={['joget', 'java', 'mysql', 'js']}
+                            />
+                            <ProjectFolder
+                                projectId="pmc_website"
+                                projectName="Pure Math Club Website"
+                                iconsUsed={['react', 'reactbootstrap', 'node']}
+                            />
+                            <ProjectFolder
+                                projectId="compass_initiative"
+                                projectName="Compass Initiative Website"
+                                iconsUsed={['wordpress', 'bluehost']}
+                            />
+                            <ProjectFolder 
+                                projectId="calculator"
+                                projectName="Tkinter Calculator"
+                                iconsUsed={['tkinter', 'python']}
+                            />
+                        </Row>
+                    </Container>
+                </section>
+
+
+            </>
         );
     }
 }
