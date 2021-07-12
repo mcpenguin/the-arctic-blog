@@ -25,11 +25,12 @@ import Experience from './components/Experience/Experience';
 import Extracurriculars from './components/Extracurriculars/Extracurriculars';
 import Notes from './components/Notes/Notes';
 import Projects from './components/Projects/Projects';
+import ProjectContent from './components/Projects/ProjectContent';
 
 // home page
 class HomePage extends Component {
     render() {
-        return ( 
+        return (
             <>
                 <Header />
                 <TopCarousel />
@@ -48,7 +49,7 @@ class AchievementsPage extends Component {
     }
 
     render() {
-        return ( 
+        return (
             <>
                 <Header />
                 <Achievements />
@@ -65,7 +66,7 @@ class CreditsPage extends Component {
     }
 
     render() {
-        return ( 
+        return (
             <>
                 <Header />
                 <Credits />
@@ -76,13 +77,13 @@ class CreditsPage extends Component {
 }
 
 class EducationPage extends Component {
-    
+
     componentDidMount() {
         window.scrollTo(0, 0);
     }
 
     render() {
-        return ( 
+        return (
             <>
                 <Header />
                 <Education />
@@ -100,7 +101,7 @@ class ExperiencePage extends Component {
 
 
     render() {
-        return ( 
+        return (
             <>
                 <Header />
                 <Experience />
@@ -111,13 +112,13 @@ class ExperiencePage extends Component {
 }
 
 class ExtracurricularsPage extends Component {
-    
+
     componentDidMount() {
         window.scrollTo(0, 0);
     }
 
     render() {
-        return ( 
+        return (
             <>
                 <Header />
                 <Extracurriculars />
@@ -134,7 +135,7 @@ class NotesPage extends Component {
     }
 
     render() {
-        return ( 
+        return (
             <>
                 <Header />
                 <Notes />
@@ -151,10 +152,26 @@ class ProjectsPage extends Component {
     }
 
     render() {
-        return ( 
+        return (
             <>
                 <Header />
                 <Projects />
+                <ContactMe />
+            </>
+        );
+    }
+}
+
+class IndividualProjectPage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
+    render() {
+        return (
+            <>
+                <Header />
+                <ProjectContent />
                 <ContactMe />
             </>
         );
@@ -169,6 +186,7 @@ export default class App extends Component {
                 <Switch>
                     <Route exact path="/" component={HomePage} />
                     <Route exact path="/projects" component={ProjectsPage} />
+                    <Route exact path="/projects/:problemId" component={IndividualProjectPage} />
                     <Route exact path="/experience" component={ExperiencePage} />
                     <Route exact path="/education" component={EducationPage} />
                     <Route exact path="/extracurriculars" component={ExtracurricularsPage} />
