@@ -24,15 +24,14 @@ import blob_credits from './blobs/blob-credits.svg'
 // commented out = not drawn yet 
 import penguin_projects from './penguins/penguin-projects.png'
 // import penguin_experience from './penguins/penguin-experience.png'
-// import penguin_education from './penguins/penguin-education.png'
+import penguin_education from './penguins/penguin-education.png'
 import penguin_extracurriculars from './penguins/penguin-extracurriculars.png'
 import penguin_achievements from './penguins/penguin-achievements.png'
 import penguin_notes from './penguins/penguin-notes.png'
-// import penguin_timeline from './penguins/penguin-timeline.png'
 // import penguin_credits from './penguins/penguin-credits.png'
 
 // import stylesheet
-import './PageSections.css';
+import './PageSections.scss';
 
 // data for page sections as list of objects
 const pageSectionData = [
@@ -58,7 +57,7 @@ const pageSectionData = [
     },
     {
         class: 'education',
-        image: penguin_extracurriculars,
+        image: penguin_education,
         title: 'My Education',
         desc: <p>
             View the subjects I took in Waterloo, the grades I achieved for my
@@ -129,7 +128,7 @@ class PageSection extends Component {
                         <Col lg={6} className={`page-image-div ${psClass}-image-div`}>
                             <div>
                                 <img
-                                    className={`page-image ${psClass}-image`}
+                                    className={`${psClass}-image page-image`}
                                     src={this.props.psImage}
                                 />
                             </div>

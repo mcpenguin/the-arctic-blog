@@ -1,13 +1,6 @@
 /* Page Sections Wrapper */
 .section-page-sections {
     background: rgb(245,245,245);
-    /* background: linear-gradient(
-        180deg, 
-        rgb(245, 245, 245) 0%, 
-        rgb(197, 226, 238) 40%,
-        rgb(163, 217, 240) 100%
-    ); */
-    background: rgb(245,245,245);
     background: linear-gradient(
         180deg, 
         rgba(245,245,245,1) 0%, 
@@ -16,11 +9,6 @@
         rgb(198, 212, 238) 90%, 
         rgb(173, 183, 221) 100%
     );
-        /* #bbdbf0 100% */
-        /* rgb(216, 180, 223) 0%,
-        rgb(255, 255, 255) 50%,
-        rgb(162, 230, 192) 100%
-    /* /* ); */
 }
 
 /* General Page Sections */
@@ -40,40 +28,25 @@
 
 .page-image {
     background-position: 0;
+    background-repeat: no-repeat;
     width: 100%;
     max-width: 500px;
 }
 
 .page-text-div {
-    /* background-color: #f5f5f5cc; */
-    /* background: url('./bg-page-section-text.svg'); */
-    /* color: #dce4db; */
-    /* color: #f5f5f5; */
-    /* border-radius: 10%; */
     padding: 20px 5%;
-}
 
-.page-text-div h2 {
-    font-family: 'nunito', sans-serif;
-    font-weight: 300;
-    margin-bottom: 5%;
-    font-size: 2.6em;
-}
+    h2 {
+        font-family: 'nunito', sans-serif;
+        font-weight: 300;
+        margin-bottom: 5%;
+        font-size: 2.6em;
+    }
 
-.page-text-div p {
-    font-size: 1.1em;
-    font-weight: 300;
-}
-
-.noselect {
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-	-webkit-tap-highlight-color: transparent;
-
+    p {
+        font-size: 1.1em;
+        font-weight: 300;
+    }
 }
 
 .page-view button {
@@ -216,7 +189,9 @@
 .education-image {
     background: url('./blobs/blob-education.svg');
     background-size: 110%;
+    background-repeat: no-repeat;
     background-position: 0;
+    padding: 15%;
 }
 
 .education-view button {
@@ -248,7 +223,9 @@
 
 /* Awards/Achievements */
 .achievements-image {
+    padding: 10%;
     background: url('./blobs/blob-achievements.svg');
+    background-repeat: no-repeat;
     background-size: 110%;
     background-position: -20px 0;
 }
@@ -265,6 +242,8 @@
 
 /* Notes */
 .notes-image {
+    padding: 10%;
+    transform: scaleX(-1);
     background: url('./blobs/blob-notes.svg');
     background-size: 110%;
     background-position: 10px 0;

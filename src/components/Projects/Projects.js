@@ -96,7 +96,17 @@ export default class Projects extends Component {
                             <ProjectFolder
                                 projectId="my_course_graph"
                                 projectName="My Course Graph"
-                                iconsUsed={['mongodb', 'expressjs', 'react', 'nodejs']}
+                                iconsUsed={['expressjs', 'react', 'nodejs']}
+                            />
+                            <ProjectFolder
+                                projectId="pmc_website"
+                                projectName="Pure Math Club Website"
+                                iconsUsed={['react', 'sass', 'nodejs']}
+                            />
+                            <ProjectFolder
+                                projectId="joget_fb_marketplace"
+                                projectName="Joget FB Marketplace"
+                                iconsUsed={['joget', 'java', 'mysql', 'js']}
                             />
                             <ProjectFolder
                                 projectId="skyblock_calculator"
@@ -116,17 +126,7 @@ export default class Projects extends Component {
                             <ProjectFolder
                                 projectId="linear_collatz"
                                 projectName="Linear Collatz"
-                                iconsUsed={['react', 'reactbootstrap', 'node']}
-                            />
-                            <ProjectFolder
-                                projectId="joget_fb_marketplace"
-                                projectName="Joget FB Marketplace"
-                                iconsUsed={['joget', 'java', 'mysql', 'js']}
-                            />
-                            <ProjectFolder
-                                projectId="pmc_website"
-                                projectName="Pure Math Club Website"
-                                iconsUsed={['react', 'reactbootstrap', 'node']}
+                                iconsUsed={['react', 'reactbootstrap', 'nodejs']}
                             />
                             <ProjectFolder
                                 projectId="compass_initiative"
