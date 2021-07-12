@@ -152,6 +152,7 @@
 
 /* Projects */
 .projects-image {
+    width: 220%;
     background-image: url('./blobs/blob-projects.svg');
     background-size: 110%;
     background-position: 0;
@@ -223,7 +224,7 @@
 
 /* Awards/Achievements */
 .achievements-image {
-    padding: 10%;
+    width: 85%;
     background: url('./blobs/blob-achievements.svg');
     background-repeat: no-repeat;
     background-size: 110%;

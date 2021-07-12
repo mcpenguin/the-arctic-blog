@@ -28,7 +28,7 @@ import penguin_education from './penguins/penguin-education.png'
 import penguin_extracurriculars from './penguins/penguin-extracurriculars.png'
 import penguin_achievements from './penguins/penguin-achievements.png'
 import penguin_notes from './penguins/penguin-notes.png'
-// import penguin_credits from './penguins/penguin-credits.png'
+import penguin_credits from './penguins/penguin-credits.png'
 
 // import stylesheet
 import './PageSections.scss';
@@ -37,7 +37,7 @@ import './PageSections.scss';
 const pageSectionData = [
     {
         class: 'projects',
-        image: penguin_extracurriculars,
+        image: penguin_projects,
         title: 'My Coding Projects',
         desc: <p>
             Explore <i>My Course Graph</i>, a React website I designed which displays Waterloo courses
@@ -98,7 +98,7 @@ const pageSectionData = [
     },
     {
         class: 'credits',
-        image: penguin_extracurriculars,
+        image: penguin_credits,
         title: 'Credits and References',
         desc: <p>
             Go behind the scenes and learn how I designed this website, including
