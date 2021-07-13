@@ -171,7 +171,7 @@ class IndividualProjectPage extends Component {
         return (
             <>
                 <Header />
-                <ProjectContent />
+                <ProjectContent {...this.props} />
                 <ContactMe />
             </>
         );
@@ -186,7 +186,7 @@ export default class App extends Component {
                 <Switch>
                     <Route exact path="/" component={HomePage} />
                     <Route exact path="/projects" component={ProjectsPage} />
-                    <Route exact path="/projects/:problemId" component={IndividualProjectPage} />
+                    <Route exact path="/projects/:projectId" component={IndividualProjectPage} />
                     <Route exact path="/experience" component={ExperiencePage} />
                     <Route exact path="/education" component={EducationPage} />
                     <Route exact path="/extracurriculars" component={ExtracurricularsPage} />

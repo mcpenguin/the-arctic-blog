@@ -19,6 +19,9 @@ import { icons_dict, icons_names_dict } from './tool_icons/tool_icons';
 // import images
 import project_images from './project_images/project_images';
 
+// import project data
+import project_data from './projectsData';
+
 // tooltip for icon images
 // props:
 // - iconId: id of icon
@@ -48,6 +51,7 @@ class IconTooltip extends Component {
 // - projectId: project id (determines image used)
 // - projectName: project name (as string, max length = 25 chars)
 // - iconsUsed: list of tools used (as list, max length = 4)
+// - projectRepoLink: link to project repo
 class ProjectFolder extends Component {
     render() {
         return (
@@ -93,51 +97,15 @@ export default class Projects extends Component {
                             duis. Eu augue ut lectus arcu bibendum at varius vel.
                         </p>
                         <Row>
-                            <ProjectFolder
-                                projectId="my_course_graph"
-                                projectName="My Course Graph"
-                                iconsUsed={['expressjs', 'react', 'nodejs']}
-                            />
-                            <ProjectFolder
-                                projectId="pmc_website"
-                                projectName="Pure Math Club Website"
-                                iconsUsed={['react', 'sass', 'nodejs']}
-                            />
-                            <ProjectFolder
-                                projectId="joget_fb_marketplace"
-                                projectName="Joget FB Marketplace"
-                                iconsUsed={['joget', 'java', 'mysql', 'js']}
-                            />
-                            <ProjectFolder
-                                projectId="skyblock_calculator"
-                                projectName="Skyblock Calculator"
-                                iconsUsed={['java', 'excel']}
-                            />
-                            <ProjectFolder
-                                projectId="malaysia_covid"
-                                projectName="Malaysia COVID-19 Data"
-                                iconsUsed={['mysql', 'beautifulsoup', 'jupyter', 'python']}
-                            />
-                            <ProjectFolder
-                                projectId="student_reg_gui"
-                                projectName="Student Attendance GUI"
-                                iconsUsed={['java']}
-                            />
-                            <ProjectFolder
-                                projectId="linear_collatz"
-                                projectName="Linear Collatz"
-                                iconsUsed={['react', 'reactbootstrap', 'nodejs']}
-                            />
-                            <ProjectFolder
-                                projectId="compass_initiative"
-                                projectName="Compass Initiative Website"
-                                iconsUsed={['wordpress', 'bluehost']}
-                            />
-                            <ProjectFolder 
-                                projectId="calculator"
-                                projectName="Tkinter Calculator"
-                                iconsUsed={['tkinter', 'python']}
-                            />
+                            {
+                                Object.keys(project_data).map(project => (
+                                    <ProjectFolder 
+                                        projectId={project_data[project].projectId}
+                                        projectName={project_data[project].projectName}
+                                        iconsUsed={project_data[project].iconsUsed}
+                                    />
+                                ))
+                            }
                         </Row>
                     </Container>
                 </section>

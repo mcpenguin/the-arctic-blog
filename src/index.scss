@@ -41,3 +41,27 @@ li {
         padding: 40px 10px;
     }
 }
+
+// media breakpoints
+$small_mobile_width: 360px;
+$mobile_width: 480px;
+$tablet_width: 768px;
+$medium_desktop_width: 990px;
+$desktop_width: 1100px;
+$large_desktop_width: 1280px;
+
+// helper code to 'center' elements
+@mixin center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+// parallax scrolling effect
+@mixin parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
