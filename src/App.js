@@ -182,7 +182,7 @@ export default class App extends Component {
 
     render() {
         return (
-            <Router>
+            <Router forceRefresh={true}>
                 <Switch>
                     <Route exact path="/" component={HomePage} />
                     <Route exact path="/projects" component={ProjectsPage} />

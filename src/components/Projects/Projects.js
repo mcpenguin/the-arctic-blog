@@ -51,7 +51,6 @@ class IconTooltip extends Component {
 // - projectId: project id (determines image used)
 // - projectName: project name (as string, max length = 25 chars)
 // - iconsUsed: list of tools used (as list, max length = 4)
-// - projectRepoLink: link to project repo
 class ProjectFolder extends Component {
     render() {
         return (
@@ -88,16 +87,17 @@ export default class Projects extends Component {
                     <Container fluid>
                         <h2>My Projects</h2>
                         <p>
-                            Projects description would go here.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ac odio tempor orci dapibus ultrices in
-                            iaculis nunc sed. Amet risus nullam eget felis eget nunc
-                            lobortis mattis aliquam. Orci a scelerisque purus semper eget
-                            duis. Eu augue ut lectus arcu bibendum at varius vel.
+                            Here, I have compiled a list of all of my programming projects, which I have done
+                            both for fun, to solve a particular problem I had in my life, or for work.
+                        </p>
+                        <p>
+                            Click the image in the 'project folder' to learn more about that project, including a link
+                            to its respective website or repository.
+                            I have also included the main languages and tools utilized in the project as well.
                         </p>
                         <Row>
                             {
+                                // map the projects data into respective project folders
                                 Object.keys(project_data).map(project => (
                                     <ProjectFolder 
                                         projectId={project}
