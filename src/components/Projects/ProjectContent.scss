@@ -48,7 +48,31 @@
                         color: rgba(4, 138, 228, 0.7);
                     }
                 }
+
+                @media (max-width: $tablet_width) {
+                    width: 80%;
+                    h1 {
+                        font-size: 2em;
+                    }
+                }
             }
         }
+    }
+
+    .project-description {
+        @include center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        .description {
+            width: 60%;
+            text-align: left;
+
+            @media (max-width: $mobile_width) {
+                width: 90%;
+            }
+
+        }
+
     }
 }

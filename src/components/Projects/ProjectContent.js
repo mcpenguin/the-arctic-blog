@@ -41,12 +41,14 @@ class ProjectContent extends Component {
                     <div className='sub'>
                         <div className='title'>
                             <h1>{project_data[this.projectId].projectName}</h1>
-                            <h4><i className='icon fab fa-github'></i> <a href={link}>{link}</a></h4>
+                            <h4><i className='icon fab fa-github'></i> <a href={link}>GitHub</a></h4>
                         </div>
                     </div>
                 </div>
                 <div className='project-description'>
-                    {parse(this.md.render(this.state.txt))}
+                    <div className='description'>
+                        {parse(this.md.render(this.state.txt))}
+                    </div>
                 </div>
             </section>
         )
