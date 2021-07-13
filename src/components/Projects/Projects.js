@@ -100,7 +100,7 @@ export default class Projects extends Component {
                             {
                                 Object.keys(project_data).map(project => (
                                     <ProjectFolder 
-                                        projectId={project_data[project].projectId}
+                                        projectId={project}
                                         projectName={project_data[project].projectName}
                                         iconsUsed={project_data[project].iconsUsed}
                                     />

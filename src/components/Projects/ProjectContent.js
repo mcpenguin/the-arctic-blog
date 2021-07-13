@@ -41,7 +41,10 @@ class ProjectContent extends Component {
                     <div className='sub'>
                         <div className='title'>
                             <h1>{project_data[this.projectId].projectName}</h1>
-                            <h4><i className='icon fab fa-github'></i> <a href={link}>GitHub</a></h4>
+                            <h4>
+                                <i className='icon fas fa-globe'></i> 
+                                {typeof link !== "undefined" ? <a href={link}>Project Link</a> : "No project link available"}
+                            </h4>
                         </div>
                     </div>
                 </div>

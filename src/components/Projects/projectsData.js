@@ -1,17 +1,15 @@
 // module to import project content data
 
-import * as project_images from './project_images/project_images';
-import * as project_content from './project_content/project_content';
-
 const data = {
     "my_course_graph": {
         projectName: "My Course Graph",
         iconsUsed: ['expressjs', 'react', 'nodejs'],
-        projectLink: 'https://github.com/thaqib0437/courseGraph'
+        projectLink: 'https://course-graph.herokuapp.com/'
     },
     "pmc_website": {
         projectName: "Pure Math Club Website",
         iconsUsed: ['react', 'sass', 'nodejs'],
+        projectLink: "https://puremath.club",
     },
     "joget_fb_marketplace": {
         projectName: "Joget FB Marketplace",
@@ -20,18 +18,22 @@ const data = {
     "skyblock_calculator": {
         projectName: "Skyblock Calculator",
         iconsUsed: ['java', 'excel'],
+        projectLink: "https://github.com/mcpenguin/hypixel-skyblock-calc",
     },
     "malaysia_covid": {
         projectName: "Malaysia COVID-19 Data",
         iconsUsed: ['mysql', 'beautifulsoup', 'jupyter', 'python'],
+        projectLink: "https://github.com/mcpenguin/malaysia-covid",
     },
     "student_reg_gui": {
         projectName: "Student Attendance GUI",
         iconsUsed: ['java'],
+        projectLink: "https://github.com/mcpenguin/student-reg-gui",
     },
     "linear_collatz": {
         projectName: "Linear Collatz",
         iconsUsed: ['react', 'reactbootstrap', 'nodejs'],
+        projectLink: "https://github.com/mcpenguin/linear-collatz",
     },
     "compass_initiative": {
         projectName: "Compass Initiative Website",
