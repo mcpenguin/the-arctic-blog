@@ -1,0 +1,67 @@
+@import "../../index";
+
+.section-experience-page {
+    .experience {
+        height: 70vh;
+        @include parallax;
+        @include center;
+
+        .content {
+            // @include lightToDarkGradient(45deg, 130, 0.7);
+            background: #f5f5f5cc;
+            @include dark_border;
+            padding: 20px;
+            width: 80%;
+
+            display: flex;
+            // flex-direction: row;
+            flex-wrap: wrap;
+
+            .title {
+                width: 80%;
+                h1 {
+                    font-size: 3em;
+                }
+            }
+
+            .date {
+                width: 20%;
+                @include center;
+
+                h6 {
+                    font-size: 1.5em;
+                    font-family: 'Comic Neue', sans-serif;
+                }
+            }
+
+            .description {
+                width: 60%;
+                padding: 10px 20px 10px 0;
+                // @include center;
+
+                p {
+                    font-size: 1.2em;
+                }
+            }
+
+            .key-achievements {
+                width: 40%;
+                padding: 10px 0 10px 20px;
+
+                h3 {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                }
+
+                li {
+                    font-size: 1.1em;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .emedasia {
+        background-size: 90%;
+    }
+}

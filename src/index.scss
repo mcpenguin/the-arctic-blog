@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    font-family: 'nunito', sans-serif;
+    font-family: 'quicksand', sans-serif;
     font-weight: 700;
 }
 
@@ -69,4 +69,19 @@ $large_desktop_width: 1280px;
         rgba(198, 212, 238, 0.8) 90%, 
         rgba(173, 183, 221, 0.8) 100%
     );
+}
+
+// general light to dark gradient, given hue and degree
+@mixin lightToDarkGradient($deg, $hue, $transp) {
+    background: linear-gradient(
+        $deg,
+        hsla($hue, 50%, 30%, $transp) 0%,
+        hsla($hue, 90%, 60%, $transp) 100%
+    );
+}
+
+// dark border options
+@mixin dark_border {
+    border: 5px solid #000031;
+    border-radius: 10px;
 }
