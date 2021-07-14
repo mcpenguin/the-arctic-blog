@@ -12,6 +12,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 // import stylesheet
 import './Projects.css';
 
+// filler image
 import test_img from './test-img.png';
 
 // import icons dict
@@ -21,6 +22,9 @@ import project_images from './project_images/project_images';
 
 // import project data
 import project_data from './projectsData';
+
+// import cover component
+import Cover from '../Cover/Cover';
 
 // tooltip for icon images
 // props:
@@ -83,18 +87,27 @@ export default class Projects extends Component {
     render() {
         return (
             <>
-                <section class="section-projects-page">
-                    <Container fluid>
-                        <h2>My Projects</h2>
+                <Cover 
+                    coverClass='projects'
+                    coverTitle="My Projects"
+                    coverDescription={<>
                         <p>
                             Here, I have compiled a list of all of my programming projects, which I have done
-                            both for fun, to solve a particular problem I had in my life, or for work.
+                            either for fun, to solve a particular problem I had in my life, for work or a
+                            combination of all three.
                         </p>
                         <p>
                             Click the image in the 'project folder' to learn more about that project, including a link
                             to its respective website or repository.
-                            I have also included the main languages and tools utilized in the project as well.
                         </p>
+                        <p>
+                            I have also included the main languages and tools utilized in each
+                            project. You can hover over the logos to see the names of the languages and tools.
+                        </p>
+                    </>}
+                />
+                <section class="section-projects-page">
+                    <Container fluid>
                         <Row>
                             {
                                 // map the projects data into respective project folders
