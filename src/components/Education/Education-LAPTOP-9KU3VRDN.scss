@@ -109,19 +109,35 @@
     $tilt: 135deg;
     $transp: 0.35;
 
-    .waterloo {
-        background-size: 50%;
+    .emedasia {
+        background-size: 70%;
 
         .sub {
-            @include lightToDarkGradient($tilt, 190, $transp);
+            @include lightToDarkGradient($tilt, 180, $transp);
         }
     }
 
-    .sunway {
-        background-size: 50%;
+    .dignity {
+        background-size: 70%;
 
         .sub {
-            @include lightToDarkGradient($tilt, 230, $transp);
+            @include lightToDarkGradient($tilt, 200, $transp);
+        }
+    }
+
+    .shelterHome {
+        background-size: 30%;
+
+        .sub {
+            @include lightToDarkGradient($tilt, 220, $transp);
+        }
+    }
+
+    .tms {
+        background-size: 80%;
+
+        .sub {
+            @include lightToDarkGradient($tilt, 240, $transp);
         }
     }
 }

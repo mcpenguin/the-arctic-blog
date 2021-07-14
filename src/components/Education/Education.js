@@ -9,14 +9,57 @@ import Col from 'react-bootstrap/Col';
 // import Cover component
 import Cover from '../Cover/Cover';
 
+// import images
+import * as images from './export_images';
+
+// import data
+import data from './educationData';
+
 // import stylesheet
 import './Education.scss';
 
+// react component class for single education section
+// props:
+// - educationClass: class of education (eg sunway)
+// - educationTitle: title of education (eg Sunway)
+// - educationDate: date of education (eg 2020 - 2025)
+// - educationDescription: description of education (as JSX)
+class EducationEntry extends Component {
+    render() {
+        return (
+            <div className={`education ${this.props.educationClass}`} style={{
+                backgroundImage: `url(${images[this.props.educationClass]})`,
+            }}>
+                <div className='sub'>
+                    <div className="content">
+                        <div className="title">
+                            <h1>{this.props.educationTitle}</h1>
+                        </div>
+                        <div className="date">
+                            <h6>{this.props.educationDate}</h6>
+                        </div>
+                        <div className="description">
+                            {this.props.educationDescription}
+                        </div>
+                        <div className="key-achievements">
+                            <ul>
+                                {this.props.educationAchievements.map(
+                                    a => <li>{a}</li>
+                                )}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+}
+
 export default class Education extends Component {
-    render() { 
+    render() {
         return (
             <section className="section-education-page">
-                <Cover 
+                <Cover
                     coverClass="education"
                     coverTitle="My Education"
                     coverDescription={
@@ -28,7 +71,20 @@ export default class Education extends Component {
                         </p>
                     }
                 />
+                {
+                    Object.keys(data).map(key =>
+                        <>
+                            <EducationEntry
+                                educationClass={key}
+                                educationTitle={data[key].title}
+                                educationDate={data[key].date}
+                                educationDescription={data[key].description}
+                                educationAchievements={data[key].achievements}
+                            />
+                        </>
+                    )
+                }
             </section>
-        ); 
+        );
     }
 }
