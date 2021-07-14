@@ -152,7 +152,7 @@
 
 /* Projects */
 .projects-image {
-    width: 220%;
+    // width: 220%;
     background-image: url('./blobs/blob-projects.svg');
     background-size: 110%;
     background-position: 0;
@@ -170,7 +170,9 @@
 
 /* Experience */
 .experience-image {
+    // width: 65%;
     background: url('./blobs/blob-experience.svg');
+    background-repeat: no-repeat;
     background-size: 110%;
     background-position: 0;
 }

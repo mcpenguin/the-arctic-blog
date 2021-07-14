@@ -38,6 +38,7 @@ export default class Header extends Component {
                             <NavbarLink id="projects" title="Projects" />
                             <NavbarLink id="experience" title="Experience" />
                             <NavbarLink id="education" title="Education" />
+                            <NavbarLink id="extracurriculars" title="Hobbies" />
                             <NavbarLink id="achievements" title="Achievements" />
                             <NavbarLink id="notes" title="Notes" />
                             <NavbarLink id="credits" title="Credits" />

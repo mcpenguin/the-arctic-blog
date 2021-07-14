@@ -26,6 +26,7 @@ import Extracurriculars from './components/Extracurriculars/Extracurriculars';
 import Notes from './components/Notes/Notes';
 import Projects from './components/Projects/Projects';
 import ProjectContent from './components/Projects/ProjectContent';
+import Cover from './components/Cover/Cover';
 
 // home page
 class HomePage extends Component {

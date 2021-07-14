@@ -23,7 +23,7 @@ import blob_credits from './blobs/blob-credits.svg'
 // import penguins
 // commented out = not drawn yet 
 import penguin_projects from './penguins/penguin-projects.png'
-// import penguin_experience from './penguins/penguin-experience.png'
+import penguin_experience from './penguins/penguin-experience.png'
 import penguin_education from './penguins/penguin-education.png'
 import penguin_extracurriculars from './penguins/penguin-extracurriculars.png'
 import penguin_achievements from './penguins/penguin-achievements.png'
@@ -47,7 +47,7 @@ const pageSectionData = [
     },
     {
         class: 'experience',
-        image: penguin_extracurriculars,
+        image: penguin_experience,
         title: 'My Experience',
         desc: <p>
             Learn about my responsiblities and accomplishments at my first coop job
