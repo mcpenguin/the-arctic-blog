@@ -51,12 +51,17 @@ $large_desktop_width: 1280px;
     align-items: center;
 }
 
-// parallax scrolling effect
-@mixin parallax {
-    background-attachment: fixed;
+// nice bg
+@mixin nicebg {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+// parallax scrolling effect
+@mixin parallax {
+    background-attachment: fixed;
+    @include nicebg;
 }
 
 // home page gradient
@@ -75,12 +80,13 @@ $large_desktop_width: 1280px;
 @mixin lightToDarkGradient($deg, $hue, $transp) {
     background: linear-gradient(
         $deg,
-        hsla($hue, 50%, 30%, $transp) 0%,
-        hsla($hue, 90%, 60%, $transp) 100%
+        hsla($hue, 80%, 30%, $transp) 0%,
+        hsla($hue, 90%, 50%, $transp) 100%
     );
 }
 
 // dark border options
+$dark_border: 5px solid #000031;
 @mixin dark_border {
     border: 5px solid #000031;
     border-radius: 10px;

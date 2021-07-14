@@ -2,66 +2,115 @@
 
 .section-experience-page {
     .experience {
-        height: 70vh;
-        @include parallax;
-        @include center;
+        min-height: 70vh;
+        @include nicebg;
+        border-top: $dark_border;
+        
+        .sub {
+            height: 100%;
+            width: 100%;
 
-        .content {
-            // @include lightToDarkGradient(45deg, 130, 0.7);
-            background: #f5f5f5cc;
-            @include dark_border;
-            padding: 20px;
-            width: 80%;
+            @include center;
+            @include homePageGradient(135deg);
 
-            display: flex;
-            // flex-direction: row;
-            flex-wrap: wrap;
-
-            .title {
+            .content {
+                margin-top: 60px;
+                margin-bottom: 60px;
+                padding: 20px;
+                
+                // @include lightToDarkGradient(45deg, 130, 0.7);
+                background: #f5f5f5ee;
+                // @include dark_border;
+                border-radius: 20px;
+                box-shadow: 20px 20px 10px #363636;
                 width: 80%;
-                h1 {
-                    font-size: 3em;
-                }
-            }
 
-            .date {
-                width: 20%;
-                @include center;
+                display: flex;
+                // flex-direction: row;
+                flex-wrap: wrap;
 
-                h6 {
-                    font-size: 1.5em;
-                    font-family: 'Comic Neue', sans-serif;
-                }
-            }
-
-            .description {
-                width: 60%;
-                padding: 10px 20px 10px 0;
-                // @include center;
-
-                p {
-                    font-size: 1.2em;
-                }
-            }
-
-            .key-achievements {
-                width: 40%;
-                padding: 10px 0 10px 20px;
-
-                h3 {
-                    font-size: 1.3em;
-                    font-weight: bold;
+                .title {
+                    width: 70%;
+                    h1 {
+                        font-size: 3em;
+                    }
                 }
 
-                li {
-                    font-size: 1.1em;
-                    font-weight: 300;
+                .date {
+                    width: 30%;
+
+                    h6 {
+                        font-size: 1.8em;
+                        font-weight: 600;
+                        // font-family: "Comic Neue", sans-serif;
+                        text-align: right;
+                    }
+                }
+
+                .description {
+                    width: 60%;
+                    padding: 10px 20px 10px 0;
+                    // @include center;
+
+                    p {
+                        font-size: 1.2em;
+                    }
+                }
+
+                .key-achievements {
+                    width: 40%;
+                    padding: 10px 0 10px 20px;
+
+                    h3 {
+                        font-size: 1.3em;
+                        font-weight: bold;
+                    }
+
+                    li {
+                        font-size: 1.1em;
+                        font-weight: 300;
+                    }
                 }
             }
         }
     }
 
+    $tilt: 135deg;
+    $transp: 0.35;
+
     .emedasia {
         background-size: 90%;
+
+        .sub {
+            @include lightToDarkGradient($tilt, 180, $transp);
+        }
     }
+
+    .dignity {
+        background-size: 80%;
+
+        .sub {
+            @include lightToDarkGradient($tilt, 200, $transp);
+        }
+    }
+
+    .shelterHome {
+        background-size: 30%;
+
+        .sub {
+            @include lightToDarkGradient($tilt, 220, $transp);
+        }
+    }
+
+    .tms {
+        background-size: 80%;
+
+        .sub {
+            @include lightToDarkGradient($tilt, 240, $transp);
+        }
+    }
+}
+
+.experience:nth-last-child(1) {
+    border-bottom: $dark_border;
 }

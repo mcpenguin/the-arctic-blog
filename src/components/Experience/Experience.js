@@ -30,23 +30,25 @@ class ExperienceEntry extends Component {
             <div className={`experience ${this.props.experienceClass}`} style={{
                 backgroundImage: `url(${images[this.props.experienceClass]})`,
             }}>
-                <div className="content">
-                    <div className="title">
-                        <h1>{this.props.experienceTitle}</h1>
-                    </div>
-                    <div className="date">
-                        <h6>{this.props.experienceDate}</h6>
-                    </div>
-                    <div className="description">
-                        <p>{this.props.experienceDescription}</p>
-                    </div>
-                    <div className="key-achievements">
-                        <h3>Key Achievements</h3>
-                        <ul>
-                            {this.props.experienceAchievements.map(
-                                a => <li>{a}</li>
-                            )}
-                        </ul>
+                <div className='sub'>
+                    <div className="content">
+                        <div className="title">
+                            <h1>{this.props.experienceTitle}</h1>
+                        </div>
+                        <div className="date">
+                            <h6>{this.props.experienceDate}</h6>
+                        </div>
+                        <div className="description">
+                            <p>{this.props.experienceDescription}</p>
+                        </div>
+                        <div className="key-achievements">
+                            <h3>Key Achievements</h3>
+                            <ul>
+                                {this.props.experienceAchievements.map(
+                                    a => <li>{a}</li>
+                                )}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,14 +73,16 @@ export default class Experience extends Component {
                     </>}
                 />
                 {
-                    Object.keys(data).map(key => 
-                        <ExperienceEntry 
-                            experienceClass={key}
-                            experienceTitle={data[key].title}
-                            experienceDate={data[key].date}
-                            experienceDescription={data[key].description}
-                            experienceAchievements={data[key].keyAchievements}
-                        />
+                    Object.keys(data).map(key =>
+                        <>
+                            <ExperienceEntry
+                                experienceClass={key}
+                                experienceTitle={data[key].title}
+                                experienceDate={data[key].date}
+                                experienceDescription={data[key].description}
+                                experienceAchievements={data[key].keyAchievements}
+                            />
+                        </>
                     )
                 }
             </section>

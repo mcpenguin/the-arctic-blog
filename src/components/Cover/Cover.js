@@ -19,7 +19,7 @@ import * as images from './export-images';
 export default class Cover extends Component {
     render() { 
         return (
-            <section className={`section-cover ${this.props.coverClass}`} style={{
+            <section className={`section-cover section-cover--${this.props.coverClass}`} style={{
                 backgroundImage: `url(${images[this.props.coverClass]})`
             }}>
                 <div className='sub'>
