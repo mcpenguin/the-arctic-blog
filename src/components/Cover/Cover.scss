@@ -9,6 +9,7 @@
     .sub {
         width: 100%;
         height: 100%;
+        border-bottom: $dark_border;
 
         @include homePageGradient(135deg);
         @include center;
@@ -29,6 +30,18 @@
 
             p {
                 font-size: 1.2em;
+            }
+
+            @media (max-width: $tablet_width) {
+                width: 90%;
+
+                h1 {
+                    font-size: 2em;
+                }
+
+                p {
+                    font-size: 1em;
+                }
             }
         }
     }
