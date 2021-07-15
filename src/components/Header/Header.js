@@ -15,9 +15,9 @@ class NavbarLink extends Component {
         const str = `#${this.props.id}`;
         return (
             <Nav.Item>
-                <a href={`#${this.props.id}`} className="nav-item">
+                <Link exact to={`/#${this.props.id}`} className="nav-item">
                     {this.props.title}
-                </a>
+                </Link>
             </Nav.Item>
         )
     }

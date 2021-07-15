@@ -30,6 +30,12 @@ import Cover from './components/Cover/Cover';
 
 // home page
 class HomePage extends Component {
+
+    componentDidMount() {
+        // scroll to hash element if any
+        document.querySelector(this.props.location.hash).scrollIntoView();
+    }
+
     render() {
         return (
             <>
@@ -39,8 +45,9 @@ class HomePage extends Component {
                 <PageSections />
                 <ContactMe />
             </>
-        );
-    }
+        )
+    };
+
 }
 
 class AchievementsPage extends Component {
