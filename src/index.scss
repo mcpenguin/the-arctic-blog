@@ -37,7 +37,13 @@ h3 {
     text-align: center;
     font-weight: 600;
     font-family: "Quicksand", sans-serif;
+
+    padding: 20px;
     // background-color: $off_white;
+
+    @media (max-width: $tablet_width) {
+        font-size: 2em;
+    }
 
 }
 
@@ -62,7 +68,7 @@ h6 {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 300;
 
     @media (max-width: $tablet_width) {

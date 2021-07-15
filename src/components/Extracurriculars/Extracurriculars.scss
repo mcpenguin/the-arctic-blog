@@ -1,0 +1,133 @@
+@import "../../index";
+
+.section-extracurriculars-page {
+    .sub {
+        @include center;
+        width: 100%;
+        height: 100%;
+
+        .extracurriculars-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .gradient {
+                height: 100%;
+                width: 100%;
+            }
+
+            .one {
+                height: 100vh;
+                background: red;
+                width: 65%;
+
+                .tedx {
+                    height: 50%;
+                    background: url("./images/tedx.jpg");
+                    background-position: center;
+
+                    border-top: $dark_border;
+                    border-bottom: $dark_border;
+
+                    .gradient {
+                        background: linear-gradient(
+                            135deg,
+                            rgba(68, 144, 216, 0.8) 0%,
+                            rgba(25, 56, 180, 0.8) 100%
+                        );
+                    }
+                }
+
+                .sue {
+                    height: 50%;
+                    background: url("./images/sue.jpg");
+                    background-position: center;
+                    background-size: 105%;
+
+                    border-bottom: $dark_border;
+
+                    .gradient {
+                        background: linear-gradient(
+                            135deg,
+                            rgba(67, 84, 233, 0.8) 0%,
+                            rgba(179, 121, 226, 0.8) 100%
+                        );
+                    }
+                }
+            }
+
+            .two {
+                height: 100vh;
+                background: blue;
+                width: 35%;
+
+                .rc {
+                    height: 100%;
+                    background: url("./images/rc.jpg");
+
+                    border-left: $dark_border;
+                    border-top: $dark_border;
+                    border-bottom: $dark_border;
+
+                    .gradient {
+                        background: linear-gradient(
+                            135deg,
+                            rgba(226, 95, 176, 0.8) 0%,
+                            rgba(85, 12, 34, 0.8) 100%
+                        );
+                    }
+                }
+            }
+
+            .three {
+                height: 50vh;
+                background: brown;
+                width: 100%;
+
+                .piano {
+                    height: 100%;
+                    background: url("./images/piano.png");
+                    background-size: 130%;
+                    background-position-x: -160px;
+                    background-repeat: no-repeat;
+
+                    border-bottom: $dark_border;
+
+                    .gradient {
+                        background: linear-gradient(
+                            135deg,
+                            rgba(10, 151, 161, 0.8) 0%,
+                            rgba(92, 221, 200, 0.8) 100%
+                        );
+                    }
+                }
+            }
+
+            @media (max-width: $tablet_width) {
+                .one {
+                    height: 80vh;
+                    background: red;
+                    width: 100%;
+
+                    .tedx {
+                        height: 50%;
+                    }
+
+                    .sue {
+                        height: 50%;
+                    }
+                }
+
+                .two {
+                    height: 40vh;
+                    width: 100%;
+                }
+
+                .three {
+                    height: 40vh;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

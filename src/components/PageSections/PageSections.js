@@ -35,6 +35,7 @@ import lightbulb_projects from './lightbulbs/lightbulb-projects.png';
 import Projects from '../Projects/Projects';
 import Experience from '../Experience/Experience';
 import Education from '../Education/Education';
+import Extracurriculars from '../Extracurriculars/Extracurriculars';
 
 // import stylesheet
 import './PageSections.scss';
@@ -179,6 +180,7 @@ export default class PageSections extends Component {
                 <Projects />
                 <Experience />
                 <Education />
+                <Extracurriculars />
                 <div class="section-page-sections">
                     {/* <PageSection
                         psIsRight={1}

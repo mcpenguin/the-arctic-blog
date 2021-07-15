@@ -42,11 +42,13 @@ class EducationEntry extends Component {
                             {this.props.educationDescription}
                         </div> */}
                         <div className="key-achievements">
-                            <ul>
-                                {this.props.educationAchievements.map(
-                                    a => <li>{a}</li>
-                                )}
-                            </ul>
+                            <p>
+                                <ul>
+                                    {this.props.educationAchievements.map(
+                                        a => <li>{a}</li>
+                                    )}
+                                </ul>
+                            </p>
                         </div>
                     </div>
                 </div>
