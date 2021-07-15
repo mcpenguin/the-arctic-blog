@@ -14,7 +14,7 @@ import Header from './components/Header/Header';
 import TopCarousel from './components/TopCarousel/TopCarousel';
 import AboutMe from './components/AboutMe/AboutMe';
 import PageSections from './components/PageSections/PageSections';
-// import Timeline from './components/Timeline/Timeline';
+import Timeline from './components/Timeline/Timeline';
 import ContactMe from './components/ContactMe/ContactMe';
 
 // import components for pages
@@ -55,6 +55,7 @@ class AchievementsPage extends Component {
                 <Header />
                 <Achievements />
                 <ContactMe />
+                <Timeline />
             </>
         );
     }

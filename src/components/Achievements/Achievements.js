@@ -9,6 +9,9 @@ import Col from 'react-bootstrap/Col';
 // import stylesheet
 import './Achievements.scss';
 
+// import data
+import data from './achievementsData';
+
 // class for individual achievement
 // props:
 // - title (eg Top 1% (Honour Roll - Group IV))
@@ -36,21 +39,9 @@ export default class Achievements extends Component {
             <section id='achievements' className='section-achievements-page'>
                 <h3>My Achievements</h3>
                 <div className='achievements-container'>
-                    <AchievementEntry 
-                        title="Top 1% (Honour Roll - Group IV)"
-                        contestName="Canadian Senior Mathematics Competition (CSMC)"
-                        date="Nov 2019"
-                    />
-                    <AchievementEntry 
-                        title="Top 1% (Honour Roll - Group IV)"
-                        contestName="Canadian Senior Mathematics Competition (CSMC)"
-                        date="Nov 2019"
-                    />
-                    <AchievementEntry 
-                        title="Top 1% (Honour Roll - Group IV)"
-                        contestName="Canadian Senior Mathematics Competition (CSMC)"
-                        date="Nov 2019"
-                    />
+                    {
+                        data.map((props) => <AchievementEntry {...props} />)
+                    }
                 </div>
             </section>
         ); 
