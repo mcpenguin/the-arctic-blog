@@ -28,19 +28,19 @@ class EducationEntry extends Component {
     render() {
         return (
             <div className={`education ${this.props.educationClass}`} style={{
-                backgroundImage: `url(${images[this.props.educationClass]})`,
+                // backgroundImage: `url(${images[this.props.educationClass]})`,
             }}>
                 <div className='sub'>
                     <div className="content">
                         <div className="title">
-                            <h1>{this.props.educationTitle}</h1>
+                            <h4>{this.props.educationTitle}</h4>
                         </div>
                         <div className="date">
                             <h6>{this.props.educationDate}</h6>
                         </div>
-                        <div className="description">
+                        {/* <div className="description">
                             {this.props.educationDescription}
-                        </div>
+                        </div> */}
                         <div className="key-achievements">
                             <ul>
                                 {this.props.educationAchievements.map(
@@ -59,7 +59,8 @@ export default class Education extends Component {
     render() {
         return (
             <section className="section-education-page">
-                <Cover
+                <div className='gradient'>
+                    {/* <Cover
                     coverClass="education"
                     coverTitle="My Education"
                     coverDescription={
@@ -70,20 +71,22 @@ export default class Education extends Component {
                             tasks and mark them as complete.
                         </p>
                     }
-                />
-                {
-                    Object.keys(data).map(key =>
-                        <>
-                            <EducationEntry
-                                educationClass={key}
-                                educationTitle={data[key].title}
-                                educationDate={data[key].date}
-                                educationDescription={data[key].description}
-                                educationAchievements={data[key].achievements}
-                            />
-                        </>
-                    )
-                }
+                /> */}
+                    <h3>My Education</h3>
+                    {
+                        Object.keys(data).map(key =>
+                            <>
+                                <EducationEntry
+                                    educationClass={key}
+                                    educationTitle={data[key].title}
+                                    educationDate={data[key].date}
+                                    educationDescription={data[key].description}
+                                    educationAchievements={data[key].achievements}
+                                />
+                            </>
+                        )
+                    }
+                </div>
             </section>
         );
     }
