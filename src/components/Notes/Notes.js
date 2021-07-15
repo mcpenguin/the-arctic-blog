@@ -30,7 +30,7 @@ import MATH148 from "./notes/1B/MATH148.pdf";
 import PSYCH101 from "./notes/1B/PSYCH101.pdf";
 
 // import stylesheet
-import './Notes.css';
+import './Notes.scss';
 
 // get JS object of pdfs
 const pdfs = { Chem, FPM1, FPM2, FPS, PM3, M1, MATH145, MATH147, CS145, PHIL145, GEOG101, MATH146, MATH148, PSYCH101 };
@@ -63,7 +63,7 @@ class CourseNotes extends Component {
                 <Accordion.Collapse eventKey={this.props.eventKey}>
                     <Card.Body className="notes-card-body">
                         <Card.Title className="notes-subject-link">
-                            <a href={pdfs[this.props.eventKey]} without rel="noopener noreferrer" target="_blank">
+                            <a href={pdfs[this.props.eventKey]} without rel="noopener noreferrer" target="_blank" download={this.props.eventKey}>
                                 {this.props.shortTitle} - {this.props.longTitle}
                             </a>
                         </Card.Title>
@@ -98,29 +98,25 @@ export default class Notes extends Component {
             for (let course in courses) {
                 const courseObject = courses[course];
                 cards.push(
-                    <Fade top>
-                        <CourseNotes
-                            shortTitle={courseObject['shortTitle']}
-                            longTitle={courseObject['longTitle']}
-                            description={courseObject['description']}
-                            takenWhen={courseObject['takenWhen']}
-                            notesStatus={courseObject['notesStatus']}
-                            professors={courseObject['professors']}
-                            notesLink={`src/notes/${term}/${course}.pdf`}
-                            eventKey={course}
-                        />  
-                    </Fade>                
-                    )
+                    <CourseNotes
+                        shortTitle={courseObject['shortTitle']}
+                        longTitle={courseObject['longTitle']}
+                        description={courseObject['description']}
+                        takenWhen={courseObject['takenWhen']}
+                        notesStatus={courseObject['notesStatus']}
+                        professors={courseObject['professors']}
+                        notesLink={`src/notes/${term}/${course}.pdf`}
+                        eventKey={course}
+                    />
+                )
             }
             cols.push(
                 <Col lg={4}>
                     {/* <Fade top cascade> */}
-                        <Fade top>
-                            <h4 className="notes-subject-heading">{classData[term].title}</h4> 
-                        </Fade>
-                        <Accordion className="notes-accordion">
-                            {cards}
-                        </Accordion>
+                    <h5 className="notes-subject-heading">{classData[term].title}</h5>
+                    <Accordion className="notes-accordion">
+                        {cards}
+                    </Accordion>
                     {/* </Fade> */}
                 </Col>)
         }
@@ -133,10 +129,11 @@ export default class Notes extends Component {
                 <Container fluid>
                     <Row>
                         <Col>
-                            <Fade top>
-                                <h2 id="personal-notes-title">My Personal Notes</h2>
-                            </Fade>
-                            <Fade top>
+                            <div className='text'>
+                                {/* <Fade top> */}
+                                <h3 id="personal-notes-title">My Personal Notes</h3>
+                                {/* </Fade> */}
+                                {/* <Fade top> */}
                                 <p id="personal-notes-description">
                                     Here I post my notes for my university courses, which were handwritten on my iPad.
                                     Be wary of downloading/viewing them, as since all my notes are handwritten,
@@ -144,13 +141,14 @@ export default class Notes extends Component {
                                     since I use many light colours in my notes, and these may not show if you
                                     print in grayscale/B&W.
                                 </p>
-                            </Fade>
-                            <Fade top>
+                                {/* </Fade> */}
+                                {/* <Fade top> */}
                                 <p>
                                     Click each course link to see the expanded details of that particular
                                     course. Click the top hyperlink to access my notes for that course.
                                 </p>
-                            </Fade>
+                            </div>
+                            {/* </Fade> */}
                         </Col>
                     </Row>
                     <Row>

@@ -1,9 +1,18 @@
+@import "../../index";
+
 .section-notes-page {
     background-color: #ecebeb;
-    padding-bottom: 50px;
-    font-size: 1.1rem;
     text-align: center;
-    /* padding: 20px 30px; */
+    padding: 20px 5%;
+    padding-bottom: 50px;
+
+    .container-fluid .row .col {
+        @include center;
+
+        .text {
+            width: 80%;
+        }
+    }
 }
 
 #personal-notes-title {
@@ -20,6 +29,12 @@
     border: 1px solid #000031;
 }
 
+@for $i from 1 through 6 {
+    .notes-card:nth-child(#{$i}) {
+        background-color: hsla(170 + $i * 10, 90%, 70%, 1);
+    }
+}
+
 .notes-card-body {
     background-color: #ecebeb;
     color: #000031;
@@ -30,10 +45,14 @@
     color: #000031;
     font-size: 1.05rem;
     font-weight: bold;
+
+    &:hover {
+        color: #000031;
+    }
 }
 
-.notes-card-link:hover {
-    color: #8e4162;
+.collapse, .collapsing {
+    border-top: 1px solid black;
 }
 
 .notes-subject-section {
