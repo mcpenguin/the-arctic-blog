@@ -28,7 +28,7 @@ export default class Header extends Component {
     render() {
         return (
             <section className="section-header">
-                <Navbar expand="lg" variant="dark">
+                <Navbar expand="lg" variant="dark" className="fixed-top">
                     <Navbar.Brand href="/" className="navbar-brand">
                         <img src={lightbulb} id="navbar-img" /> The Arctic Blog
                     </Navbar.Brand>
@@ -38,7 +38,7 @@ export default class Header extends Component {
                             <NavbarLink id="projects" title="Projects" />
                             <NavbarLink id="experience" title="Experience" />
                             <NavbarLink id="education" title="Education" />
-                            <NavbarLink id="extracurriculars" title="Hobbies" />
+                            <NavbarLink id="extracurriculars" title="Extracurriculars" />
                             <NavbarLink id="achievements" title="Achievements" />
                             <NavbarLink id="notes" title="Notes" />
                             <NavbarLink id="credits" title="Credits" />

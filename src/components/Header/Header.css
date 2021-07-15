@@ -1,6 +1,7 @@
 .section-header {
-    background-color: #000031;
     padding: 0;
+    z-index: 1000;
+    margin-bottom: 40px;
 }
 
 #my-navbar {
@@ -8,8 +9,13 @@
     font-weight: 500;
 }
 
+nav {
+    background-color: #000031;
+}
+
 .nav-item {
     margin: 0 8px;
+    font-size: 0.95em;
     color: #c1c1dd !important;
 }
 

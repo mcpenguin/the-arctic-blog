@@ -16,7 +16,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import CodeIcon from '@material-ui/icons/CodeSharp';
 import ActivityIcon from '@material-ui/icons/SportsSoccerSharp';
 
-import './AboutMe.css';
+import './AboutMe.scss';
 
 export default class AboutMe extends Component {
     render() {

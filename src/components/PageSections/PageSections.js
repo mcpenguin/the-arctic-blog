@@ -30,6 +30,12 @@ import penguin_achievements from './penguins/penguin-achievements.png'
 import penguin_notes from './penguins/penguin-notes.png'
 import penguin_credits from './penguins/penguin-credits.png'
 
+import lightbulb_projects from './lightbulbs/lightbulb-projects.png';
+
+import Projects from '../Projects/Projects';
+import Experience from '../Experience/Experience';
+import Education from '../Education/Education';
+
 // import stylesheet
 import './PageSections.scss';
 
@@ -96,16 +102,16 @@ const pageSectionData = [
             including my notes for MATH 145/6/7/8 and Cambridge GCE A-Level Further Mathematics.
         </p>,
     },
-    {
-        class: 'credits',
-        image: penguin_credits,
-        title: 'Credits and References',
-        desc: <p>
-            Go behind the scenes and learn how I designed this website, including
-            the languages, libraries and tools I used, and view my acknowledgements to the
-            people which made this website possible.
-        </p>,
-    },
+    // {
+    //     class: 'credits',
+    //     image: penguin_credits,
+    //     title: 'Credits and References',
+    //     desc: <p>
+    //         Go behind the scenes and learn how I designed this website, including
+    //         the languages, libraries and tools I used, and view my acknowledgements to the
+    //         people which made this website possible.
+    //     </p>,
+    // },
 ]
 
 // class for page section
@@ -163,15 +169,27 @@ export default class PageSections extends Component {
                     psIsRight={i % 2}
                     psClass={pageSection.class}
                     psDesc={pageSection.desc}
-                    psImage={pageSection.image}
+                    psImage={lightbulb_projects}
                     psTitle={pageSection.title}
                 />
             )
         }
         return (
-            <div class="section-page-sections">
-                {result}
-            </div>
+            <>
+                <Projects />
+                <Experience />
+                <Education />
+                <div class="section-page-sections">
+                    {/* <PageSection
+                        psIsRight={1}
+                        psClass={"projects"}
+                        psDesc={"Description description"}
+                        psImage={lightbulb_projects}
+                        psTitle={"My Projects"}
+                    /> */}
+                    {/* {result} */}
+                </div>
+            </>
         );
     }
 }

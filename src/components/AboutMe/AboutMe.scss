@@ -1,9 +1,14 @@
+@import '../../index.scss';
+
 .section-about-me {
     padding: 30px 0 50px 0;
     /* background-color: #c7cdf0; */
     background-image: url("./geometric-1920x1080.svg");
-    background-repeat: repeat-y;
+    @include parallax;
     text-align: center;
+
+    border-top: $dark_border;
+    border-bottom: $dark_border;
 }
 
 #container-about-me {

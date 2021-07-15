@@ -1,20 +1,23 @@
+@import '../../index.scss';
+
 /* Page Sections Wrapper */
 .section-page-sections {
     background: rgb(245,245,245);
-    background: linear-gradient(
-        160deg, 
-        rgb(224, 247, 245) 0%, 
-        rgb(165, 236, 220) 35%, 
-        rgb(187, 223, 240) 64%, 
-        rgb(177, 198, 238) 90%, 
-        rgb(174, 186, 235) 100%
-    );
+    // background: linear-gradient(
+    //     160deg, 
+    //     rgb(224, 247, 245) 0%, 
+    //     rgb(165, 236, 220) 35%, 
+    //     rgb(187, 223, 240) 64%, 
+    //     rgb(177, 198, 238) 90%, 
+    //     rgb(174, 186, 235) 100%
+    // );
 }
 
 /* General Page Sections */
 .section-page {
     padding: 20px 12%;
-    display: inline-flex;
+    height: 80vh;
+    @include center;
 }
 
 .section-page .container-fluid .col-lg-6 {
@@ -170,7 +173,7 @@
 
 /* Experience */
 .experience-image {
-    // width: 65%;
+    // padding: 15%;
     background: url('./blobs/blob-experience.svg');
     background-repeat: no-repeat;
     background-size: 110%;
@@ -281,6 +284,8 @@
 
 /* Credits */
 .credits-image {
+    transform: scaleX(-1);
+    padding: 15%;
     background: url('./blobs/blob-credits.svg');
     background-size: 105%;
     background-position: 0;
