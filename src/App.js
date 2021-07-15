@@ -33,7 +33,10 @@ class HomePage extends Component {
 
     componentDidMount() {
         // scroll to hash element if any
-        document.querySelector(this.props.location.hash).scrollIntoView();
+        console.log(this.props.location.hash);
+        if (this.props.location.hash !== '') {
+            document.querySelector(this.props.location.hash).scrollIntoView();
+        }
     }
 
     render() {
