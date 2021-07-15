@@ -1,3 +1,5 @@
+@import "../../index";
+
 .section-header {
     padding: 0;
     z-index: 1000;
@@ -17,6 +19,12 @@ nav {
     margin: 0 8px;
     font-size: 0.95em;
     color: #c1c1dd !important;
+    font-family: 'Quicksand', sans-serif;
+
+    @media (max-width: $desktop_width) {
+        margin: 0 5px;
+        transition: 1s;
+    }
 }
 
 #navbar-img {
@@ -30,7 +38,7 @@ nav {
     color: #f5f5f5 !important;
     font-weight: 600;
     font-family: 'nunito', sans-serif;
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
     margin: 0 5px;
     vertical-align: middle;
 } 

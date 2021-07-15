@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-import './Header.css';
+import './Header.scss';
 
 import lightbulb from './lightbulb.png';
 
