@@ -31,9 +31,24 @@ h2 {
     font-weight: 500;
 }
 
+h3 {
+    font-size: 2.8em;
+    // color: white;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+    // background-color: $off_white;
+
+}
+
 h4 {
-    font-family: 'nunito', sans-serif;
-    font-weight: 400;
+    font-size: 2.4em;
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+
+    @media (max-width: $tablet_width) {
+        font-size: 2em;
+    }
 }
 
 // lightbulb bullet points

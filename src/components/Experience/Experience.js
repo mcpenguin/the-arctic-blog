@@ -33,7 +33,7 @@ class ExperienceEntry extends Component {
                 <div className='sub'>
                     <div className="content">
                         <div className="title">
-                            <h1>{this.props.experienceTitle}</h1>
+                            <h4>{this.props.experienceTitle}</h4>
                         </div>
                         <div className="date">
                             <h6>{this.props.experienceDate}</h6>
@@ -60,7 +60,9 @@ export default class Experience extends Component {
     render() {
         return (
             <section class='section-experience-page'>
-                <Cover
+                <div class='gradient'>
+                    <h3>My Past Experiences</h3>
+                    {/* <Cover
                     coverClass="experience"
                     coverTitle="My Experience"
                     coverDescription={<>
@@ -71,20 +73,21 @@ export default class Experience extends Component {
                             tasks and mark them as complete.
                         </p>
                     </>}
-                />
-                {
-                    Object.keys(data).map(key =>
-                        <>
-                            <ExperienceEntry
-                                experienceClass={key}
-                                experienceTitle={data[key].title}
-                                experienceDate={data[key].date}
-                                experienceDescription={data[key].description}
-                                experienceAchievements={data[key].keyAchievements}
-                            />
-                        </>
-                    )
-                }
+                /> */}
+                    {
+                        Object.keys(data).map(key =>
+                            <>
+                                <ExperienceEntry
+                                    experienceClass={key}
+                                    experienceTitle={data[key].title}
+                                    experienceDate={data[key].date}
+                                    experienceDescription={data[key].description}
+                                    experienceAchievements={data[key].keyAchievements}
+                                />
+                            </>
+                        )
+                    }
+                </div>
             </section>
         );
     }

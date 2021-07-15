@@ -36,7 +36,7 @@ const data = {
         projectLink: "https://github.com/mcpenguin/linear-collatz",
     },
     "compass_initiative": {
-        projectName: "Compass Initiative Website",
+        projectName: "Compass Website",
         iconsUsed: ['wordpress', 'bluehost'],
     },
     "calculator": {
