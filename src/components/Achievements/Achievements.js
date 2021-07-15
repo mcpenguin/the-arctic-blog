@@ -41,6 +41,16 @@ export default class Achievements extends Component {
                         contestName="Canadian Senior Mathematics Competition (CSMC)"
                         date="Nov 2019"
                     />
+                    <AchievementEntry 
+                        title="Top 1% (Honour Roll - Group IV)"
+                        contestName="Canadian Senior Mathematics Competition (CSMC)"
+                        date="Nov 2019"
+                    />
+                    <AchievementEntry 
+                        title="Top 1% (Honour Roll - Group IV)"
+                        contestName="Canadian Senior Mathematics Competition (CSMC)"
+                        date="Nov 2019"
+                    />
                 </div>
             </section>
         ); 

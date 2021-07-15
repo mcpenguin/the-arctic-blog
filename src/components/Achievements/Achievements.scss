@@ -19,14 +19,23 @@
         background-color: #f5f5f5ee;
         height: 100%;
 
+        border-radius: 20px;
+
+        @media (max-width: $tablet_width) {
+            width: 95%;
+            // padding: 0 10px;
+        }
+
         .achievement {
             display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
 
             .description {
                 width: 80%;
                 h5 {
                     font-size: 2.2em;
-                    font-weight: 500;
+                    font-weight: 600;
                     // gradient background
                     background: linear-gradient(135deg, rgb(3, 20, 117) 0%, rgb(109, 181, 230) 100%);
                     background-clip: text;
@@ -40,6 +49,18 @@
                     font-weight: 600;
                     color: $dark_blue;
                 }
+
+                @media (max-width: $tablet_width) {
+                    width: 100%;
+
+                    h5 {
+                        font-size: 1.8em;
+                    }
+
+                    h6 {
+                        font-size: 1.1em;
+                    }
+                }
             }
 
             .date {
@@ -51,6 +72,15 @@
                 h6 {
                     text-align: right;
                     // font-style: italic;
+                }
+
+                @media (max-width: $tablet_width) {
+                    width: 100%;
+                    justify-content: flex-start;
+
+                    h6 {
+                        text-align: left;
+                    }
                 }
             }
         }
