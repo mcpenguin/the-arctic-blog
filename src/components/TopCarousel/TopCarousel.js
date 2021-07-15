@@ -9,7 +9,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
 // import stylesheet
-import './TopCarousel.css';
+import './TopCarousel.scss';
 
 // proportion of carousel images: 1440x600
 // need to add "smaller" images for the media, so when window width gets smaller,

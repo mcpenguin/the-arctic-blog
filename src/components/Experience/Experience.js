@@ -28,7 +28,7 @@ class ExperienceEntry extends Component {
     render() {
         return (
             <div className={`experience ${this.props.experienceClass}`} style={{
-                backgroundImage: `url(${images[this.props.experienceClass]})`,
+                // backgroundImage: `url(${images[this.props.experienceClass]})`,
             }}>
                 <div className='sub'>
                     <div className="content">
@@ -38,11 +38,11 @@ class ExperienceEntry extends Component {
                         <div className="date">
                             <h6>{this.props.experienceDate}</h6>
                         </div>
-                        <div className="description">
+                        {/* <div className="description">
                             <p>{this.props.experienceDescription}</p>
-                        </div>
+                        </div> */}
                         <div className="key-achievements">
-                            <h3>Key Achievements</h3>
+                            {/* <h3>Key Achievements</h3> */}
                             <ul>
                                 {this.props.experienceAchievements.map(
                                     a => <li>{a}</li>

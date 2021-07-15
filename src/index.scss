@@ -1,3 +1,15 @@
+// media breakpoints
+$small_mobile_width: 360px;
+$mobile_width: 480px;
+$tablet_width: 768px;
+$medium_desktop_width: 990px;
+$desktop_width: 1100px;
+$large_desktop_width: 1280px;
+
+// color scheme
+$off_white: #f5f5f5;
+$dark_blue: #000031;
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -32,21 +44,14 @@ ul {
 li {
     font-family: 'nunito', sans-serif;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-left: -5px;
+    // margin-bottom: 10px;
 }
 
 #root {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-
-// media breakpoints
-$small_mobile_width: 360px;
-$mobile_width: 480px;
-$tablet_width: 768px;
-$medium_desktop_width: 990px;
-$desktop_width: 1100px;
-$large_desktop_width: 1280px;
 
 // helper code to 'center' elements
 @mixin center {
@@ -85,8 +90,8 @@ $large_desktop_width: 1280px;
 @mixin lightToDarkGradient($deg, $hue, $transp) {
     background: linear-gradient(
         $deg,
-        hsla($hue, 80%, 30%, $transp) 0%,
-        hsla($hue, 90%, 50%, $transp) 100%
+        hsla($hue, 90%, 50%, $transp) 0%,
+        hsla($hue, 70%, 60%, $transp) 100%
     );
 }
 

@@ -2,27 +2,30 @@
 
 .section-experience-page {
     .experience {
-        min-height: 70vh;
+        // min-height: 70vh;
         @include nicebg;
-        border-bottom: $dark_border;
+        // border-bottom: $dark_border;
+        padding: 20px;
         
         .sub {
             height: 100%;
             width: 100%;
+            // padding: 20px;
 
             @include center;
-            @include homePageGradient(135deg);
+            // @include homePageGradient(135deg);
 
             .content {
-                margin-top: 60px;
-                margin-bottom: 60px;
-                padding: 20px;
+                // margin-top: 60px;
+                // margin-bottom: 60px;
+                // margin: 0;
+                padding: 10px 0;
                 
                 // @include lightToDarkGradient(45deg, 130, 0.7);
-                background: #f5f5f5ee;
+                // background: #f5f5f5cc;
                 // @include dark_border;
                 border-radius: 20px;
-                box-shadow: 10px 10px #000031;
+                // box-shadow: 10px 10px #000031;
                 width: 80%;
 
                 display: flex;
@@ -32,7 +35,7 @@
                 .title {
                     width: 70%;
                     h1 {
-                        font-size: 3em;
+                        font-size: 2.4em;
                     }
                 }
 
@@ -48,7 +51,7 @@
                 }
 
                 .description {
-                    width: 60%;
+                    width: 80%;
                     padding: 10px 20px 10px 0;
                     // @include center;
 
@@ -58,8 +61,8 @@
                 }
 
                 .key-achievements {
-                    width: 40%;
-                    padding: 10px 0 10px 20px;
+                    width: 100%;
+                    // padding: 10px 0 10px 20px;
 
                     h3 {
                         font-size: 1.3em;
@@ -67,7 +70,7 @@
                     }
 
                     li {
-                        font-size: 1.1em;
+                        font-size: 1.3em;
                         font-weight: 300;
                     }
                 }
@@ -107,13 +110,14 @@
     }
 
     $tilt: 135deg;
-    $transp: 0.35;
+    $transp: 0.5;
 
     .emedasia {
         background-size: 70%;
 
         .sub {
-            @include lightToDarkGradient($tilt, 180, $transp);
+            // @include lightToDarkGradient($tilt, 180, $transp);
+            // background: #f5f5f5cc;
         }
     }
 
@@ -121,7 +125,7 @@
         background-size: 70%;
 
         .sub {
-            @include lightToDarkGradient($tilt, 200, $transp);
+            // @include lightToDarkGradient($tilt, 200, $transp);
         }
     }
 
@@ -129,7 +133,7 @@
         background-size: 30%;
 
         .sub {
-            @include lightToDarkGradient($tilt, 220, $transp);
+            // @include lightToDarkGradient($tilt, 220, $transp);
         }
     }
 
@@ -137,7 +141,7 @@
         background-size: 80%;
 
         .sub {
-            @include lightToDarkGradient($tilt, 240, $transp);
+            // @include lightToDarkGradient($tilt, 240, $transp);
         }
     }
 }

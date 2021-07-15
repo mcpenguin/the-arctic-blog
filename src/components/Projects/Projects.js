@@ -10,7 +10,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
 // import stylesheet
-import './Projects.css';
+import './Projects.scss';
 
 // filler image
 import test_img from './test-img.png';
@@ -58,7 +58,7 @@ class IconTooltip extends Component {
 class ProjectFolder extends Component {
     render() {
         return (
-            <Col xl={4} md={6}>
+            <Col xl={4} lg={6}>
                 <div className="project-folder">
                     <div className="title">
                         <h4>{this.props.projectName}</h4>
@@ -87,7 +87,7 @@ export default class Projects extends Component {
     render() {
         return (
             <>
-                <Cover 
+                {/* <Cover 
                     coverClass='projects'
                     coverTitle="My Projects"
                     coverDescription={<>
@@ -104,23 +104,26 @@ export default class Projects extends Component {
                             I have also included the main languages and tools utilized in each
                             project. You can hover over the logos to see the names of the languages and tools.
                         </p>
-                    </>}
-                />
+                    </>} */}
+                {/* /> */}
                 <section class="section-projects-page">
-                    <Container fluid>
-                        <Row>
-                            {
-                                // map the projects data into respective project folders
-                                Object.keys(project_data).map(project => (
-                                    <ProjectFolder 
-                                        projectId={project}
-                                        projectName={project_data[project].projectName}
-                                        iconsUsed={project_data[project].iconsUsed}
-                                    />
-                                ))
-                            }
-                        </Row>
-                    </Container>
+                    <div className="sub">
+                        <Container fluid>
+                            <h3>My Projects</h3>
+                            <Row>
+                                {
+                                    // map the projects data into respective project folders
+                                    Object.keys(project_data).map(project => (
+                                        <ProjectFolder
+                                            projectId={project}
+                                            projectName={project_data[project].projectName}
+                                            iconsUsed={project_data[project].iconsUsed}
+                                        />
+                                    ))
+                                }
+                            </Row>
+                        </Container>
+                    </div>
                 </section>
 
 
