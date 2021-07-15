@@ -41,7 +41,6 @@ export default class Header extends Component {
                             <NavbarLink id="extracurriculars" title="Extracurriculars" />
                             <NavbarLink id="achievements" title="Achievements" />
                             <NavbarLink id="notes" title="Notes" />
-                            <NavbarLink id="credits" title="Credits" />
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

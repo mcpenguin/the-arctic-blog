@@ -36,6 +36,7 @@ import Projects from '../Projects/Projects';
 import Experience from '../Experience/Experience';
 import Education from '../Education/Education';
 import Extracurriculars from '../Extracurriculars/Extracurriculars';
+import Achievements from '../Achievements/Achievements';
 
 // import stylesheet
 import './PageSections.scss';
@@ -181,6 +182,7 @@ export default class PageSections extends Component {
                 <Experience />
                 <Education />
                 <Extracurriculars />
+                <Achievements />
                 <div class="section-page-sections">
                     {/* <PageSection
                         psIsRight={1}

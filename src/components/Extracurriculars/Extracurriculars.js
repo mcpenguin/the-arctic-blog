@@ -12,7 +12,7 @@ import './Extracurriculars.scss';
 export default class Extracurriculars extends Component {
     render() {
         return (
-            <section className='section-extracurriculars-page'>
+            <section id="extracurriculars" className='section-extracurriculars-page'>
                 <div className='sub'>
                     <h3>My Extracurriculars and Hobbies</h3>
 

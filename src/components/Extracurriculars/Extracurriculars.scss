@@ -1,6 +1,8 @@
 @import "../../index";
 
 .section-extracurriculars-page {
+    background: $off_white;
+    
     .sub {
         @include center;
         width: 100%;
