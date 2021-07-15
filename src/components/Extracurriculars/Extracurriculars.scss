@@ -14,6 +14,12 @@
             .gradient {
                 height: 100%;
                 width: 100%;
+                @include center;
+
+                .title {
+                    color: $off_white;
+                    text-align: center;
+                }
             }
 
             .one {
@@ -63,7 +69,9 @@
 
                 .rc {
                     height: 100%;
-                    background: url("./images/rc.jpg");
+                    background: url("./images/rc.jpg"); 
+                    background-position: center;
+                    background-size: 100%;
 
                     border-left: $dark_border;
                     border-top: $dark_border;
@@ -96,8 +104,8 @@
                     .gradient {
                         background: linear-gradient(
                             135deg,
-                            rgba(10, 151, 161, 0.8) 0%,
-                            rgba(92, 221, 200, 0.8) 100%
+                            rgba(4, 94, 100, 0.8) 0%,
+                            rgba(9, 131, 111, 0.8) 100%
                         );
                     }
                 }
@@ -108,24 +116,41 @@
                     height: 80vh;
                     background: red;
                     width: 100%;
+                    
+                    border-top: $dark_border;
 
                     .tedx {
                         height: 50%;
+                        border: none;
                     }
 
                     .sue {
                         height: 50%;
+                        border: none;
                     }
                 }
 
                 .two {
                     height: 40vh;
                     width: 100%;
+
+                    border-top: $dark_border;
+
+                    .rc {
+                        border: none;
+                    }
                 }
 
                 .three {
                     height: 40vh;
                     width: 100%;
+
+                    border-top: $dark_border;
+                    border-bottom: $dark_border;
+
+                    .piano {
+                        border: none;
+                    }
                 }
             }
         }
