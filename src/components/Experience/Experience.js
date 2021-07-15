@@ -43,11 +43,13 @@ class ExperienceEntry extends Component {
                         </div> */}
                         <div className="key-achievements">
                             {/* <h3>Key Achievements</h3> */}
-                            <ul>
-                                {this.props.experienceAchievements.map(
-                                    a => <li>{a}</li>
-                                )}
-                            </ul>
+                            <p>
+                                <ul>
+                                    {this.props.experienceAchievements.map(
+                                        a => <li>{a}</li>
+                                    )}
+                                </ul>
+                            </p>
                         </div>
                     </div>
                 </div>
