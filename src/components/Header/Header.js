@@ -15,9 +15,9 @@ class NavbarLink extends Component {
         const str = `#${this.props.id}`;
         return (
             <Nav.Item>
-                <Link to={`/${this.props.id}`} className="nav-item">
+                <a href={`#${this.props.id}`} className="nav-item">
                     {this.props.title}
-                </Link>
+                </a>
             </Nav.Item>
         )
     }
@@ -41,6 +41,7 @@ export default class Header extends Component {
                             <NavbarLink id="extracurriculars" title="Extracurriculars" />
                             <NavbarLink id="achievements" title="Achievements" />
                             <NavbarLink id="notes" title="Notes" />
+                            <NavbarLink id="contact-me" title="Contact Me" />
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

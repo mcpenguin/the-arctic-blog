@@ -61,7 +61,7 @@ class ExperienceEntry extends Component {
 export default class Experience extends Component {
     render() {
         return (
-            <section class='section-experience-page'>
+            <section id="experience" class='section-experience-page'>
                 <div class='gradient'>
                     <h3>My Past Experiences</h3>
                     {/* <Cover

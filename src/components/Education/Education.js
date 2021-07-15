@@ -60,7 +60,7 @@ class EducationEntry extends Component {
 export default class Education extends Component {
     render() {
         return (
-            <section className="section-education-page">
+            <section id="education" className="section-education-page">
                 <div className='gradient'>
                     {/* <Cover
                     coverClass="education"

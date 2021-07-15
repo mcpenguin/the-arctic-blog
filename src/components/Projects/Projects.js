@@ -106,7 +106,7 @@ export default class Projects extends Component {
                         </p>
                     </>} */}
                 {/* /> */}
-                <section class="section-projects-page">
+                <section id="projects" class="section-projects-page">
                     <div className="sub">
                         <Container fluid>
                             <h3>My Projects</h3>
