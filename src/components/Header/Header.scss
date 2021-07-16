@@ -15,6 +15,17 @@ nav {
     background-color: #000031;
 }
 
+.navbar-toggler {
+    width: 40px;
+    border: none;
+
+    .navbar-toggler-icon {
+        width: 25px;
+        position: relative;
+        left: -5px;
+    }
+}
+
 .nav-item {
     margin: 0 8px;
     font-size: 0.95em;
@@ -41,6 +52,10 @@ nav {
     font-size: 1.6rem !important;
     margin: 0 5px;
     vertical-align: middle;
+
+    @media (max-width: $tablet_width) {
+        font-size: 1.3rem !important;
+    }
 } 
 
 .navbar-logo {
