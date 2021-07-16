@@ -1,3 +1,8 @@
 ## About
 
-Generating random paragraphs can be an excellent way for writers to get their creative flow going at the beginning of the day. The writer has no idea what topic the random paragraph will be about when it appears. This forces the writer to use creativity to complete one of three common writing challenges. The writer can use the paragraph as the first one of a short story and build upon it. A second option is to use the random paragraph somewhere in a short story they create. The third option is to have the random paragraph be the ending paragraph in a short story. No matter which of these challenges is undertaken, the writer is forced to use creativity to incorporate the paragraph into their writing.
+*Joget FB Marketplace* is an application built using the Joget framework, which itself
+is built on Java and MySQL, to help vendors sell their products via streaming through Facebook Live. 
+It allows vendors to start a stream on Facebook, and customers can order products by commenting on said streams.
+It also integrates a payment gateway for customers to pay for the vendors'
+products. The app is still in development, so no link is currently available
+for now.
