@@ -10,6 +10,15 @@ export default {
             "Helped to develop a Joget website to manage medical subscriptions for doctors and patients",
         ]
     },
+    mathsoc_comic_writer: {
+        title: "Comic Writer @ MATHSOC Cartoons",
+        location: "University of Waterloo, Ontario, Canada",
+        date: "May - Aug 2021",
+        keyAchievements: [
+            "Created storyboards for original mathematics-based cartoons",
+            "Liaised with team to review each other's work and provide feedback",
+        ]
+    },
     dignity: {
         title: "Mathematics Tutor @ Dignity for Children Foundation",
         location: "Kuala Lumpur, Malaysia",
