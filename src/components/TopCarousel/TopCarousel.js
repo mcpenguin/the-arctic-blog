@@ -16,13 +16,7 @@ import './TopCarousel.scss';
 // the animation for the carousel does not look so bad
 
 // import images
-import notes from './notes_carousel.jpg';
-import piano from './piano_carousel.jpg';
-import graph from './graph_carousel.png';
-import github from './github_carousel.jpg';
-import linkedin from './linkedin_carousel.jpg';
-import rose from './rose_carousel.png';
-import penguin from './penguin_carousel.png'
+import * as images from './images/export_images';
 
 // component for carousel items
 class CustomCarouselContents extends Component {
@@ -45,10 +39,32 @@ export default class TopCarousel extends Component {
     render() {
         return (
             <section className="section-top-carousel">
-                <Carousel>
+                <div className='carousel-container'>
+                    {/* {
+                    Object.values(images).map(
+                        image => <div className='carousel-image'>
+                            <img src={image} />
+                        </div>
+                    )
+                } */}
+                    <div className='description'>
+                        <h1>
+                            Welcome to the Arctic Blog :D
+                        </h1>
+                        <h5>
+                            I'm Marcus Chan, a 2A Data Science student
+                            at the University of Waterloo and an aspiring
+                            software developer and data scientist.
+                        </h5>
+                    </div>
+                </div>
+
+
+
+                {/* <Carousel>
                     <Carousel.Item>
                         <CustomCarouselContents
-                            image={notes}
+                            image={images.notes}
                             heading={
                                 <h1 className="carousel-heading">
                                     Incoming A-Levels or first-year student?
@@ -65,7 +81,7 @@ export default class TopCarousel extends Component {
                     </Carousel.Item>
                     <Carousel.Item>
                         <CustomCarouselContents
-                            image={notes}
+                            image={images.notes}
                             heading={
                                 <h1 className="carousel-heading">
                                     Current notes update
@@ -81,7 +97,7 @@ export default class TopCarousel extends Component {
                     </Carousel.Item>
                     <Carousel.Item>
                         <CustomCarouselContents
-                            image={piano}
+                            image={images.piano}
                             heading={
                                 <h1 className="carousel-heading">
                                     Unravel (from Tokyo Ghoul) - Original Piano Arrangement
@@ -96,7 +112,7 @@ export default class TopCarousel extends Component {
                     </Carousel.Item>
                     <Carousel.Item>
                         <CustomCarouselContents
-                            image={graph}
+                            image={images.graph}
                             heading={
                                 <h1 className="carousel-heading">
                                     Check out "My Course Graph"
@@ -112,7 +128,7 @@ export default class TopCarousel extends Component {
                     </Carousel.Item>
                     <Carousel.Item>
                         <CustomCarouselContents
-                            image={penguin}
+                            image={images.penguin}
                             heading={
                                 <h1 className="carousel-heading">
                                     Want to connect with me further?
@@ -126,7 +142,7 @@ export default class TopCarousel extends Component {
                             }
                         />
                     </Carousel.Item>
-                </Carousel>
+                </Carousel> */}
             </section>
         );
     }
