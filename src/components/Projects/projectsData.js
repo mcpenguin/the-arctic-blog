@@ -41,6 +41,7 @@ const data = {
     },
     "calculator": {
         projectName: "Tkinter Calculator",
+        projectLink: "https://github.com/mcpenguin/calculator",
         iconsUsed:['tkinter', 'python'],
     },
 };
