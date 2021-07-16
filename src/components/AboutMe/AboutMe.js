@@ -1,7 +1,7 @@
 // React component class for About Me section
 
 import React, { Component } from 'react';
-import Fade from 'react-reveal';
+// import Fade from 'react-reveal';
 import TypeWriterEffect from 'react-typewriter-effect';
 
 import Container from 'react-bootstrap/Container';

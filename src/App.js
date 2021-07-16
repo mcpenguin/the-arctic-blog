@@ -1,7 +1,7 @@
 // React components for pages
 
 import { Component } from 'react';
-import Fade from 'react-reveal';
+// import Fade from 'react-reveal';
 import {
     BrowserRouter as Router,
     Switch,
@@ -14,7 +14,7 @@ import Header from './components/Header/Header';
 import TopCarousel from './components/TopCarousel/TopCarousel';
 import AboutMe from './components/AboutMe/AboutMe';
 import PageSections from './components/PageSections/PageSections';
-import Timeline from './components/Timeline/Timeline';
+// import Timeline from './components/Timeline/Timeline';
 import ContactMe from './components/ContactMe/ContactMe';
 
 // import components for pages
@@ -27,6 +27,7 @@ import Notes from './components/Notes/Notes';
 import Projects from './components/Projects/Projects';
 import ProjectContent from './components/Projects/ProjectContent';
 import Cover from './components/Cover/Cover';
+import NotFound from './components/404NotFound/404NotFound';
 
 // home page
 class HomePage extends Component {
@@ -65,7 +66,6 @@ class AchievementsPage extends Component {
                 <Header />
                 <Achievements />
                 <ContactMe />
-                <Timeline />
             </>
         );
     }
@@ -190,6 +190,18 @@ class IndividualProjectPage extends Component {
     }
 }
 
+class NotFoundSection extends Component {
+    render() {
+        return (
+            <>
+                <Header />
+                <NotFound />
+                <ContactMe />
+            </>
+        )
+    }
+}
+
 export default class App extends Component {
 
     render() {
@@ -205,6 +217,7 @@ export default class App extends Component {
                     {/* <Route exact path="/achievements" component={AchievementsPage} /> */}
                     {/* <Route exact path="/notes" component={NotesPage} /> */}
                     {/* <Route exact path="/credits" component={CreditsPage} /> */}
+                    <Route component={NotFoundSection} />
                 </Switch>
             </Router>
         )

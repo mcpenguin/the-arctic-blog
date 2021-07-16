@@ -1,6 +1,6 @@
 // React component class for Notes section
 import React, { Component } from 'react';
-import { Fade, Slide } from 'react-reveal';
+// import { Fade, Slide } from 'react-reveal';
 import TypeWriterEffect from 'react-typewriter-effect';
 
 // import Bootstrap components
