@@ -1,0 +1,104 @@
+@import "../../index";
+
+.section-notes-page {
+    background-color: #ecebeb;
+    text-align: center;
+    padding: 20px 5%;
+    padding-bottom: 50px;
+
+    .container-fluid .row .col {
+        @include center;
+
+        .text {
+            width: 80%;
+        }
+    }
+
+    .row {  
+        @media (max-width: $tablet_width) {
+            margin: 0 -20px;
+        }
+    }
+}
+
+#personal-notes-title {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#personal-notes-description {
+    padding-bottom: 15px;
+}
+
+.notes-card {
+    background-color: #b2d0db;
+    border: 1px solid #000031;
+}
+
+@for $i from 1 through 6 {
+    .notes-card:nth-child(#{$i}) {
+        background-color: hsla(170 + $i * 10, 90%, 70%, 1);
+    }
+}
+
+.notes-card-body {
+    background-color: #ecebeb;
+    color: #000031;
+    font-weight: 400;
+}
+
+.notes-card-link {
+    color: #000031;
+    font-size: 1.05rem;
+    font-weight: bold;
+
+    &:hover {
+        color: #000031;
+    }
+}
+
+.collapse, .collapsing {
+    border-top: 1px solid black;
+}
+
+.notes-subject-section {
+    padding: 15px 0;
+}
+
+.notes-subject-heading {
+    font-weight: 600;
+    padding: 5px 0;
+
+    @media (max-width: $tablet_width) {
+        margin-top: 20px;
+    }
+}
+
+.notes-subject-link {
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.notes-subject-link a {
+    color: #046c92;
+}
+
+.notes-subject-link a:hover {
+    color: #046c92c2;
+}
+
+.notes-taken-when {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.notes-professors {
+    font-size: 1rem;
+    font-style: italic;
+    text-align: left;
+}
+
+.notes-description {
+    font-size: 1rem;
+    text-align: justify;
+}

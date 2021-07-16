@@ -1,2 +1,2 @@
-# the-arctic-blog
-The *actual* GitHub page for the Arctic Blog.
+# The Arctic Blog
+The repository for my website.

@@ -1,0 +1,302 @@
+@import '../../index.scss';
+
+/* Page Sections Wrapper */
+.section-page-sections {
+    background: rgb(245,245,245);
+    // background: linear-gradient(
+    //     160deg, 
+    //     rgb(224, 247, 245) 0%, 
+    //     rgb(165, 236, 220) 35%, 
+    //     rgb(187, 223, 240) 64%, 
+    //     rgb(177, 198, 238) 90%, 
+    //     rgb(174, 186, 235) 100%
+    // );
+}
+
+/* General Page Sections */
+.section-page {
+    padding: 20px 12%;
+    height: 80vh;
+    @include center;
+}
+
+.section-page .container-fluid .col-lg-6 {
+    display: flex;
+}
+
+.page-text, .page-image-div {
+    justify-content: center;
+    align-items: center;
+}
+
+.page-image {
+    background-position: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 500px;
+}
+
+.page-text-div {
+    padding: 20px 5%;
+
+    h2 {
+        font-family: 'nunito', sans-serif;
+        font-weight: 300;
+        margin-bottom: 5%;
+        font-size: 2.6em;
+    }
+
+    p {
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+}
+
+.page-view button {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	width: 250px !important;
+	height: 50px;
+	cursor: pointer;
+    border: 0;
+    /* border: 2px solid #000031; */
+	box-shadow: 2px 2px #000031;
+	font-family: 'nunito', sans-serif;
+	color: #000000;
+	font-size: 25px;
+	border-radius: 4px;
+	transition: 0.3s;
+}
+
+.page-view button:hover {
+    box-shadow: 4px 4px #000031;
+}
+
+.page-view button .page-icon {
+    font-size: 110%;
+}
+
+.page-view button:hover .page-icon {
+    animation-name: bounce_arrow;
+    animation-duration: 0.5s; 
+    /* animation-direction: alternate-reverse; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce_arrow {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 992px) {
+    .section-projects, .section-education,
+    .section-achievements, .section-my-timeline {
+        /* padding: 10px 7%; */
+        padding-left: 9%;
+        padding-right: 11%;
+    }
+
+    .section-experience, .section-extracurriculars, 
+    .section-notes, .section-credits {
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .section-page {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 9%;
+        padding-right: 11%;
+    }
+
+    .page-text-div h2 {
+        margin-bottom: 10px;
+        font-size: 2.4em;
+    }
+
+}
+
+@media (max-width: 680px) {
+
+    .section-page {
+        padding: 40px 10px;
+    }
+
+    .page-text-div h2 {
+        margin-bottom: 5px;
+    }
+
+    .page-image {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .page-image {
+        margin-bottom: 20px;
+    }
+
+    .page-text-div h2 {
+        font-size: 2em;
+    }
+}
+
+/* Projects */
+.projects-image {
+    // width: 220%;
+    background-image: url('./blobs/blob-projects.svg');
+    background-size: 110%;
+    background-position: 0;
+}
+
+.projects-view button {
+	width: 250px;
+	color: #000000;
+    background: #b9d3f0;
+}
+
+.projects-view button:hover {
+    background: #b9d3f099;
+}
+
+/* Experience */
+.experience-image {
+    // padding: 15%;
+    background: url('./blobs/blob-experience.svg');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 0;
+}
+
+.experience-view button {
+	width: 250px;
+	color: #000000;
+    background: #afcff5;
+}
+
+.experience-view button:hover {
+    background: #afcff599;
+}
+
+/* Education */
+
+.education-image {
+    background: url('./blobs/blob-education.svg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 0;
+    padding: 15%;
+}
+
+.education-view button {
+	width: 250px;
+	color: #000000;
+    background: #97c3f1;
+}
+
+.education-view button:hover {
+    background: #97c3f199;
+}
+
+/* Extracurriculars */
+.extracurriculars-image {
+    background: url('./blobs/blob-extracurriculars.svg');
+    background-size: 110%;
+    background-position: 0;
+}
+
+.extracurriculars-view button {
+	width: 300px;
+	color: #000000;
+    background: #8abaee;
+}
+
+.extracurriculars-view button:hover {
+    background: #8abaee99;
+}
+
+/* Awards/Achievements */
+.achievements-image {
+    width: 85%;
+    background: url('./blobs/blob-achievements.svg');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: -20px 0;
+}
+
+.achievements-view button {
+	width: 280px;
+	color: #000000;
+    background: #81b7f1;
+}
+
+.achievements-view button:hover {
+    background: #81b7f199;
+}
+
+/* Notes */
+.notes-image {
+    padding: 10%;
+    transform: scaleX(-1);
+    background: url('./blobs/blob-notes.svg');
+    background-size: 110%;
+    background-position: 10px 0;
+}
+
+.notes-view button {
+	width: 250px;
+	color: #000000;
+    background: #74b2f3;
+}
+
+.notes-view button:hover {
+    background: #74b2f399;
+}
+
+/* Timeline */
+.my-timeline-image {
+    background: url('./blobs/blob-timeline.svg');
+    background-size: 105%;
+    background-position: -20px -10px;
+}
+
+.my-timeline-view button {
+	width: 250px;
+	color: #000000;
+    background: #73b4f8;
+}
+
+.my-timeline-view button:hover {
+    background: #73b4f899;
+}
+
+/* Credits */
+.credits-image {
+    transform: scaleX(-1);
+    padding: 15%;
+    background: url('./blobs/blob-credits.svg');
+    background-size: 105%;
+    background-position: 0;
+}
+
+.credits-view button {
+	width: 250px;
+	color: #000000;
+    background: #70adee;
+}
+
+.credits-view button:hover {
+    background: #70adee99;
+}

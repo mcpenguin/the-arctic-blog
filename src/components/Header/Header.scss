@@ -1,0 +1,63 @@
+@import "../../index";
+
+.section-header {
+    padding: 0;
+    z-index: 1000;
+    margin-bottom: 40px;
+}
+
+#my-navbar {
+    font-family: 'nunito', sans-serif;
+    font-weight: 500;
+}
+
+nav {
+    background-color: #000031;
+}
+
+.navbar-toggler {
+    width: 40px;
+    border: none;
+
+    .navbar-toggler-icon {
+        width: 25px;
+        position: relative;
+        left: -5px;
+    }
+}
+
+.nav-item {
+    margin: 0 8px;
+    font-size: 0.95em;
+    color: #c1c1dd !important;
+    font-family: 'Quicksand', sans-serif;
+
+    @media (max-width: $desktop_width) {
+        margin: 0 5px;
+        transition: 1s;
+    }
+}
+
+#navbar-img {
+    width: 30px;
+    position: relative;
+    top: -3px;
+    margin: 0 6px 0 0;
+}
+
+.navbar-brand {
+    color: #f5f5f5 !important;
+    font-weight: 600;
+    font-family: 'nunito', sans-serif;
+    font-size: 1.6rem !important;
+    margin: 0 5px;
+    vertical-align: middle;
+
+    @media (max-width: $tablet_width) {
+        font-size: 1.3rem !important;
+    }
+} 
+
+.navbar-logo {
+    padding: 0 0;
+}
