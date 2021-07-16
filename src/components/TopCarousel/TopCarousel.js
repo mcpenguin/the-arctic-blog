@@ -53,7 +53,7 @@ export default class TopCarousel extends Component {
                         </h1>
                         <h5>
                             I'm Marcus Chan, a 2A Data Science student
-                            at the University of Waterloo and an aspiring
+                            at the University of Waterloo as well as an aspiring
                             software developer and data scientist.
                         </h5>
                     </div>

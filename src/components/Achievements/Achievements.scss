@@ -7,6 +7,7 @@
     // min-height: 200vh;
     padding: 40px 0;
     @include center;
+    @include parallax;
 
     h3 {
         color: $off_white;

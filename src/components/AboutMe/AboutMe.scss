@@ -17,6 +17,37 @@
         padding: 30px 0 50px 0;
         background: radial-gradient(#b9b9f0cc 0%, #000031cc 100%);
     }
+
+    .wrapper {
+        // gradient 'border'
+        background: linear-gradient(
+            135deg,
+            #00eeee 0%,
+            #2e68d4 34%,
+            #1907b9 66%,
+            #4d0bc7 100%
+        );
+        border-radius: 20px;
+        // min-height: 90vh;
+    
+        .personal-facts {
+            
+            height: 100%;
+            width: 100%;
+    
+            // min-height: 90vh;
+            margin: 5px;
+            padding: 20px 30px;
+    
+            background-color: #f5f5f5cc;
+            text-align: left;
+            border-radius: 20px;
+    
+            @media (max-width: $tablet_width) {
+                margin-top: 0px;
+            }
+        }
+    }
 }
 
 #container-about-me {
@@ -73,37 +104,6 @@
     padding: 30px 20px 20px 20px;
     background-color: #f5f5f5cc;
     text-align: justify;
-}
-
-.wrapper {
-    // gradient 'border'
-    background: linear-gradient(
-        135deg,
-        #00eeee 0%,
-        #2e68d4 34%,
-        #1907b9 66%,
-        #4d0bc7 100%
-    );
-    border-radius: 20px;
-    // min-height: 90vh;
-
-    .personal-facts {
-        
-        height: 100%;
-        width: 100%;
-
-        // min-height: 90vh;
-        margin: 5px;
-        padding: 20px 30px;
-
-        background-color: #f5f5f5cc;
-        text-align: left;
-        border-radius: 20px;
-
-        @media (max-width: $tablet_width) {
-            margin-top: 0px;
-        }
-    }
 }
 
 .personal-facts-col {
