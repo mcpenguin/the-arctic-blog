@@ -4,52 +4,39 @@ export default {
         title: "Data Analyst @ eMedAsia",
         location: "Kuala Lumpur, Malaysia",
         date: "May - Aug 2021",
-        description: `
-            During the first part of your life, you only become aware of happiness once you have lost it. Then an age comes, a second one, in which you already know, at the moment when you begin to experience true happiness, that you are, at the end of the day, going to lose it. When I met Belle, I understood that I had just entered this second age. I also understood that I hadn’t reached the third age, in which anticipation of the loss of happiness prevents you from living.
-        `,
         keyAchievements: [
-            "Conducted analysis and constructed visualizations for medical data produced by over 40% of the clinics in Malaysia",
-            "Conducted analysis and constructed visualizations for medical data produced by over 40% of the clinics in Malaysia",
-            "Conducted analysis and constructed visualizations for medical data produced by over 40% of the clinics in Malaysia",
+            "Analyzed megabytes of transaction records from 41,000+ clinics in Malaysia",
+            "Independently built and implemented a Joget website that allows vendors to sell products through Facebook Live",
+            "Helped to develop a Joget website to manage medical subscriptions for doctors and patients",
         ]
     },
     dignity: {
         title: "Mathematics Tutor @ Dignity for Children Foundation",
         location: "Kuala Lumpur, Malaysia",
         date: "June - Dec 2019",
-        description: `
-            During the first part of your life, you only become aware of happiness once you have lost it. Then an age comes, a second one, in which you already know, at the moment when you begin to experience true happiness, that you are, at the end of the day, going to lose it. When I met Belle, I understood that I had just entered this second age. I also understood that I hadn’t reached the third age, in which anticipation of the loss of happiness prevents you from living.
-        `,
         keyAchievements: [
-            "Conducted analysis and constructed visualizations for medical data produced by over 40% of the clinics in Malaysia",
-            "Conducted analysis and constructed visualizations for medical data produced by over 40% of the clinics in Malaysia",
-            "Conducted analysis and constructed visualizations for medical data produced by over 40% of the clinics in Malaysia",
+            "Taught mathematics and provided 1-1 guidance and tutoring to a class of Grade 5 students",
+            "Optimised course materials and assignments to maximise class engagement and effectiveness",
+            "Personalised help with each student to ensure they had mastery over the material",
         ]
     },
     shelterHome: {
         title: "Piano Tutor @ Shelter Home for Children",
         location: "Kuala Lumpur, Malaysia",
         date: "Apr 2019 - Jan 2020",
-        description: `
-            During the first part of your life, you only become aware of happiness once you have lost it. Then an age comes, a second one, in which you already know, at the moment when you begin to experience true happiness, that you are, at the end of the day, going to lose it. When I met Belle, I understood that I had just entered this second age. I also understood that I hadn’t reached the third age, in which anticipation of the loss of happiness prevents you from living.
-        `,
         keyAchievements: [
-            "Conducted analysis and constructed visualizations for medical data produced by over 40% of the clinics in Malaysia",
-            "Conducted analysis and constructed visualizations for medical data produced by over 40% of the clinics in Malaysia",
-            "Conducted analysis and constructed visualizations for medical data produced by over 40% of the clinics in Malaysia",
+            "Provided private lessons to residents of the home of various ages",
+            "Catered learning style and music scores to each student to maximize their engagement and learning efficacy",
         ]
     },
     tms: {
         title: "Software Engineer @ TMS Software Sdn Bhd",
         location: "Kuala Lumpur, Malaysia",
         date: "May - July 2018",
-        description: `
-            During the first part of your life, you only become aware of happiness once you have lost it. Then an age comes, a second one, in which you already know, at the moment when you begin to experience true happiness, that you are, at the end of the day, going to lose it. When I met Belle, I understood that I had just entered this second age. I also understood that I hadn’t reached the third age, in which anticipation of the loss of happiness prevents you from living.
-        `,
         keyAchievements: [
-            "Conducted analysis and constructed visualizations for medical data produced by over 40% of the clinics in Malaysia",
-            "Conducted analysis and constructed visualizations for medical data produced by over 40% of the clinics in Malaysia",
-            "Conducted analysis and constructed visualizations for medical data produced by over 40% of the clinics in Malaysia",
+            "Implemented the framework for a Joget project managing a country-wide database of over 41,000 clinics",
+            "Used the Google Maps API to display locations of clinics in a visually appealing interface",
+            "Created a comprehensive user guide for a truck delivery application, currently used by over 100,000 users",
         ]
     },
 }
