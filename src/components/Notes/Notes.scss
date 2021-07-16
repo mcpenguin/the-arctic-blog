@@ -13,6 +13,12 @@
             width: 80%;
         }
     }
+
+    .row {  
+        @media (max-width: $tablet_width) {
+            margin: 0 -20px;
+        }
+    }
 }
 
 #personal-notes-title {
