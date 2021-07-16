@@ -2,6 +2,7 @@
 
 .section-about-me {
     /* background-color: #c7cdf0; */
+    margin-top: -1px;
     background-image: url("./geometric-1920x1080.svg");
     @include parallax;
     text-align: center;
@@ -30,11 +31,41 @@
     text-align: center;
 }
 
-#personal-photo {
+.personal-photo {
+    background: white;
     margin: 20px 0;
-    width: 100%;
-    height: 707px;
-    object-fit: cover;
+    border-radius: 20px;
+    height: 90vh;
+
+    // gradient 'border'
+    background: conic-gradient(
+        #00eeee,
+        #2e68d4,
+        #1907b9,
+        #00eeee,
+        #2e68d4,
+        #1907b9,
+        #00eeee,
+        #2e68d4,
+        #1907b9,
+        #00eeee,
+        #2e68d4,
+        #1907b9,
+        #00eeee
+    );
+
+    @media (max-width: $tablet_width) {
+        height: 60vh;
+    }
+    
+    #personal-photo {
+
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
 }
 
 .personal-desc-section {
@@ -44,36 +75,60 @@
     text-align: justify;
 }
 
-.personal-facts {
-    margin-top: 10px;
-    padding: 20px 20px 10px 20px;
-    background-color: #f5f5f5cc;
-    text-align: left;
-}
+.wrapper {
+    // gradient 'border'
+    background: linear-gradient(
+        135deg,
+        #00eeee 0%,
+        #2e68d4 34%,
+        #1907b9 66%,
+        #4d0bc7 100%
+    );
+    border-radius: 20px;
+    // min-height: 90vh;
 
-@media only screen and (max-width: 768px) {
     .personal-facts {
-        margin-top: 25px;
+        
+        height: 100%;
+        width: 100%;
+
+        // min-height: 90vh;
+        margin: 5px;
+        padding: 20px 30px;
+
+        background-color: #f5f5f5cc;
+        text-align: left;
+        border-radius: 20px;
+
+        @media (max-width: $tablet_width) {
+            margin-top: 0px;
+        }
     }
 }
 
-.personal-facts-head {
-    font-weight: 600;
-    font-size: 1.4rem;
-    margin: 2px 0;
+.personal-facts-col {
+    height: 100%;
 }
+
+// .personal-facts-head {
+//     font-weight: 600;
+//     font-size: 1.4rem;
+//     margin: 2px 0;
+// }
 
 .personal-facts-icon {
     color: #000031;
     position: relative;
     top: -2px;
     margin: 0 8px 0 2px;
+    font-size: 1.2em !important;
 }
 
 .personal-facts-body {
     font-weight: 400;
     font-size: 1.05rem;
     margin: 2px 0 15px 0;
+    min-height: 100%;
 }
 
 .personal-description {
