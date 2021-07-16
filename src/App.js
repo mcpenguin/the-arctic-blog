@@ -197,14 +197,14 @@ export default class App extends Component {
             <Router forceRefresh={true}>
                 <Switch>
                     <Route exact path="/" component={HomePage} />
-                    <Route exact path="/projects" component={ProjectsPage} />
+                    {/* <Route exact path="/projects" component={ProjectsPage} /> */}
                     <Route exact path="/projects/:projectId" component={IndividualProjectPage} />
-                    <Route exact path="/experience" component={ExperiencePage} />
-                    <Route exact path="/education" component={EducationPage} />
-                    <Route exact path="/extracurriculars" component={ExtracurricularsPage} />
-                    <Route exact path="/achievements" component={AchievementsPage} />
-                    <Route exact path="/notes" component={NotesPage} />
-                    <Route exact path="/credits" component={CreditsPage} />
+                    {/* <Route exact path="/experience" component={ExperiencePage} /> */}
+                    {/* <Route exact path="/education" component={EducationPage} /> */}
+                    {/* <Route exact path="/extracurriculars" component={ExtracurricularsPage} /> */}
+                    {/* <Route exact path="/achievements" component={AchievementsPage} /> */}
+                    {/* <Route exact path="/notes" component={NotesPage} /> */}
+                    {/* <Route exact path="/credits" component={CreditsPage} /> */}
                 </Switch>
             </Router>
         )
