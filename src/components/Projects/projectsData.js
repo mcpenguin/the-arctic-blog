@@ -11,6 +11,16 @@ const data = {
         iconsUsed: ['react', 'sass', 'nodejs'],
         projectLink: "https://puremath.club",
     },
+    "linear_collatz": {
+        projectName: "Linear Collatz",
+        iconsUsed: ['react', 'reactbootstrap', 'nodejs'],
+        projectLink: "https://linear-collatz.herokuapp.com/",
+    },
+    "malaysia_covid": {
+        projectName: "Malaysia COVID-19 Data",
+        iconsUsed: ['mysql', 'beautifulsoup', 'jupyter', 'python'],
+        projectLink: "https://github.com/mcpenguin/malaysia-covid",
+    },
     "joget_fb_marketplace": {
         projectName: "Joget FB Marketplace",
         iconsUsed: ['joget', 'java', 'mysql', 'js'],
@@ -20,20 +30,10 @@ const data = {
         iconsUsed: ['java', 'excel'],
         projectLink: "https://github.com/mcpenguin/hypixel-skyblock-calc",
     },
-    "malaysia_covid": {
-        projectName: "Malaysia COVID-19 Data",
-        iconsUsed: ['mysql', 'beautifulsoup', 'jupyter', 'python'],
-        projectLink: "https://github.com/mcpenguin/malaysia-covid",
-    },
     "student_reg_gui": {
         projectName: "Student Attendance GUI",
         iconsUsed: ['java'],
         projectLink: "https://github.com/mcpenguin/student-reg-gui",
-    },
-    "linear_collatz": {
-        projectName: "Linear Collatz",
-        iconsUsed: ['react', 'reactbootstrap', 'nodejs'],
-        projectLink: "https://github.com/mcpenguin/linear-collatz",
     },
     "compass_initiative": {
         projectName: "Compass Website",
