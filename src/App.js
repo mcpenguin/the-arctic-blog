@@ -206,7 +206,7 @@ export default class App extends Component {
 
     render() {
         return (
-            <Router forceRefresh={true} basename={process.env.PUBLIC_URL}>
+            <Router forceRefresh={true} basename={`${process.env.PUBLIC_URL}`}>
                 <Switch>
                     <Route exact path="/" component={HomePage} />
                     {/* <Route exact path="/projects" component={ProjectsPage} /> */}
