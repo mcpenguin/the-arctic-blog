@@ -20,29 +20,23 @@
 
     .wrapper {
         // gradient 'border'
-        background: linear-gradient(
-            135deg,
-            #00eeee 0%,
-            #2e68d4 34%,
-            #1907b9 66%,
-            #4d0bc7 100%
-        );
+        // background: linear-gradient(135deg, #00eeee 0%, #2e68d4 34%, #1907b9 66%, #4d0bc7 100%);
+        @include cyanToDarkBlueAnimatedGradient;
         border-radius: 20px;
         // min-height: 90vh;
-    
+
         .personal-facts {
-            
             height: 100%;
             width: 100%;
-    
+
             // min-height: 90vh;
             margin: 5px;
             padding: 20px 30px;
-    
-            background-color: #f5f5f5cc;
+
+            background-color: #f5f5f5ee;
             text-align: left;
             border-radius: 20px;
-    
+
             @media (max-width: $tablet_width) {
                 margin-top: 0px;
             }
@@ -63,40 +57,24 @@
 }
 
 .personal-photo {
-    background: white;
-    margin: 20px 0;
+    // background: white;
+    // padding: 20px 0;
     border-radius: 20px;
     height: 90vh;
+    margin: 5px;
+    overflow: hidden;
+    @include cyanToDarkBlueAnimatedGradient;
+    // margin: 5px;
 
-    // gradient 'border'
-    background: conic-gradient(
-        #00eeee,
-        #2e68d4,
-        #1907b9,
-        #00eeee,
-        #2e68d4,
-        #1907b9,
-        #00eeee,
-        #2e68d4,
-        #1907b9,
-        #00eeee,
-        #2e68d4,
-        #1907b9,
-        #00eeee
-    );
-
-    @media (max-width: $tablet_width) {
-        height: 60vh;
-    }
-    
     #personal-photo {
-
-        padding: 5px;
+        // make picture fit div
         width: 100%;
+        padding: 5px;
         height: 100%;
         object-fit: cover;
-        border-radius: 20px;
+        border-radius: inherit;
     }
+    // }
 }
 
 .personal-desc-section {
