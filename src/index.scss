@@ -158,6 +158,11 @@ $dark_border: 5px solid #000031;
     background: linear-gradient($deg, #00cccc 0%, #185fe2 $mid, #1100ac 100%);
 }
 
+// dark-cyan-to-dark-blue gradient
+@mixin darkCyanToDarkBlueGradient($deg, $mid) {
+    background: linear-gradient($deg, #288181 0%, #0e3988 $mid, #1000a1 100%);
+}
+
 // cyan-to-dark-blue animated gradient
 @mixin cyanToDarkBlueAnimatedGradient($duration) {
     background: linear-gradient(

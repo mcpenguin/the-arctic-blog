@@ -7,7 +7,7 @@ export default {
         achievements: [
             "Recipient of the CAD$20,000 Faculty of Mathematics Global Scholarship, awarded to only ten international students every year",
             "One of only three students to transfer from Honours Mathematics to Data Science in first year",
-            "CAV: 96 (MAV: 98)",
+            "CAV: 94 (MAV: 96)",
         ]
     },
     sunway: {
