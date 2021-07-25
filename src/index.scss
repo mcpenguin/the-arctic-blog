@@ -143,7 +143,7 @@ li {
         rgba(188, 238, 226, 0.85),
         rgba(245, 245, 245, 0.85)
     );
-    @include animatedGradient(10s, 5);
+    @include animatedGradient(8s, 5);
 }
 
 // general light to dark gradient, given hue and degree
