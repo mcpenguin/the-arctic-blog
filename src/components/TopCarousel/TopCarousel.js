@@ -40,22 +40,24 @@ export default class TopCarousel extends Component {
         return (
             <section className="section-top-carousel">
                 <div className='carousel-container'>
-                    {/* {
-                    Object.values(images).map(
-                        image => <div className='carousel-image'>
-                            <img src={image} />
+                    {
+                        Object.values(images).map(
+                            image => <div className='carousel-image'>
+                                <img src={image} />
+                            </div>
+                        )
+                    }
+                    <div className='description-sub'>
+                        <div className='description'>
+                            <h1>
+                                Welcome to the Arctic Blog :D
+                            </h1>
+                            <h5>
+                                I'm Marcus Chan, a 2A Data Science student
+                                at the University of Waterloo as well as an aspiring
+                                software developer and data scientist.
+                            </h5>
                         </div>
-                    )
-                } */}
-                    <div className='description'>
-                        <h1>
-                            Welcome to the Arctic Blog :D
-                        </h1>
-                        <h5>
-                            I'm Marcus Chan, a 2A Data Science student
-                            at the University of Waterloo as well as an aspiring
-                            software developer and data scientist.
-                        </h5>
                     </div>
                 </div>
 
