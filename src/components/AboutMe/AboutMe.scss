@@ -21,7 +21,7 @@
     .wrapper {
         // gradient 'border'
         // background: linear-gradient(135deg, #00eeee 0%, #2e68d4 34%, #1907b9 66%, #4d0bc7 100%);
-        @include cyanToDarkBlueAnimatedGradient;
+        @include cyanToDarkBlueAnimatedGradient(20s);
         border-radius: 20px;
         // min-height: 90vh;
 
@@ -63,7 +63,7 @@
     height: 90vh;
     margin: 5px;
     overflow: hidden;
-    @include cyanToDarkBlueAnimatedGradient;
+    @include cyanToDarkBlueAnimatedGradient(30s);
     // margin: 5px;
 
     #personal-photo {
@@ -94,12 +94,31 @@
 //     margin: 2px 0;
 // }
 
-.personal-facts-icon {
-    color: #000031;
-    position: relative;
-    top: -2px;
-    margin: 0 8px 0 2px;
-    font-size: 1.2em !important;
+.personal-facts {
+    .personal-facts-head {
+        @include cyanToDarkBlueGradient(45deg, 20%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 500;
+        display: flex;
+
+        .personal-facts-icon {
+            @include cyanToDarkBlueGradient(45deg, 50%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+
+            position: relative;
+            // top: -2px;
+            margin: 0 12px 0 2px;
+            width: 40px;
+            font-size: 1em !important;
+        }
+    }
 }
 
 .personal-facts-body {

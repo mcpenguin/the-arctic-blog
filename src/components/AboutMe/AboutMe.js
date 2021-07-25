@@ -58,7 +58,8 @@ export default class AboutMe extends Component {
                                 <div className='wrapper'>
                                     <div className="personal-facts">
                                         <h5 className="personal-facts-head">
-                                            <NotesIcon className="personal-facts-icon" />
+                                            <div className='personal-facts-icon'><i className='fas fa-pencil-alt' /></div>
+                                            {/* <i className='personal-facts-icon fas fa-pencil-alt' /> */}
                                             Current Notes Update
                                         </h5>
                                         <p className="personal-facts-body">
@@ -69,7 +70,7 @@ export default class AboutMe extends Component {
                                         </p>
 
                                         <h5 className="personal-facts-head">
-                                            <WorkIcon className="personal-facts-icon" />
+                                        <div className='personal-facts-icon'><i className='fas fa-briefcase' /></div>
                                             Current Coop
                                         </h5>
                                         <p className="personal-facts-body">
@@ -77,7 +78,7 @@ export default class AboutMe extends Component {
                                         </p>
 
                                         <h5 className="personal-facts-head">
-                                            <SchoolIcon className="personal-facts-icon" />
+                                        <div className='personal-facts-icon'><i className='fas fa-graduation-cap' /></div>
                                             Current Education
                                         </h5>
                                         <p className="personal-facts-body">
@@ -89,7 +90,7 @@ export default class AboutMe extends Component {
                                         </p>
 
                                         <h5 className="personal-facts-head">
-                                            <CodeIcon className="personal-facts-icon" />
+                                        <div className='personal-facts-icon'><i className='fas fa-code' /></div>
                                             Programming Expertise
                                         </h5>
                                         <p className="personal-facts-body">
@@ -99,7 +100,7 @@ export default class AboutMe extends Component {
                                         </p>
 
                                         <h5 className="personal-facts-head">
-                                            <ActivityIcon className="personal-facts-icon" />
+                                        <div className='personal-facts-icon'><i className='far fa-futbol' /></div>
                                             Hobbies
                                         </h5>
                                         <p className="personal-facts-body">
