@@ -163,6 +163,21 @@ $dark_border: 5px solid #000031;
     background: linear-gradient($deg, #288181 0%, #0e3988 $mid, #1000a1 100%);
 }
 
+// animated gradient
+@mixin animatedGradient($duration, $noColours) {
+    background-size: 200% * $noColours 200% * $noColours;
+    animation: gradientAnimate $duration ease alternate infinite;
+
+    @keyframes gradientAnimate {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 100% 100%;
+        }
+    }
+}
+
 // cyan-to-dark-blue animated gradient
 @mixin cyanToDarkBlueAnimatedGradient($duration) {
     background: linear-gradient(
@@ -177,15 +192,5 @@ $dark_border: 5px solid #000031;
         #2e68d4,
         #1907b9
     );
-    background-size: 600% 600%;
-    animation: AnimationName $duration ease alternate infinite;
-
-    @keyframes AnimationName {
-        0% {
-            background-position: 0% 0%;
-        }
-        100% {
-            background-position: 100% 100%;
-        }
-    }
+    @include animatedGradient($duration, 3);
 }
