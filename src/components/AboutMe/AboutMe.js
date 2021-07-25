@@ -95,8 +95,8 @@ export default class AboutMe extends Component {
                                         </h5>
                                         <p className="personal-facts-body">
                                             HTML, CSS (Sass), JS (Node.js, Express.js, React), Python
-                                            (Pandas, Numpy, Scipy, Matplotlib, BeautifulSoup), Java (Joget DX), MySQL,
-                                            Racket/Scheme/Lisp, C, Tableau, Metabase
+                                            (Pandas, Numpy, Matplotlib, BeautifulSoup), Jupyter Notebook, Java (Joget DX), MySQL,
+                                            Racket/Scheme/Lisp, C, Git, Tableau, Metabase
                                         </p>
 
                                         <h5 className="personal-facts-head">
