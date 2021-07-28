@@ -39,9 +39,9 @@
 		}
 
 		// fading animation for images
-		$a: 3; // presentation time for one image, in seconds
+		$a: 5; // presentation time for one image, in seconds
 		$b: 1; // duration for cross fading, in seconds
-		$n: 3; // number of images
+		$n: 6; // number of images
 
 		$t: ($a + $b) * $n; // total animation duration
 		.carousel-image {
