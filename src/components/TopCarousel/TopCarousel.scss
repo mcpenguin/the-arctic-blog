@@ -19,9 +19,10 @@
 		.description-sub {
 			width: 100%;
 			height: 100%;
-			@include homePageGradient(90deg);
+			@include homePageGradient(135deg);
 			@include center;
 			z-index: 1000;
+			// background:rgba(245, 245, 245, 0.85);
 
 			.description {
 				text-align: center;
@@ -38,9 +39,9 @@
 		}
 
 		// fading animation for images
-		$a: 5; // presentation time for one image, in seconds
+		$a: 3; // presentation time for one image, in seconds
 		$b: 1; // duration for cross fading, in seconds
-		$n: 2; // number of images
+		$n: 3; // number of images
 
 		$t: ($a + $b) * $n; // total animation duration
 		.carousel-image {
@@ -48,7 +49,7 @@
 			opacity: 1;
 			width: 100%;
 			height: 90vh;
-			// object-fit: cover;
+			object-fit: cover;
 			// height: 100%;
 			// @include center;
 			// height: 80vh;
@@ -56,7 +57,7 @@
 			// display: flex;
 			// justify-content: center;
 			// align-items: center;
-			object-fit: cover;
+			// object-fit: cover;
 			// overflow: hidden;
 
 			animation: images_fade;

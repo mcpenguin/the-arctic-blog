@@ -1,3 +1,7 @@
+// use sass math
+@use "sass:math";
+@use "sass:list";
+
 // media breakpoints
 $small_mobile_width: 360px;
 $mobile_width: 480px;
@@ -131,19 +135,36 @@ li {
 
 // home page gradient
 @mixin homePageGradient($deg) {
-    background: linear-gradient(
+    $colors: (
         $deg,
         rgba(245, 245, 245, 0.85),
-        rgba(183, 233, 221, 0.85),
-        rgba(187, 223, 240, 0.85),
-        rgba(198, 212, 238, 0.85),
-        rgba(173, 183, 221, 0.85),
-        rgba(198, 212, 238, 0.85),
-        rgba(187, 223, 240, 0.85),
-        rgba(188, 238, 226, 0.85),
-        rgba(245, 245, 245, 0.85)
+        rgba(158, 236, 218, 0.85),
+        rgba(157, 215, 241, 0.85),
+        rgba(149, 180, 238, 0.85),
+        rgba(119, 141, 233, 0.85)
     );
-    @include animatedGradient(8s, 5);
+
+    // $result: ();
+    // @for $i from 0 through 4 {
+    //     @debug $colors;
+    //     $color: list.index($colors, $i);
+    //     @debug $color;
+    //     $result: append($result, list.index($color, 0));
+    // }
+    // @debug $result;
+
+    background: linear-gradient($colors);
+    background-size: 2000% 2000%;
+    animation: gradientAnimate 15s ease-in-out alternate infinite;
+
+    @keyframes gradientAnimate {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 100% 100%;
+        }
+    }
 }
 
 // general light to dark gradient, given hue and degree
