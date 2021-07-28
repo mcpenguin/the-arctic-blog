@@ -19,14 +19,15 @@ const PersonalFact = (props) => {
         <>
             <div className="personal-facts-head">
                 <h5>
-                <i className={`personal-facts-icon ${props.iconName}`}></i>
+                    <i className={`personal-facts-icon ${props.iconName}`}></i>
                 </h5>
+                {/* <Fade up> */}
                 <h5>
                     {/* <span className='personal-facts-icon'><i className={props.iconName} /></span> */}
                     {/* <i className={`personal-facts-icon ${props.iconName}`}></i> */}
-                {/* </h5>
+                    {/* </h5>
                 <h5> */}
-                {/* <div className='personal-facts-icon'><i className={props.iconName} /></div> */}
+                    {/* <div className='personal-facts-icon'><i className={props.iconName} /></div> */}
                     <TypeWriterEffect
                         text={props.title}
                         typeSpeed={100}
@@ -34,12 +35,16 @@ const PersonalFact = (props) => {
                         hideCursorAfterText={true}
                         textStyle={{
                             fontSize: "1em",
+                            marginBottom: "5px",
+                            fontWeight: "600",
                         }}
                     />
+                    {/* {props.title} */}
                 </h5>
+                {/* </Fade> */}
 
             </div>
-            <Fade up delay={2000}>
+            <Fade up delay={100 * props.title.length}>
                 <p className="personal-facts-body">
                     {props.body}
                 </p>

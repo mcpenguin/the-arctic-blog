@@ -50,6 +50,7 @@
 		$n: 6; // number of images
 
 		$t: ($a + $b) * $n; // total animation duration
+		@debug $t;
 
 		position: relative;
         width: 100%;
