@@ -96,13 +96,6 @@
 
 .personal-facts {
     .personal-facts-head {
-        // h5 {
-        // @include cyanToDarkBlueGradient(45deg, 20%);
-        // -webkit-background-clip: text;
-        // -moz-background-clip: text;
-        // background-clip: text;
-        // color: transparent;
-        // // background: linear-gradient(135deg, rgb(3, 20, 117) 0%, rgb(109, 181, 230) 100%);
         h5 {
             background: linear-gradient(90deg, rgb(4, 83, 201) 0%, rgb(42, 59, 211) 50%, rgb(32, 4, 156) 100%);
             background-clip: text;
@@ -111,25 +104,7 @@
         }
 
         display: flex;
-        // flex-wrap: wrap;
-        // put icons on same line as text
         align-items: center;
-        // }
-
-        // .personal-facts-icon {
-        //     @include cyanToDarkBlueGradient(45deg, 50%);
-        //     -webkit-background-clip: text;
-        //     -moz-background-clip: text;
-        //     background-clip: text;
-        //     -webkit-text-fill-color: transparent;
-        //     // text-align: center;
-
-        //     position: relative;
-        //     // top: -2px;
-        //     margin: 0 12px 0 2px;
-        //     width: 40px;
-        //     font-size: 1em !important;
-        // }
     }
 
     .personal-facts-icon {
@@ -141,7 +116,6 @@
         text-align: center;
 
         position: relative;
-        // top: -2px;
         margin: 0 12px 0 2px;
         width: 40px;
         font-size: 1em !important;
@@ -153,8 +127,9 @@
 }
 
 .start-animation {
-    // number of contact me elements
+    // number of about me headers
     $n: 5;
+    // width of icon
     $cm_width: 40px;
 
     // time it takes for logo to appear (in seconds)
