@@ -22,6 +22,7 @@ const PersonalFact = (props) => {
             <TypeWriterEffect
                 text={props.title}
                 typeSpeed={100}
+                cursorColor={'blue'}
                 hideCursorAfterText={true}
                 textStyle={{
                     fontSize: "1em",
