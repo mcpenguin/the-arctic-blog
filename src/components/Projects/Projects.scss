@@ -13,10 +13,13 @@
         // @include homePageGradient(135deg);
         background: linear-gradient(
             135deg,
-            rgba(65, 194, 245, 0.7) 0%,
-            rgba(88, 128, 214, 0.74) 50%,
-            rgba(0, 48, 121, 0.7) 100%
+            rgba(65, 194, 245, 0.7),
+            rgba(88, 128, 214, 0.74),
+            rgba(0, 68, 170, 0.7),
+            rgba(88, 128, 214, 0.74),
+            rgba(65, 194, 245, 0.7)
         );
+        @include animatedGradient(20s, 3);
 
         h3 {
             color: $off_white;

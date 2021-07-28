@@ -1,8 +1,10 @@
+@use "sass:math";
+
 @import "../../index.scss";
 
 .section-top-carousel {
 	// @include homePageGradient(135deg);
-	background: url('./images/penguin_carousel.png');
+	// background: url("./images/penguin_carousel.png");
 	@include parallax;
 	margin-top: 50px;
 	height: 90vh;
@@ -11,36 +13,55 @@
 	.carousel-container {
 		width: 100%;
 		height: 100%;
-		@include homePageGradient(135deg);
+		// @include homePageGradient(90deg);
 		@include center;
 
-		.description {
-			text-align: center;
-			width: 60%;
+		.description-sub {
+			width: 100%;
+			height: 100%;
+			@include homePageGradient(135deg);
+			@include center;
+			z-index: 1000;
+			// background:rgba(245, 245, 245, 0.85);
 
-			h1 {
-				margin-bottom: 30px;
-			}
+			.description {
+				text-align: center;
+				width: 60%;
 
-			@media (max-width: $tablet_width) {
-				width: 80%;
+				h1 {
+					margin-bottom: 30px;
+				}
+
+				@media (max-width: $tablet_width) {
+					width: 80%;
+				}
 			}
 		}
 
 		// fading animation for images
 		$a: 5; // presentation time for one image, in seconds
 		$b: 1; // duration for cross fading, in seconds
-		$n: 5; // number of images
+		$n: 6; // number of images
 
 		$t: ($a + $b) * $n; // total animation duration
 		.carousel-image {
 			position: absolute;
 			opacity: 1;
+			width: 100%;
+			height: 90vh;
 			object-fit: cover;
-			overflow-x: hidden;
+			// height: 100%;
+			// @include center;
+			// height: 80vh;
+			// overflow-x: hidden;
+			// display: flex;
+			// justify-content: center;
+			// align-items: center;
+			// object-fit: cover;
+			// overflow: hidden;
 
 			animation: images_fade;
-			animation-timing-function: normal;
+			animation-timing-function: ease-in-out;
 			animation-iteration-count: infinite;
 			animation-duration: #{$t}s;
 			animation-direction: normal;
@@ -50,13 +71,13 @@
 				0% {
 					opacity: 1;
 				}
-				#{$a / $t * 100%} {
+				#{math.div($a, $t) * 100%} {
 					opacity: 1;
 				}
-				#{100% / $n} {
+				#{math.div(100%, $n)} {
 					opacity: 0;
 				}
-				#{100% - $b / $t * 100%} {
+				#{100% - math.div($b, $t) * 100%} {
 					opacity: 0;
 				}
 				100% {
@@ -74,6 +95,12 @@
 			$description_width: 40%;
 			// max width of the description, in pixels
 			$max_description_width: 300;
+
+			img {
+				flex-shrink: 0;
+				min-width: 100%;
+				min-height: 100%
+			}
 		}
 	}
 }

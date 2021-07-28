@@ -20,29 +20,23 @@
 
     .wrapper {
         // gradient 'border'
-        background: linear-gradient(
-            135deg,
-            #00eeee 0%,
-            #2e68d4 34%,
-            #1907b9 66%,
-            #4d0bc7 100%
-        );
+        // background: linear-gradient(135deg, #00eeee 0%, #2e68d4 34%, #1907b9 66%, #4d0bc7 100%);
+        @include cyanToDarkBlueAnimatedGradient(20s);
         border-radius: 20px;
         // min-height: 90vh;
-    
+
         .personal-facts {
-            
             height: 100%;
             width: 100%;
-    
+
             // min-height: 90vh;
             margin: 5px;
             padding: 20px 30px;
-    
-            background-color: #f5f5f5cc;
+
+            background-color: #f5f5f5ee;
             text-align: left;
             border-radius: 20px;
-    
+
             @media (max-width: $tablet_width) {
                 margin-top: 0px;
             }
@@ -63,40 +57,24 @@
 }
 
 .personal-photo {
-    background: white;
-    margin: 20px 0;
+    // background: white;
+    // padding: 20px 0;
     border-radius: 20px;
     height: 90vh;
+    margin: 5px;
+    overflow: hidden;
+    @include cyanToDarkBlueAnimatedGradient(30s);
+    // margin: 5px;
 
-    // gradient 'border'
-    background: conic-gradient(
-        #00eeee,
-        #2e68d4,
-        #1907b9,
-        #00eeee,
-        #2e68d4,
-        #1907b9,
-        #00eeee,
-        #2e68d4,
-        #1907b9,
-        #00eeee,
-        #2e68d4,
-        #1907b9,
-        #00eeee
-    );
-
-    @media (max-width: $tablet_width) {
-        height: 60vh;
-    }
-    
     #personal-photo {
-
-        padding: 5px;
+        // make picture fit div
         width: 100%;
+        padding: 5px;
         height: 100%;
         object-fit: cover;
-        border-radius: 20px;
+        border-radius: inherit;
     }
+    // }
 }
 
 .personal-desc-section {
@@ -116,12 +94,72 @@
 //     margin: 2px 0;
 // }
 
-.personal-facts-icon {
-    color: #000031;
-    position: relative;
-    top: -2px;
-    margin: 0 8px 0 2px;
-    font-size: 1.2em !important;
+.personal-facts {
+    .personal-facts-head {
+        @include cyanToDarkBlueGradient(45deg, 20%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 500;
+        display: flex;
+
+        .personal-facts-icon {
+            @include cyanToDarkBlueGradient(45deg, 50%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+
+            position: relative;
+            // top: -2px;
+            margin: 0 12px 0 2px;
+            width: 40px;
+            font-size: 1em !important;
+        }
+    }
+}
+
+.start-animation {
+
+    // number of contact me elements
+    $n: 5;
+    $cm_width: 40px;
+
+    // time it takes for logo to appear (in seconds)
+    $logo_appear_time: 0.2;
+    // time it takes for logo link to appear (in seconds)
+    $logo_link_appear_time: 1;
+
+    .personal-facts-icon {
+        animation: logo-appear-and-move 2s forwards ease;
+
+        @for $i from 1 to $n {
+            &:nth-of-type(#{$i}) {
+                animation-delay: #{$logo_appear_time * $i}s;
+            }
+
+            .logo-link:nth-of-type(#{$i}) {
+                animation-delay: #{$logo_link_appear_time * $i}s;
+            }
+        }
+
+        @keyframes logo-appear-and-move {
+            0% {
+                opacity: 0;
+                transform: translateX($cm_width);
+            }
+            #{$logo_appear_time / ($logo_appear_time * $logo_link_appear_time) * 100%} {
+                opacity: 1;
+                transform: translateX($cm_width);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    }
 }
 
 .personal-facts-body {

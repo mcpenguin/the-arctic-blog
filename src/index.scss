@@ -1,3 +1,7 @@
+// use sass math
+@use "sass:math";
+@use "sass:list";
+
 // media breakpoints
 $small_mobile_width: 360px;
 $mobile_width: 480px;
@@ -16,13 +20,13 @@ html {
 }
 
 body {
-    font-family: 'nunito', sans-serif;
+    font-family: "nunito", sans-serif;
     font-weight: 300;
     font-size: 1.1rem;
 }
 
 h1 {
-    font-family: 'quicksand', sans-serif;
+    font-family: "quicksand", sans-serif;
     font-weight: 700;
     font-size: 3.5em;
 
@@ -32,7 +36,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'quicksand', sans-serif;
+    font-family: "quicksand", sans-serif;
     font-weight: 500;
     font-size: 2em;
 }
@@ -50,7 +54,6 @@ h3 {
     @media (max-width: $tablet_width) {
         font-size: 2em;
     }
-
 }
 
 h4 {
@@ -94,11 +97,11 @@ p {
 
 // lightbulb bullet points
 ul {
-    list-style-image: url('./images/lightbulb.png');
+    list-style-image: url("./images/lightbulb.png");
 }
 
 li {
-    font-family: 'nunito', sans-serif;
+    font-family: "nunito", sans-serif;
     font-weight: 400;
     margin-left: -5px;
     // margin-bottom: 10px;
@@ -132,23 +135,41 @@ li {
 
 // home page gradient
 @mixin homePageGradient($deg) {
-    background: linear-gradient(
-        $deg, 
-        rgba(245,245,245, 0.8) 0%, 
-        rgba(165, 236, 220, 0.8) 35%, 
-        rgba(187, 223, 240, 0.8) 64%, 
-        rgba(198, 212, 238, 0.8) 90%, 
-        rgba(173, 183, 221, 0.8) 100%
+    $colors: (
+        $deg,
+        rgba(245, 245, 245, 0.85),
+        rgba(158, 236, 218, 0.85),
+        rgba(157, 215, 241, 0.85),
+        rgba(149, 180, 238, 0.85),
+        rgba(119, 141, 233, 0.85)
     );
+
+    // $result: ();
+    // @for $i from 0 through 4 {
+    //     @debug $colors;
+    //     $color: list.index($colors, $i);
+    //     @debug $color;
+    //     $result: append($result, list.index($color, 0));
+    // }
+    // @debug $result;
+
+    background: linear-gradient($colors);
+    background-size: 2000% 2000%;
+    animation: gradientAnimate 15s ease-in-out alternate infinite;
+
+    @keyframes gradientAnimate {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 100% 100%;
+        }
+    }
 }
 
 // general light to dark gradient, given hue and degree
 @mixin lightToDarkGradient($deg, $hue, $transp) {
-    background: linear-gradient(
-        $deg,
-        hsla($hue, 90%, 50%, $transp) 0%,
-        hsla($hue, 70%, 60%, $transp) 100%
-    );
+    background: linear-gradient($deg, hsla($hue, 90%, 50%, $transp) 0%, hsla($hue, 70%, 60%, $transp) 100%);
 }
 
 // dark border options
@@ -156,4 +177,46 @@ $dark_border: 5px solid #000031;
 @mixin dark_border {
     border: 5px solid #000031;
     border-radius: 10px;
+}
+
+// cyan-to-dark-blue gradient
+@mixin cyanToDarkBlueGradient($deg, $mid) {
+    background: linear-gradient($deg, #00cccc 0%, #185fe2 $mid, #1100ac 100%);
+}
+
+// dark-cyan-to-dark-blue gradient
+@mixin darkCyanToDarkBlueGradient($deg, $mid) {
+    background: linear-gradient($deg, #288181 0%, #0e3988 $mid, #1000a1 100%);
+}
+
+// animated gradient
+@mixin animatedGradient($duration, $noColours) {
+    background-size: 200% * $noColours 200% * $noColours;
+    animation: gradientAnimate $duration ease alternate infinite;
+
+    @keyframes gradientAnimate {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 100% 100%;
+        }
+    }
+}
+
+// cyan-to-dark-blue animated gradient
+@mixin cyanToDarkBlueAnimatedGradient($duration) {
+    background: linear-gradient(
+        135deg,
+        #00eeee,
+        #2e68d4,
+        #1907b9,
+        #00eeee,
+        #2e68d4,
+        #1907b9,
+        #00eeee,
+        #2e68d4,
+        #1907b9
+    );
+    @include animatedGradient($duration, 3);
 }

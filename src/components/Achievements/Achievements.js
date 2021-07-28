@@ -1,6 +1,9 @@
 // React component class for Achievements section
 import React, { Component } from 'react';
 
+import Fade from 'react-reveal/Fade';
+import TypeWriterEffect from 'react-typewriter-effect';
+
 // import Bootstrap components
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -22,11 +25,29 @@ class AchievementEntry extends Component {
         return (
             <div className='achievement'>
                 <div className='description'>
-                    <h5>{this.props.title}</h5>
-                    <h6>{this.props.contestName}</h6>
+                    <h5>
+                        <TypeWriterEffect
+                            text={this.props.title}
+                            typeSpeed={100}
+                            cursorColor={'rgb(3, 20, 117)'}
+                            hideCursorAfterText={true}
+                            textStyle={{
+                                fontSize: "1em",
+                            }}
+                        />
+                    </h5>
+                    <h6>
+                        <Fade bottom delay={100 * this.props.title.length}>
+                            {this.props.contestName}
+                        </Fade>
+                    </h6>
                 </div>
                 <div className='date'>
-                    <h6>{this.props.date}</h6>
+                    <h6>
+                        <Fade right delay={100 * this.props.title.length}>
+                            {this.props.date}
+                        </Fade>
+                    </h6>
                 </div>
             </div>
         )
@@ -34,7 +55,7 @@ class AchievementEntry extends Component {
 }
 
 export default class Achievements extends Component {
-    render() { 
+    render() {
         return (
             <section id='achievements' className='section-achievements-page'>
                 <h3>My Achievements</h3>
@@ -44,6 +65,6 @@ export default class Achievements extends Component {
                     }
                 </div>
             </section>
-        ); 
+        );
     }
 }
