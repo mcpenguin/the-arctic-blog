@@ -29,7 +29,7 @@ const PersonalFact = (props) => {
                 }}
             />
             </h5>
-            <Fade up delay={2500}>
+            <Fade up delay={2500} collapse>
                 <p className="personal-facts-body">
                     {props.body}
                 </p>
