@@ -103,21 +103,39 @@
         -webkit-text-fill-color: transparent;
         font-weight: 500;
         display: flex;
+        // flex-wrap: wrap;
+        // put icons on same line as text
+        align-items: center;
 
-        .personal-facts-icon {
-            @include cyanToDarkBlueGradient(45deg, 50%);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-align: center;
+        // .personal-facts-icon {
+        //     @include cyanToDarkBlueGradient(45deg, 50%);
+        //     -webkit-background-clip: text;
+        //     -moz-background-clip: text;
+        //     background-clip: text;
+        //     -webkit-text-fill-color: transparent;
+        //     // text-align: center;
 
-            position: relative;
-            // top: -2px;
-            margin: 0 12px 0 2px;
-            width: 40px;
-            font-size: 1em !important;
-        }
+        //     position: relative;
+        //     // top: -2px;
+        //     margin: 0 12px 0 2px;
+        //     width: 40px;
+        //     font-size: 1em !important;
+        // }
+    }
+
+    .personal-facts-icon {
+        @include cyanToDarkBlueGradient(45deg, 50%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+
+        position: relative;
+        // top: -2px;
+        margin: 0 12px 0 2px;
+        width: 40px;
+        font-size: 1em !important;
     }
 }
 

@@ -17,18 +17,28 @@ import './AboutMe.scss';
 const PersonalFact = (props) => {
     return (
         <>
-            <h5 className="personal-facts-head">
-            <div className='personal-facts-icon'><i className={props.iconName} /></div>
-            <TypeWriterEffect
-                text={props.title}
-                typeSpeed={100}
-                cursorColor={'blue'}
-                hideCursorAfterText={true}
-                textStyle={{
-                    fontSize: "1em",
-                }}
-            />
-            </h5>
+            <div className="personal-facts-head">
+                <h5>
+                <i className={`personal-facts-icon ${props.iconName}`}></i>
+                </h5>
+                <h5>
+                    {/* <span className='personal-facts-icon'><i className={props.iconName} /></span> */}
+                    {/* <i className={`personal-facts-icon ${props.iconName}`}></i> */}
+                {/* </h5>
+                <h5> */}
+                {/* <div className='personal-facts-icon'><i className={props.iconName} /></div> */}
+                    <TypeWriterEffect
+                        text={props.title}
+                        typeSpeed={100}
+                        cursorColor={'blue'}
+                        hideCursorAfterText={true}
+                        textStyle={{
+                            fontSize: "1em",
+                        }}
+                    />
+                </h5>
+
+            </div>
             <Fade up delay={2000}>
                 <p className="personal-facts-body">
                     {props.body}
@@ -89,17 +99,17 @@ export default class AboutMe extends Component {
                             <Col lg={6} className="personal-facts-col">
                                 <div className='wrapper'>
                                     <div className={`personal-facts`}>
-                                        <PersonalFact 
+                                        <PersonalFact
                                             iconName='fas fa-pencil-alt'
                                             title='Current Notes Update'
                                             body={<>None (currently in work term)</>}
                                         />
-                                        <PersonalFact 
+                                        <PersonalFact
                                             iconName='fas fa-briefcase'
                                             title='Current Coop'
                                             body={<>Data Analyst, eMedAsia @ Kuala Lumpur, Malaysia</>}
                                         />
-                                        <PersonalFact 
+                                        <PersonalFact
                                             iconName='fas fa-graduation-cap'
                                             title='Current Education'
                                             body={<>
@@ -110,7 +120,7 @@ export default class AboutMe extends Component {
                                                 CAV: 94 | MAV: 96
                                             </>}
                                         />
-                                        <PersonalFact 
+                                        <PersonalFact
                                             iconName='fas fa-code'
                                             title='Programming Expertise'
                                             body={<>
@@ -119,7 +129,7 @@ export default class AboutMe extends Component {
                                                 Racket/Scheme/Lisp, C, Git, Tableau, Metabase
                                             </>}
                                         />
-                                        <PersonalFact 
+                                        <PersonalFact
                                             iconName='far fa-futbol'
                                             title='Hobbies'
                                             body={<>
