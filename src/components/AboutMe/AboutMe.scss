@@ -121,6 +121,47 @@
     }
 }
 
+.start-animation {
+
+    // number of contact me elements
+    $n: 5;
+    $cm_width: 40px;
+
+    // time it takes for logo to appear (in seconds)
+    $logo_appear_time: 0.2;
+    // time it takes for logo link to appear (in seconds)
+    $logo_link_appear_time: 1;
+
+    .personal-facts-icon {
+        animation: logo-appear-and-move 2s forwards ease;
+
+        @for $i from 1 to $n {
+            &:nth-of-type(#{$i}) {
+                animation-delay: #{$logo_appear_time * $i}s;
+            }
+
+            .logo-link:nth-of-type(#{$i}) {
+                animation-delay: #{$logo_link_appear_time * $i}s;
+            }
+        }
+
+        @keyframes logo-appear-and-move {
+            0% {
+                opacity: 0;
+                transform: translateX($cm_width);
+            }
+            #{$logo_appear_time / ($logo_appear_time * $logo_link_appear_time) * 100%} {
+                opacity: 1;
+                transform: translateX($cm_width);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
 .personal-facts-body {
     font-weight: 400;
     font-size: 1.05rem;
