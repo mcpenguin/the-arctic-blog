@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0cb10a5.chunk.css",
-    "main.js": "/static/js/main.f8dfcd89.chunk.js",
-    "main.js.map": "/static/js/main.f8dfcd89.chunk.js.map",
+    "main.css": "/static/css/main.c8159288.chunk.css",
+    "main.js": "/static/js/main.844b221d.chunk.js",
+    "main.js.map": "/static/js/main.844b221d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3cb7352b.js",
     "runtime-main.js.map": "/static/js/runtime-main.3cb7352b.js.map",
     "static/js/2.eacc9974.chunk.js": "/static/js/2.eacc9974.chunk.js",
     "static/js/2.eacc9974.chunk.js.map": "/static/js/2.eacc9974.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.d0cb10a5.chunk.css.map": "/static/css/main.d0cb10a5.chunk.css.map",
+    "static/css/main.c8159288.chunk.css.map": "/static/css/main.c8159288.chunk.css.map",
     "static/js/2.eacc9974.chunk.js.LICENSE.txt": "/static/js/2.eacc9974.chunk.js.LICENSE.txt",
     "static/media/CS145.3e6a9481.pdf": "/static/media/CS145.3e6a9481.pdf",
     "static/media/Chem.b1ab4431.pdf": "/static/media/Chem.b1ab4431.pdf",
@@ -86,7 +86,7 @@
   "entrypoints": [
     "static/js/runtime-main.3cb7352b.js",
     "static/js/2.eacc9974.chunk.js",
-    "static/css/main.d0cb10a5.chunk.css",
-    "static/js/main.f8dfcd89.chunk.js"
+    "static/css/main.c8159288.chunk.css",
+    "static/js/main.844b221d.chunk.js"
   ]
 }
