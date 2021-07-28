@@ -4,17 +4,6 @@ import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import TypeWriterEffect from 'react-typewriter-effect';
 
-// import Bootstrap components
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-// import Cover
-import Cover from '../Cover/Cover';
-
-// import images
-import * as images from './export_images';
-
 // import data
 import data from './experienceData';
 
@@ -39,7 +28,7 @@ class ExperienceEntry extends Component {
                             <h4>
                             <TypeWriterEffect
                                 text={this.props.experienceTitle}
-                                typeSpeed={100}
+                                typeSpeed={50}
                                 cursorColor={'rgb(34, 114, 218)'}
                                 hideCursorAfterText={true}
                                 textStyle={{
@@ -50,7 +39,7 @@ class ExperienceEntry extends Component {
                         </div>
                         <div className="date">
                             <h6>
-                                <Fade right delay={100 * this.props.experienceTitle.length}>
+                                <Fade right delay={50 * this.props.experienceTitle.length}>
                                     {this.props.experienceDate}
                                 </Fade>
                             </h6>
@@ -58,7 +47,7 @@ class ExperienceEntry extends Component {
                         <div className="key-achievements">
                             {/* <h3>Key Achievements</h3> */}
                             <p>
-                                <Fade bottom cascade delay={100 * this.props.experienceTitle.length} collapse>
+                                <Fade bottom cascade delay={50 * this.props.experienceTitle.length}>
                                     <ul>
                                         {this.props.experienceAchievements.map(
                                             a => <li>{a}</li>

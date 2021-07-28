@@ -1,16 +1,8 @@
 // React component class for Education section
 import React, { Component } from 'react';
 
-// import Bootstrap components
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-// import Cover component
-import Cover from '../Cover/Cover';
-
-// import images
-import * as images from './export_images';
+import Fade from 'react-reveal/Fade';
+import TypeWriterEffect from 'react-typewriter-effect';
 
 // import data
 import data from './educationData';
@@ -31,23 +23,37 @@ class EducationEntry extends Component {
                 // backgroundImage: `url(${images[this.props.educationClass]})`,
             }}>
                 <div className='sub'>
-                    <div className="content">
+                <div className="content">
                         <div className="title">
-                            <h4>{this.props.educationTitle}</h4>
+                            <h4>
+                            <TypeWriterEffect
+                                text={this.props.educationTitle}
+                                typeSpeed={50}
+                                cursorColor={'rgb(42, 59, 211)'}
+                                hideCursorAfterText={true}
+                                textStyle={{
+                                    fontSize: "1em",
+                                }}
+                            />
+                            </h4>
                         </div>
                         <div className="date">
-                            <h6>{this.props.educationDate}</h6>
+                            <h6>
+                                <Fade right delay={50 * this.props.educationTitle.length}>
+                                    {this.props.educationDate}
+                                </Fade>
+                            </h6>
                         </div>
-                        {/* <div className="description">
-                            {this.props.educationDescription}
-                        </div> */}
                         <div className="key-achievements">
+                            {/* <h3>Key Achievements</h3> */}
                             <p>
-                                <ul>
-                                    {this.props.educationAchievements.map(
-                                        a => <li>{a}</li>
-                                    )}
-                                </ul>
+                                <Fade bottom cascade delay={50 * this.props.educationTitle.length}>
+                                    <ul>
+                                        {this.props.educationAchievements.map(
+                                            a => <li>{a}</li>
+                                        )}
+                                    </ul>
+                                </Fade>
                             </p>
                         </div>
                     </div>
