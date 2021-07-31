@@ -48,6 +48,7 @@ const pdfs = { Chem, FPM1, FPM2, FPS, PM3, M1, MATH145, MATH147, CS145, PHIL145,
 class CourseNotes extends Component {
 
     render() {
+
         return (
             <Card className="notes-card">
                 <Card.Header>
@@ -134,17 +135,14 @@ export default class Notes extends Component {
                                 <h3 id="personal-notes-title">My Personal Notes</h3>
                                 {/* </Fade> */}
                                 {/* <Fade top> */}
-                                <p id="personal-notes-description">
+                                <p>
                                     Here I post my notes for both my university and high school courses, 
                                     which were handwritten on my iPad using the app GoodNotes 5.
-                                </p>
-                                <p>
-                                    The course notes are adapted from the original professor's / lecturer's notes, and I
+                                    These are adapted from the original professor's / lecturer's notes, and I
                                     get each professor's permission prior to posting my notes for the course on my website.
-                                    For the current academic term, I update the notes whenever I finish a chapter or week of the course.
                                 </p>
                                 <p>
-                                    I designed the course notes to be Ctrl+F friendly. For the later notes (1B onwards),
+                                    The course notes to be Ctrl+F friendly. For the later notes (1B onwards),
                                     the theorem/equation/etc. references to the original professor's lecture notes are
                                     highlighted in each heading, making it easy for revision or reference purposes. A key is located at the start
                                     of each notebook.
@@ -154,12 +152,6 @@ export default class Notes extends Component {
                                     course, including the full course name, the progress of the notes, the professor
                                     I took the course with, and a brief description of the course. 
                                     You can then click the blue hyperlink to download the pdf of my notes for that course.
-                                </p>
-                                <p>
-                                    Be wary of downloading/viewing them, as since all my notes are handwritten,
-                                    the file sizes are substantial. Moreover, try not to print them,
-                                    since I use many light colours in my notes, and these may not show if you
-                                    print in grayscale/B&W.
                                 </p>
                             </div>
                             {/* </Fade> */}
