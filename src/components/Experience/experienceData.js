@@ -1,7 +1,7 @@
 // module containing experience data
 export default {
     emedasia: {
-        title: "Data Analyst @ eMedAsia",
+        title: "Data Analyst / Software Engineer @ eMedAsia",
         location: "Kuala Lumpur, Malaysia",
         date: "May - Aug 2021",
         keyAchievements: [
@@ -17,6 +17,7 @@ export default {
         keyAchievements: [
             "Created storyboards for original mathematics-based cartoons",
             "Liaised with team to review each other's work and provide feedback",
+            <>Wrote the storyboard for <a href="https://www.instagram.com/p/CQWYix6gv5n/">Comic 21 - The Riemann Integral</a></>,
         ]
     },
     dignity: {

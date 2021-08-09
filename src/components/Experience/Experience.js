@@ -68,7 +68,7 @@ export default class Experience extends Component {
         return (
             <section id="experience" class='section-experience-page'>
                 <div class='gradient'>
-                    <h3>My Past Experiences</h3>
+                    <h3>My Experiences</h3>
                     {/* <Cover
                     coverClass="experience"
                     coverTitle="My Experience"
