@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col';
 
 import Fade from 'react-reveal/Fade';
 
-import personal_photo from './personal-photo.png';
+import personal_photo from './personal-photo-3.png';
 
 import './AboutMe.scss';
 
