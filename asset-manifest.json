@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c44210d.chunk.css",
-    "main.js": "/static/js/main.c746d149.chunk.js",
-    "main.js.map": "/static/js/main.c746d149.chunk.js.map",
+    "main.css": "/static/css/main.f634a875.chunk.css",
+    "main.js": "/static/js/main.adefe491.chunk.js",
+    "main.js.map": "/static/js/main.adefe491.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3cb7352b.js",
     "runtime-main.js.map": "/static/js/runtime-main.3cb7352b.js.map",
     "static/js/2.eacc9974.chunk.js": "/static/js/2.eacc9974.chunk.js",
     "static/js/2.eacc9974.chunk.js.map": "/static/js/2.eacc9974.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2c44210d.chunk.css.map": "/static/css/main.2c44210d.chunk.css.map",
+    "static/css/main.f634a875.chunk.css.map": "/static/css/main.f634a875.chunk.css.map",
     "static/js/2.eacc9974.chunk.js.LICENSE.txt": "/static/js/2.eacc9974.chunk.js.LICENSE.txt",
     "static/media/CS145.3e6a9481.pdf": "/static/media/CS145.3e6a9481.pdf",
     "static/media/Chem.b1ab4431.pdf": "/static/media/Chem.b1ab4431.pdf",
@@ -48,7 +48,7 @@
     "static/media/linear_collatz.9248fc68.md": "/static/media/linear_collatz.9248fc68.md",
     "static/media/malaysia.2fa45b7f.png": "/static/media/malaysia.2fa45b7f.png",
     "static/media/malaysia_covid.6d23b15e.md": "/static/media/malaysia_covid.6d23b15e.md",
-    "static/media/malaysia_covid.f8710c83.png": "/static/media/malaysia_covid.f8710c83.png",
+    "static/media/malaysia_covid.d11bb421.png": "/static/media/malaysia_covid.d11bb421.png",
     "static/media/metabase.3746dca9.svg": "/static/media/metabase.3746dca9.svg",
     "static/media/mongodb.93d2db65.png": "/static/media/mongodb.93d2db65.png",
     "static/media/my_course_graph.75569cc6.png": "/static/media/my_course_graph.75569cc6.png",
@@ -63,12 +63,12 @@
     "static/media/penguin-extracurriculars.603b3173.png": "/static/media/penguin-extracurriculars.603b3173.png",
     "static/media/penguin-notes.6e7141f2.png": "/static/media/penguin-notes.6e7141f2.png",
     "static/media/penguin-projects.3a3c09e2.png": "/static/media/penguin-projects.3a3c09e2.png",
-    "static/media/personal-photo.ad2ad3e6.png": "/static/media/personal-photo.ad2ad3e6.png",
+    "static/media/personal-photo-3.31308954.png": "/static/media/personal-photo-3.31308954.png",
     "static/media/Extracurriculars.scss": "/static/media/tedx.ebbffb05.jpg",
     "static/media/piano_carousel.ffd81a9e.jpg": "/static/media/piano_carousel.ffd81a9e.jpg",
     "static/media/pmc.f75c32b3.png": "/static/media/pmc.f75c32b3.png",
     "static/media/pmc_website.8b8b9da6.md": "/static/media/pmc_website.8b8b9da6.md",
-    "static/media/pmc_website.bdd14c58.png": "/static/media/pmc_website.bdd14c58.png",
+    "static/media/pmc_website.940efea6.png": "/static/media/pmc_website.940efea6.png",
     "static/media/Projects.scss": "/static/media/projects.06e4f70e.png",
     "static/media/python.6465f3ea.png": "/static/media/python.6465f3ea.png",
     "static/media/react.4b5e1ab0.png": "/static/media/react.4b5e1ab0.png",
@@ -78,7 +78,7 @@
     "static/media/student_reg_gui.6a7415f8.jpg": "/static/media/student_reg_gui.6a7415f8.jpg",
     "static/media/student_reg_gui.80203f0a.md": "/static/media/student_reg_gui.80203f0a.md",
     "static/media/tableau.173d03be.png": "/static/media/tableau.173d03be.png",
-    "static/media/test-img.dcab73e7.png": "/static/media/test-img.dcab73e7.png",
+    "static/media/test-img.52d987e0.png": "/static/media/test-img.52d987e0.png",
     "static/media/tkinter.cce85df3.png": "/static/media/tkinter.cce85df3.png",
     "static/media/ContactMe.scss": "/static/media/waves-1920x240.279a412b.svg",
     "static/media/wordpress.f1c9b08e.png": "/static/media/wordpress.f1c9b08e.png"
@@ -86,7 +86,7 @@
   "entrypoints": [
     "static/js/runtime-main.3cb7352b.js",
     "static/js/2.eacc9974.chunk.js",
-    "static/css/main.2c44210d.chunk.css",
-    "static/js/main.c746d149.chunk.js"
+    "static/css/main.f634a875.chunk.css",
+    "static/js/main.adefe491.chunk.js"
   ]
 }
