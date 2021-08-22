@@ -6,6 +6,11 @@ const data = {
         iconsUsed: ['expressjs', 'react', 'nodejs'],
         projectLink: 'https://course-graph.herokuapp.com/'
     },
+    "wclasses_bot": {
+        projectName: "WClasses Discord Bot",
+        iconsUsed: ['mongodb', 'beautifulsoup', 'python'],
+        projectLink: "https://discord.com/api/oauth2/authorize?client_id=877440425718333460&permissions=2048&scope=bot"
+    },
     "pmc_website": {
         projectName: "Pure Math Club Website",
         iconsUsed: ['react', 'sass', 'nodejs'],
