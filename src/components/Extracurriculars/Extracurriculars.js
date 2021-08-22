@@ -30,7 +30,7 @@ export default class Extracurriculars extends Component {
                                 <div className='gradient'>
                                     <div className='title'>
                                         <h3>Trombonist @ Sunway University Ensemble</h3>
-                                        <h4>2018 - present</h4>
+                                        <h4>2018 - 2021</h4>
                                     </div>
                                 </div>
                             </div>
