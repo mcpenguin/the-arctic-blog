@@ -25,6 +25,10 @@
         }
     }
 
+    .notes-accordion {
+        margin: 10px 0;
+    }
+
     .row {
         @media (max-width: $tablet_width) {
             margin: 0 -20px;

@@ -1,4 +1,107 @@
 {
+    "2A": {
+        "title": "2A (F2021)",
+        "courses": {
+            "MATH245": {
+                "shortTitle": "MATH 245",
+                "longTitle": "Linear Algebra 2 (Advanced Level)",
+                "description": "MATH 245 is an advanced level version of MATH 235.\n\nMATH 235: Orthogonal and unitary matrices and transformations. Orthogonal projections, Gram-Schmidt procedure, best approximations, least-squares. Inner products, angles and orthogonality, orthogonal diagonalization, singular value decomposition, applications.",
+                "takenWhen": "Taken in 2A (Fall 2021) (Online)",
+                "professors": "Professor: Stephen New",
+                "notesStatus": "Not Started"
+            },
+            "MATH247": {
+                "shortTitle": "MATH 247",
+                "longTitle": "Calculus 3 (Advanced Level)",
+                "description": "MATH 247 is an advanced level version of MATH 237.\n\nMATH 237: Calculus of functions of several variables. Limits, continuity, differentiability, the chain rule. The gradient vector and the directional derivative. Taylor's formula. Optimization problems. Mappings and the Jacobian. Multiple integrals in various co-ordinate systems.",
+                "takenWhen": "Taken in 2A (Fall 2021) (Online)",
+                "professors": "Professor: Blake Madill",
+                "notesStatus": "Not Started"
+            },
+            "STAT240": {
+                "shortTitle": "STAT 240",
+                "longTitle": "Probability (Advanced Level)",
+                "description": "STAT 240 is an advanced level version of STAT 230.\n\nSTAT 230: This course provides an introduction to probability models including sample spaces, mutually exclusive and independent events, conditional probability and Bayes' Theorem. The named distributions (Discrete Uniform, Hypergeometric, Binomial, Negative Binomial, Geometric, Poisson, Continuous Uniform, Exponential, Normal (Gaussian), and Multinomial) are used to model real phenomena. Discrete and continuous univariate random variables and their distributions are discussed. Joint probability functions, marginal probability functions, and conditional probability functions of two or more discrete random variables and functions of random variables are also discussed. Students learn how to calculate and interpret means, variances and covariances particularly for the named distributions. The Central Limit Theorem is used to approximate probabilities.",
+                "takenWhen": "Taken in 2A (Fall 2021) (Online)",
+                "professors": "Professor: Qin Ying-Li",
+                "notesStatus": "Not Started"
+            }
+        }
+    },
+    "1B": {
+        "title": "1B (W2021)",
+        "courses": {
+            "MATH146": {
+                "shortTitle": "MATH 146",
+                "longTitle": "Linear Algebra 1 (Advanced Level)",
+                "description": "MATH 146 is an advanced level version of MATH 136.\n\nMATH 136: Systems of linear equations, matrix algebra, elementary matrices, computational issues. Real n-space, vector spaces and subspaces, basis and dimension, rank of a matrix, linear transformations, and matrix representations. Determinants, eigenvalues and diagonalization, applications.",
+                "takenWhen": "Taken in 1B (Winter 2021) (Online)",
+                "professors": "Professors: Ross Willard and Giang Tran",
+                "notesStatus": "Notes Complete"
+            },
+            "MATH148": {
+                "shortTitle": "MATH 148",
+                "longTitle": "Calculus 2 (Advanced Level)",
+                "description": "MATH 148 is an advanced level version of MATH 138.\n\nMATH 138: Introduction to the Riemann integral and approximations. Antiderivatives and the Fundamental theorem of calculus. Change of variables, Methods of integration. Applications of the integral. Improper integrals. Linear and separable differential equations and applications. Tests for convergence for series. Binomial series, Functions defined as power series and Taylor series. Vector (parametric) curves in R2. Suitable topics are illustrated using computer software.",
+                "takenWhen": "Taken in 1B (Winter 2021) (Online)",
+                "professors": "Professor: Stephen New",
+                "notesStatus": "Notes Complete"
+            },
+            "PSYCH101": {
+                "shortTitle": "PSYCH 101",
+                "longTitle": "Introductory Psychology",
+                "description": "A general survey course designed to provide the student with an understanding of the basic concepts and techniques of modern psychology as a behavioural science.",
+                "takenWhen":"Taken in 1B (Winter 2021) (Online)",
+                "professors": "Professor: Paul Wehr",
+                "notesStatus": "Notes Complete"
+            }
+        }   
+    },
+    "1A": {
+        "title": "1A (F2020)",
+        "courses": {
+            "MATH145": {
+                "shortTitle": "MATH 145",
+                "longTitle": "Algebra (Advanced Level)",
+                "description": "MATH 145 is an advanced-level version of MATH 135.\n\nMATH 135: An introduction to the language of mathematics and proof techniques through a study of the basic algebraic systems of mathematics: the integers, the integers modulo n, the rational numbers, the real numbers, the complex numbers and polynomials.",
+                "takenWhen": "Taken in 1A (Fall 2020) (Online)",
+                "professors": "Professor: Nickolas Rollick",
+                "notesStatus": "Notes Complete"
+            },
+            "MATH147": {
+                "shortTitle": "MATH 147",
+                "longTitle": "Calculus 1 (Advanced Level)",
+                "description": "MATH 147 is an advanced-level version of MATH 137.\n\nMATH 137: Absolute values and inequalities. Sequences and their limits. Introduction to series. Limits of functions and continuity. The Intermediate Value theorem and approximate solutions to equations. Derivatives, linear approximation, and Newton's method. The Mean Value theorem and error bounds. Applications of the Mean Value theorem, Taylor polynomials, and Taylor's theorem, Big-O notation. Suitable topics are illustrated using computer software.",
+                "takenWhen": "Taken in 1A (Fall 2020) (Online)",
+                "professors": "Professor: Brian Forrest",
+                "notesStatus": "Notes Complete"
+            },
+            "CS145": {
+                "shortTitle": "CS 145",
+                "longTitle": "Designing Functional Programs (Advanced Level)",
+                "description": "CS 145 is an advanced-level version of CS 135.\n\nCS 135: An introduction to the fundamentals of computer science through the application of elementary programming patterns in the functional style of programming. Syntax and semantics of a functional programming language. Tracing via substitution. Design, testing, and documentation. Linear and nonlinear data structures. Recursive data definitions. Abstraction and encapsulation. Generative and structural recursion. Historical context.",
+                "takenWhen": "Taken in 1A (Fall 2020) (Online)",
+                "professors": "Professor: Gordon Cormack",
+                "notesStatus": "Notes Complete"
+            },
+            "PHIL145": {
+                "shortTitle": "PHIL 145",
+                "longTitle": "Critical Thinking",
+                "description": "An analysis of basic types of reasoning, structure of arguments, critical assessment of information, common fallacies, problems of clarity and meaning.",
+                "takenWhen": "Taken in 1A (Fall 2020) (Online)",
+                "professors": "Professor: Greg Andres",
+                "notesStatus": "Notes Complete"
+            },
+            "GEOG101": {
+                "shortTitle": "GEOG 101",
+                "longTitle": "Human Geographies: People, Space and Change",
+                "description": "An introduction to human geography through key subfields of the discipline, examining population change, the rise of cities, our relationship to nature, social inequalities, economic forms, cultural difference and environmental change at the local and global scale.",
+                "takenWhen":"Taken in 1A (Fall 2020) (Online)",
+                "professors": "Professor: Brent Doberstein",
+                "notesStatus":"Notes Complete"
+            }
+        }
+    },
     "AL": {
         "title": "A-Levels (F2018 - S2020)",
         "courses": {
@@ -51,79 +154,5 @@
                 "notesStatus": "Notes Complete"
             }
         }
-    },
-    "1A": {
-        "title": "1A (F2020)",
-        "courses": {
-            "MATH145": {
-                "shortTitle": "MATH 145",
-                "longTitle": "Algebra (Advanced Level)",
-                "description": "MATH 145 is an advanced-level version of MATH 135.\n\nMATH 135: An introduction to the language of mathematics and proof techniques through a study of the basic algebraic systems of mathematics: the integers, the integers modulo n, the rational numbers, the real numbers, the complex numbers and polynomials.",
-                "takenWhen": "Taken in 1A (Fall 2020) (Online)",
-                "professors": "Professor: Nickolas Rollick",
-                "notesStatus": "Notes Complete"
-            },
-            "MATH147": {
-                "shortTitle": "MATH 147",
-                "longTitle": "Calculus 1 (Advanced Level)",
-                "description": "MATH 147 is an advanced-level version of MATH 137.\n\nMATH 137: Absolute values and inequalities. Sequences and their limits. Introduction to series. Limits of functions and continuity. The Intermediate Value theorem and approximate solutions to equations. Derivatives, linear approximation, and Newton's method. The Mean Value theorem and error bounds. Applications of the Mean Value theorem, Taylor polynomials, and Taylor's theorem, Big-O notation. Suitable topics are illustrated using computer software.",
-                "takenWhen": "Taken in 1A (Fall 2020) (Online)",
-                "professors": "Professor: Brian Forrest",
-                "notesStatus": "Notes Complete"
-            },
-            "CS145": {
-                "shortTitle": "CS 145",
-                "longTitle": "Designing Functional Programs (Advanced Level)",
-                "description": "CS 145 is an advanced-level version of CS 135.\n\nCS 135: An introduction to the fundamentals of computer science through the application of elementary programming patterns in the functional style of programming. Syntax and semantics of a functional programming language. Tracing via substitution. Design, testing, and documentation. Linear and nonlinear data structures. Recursive data definitions. Abstraction and encapsulation. Generative and structural recursion. Historical context.",
-                "takenWhen": "Taken in 1A (Fall 2020) (Online)",
-                "professors": "Professor: Gordon Cormack",
-                "notesStatus": "Notes Complete"
-            },
-            "PHIL145": {
-                "shortTitle": "PHIL 145",
-                "longTitle": "Critical Thinking",
-                "description": "An analysis of basic types of reasoning, structure of arguments, critical assessment of information, common fallacies, problems of clarity and meaning.",
-                "takenWhen": "Taken in 1A (Fall 2020) (Online)",
-                "professors": "Professor: Greg Andres",
-                "notesStatus": "Notes Complete"
-            },
-            "GEOG101": {
-                "shortTitle": "GEOG 101",
-                "longTitle": "Human Geographies: People, Space and Change",
-                "description": "An introduction to human geography through key subfields of the discipline, examining population change, the rise of cities, our relationship to nature, social inequalities, economic forms, cultural difference and environmental change at the local and global scale.",
-                "takenWhen":"Taken in 1A (Fall 2020) (Online)",
-                "professors": "Professor: Brent Doberstein",
-                "notesStatus":"Notes Complete"
-            }
-        }
-    },
-    "1B": {
-        "title": "1B (W2021)",
-        "courses": {
-            "MATH146": {
-                "shortTitle": "MATH 146",
-                "longTitle": "Linear Algebra 1 (Advanced Level)",
-                "description": "MATH 146 is an advanced level version of MATH 136.\n\nMATH 136: Systems of linear equations, matrix algebra, elementary matrices, computational issues. Real n-space, vector spaces and subspaces, basis and dimension, rank of a matrix, linear transformations, and matrix representations. Determinants, eigenvalues and diagonalization, applications.",
-                "takenWhen": "Taken in 1B (Winter 2021) (Online)",
-                "professors": "Professors: Ross Willard and Giang Tran",
-                "notesStatus": "Notes Complete"
-            },
-            "MATH148": {
-                "shortTitle": "MATH 148",
-                "longTitle": "Calculus 2 (Advanced Level)",
-                "description": "MATH 148 is an advanced level version of MATH 138.\n\nMATH 138: Introduction to the Riemann integral and approximations. Antiderivatives and the Fundamental theorem of calculus. Change of variables, Methods of integration. Applications of the integral. Improper integrals. Linear and separable differential equations and applications. Tests for convergence for series. Binomial series, Functions defined as power series and Taylor series. Vector (parametric) curves in R2. Suitable topics are illustrated using computer software.",
-                "takenWhen": "Taken in 1B (Winter 2021) (Online)",
-                "professors": "Professor: Stephen New",
-                "notesStatus": "Notes Complete"
-            },
-            "PSYCH101": {
-                "shortTitle": "PSYCH 101",
-                "longTitle": "Introductory Psychology",
-                "description": "A general survey course designed to provide the student with an understanding of the basic concepts and techniques of modern psychology as a behavioural science.",
-                "takenWhen":"Taken in 1B (Winter 2021) (Online)",
-                "professors": "Professor: Paul Wehr",
-                "notesStatus": "Notes Complete"
-            }
-        }   
     }
 }
