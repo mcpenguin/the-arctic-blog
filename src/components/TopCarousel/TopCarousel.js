@@ -42,13 +42,13 @@ export default class TopCarousel extends Component {
         return (
             <section className="section-top-carousel">
                 <div className='carousel-container'>
-                    {
+                    {/* {
                         Object.values(images).map(
                             image => <div className='carousel-image'>
                                 <img src={image} />
                             </div>
                         )
-                    }
+                    } */}
                     <div className='description-sub'>
                         <div className='description'>
                             <Fade bottom opposite>

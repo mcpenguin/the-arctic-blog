@@ -28,7 +28,7 @@ class EducationEntry extends Component {
                             <h4>
                             <TypeWriterEffect
                                 text={this.props.educationTitle}
-                                typeSpeed={50}
+                                typeSpeed={40}
                                 cursorColor={'rgb(42, 59, 211)'}
                                 hideCursorAfterText={true}
                                 textStyle={{
@@ -39,7 +39,7 @@ class EducationEntry extends Component {
                         </div>
                         <div className="date">
                             <h6>
-                                <Fade right delay={50 * this.props.educationTitle.length}>
+                                <Fade right delay={40 * this.props.educationTitle.length}>
                                     {this.props.educationDate}
                                 </Fade>
                             </h6>
@@ -47,7 +47,7 @@ class EducationEntry extends Component {
                         <div className="key-achievements">
                             {/* <h3>Key Achievements</h3> */}
                             <p>
-                                <Fade bottom cascade delay={50 * this.props.educationTitle.length}>
+                                <Fade bottom cascade delay={40 * this.props.educationTitle.length}>
                                     <ul>
                                         {this.props.educationAchievements.map(
                                             a => <li>{a}</li>

@@ -30,7 +30,7 @@ const PersonalFact = (props) => {
                     {/* <div className='personal-facts-icon'><i className={props.iconName} /></div> */}
                     <TypeWriterEffect
                         text={props.title}
-                        typeSpeed={100}
+                        typeSpeed={80}
                         cursorColor={'blue'}
                         hideCursorAfterText={true}
                         textStyle={{
@@ -44,7 +44,7 @@ const PersonalFact = (props) => {
                 {/* </Fade> */}
 
             </div>
-            <Fade up delay={100 * props.title.length}>
+            <Fade up delay={80 * props.title.length}>
                 <p className="personal-facts-body">
                     {props.body}
                 </p>
