@@ -18,10 +18,11 @@ const PersonalFact = (props) => {
     return (
         <>
             <div className="personal-facts-head">
+                {/* <img className={`personal-facts-icon ${props.iconName}`} src={props.icon} /> */}
+                {/* <Fade up> */}
                 <h5>
                     <i className={`personal-facts-icon ${props.iconName}`}></i>
                 </h5>
-                {/* <Fade up> */}
                 <h5>
                     {/* <span className='personal-facts-icon'><i className={props.iconName} /></span> */}
                     {/* <i className={`personal-facts-icon ${props.iconName}`}></i> */}
@@ -31,7 +32,7 @@ const PersonalFact = (props) => {
                     <TypeWriterEffect
                         text={props.title}
                         typeSpeed={80}
-                        cursorColor={'blue'}
+                        cursorColor={'#0553ca'}
                         hideCursorAfterText={true}
                         textStyle={{
                             fontSize: "1em",
@@ -106,6 +107,7 @@ export default class AboutMe extends Component {
                                     <div className={`personal-facts`}>
                                         <PersonalFact
                                             iconName='fas fa-pencil-alt'
+                                            // icon={NotesIcon}
                                             title='Current Notes Update'
                                             body={<>None (currently in work term)</>}
                                         />
@@ -131,7 +133,7 @@ export default class AboutMe extends Component {
                                             body={<>
                                                 HTML, CSS (Sass), JS (Node.js, Express.js, React), Python
                                                 (Pandas, Numpy, Matplotlib, BeautifulSoup), Jupyter Notebook, Java (Joget DX), MySQL,
-                                                Racket/Scheme/Lisp, C, Git, Tableau, Metabase
+                                                MongoDB, Racket/Scheme/Lisp, C, Git, Tableau, Metabase
                                             </>}
                                         />
                                         <PersonalFact
