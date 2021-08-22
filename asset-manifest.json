@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.0b1061e9.chunk.css",
-    "main.js": "/static/js/main.17070951.chunk.js",
-    "main.js.map": "/static/js/main.17070951.chunk.js.map",
+    "main.js": "/static/js/main.c3352ba4.chunk.js",
+    "main.js.map": "/static/js/main.c3352ba4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3cb7352b.js",
     "runtime-main.js.map": "/static/js/runtime-main.3cb7352b.js.map",
     "static/js/2.eacc9974.chunk.js": "/static/js/2.eacc9974.chunk.js",
@@ -41,8 +41,8 @@
     "static/media/linear_collatz.5f8531c3.png": "/static/media/linear_collatz.5f8531c3.png",
     "static/media/linear_collatz.9248fc68.md": "/static/media/linear_collatz.9248fc68.md",
     "static/media/malaysia.2fa45b7f.png": "/static/media/malaysia.2fa45b7f.png",
-    "static/media/malaysia_covid.040f0647.png": "/static/media/malaysia_covid.040f0647.png",
     "static/media/malaysia_covid.6d23b15e.md": "/static/media/malaysia_covid.6d23b15e.md",
+    "static/media/malaysia_covid.de69e9ba.png": "/static/media/malaysia_covid.de69e9ba.png",
     "static/media/metabase.51a5ad0d.svg": "/static/media/metabase.51a5ad0d.svg",
     "static/media/my_course_graph.94cf1e5c.png": "/static/media/my_course_graph.94cf1e5c.png",
     "static/media/my_course_graph.9ac1d0c5.md": "/static/media/my_course_graph.9ac1d0c5.md",
@@ -66,12 +66,14 @@
     "static/media/student_reg_gui.80203f0a.md": "/static/media/student_reg_gui.80203f0a.md",
     "static/media/student_reg_gui.8e32e6b0.jpg": "/static/media/student_reg_gui.8e32e6b0.jpg",
     "static/media/test-img.52d987e0.png": "/static/media/test-img.52d987e0.png",
-    "static/media/ContactMe.scss": "/static/media/waves-1920x240.279a412b.svg"
+    "static/media/ContactMe.scss": "/static/media/waves-1920x240.279a412b.svg",
+    "static/media/wclasses_bot.2044e436.jpg": "/static/media/wclasses_bot.2044e436.jpg",
+    "static/media/wclasses_bot.24b1181e.md": "/static/media/wclasses_bot.24b1181e.md"
   },
   "entrypoints": [
     "static/js/runtime-main.3cb7352b.js",
     "static/js/2.eacc9974.chunk.js",
     "static/css/main.0b1061e9.chunk.css",
-    "static/js/main.17070951.chunk.js"
+    "static/js/main.c3352ba4.chunk.js"
   ]
 }
