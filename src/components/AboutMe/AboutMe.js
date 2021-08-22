@@ -109,12 +109,18 @@ export default class AboutMe extends Component {
                                             iconName='fas fa-pencil-alt'
                                             // icon={NotesIcon}
                                             title='Current Notes Update'
-                                            body={<>None (currently in work term)</>}
+                                            body={<>
+                                                <ul>
+                                                    <li>MATH 245 (Lin Alg 2 (Adv)) - Not Started</li>
+                                                    <li>MATH 247 (Calc 3 (Adv)) - Not Started</li>
+                                                    <li>STAT 240 (Prob (Adv)) - Not Started</li>
+                                                </ul>
+                                            </>}
                                         />
                                         <PersonalFact
                                             iconName='fas fa-briefcase'
-                                            title='Current Coop'
-                                            body={<>Data Analyst, eMedAsia @ Kuala Lumpur, Malaysia</>}
+                                            title='Latest Coop'
+                                            body={<>Data Analyst @ eMedAsia, Malaysia</>}
                                         />
                                         <PersonalFact
                                             iconName='fas fa-graduation-cap'
