@@ -29,7 +29,7 @@ const PersonalFact = (props) => {
                     {/* </h5>
                 <h5> */}
                     {/* <div className='personal-facts-icon'><i className={props.iconName} /></div> */}
-                    <TypeWriterEffect
+                    {/* <TypeWriterEffect
                         text={props.title}
                         typeSpeed={80}
                         cursorColor={'#0553ca'}
@@ -39,17 +39,17 @@ const PersonalFact = (props) => {
                             marginBottom: "5px",
                             fontWeight: "600",
                         }}
-                    />
-                    {/* {props.title} */}
+                    /> */}
+                    {props.title}
                 </h5>
                 {/* </Fade> */}
 
             </div>
-            <Fade up delay={80 * props.title.length}>
+            {/* <Fade up delay={80 * props.title.length}> */}
                 <p className="personal-facts-body">
                     {props.body}
                 </p>
-            </Fade>
+            {/* </Fade> */}
         </>
     )
 }

@@ -26,7 +26,7 @@ class ExperienceEntry extends Component {
                     <div className="content">
                         <div className="title">
                             <h4>
-                            <TypeWriterEffect
+                            {/* <TypeWriterEffect
                                 text={this.props.experienceTitle}
                                 typeSpeed={40}
                                 cursorColor={'rgb(34, 114, 218)'}
@@ -34,26 +34,27 @@ class ExperienceEntry extends Component {
                                 textStyle={{
                                     fontSize: "1em",
                                 }}
-                            />
+                            /> */}
+                            {this.props.experienceTitle}
                             </h4>
                         </div>
                         <div className="date">
                             <h6>
-                                <Fade right delay={40 * this.props.experienceTitle.length}>
+                                {/* <Fade right delay={40 * this.props.experienceTitle.length}> */}
                                     {this.props.experienceDate}
-                                </Fade>
+                                {/* </Fade> */}
                             </h6>
                         </div>
                         <div className="key-achievements">
                             {/* <h3>Key Achievements</h3> */}
                             <p>
-                                <Fade bottom cascade delay={40 * this.props.experienceTitle.length}>
+                                {/* <Fade bottom cascade delay={40 * this.props.experienceTitle.length}> */}
                                     <ul>
                                         {this.props.experienceAchievements.map(
                                             a => <li>{a}</li>
                                         )}
                                     </ul>
-                                </Fade>
+                                {/* </Fade> */}
                             </p>
                         </div>
                     </div>

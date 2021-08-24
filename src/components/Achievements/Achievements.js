@@ -26,27 +26,29 @@ class AchievementEntry extends Component {
             <div className='achievement'>
                 <div className='description'>
                     <h5>
-                        <TypeWriterEffect
+                        {/* <TypeWriterEffect
                             text={this.props.title}
                             typeSpeed={40}
                             cursorColor={'rgb(3, 20, 117)'}
                             hideCursorAfterText={true}
                             textStyle={{
                                 fontSize: "1em",
-                            }}
-                        />
+                            }} 
+                            />*/}
+                            {this.props.title}
+                        
                     </h5>
                     <h6>
-                        <Fade bottom delay={40 * this.props.title.length}>
+                        {/* <Fade bottom delay={40 * this.props.title.length}> */}
                             {this.props.contestName}
-                        </Fade>
+                        {/* </Fade> */}
                     </h6>
                 </div>
                 <div className='date'>
                     <h6>
-                        <Fade right delay={40 * this.props.title.length}>
+                        {/* <Fade right delay={40 * this.props.title.length}> */}
                             {this.props.date}
-                        </Fade>
+                        {/* </Fade> */}
                     </h6>
                 </div>
             </div>

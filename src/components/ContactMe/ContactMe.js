@@ -10,7 +10,7 @@ import './ContactMe.scss';
 class ContactMePage extends Component {
     render() {
         return (
-            <Fade bottom>
+            // <Fade bottom>
                 <a href={this.props.link}>
                     <div
                         class={`icon ${this.props.class}`}
@@ -21,7 +21,7 @@ class ContactMePage extends Component {
                         </span>
                     </div>
                 </a>
-            </Fade>
+            // </Fade>
         )
     }
 }
