@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.0b1061e9.chunk.css",
-    "main.js": "/static/js/main.dd2a21c5.chunk.js",
-    "main.js.map": "/static/js/main.dd2a21c5.chunk.js.map",
+    "main.js": "/static/js/main.426a7b3a.chunk.js",
+    "main.js.map": "/static/js/main.426a7b3a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3cb7352b.js",
     "runtime-main.js.map": "/static/js/runtime-main.3cb7352b.js.map",
     "static/js/2.2dea4bb8.chunk.js": "/static/js/2.2dea4bb8.chunk.js",
@@ -24,6 +24,7 @@
     "static/media/PHIL145.542670d0.pdf": "/static/media/PHIL145.542670d0.pdf",
     "static/media/PM3.542db20c.pdf": "/static/media/PM3.542db20c.pdf",
     "static/media/PSYCH101.931dbe8b.pdf": "/static/media/PSYCH101.931dbe8b.pdf",
+    "static/media/STAT240.d41cec02.pdf": "/static/media/STAT240.d41cec02.pdf",
     "static/media/Achievements.scss": "/static/media/achievements-bg.68ff5a16.svg",
     "static/media/PageSections.scss": "/static/media/blob-timeline.fa39e0b0.svg",
     "static/media/calculator.9950c8b7.jpg": "/static/media/calculator.9950c8b7.jpg",
@@ -74,6 +75,6 @@
     "static/js/runtime-main.3cb7352b.js",
     "static/js/2.2dea4bb8.chunk.js",
     "static/css/main.0b1061e9.chunk.css",
-    "static/js/main.dd2a21c5.chunk.js"
+    "static/js/main.426a7b3a.chunk.js"
   ]
 }
