@@ -111,9 +111,7 @@ export default class AboutMe extends Component {
                                             title='Current Notes Update'
                                             body={<>
                                                 <ul>
-                                                    <li>MATH 245 (Lin Alg 2 (Adv)) - Not Started</li>
-                                                    <li>MATH 247 (Calc 3 (Adv)) - Not Started</li>
-                                                    <li>STAT 240 (Prob (Adv)) - Not Started</li>
+                                                    <li>STAT 240 (Prob (Adv)) - Up to Week 1</li>
                                                 </ul>
                                             </>}
                                         />

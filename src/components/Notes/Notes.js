@@ -28,12 +28,13 @@ import GEOG101 from "./notes/1A/GEOG101.pdf";
 import MATH146 from "./notes/1B/MATH146.pdf";
 import MATH148 from "./notes/1B/MATH148.pdf";
 import PSYCH101 from "./notes/1B/PSYCH101.pdf";
+import STAT240 from './notes/2A/STAT240.pdf';
 
 // import stylesheet
 import './Notes.scss';
 
 // get JS object of pdfs
-const pdfs = { Chem, FPM1, FPM2, FPS, PM3, M1, MATH145, MATH147, CS145, PHIL145, GEOG101, MATH146, MATH148, PSYCH101 };
+const pdfs = { Chem, FPM1, FPM2, FPS, PM3, M1, MATH145, MATH147, CS145, PHIL145, GEOG101, MATH146, MATH148, PSYCH101, STAT240 };
 
 // class for individual course notes
 // props: 
