@@ -1,5 +1,21 @@
 // module containing experience data
 export default {
+    math135_marker: {
+        title: 'Marker for MATH 135 (Algebra for Honours Mathematics)',
+        location: "University of Waterloo, Ontario, Canada",
+        date: "Sep - Dec 2021",
+        keyAchievements: []
+    },
+    mathsoc_comic_writer: {
+        title: "Comic Writer @ MATHSOC Cartoons",
+        location: "University of Waterloo, Ontario, Canada",
+        date: "May - Dec 2021",
+        keyAchievements: [
+            "Created storyboards for original mathematics-based cartoons",
+            "Liaised with team to review each other's work and provide feedback",
+            <>Wrote the storyboard for <a href="https://www.instagram.com/p/CQWYix6gv5n/">Comic 21 - The Riemann Integral</a></>,
+        ]
+    },
     emedasia: {
         title: "Data Analyst / Software Engineer @ eMedAsia",
         location: "Kuala Lumpur, Malaysia",
@@ -8,16 +24,6 @@ export default {
             "Analyzed megabytes of transaction records from 41,000+ clinics in Malaysia",
             "Independently built and implemented a Joget website that allows vendors to sell products through Facebook Live",
             "Helped to develop a Joget website to manage medical subscriptions for doctors and patients",
-        ]
-    },
-    mathsoc_comic_writer: {
-        title: "Comic Writer @ MATHSOC Cartoons",
-        location: "University of Waterloo, Ontario, Canada",
-        date: "May - Aug 2021",
-        keyAchievements: [
-            "Created storyboards for original mathematics-based cartoons",
-            "Liaised with team to review each other's work and provide feedback",
-            <>Wrote the storyboard for <a href="https://www.instagram.com/p/CQWYix6gv5n/">Comic 21 - The Riemann Integral</a></>,
         ]
     },
     dignity: {

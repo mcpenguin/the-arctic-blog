@@ -124,7 +124,7 @@ export default class AboutMe extends Component {
                                             iconName='fas fa-graduation-cap'
                                             title='Current Education'
                                             body={<>
-                                                Data Science, Honours, Co-op (2A in Fall 2021)
+                                                Computer Science, Honours, Co-op (2A in Fall 2021)
                                                 <br />
                                                 University of Waterloo @ Ontario, Canada
                                                 <br />
@@ -137,7 +137,7 @@ export default class AboutMe extends Component {
                                             body={<>
                                                 HTML, CSS (Sass), JS (Node.js, Express.js, React), Python
                                                 (Pandas, Numpy, Matplotlib, BeautifulSoup), Jupyter Notebook, Java (Joget DX), MySQL,
-                                                MongoDB, Racket/Scheme/Lisp, C, Git, Tableau, Metabase
+                                                MongoDB, Racket/Scheme/Lisp, C/C++, Git, Tableau, Metabase
                                             </>}
                                         />
                                         <PersonalFact

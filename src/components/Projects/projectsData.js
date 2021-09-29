@@ -1,6 +1,11 @@
 // module to import project content data
 
 const data = {
+    "blow_it_up": {
+        projectName: "BlowItUp (HTN 2021 Winner)",
+        iconsUsed: ['html', 'css', 'js'],
+        projectLink: 'http://blowitup.duckdns.org/'
+    },
     "my_course_graph": {
         projectName: "My Course Graph",
         iconsUsed: ['expressjs', 'react', 'nodejs'],

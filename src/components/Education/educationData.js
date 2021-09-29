@@ -6,7 +6,7 @@ export default {
         date: "2020 - 2025",
         achievements: [
             "Recipient of the CAD$20,000 Faculty of Mathematics Global Scholarship, awarded to only ten international students every year",
-            "One of only three students to transfer from Honours Mathematics to Data Science in first year",
+            "The first student ever to transfer from Honours Mathematics to BMath Data Science in 1B, and then to BCS CS in the subsequent term",
             "CAV: 94 (MAV: 96)",
         ]
     },

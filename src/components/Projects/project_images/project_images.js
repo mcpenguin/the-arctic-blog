@@ -8,11 +8,12 @@ import compass_initiative from './compass_initiative.png'
 import calculator from './calculator.jpg'
 import pmc_website from './pmc_website.png'
 import wclasses_bot from './wclasses_bot.jpg'
+import blow_it_up from './blow_it_up.jpg'
 
 const project_images = {
     my_course_graph, skyblock_calculator, malaysia_covid,
     student_reg_gui, linear_collatz, compass_initiative, 
-    calculator, pmc_website, wclasses_bot
+    calculator, pmc_website, wclasses_bot, blow_it_up
 }
 
 export default project_images;
