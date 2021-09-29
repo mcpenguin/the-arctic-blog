@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.0b1061e9.chunk.css",
-    "main.js": "/static/js/main.426a7b3a.chunk.js",
-    "main.js.map": "/static/js/main.426a7b3a.chunk.js.map",
+    "main.js": "/static/js/main.7b4585cb.chunk.js",
+    "main.js.map": "/static/js/main.7b4585cb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3cb7352b.js",
     "runtime-main.js.map": "/static/js/runtime-main.3cb7352b.js.map",
     "static/js/2.2dea4bb8.chunk.js": "/static/js/2.2dea4bb8.chunk.js",
@@ -27,6 +27,8 @@
     "static/media/STAT240.d41cec02.pdf": "/static/media/STAT240.d41cec02.pdf",
     "static/media/Achievements.scss": "/static/media/achievements-bg.68ff5a16.svg",
     "static/media/PageSections.scss": "/static/media/blob-timeline.fa39e0b0.svg",
+    "static/media/blow_it_up.1406be95.md": "/static/media/blow_it_up.1406be95.md",
+    "static/media/blow_it_up.7c8944ad.jpg": "/static/media/blow_it_up.7c8944ad.jpg",
     "static/media/calculator.9950c8b7.jpg": "/static/media/calculator.9950c8b7.jpg",
     "static/media/calculator.d58ba088.md": "/static/media/calculator.d58ba088.md",
     "static/media/compass_initiative.041f3ac1.png": "/static/media/compass_initiative.041f3ac1.png",
@@ -75,6 +77,6 @@
     "static/js/runtime-main.3cb7352b.js",
     "static/js/2.2dea4bb8.chunk.js",
     "static/css/main.0b1061e9.chunk.css",
-    "static/js/main.426a7b3a.chunk.js"
+    "static/js/main.7b4585cb.chunk.js"
   ]
 }
