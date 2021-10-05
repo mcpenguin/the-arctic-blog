@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 // import Fade from 'react-reveal';
 import TypeWriterEffect from 'react-typewriter-effect';
+import * as courses from '../Notes/courses.json';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -13,6 +14,8 @@ import Fade from 'react-reveal/Fade';
 import personal_photo from './personal-photo-3.png';
 
 import './AboutMe.scss';
+
+const CURRENT_TERM = '2A'
 
 const PersonalFact = (props) => {
     return (
@@ -46,14 +49,13 @@ const PersonalFact = (props) => {
 
             </div>
             {/* <Fade up delay={80 * props.title.length}> */}
-                <p className="personal-facts-body">
-                    {props.body}
-                </p>
+            <p className="personal-facts-body">
+                {props.body}
+            </p>
             {/* </Fade> */}
         </>
     )
 }
-
 export default class AboutMe extends Component {
     constructor(props) {
         super(props);
@@ -83,6 +85,9 @@ export default class AboutMe extends Component {
     }
 
     render() {
+        let coursesList = courses.default[CURRENT_TERM]['courses']
+        const coursesKeysList = Object.keys(coursesList)
+
         return (
             <section className="section-about-me" id="about-me">
                 <div className='sub'>
@@ -110,8 +115,9 @@ export default class AboutMe extends Component {
                                             // icon={NotesIcon}
                                             title='Current Notes Update'
                                             body={<>
-                                                <ul>
-                                                    <li>STAT 240 (Prob (Adv)) - Up to Week 1</li>
+                                                <ul className=''>{coursesKeysList.map((course_code) =>
+                                                    <li>{`${coursesList[course_code]['shortTitle']} - ${coursesList[course_code]['notesStatus']}`}</li>
+                                                )}
                                                 </ul>
                                             </>}
                                         />

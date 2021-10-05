@@ -8,7 +8,7 @@ var courses = [];
 var importStatements = [];
 
 for (let term in classData) {
-    for (let course in classData[term]) {
+    for (let course in classData[term]['courses']) {
         courses.push(course);
         importStatements.push(`import ${course} from "./notes/${term}/${course}.pdf";`);
     }
