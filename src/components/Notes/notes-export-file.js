@@ -1,4 +1,4 @@
-import MATH247 from "./notes/2A/MATH247.pdf";
+// import MATH247 from "./notes/2A/MATH247.pdf";
 import STAT240 from "./notes/2A/STAT240.pdf";
 import MATH235 from "./notes/2A/MATH235.pdf";
 import MATH146 from "./notes/1B/MATH146.pdf";
@@ -15,5 +15,5 @@ import FPM2 from "./notes/AL/FPM2.pdf";
 import FPS from "./notes/AL/FPS.pdf";
 import PM3 from "./notes/AL/PM3.pdf";
 import M1 from "./notes/AL/M1.pdf";
-const pdfs = {MATH247,STAT240,MATH235,MATH146,MATH148,PSYCH101,MATH145,MATH147,CS145,PHIL145,GEOG101,Chem,FPM1,FPM2,FPS,PM3,M1};
+const pdfs = {STAT240,MATH235,MATH146,MATH148,PSYCH101,MATH145,MATH147,CS145,PHIL145,GEOG101,Chem,FPM1,FPM2,FPS,PM3,M1};
 export default pdfs;

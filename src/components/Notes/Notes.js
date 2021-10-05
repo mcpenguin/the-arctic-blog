@@ -14,27 +14,10 @@ import Row from 'react-bootstrap/Row';
 // import class data from json file
 import classData from './courses.json';
 // import class data pdfs (copied from notes-export-file.js)
-import Chem from "./notes/AL/Chem.pdf";
-import FPM1 from "./notes/AL/FPM1.pdf";
-import FPM2 from "./notes/AL/FPM2.pdf";
-import FPS from "./notes/AL/FPS.pdf";
-import PM3 from "./notes/AL/PM3.pdf";
-import M1 from "./notes/AL/M1.pdf";
-import MATH145 from "./notes/1A/MATH145.pdf";
-import MATH147 from "./notes/1A/MATH147.pdf";
-import CS145 from "./notes/1A/CS145.pdf";
-import PHIL145 from "./notes/1A/PHIL145.pdf";
-import GEOG101 from "./notes/1A/GEOG101.pdf";
-import MATH146 from "./notes/1B/MATH146.pdf";
-import MATH148 from "./notes/1B/MATH148.pdf";
-import PSYCH101 from "./notes/1B/PSYCH101.pdf";
-import STAT240 from './notes/2A/STAT240.pdf';
+import pdfs from './notes-export-file.js';
 
 // import stylesheet
 import './Notes.scss';
-
-// get JS object of pdfs
-const pdfs = { Chem, FPM1, FPM2, FPS, PM3, M1, MATH145, MATH147, CS145, PHIL145, GEOG101, MATH146, MATH148, PSYCH101, STAT240 };
 
 // class for individual course notes
 // props: 
@@ -65,7 +48,7 @@ class CourseNotes extends Component {
                 <Accordion.Collapse eventKey={this.props.eventKey}>
                     <Card.Body className="notes-card-body">
                         <Card.Title className="notes-subject-link">
-                            <a href={pdfs[this.props.eventKey]} without rel="noopener noreferrer" target="_blank" download={this.props.eventKey}>
+                            <a href={pdfs[this.props.eventKey]} without rel="noopener noreferrer" target="_blank">
                                 {this.props.shortTitle} - {this.props.longTitle}
                             </a>
                         </Card.Title>
