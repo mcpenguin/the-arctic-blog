@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.689dc8dd.chunk.css",
-    "main.js": "/static/js/main.201d4057.chunk.js",
-    "main.js.map": "/static/js/main.201d4057.chunk.js.map",
+    "main.js": "/static/js/main.073524c6.chunk.js",
+    "main.js.map": "/static/js/main.073524c6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3cb7352b.js",
     "runtime-main.js.map": "/static/js/runtime-main.3cb7352b.js.map",
     "static/js/2.806d48e1.chunk.js": "/static/js/2.806d48e1.chunk.js",
@@ -10,22 +10,6 @@
     "index.html": "/index.html",
     "static/css/main.689dc8dd.chunk.css.map": "/static/css/main.689dc8dd.chunk.css.map",
     "static/js/2.806d48e1.chunk.js.LICENSE.txt": "/static/js/2.806d48e1.chunk.js.LICENSE.txt",
-    "static/media/CS145.3e6a9481.pdf": "/static/media/CS145.3e6a9481.pdf",
-    "static/media/Chem.b1ab4431.pdf": "/static/media/Chem.b1ab4431.pdf",
-    "static/media/FPM1.68b9990c.pdf": "/static/media/FPM1.68b9990c.pdf",
-    "static/media/FPM2.709808a3.pdf": "/static/media/FPM2.709808a3.pdf",
-    "static/media/FPS.ad99d87f.pdf": "/static/media/FPS.ad99d87f.pdf",
-    "static/media/GEOG101.aadbfa1b.pdf": "/static/media/GEOG101.aadbfa1b.pdf",
-    "static/media/M1.4b57c68f.pdf": "/static/media/M1.4b57c68f.pdf",
-    "static/media/MATH145.1e6774da.pdf": "/static/media/MATH145.1e6774da.pdf",
-    "static/media/MATH146.760e48f9.pdf": "/static/media/MATH146.760e48f9.pdf",
-    "static/media/MATH147.3002f33d.pdf": "/static/media/MATH147.3002f33d.pdf",
-    "static/media/MATH148.564ff5c5.pdf": "/static/media/MATH148.564ff5c5.pdf",
-    "static/media/MATH235.fc1d0cc5.pdf": "/static/media/MATH235.fc1d0cc5.pdf",
-    "static/media/PHIL145.542670d0.pdf": "/static/media/PHIL145.542670d0.pdf",
-    "static/media/PM3.542db20c.pdf": "/static/media/PM3.542db20c.pdf",
-    "static/media/PSYCH101.931dbe8b.pdf": "/static/media/PSYCH101.931dbe8b.pdf",
-    "static/media/STAT240.a6393a09.pdf": "/static/media/STAT240.a6393a09.pdf",
     "static/media/Achievements.scss": "/static/media/achievements-bg.68ff5a16.svg",
     "static/media/PageSections.scss": "/static/media/blob-timeline.fa39e0b0.svg",
     "static/media/blow_it_up.1406be95.md": "/static/media/blow_it_up.1406be95.md",
@@ -78,6 +62,6 @@
     "static/js/runtime-main.3cb7352b.js",
     "static/js/2.806d48e1.chunk.js",
     "static/css/main.689dc8dd.chunk.css",
-    "static/js/main.201d4057.chunk.js"
+    "static/js/main.073524c6.chunk.js"
   ]
 }
