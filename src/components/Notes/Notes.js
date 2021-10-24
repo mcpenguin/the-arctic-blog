@@ -14,7 +14,6 @@ import Row from 'react-bootstrap/Row';
 // import class data from json file
 import classData from './courses.json';
 // import class data pdfs (copied from notes-export-file.js)
-import pdfs from './notes-export-file.js';
 
 // import stylesheet
 import './Notes.scss';
@@ -48,7 +47,7 @@ class CourseNotes extends Component {
                 <Accordion.Collapse eventKey={this.props.eventKey}>
                     <Card.Body className="notes-card-body">
                         <Card.Title className="notes-subject-link">
-                            <a href={pdfs[this.props.eventKey]} without rel="noopener noreferrer" target="_blank">
+                            <a href={this.props.notesLink} target="_blank">
                                 {this.props.shortTitle} - {this.props.longTitle}
                             </a>
                         </Card.Title>
@@ -90,7 +89,7 @@ export default class Notes extends Component {
                         takenWhen={courseObject['takenWhen']}
                         notesStatus={courseObject['notesStatus']}
                         professors={courseObject['professors']}
-                        notesLink={`src/notes/${term}/${course}.pdf`}
+                        notesLink={`/notes/${term}/${course}.pdf`}
                         eventKey={course}
                     />
                 )
