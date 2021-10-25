@@ -5,7 +5,7 @@
             "MATH247": {
                 "shortTitle": "MATH 247",
                 "longTitle": "Calculus 3 (Advanced Level)",
-                "description": "MATH 247 is an advanced level version of MATH 237.\n\nMATH 237: Calculus of functions of several variables. Limits, continuity, differentiability, the chain rule. The gradient vector and the directional derivative. Taylor's formula. Optimization problems. Mappings and the Jacobian. Multiple integrals in various co-ordinate systems. Note: Prof Madill has requested that I only release my notes after the oral tests have finished.",
+                "description": "MATH 247 is an advanced level version of MATH 237.\n\nMATH 237: Calculus of functions of several variables. Limits, continuity, differentiability, the chain rule. The gradient vector and the directional derivative. Taylor's formula. Optimization problems. Mappings and the Jacobian. Multiple integrals in various co-ordinate systems.",
                 "takenWhen": "Taken in 2A (Fall 2021) (Online)",
                 "professors": "Professor: Blake Madill",
                 "notesStatus": "Up to Week 6"
@@ -24,7 +24,7 @@
                 "description": "Orthogonal and unitary matrices and transformations. Orthogonal projections, Gram-Schmidt procedure, best approximations, least-squares. Inner products, angles and orthogonality, orthogonal diagonalization, singular value decomposition, applications.",
                 "takenWhen": "Taken in 2A (Fall 2021) (In-Person)",
                 "professors": "Professor: Nickolas Rollick",
-                "notesStatus": "Up to Class 11"
+                "notesStatus": "Up to Class 12"
             }
         }
     },
