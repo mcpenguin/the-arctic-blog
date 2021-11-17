@@ -3,8 +3,8 @@
 @import "../../index.scss";
 
 .section-top-carousel {
-	// @include homePageGradient(135deg);
-	// background: url("./images/penguin_carousel.png");
+	@include homePageGradient(135deg);
+	// background: url("carousel-waves-1920x700.svg");
 	@include parallax;
 	margin-top: 50px;
 	height: 90vh;
@@ -19,7 +19,7 @@
 		.description-sub {
 			width: 100%;
 			height: 100%;
-			@include homePageGradient(135deg);
+			// @include homePageGradient(135deg);
 			@include center;
 			z-index: 1000;
 			// background:rgba(245, 245, 245, 0.85);
