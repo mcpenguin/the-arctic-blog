@@ -37,121 +37,27 @@ class CustomCarouselContents extends Component {
     }
 }
 
-export default class TopCarousel extends Component {
-    render() {
-        return (
-            <section className="section-top-carousel">
-                <div className='carousel-container'>
-                    {/* {
-                        Object.values(images).map(
-                            image => <div className='carousel-image'>
-                                <img src={image} />
-                            </div>
-                        )
-                    } */}
-                    <div className='description-sub'>
-                        <div className='description'>
-                            <Fade bottom opposite>
-                                <h1>
-                                    Welcome to the Arctic Blog :D
-                                </h1>
-                            </Fade>
-                            <Fade bottom delay={500} opposite>
-                                <h5>
-                                    I'm Marcus Chan, a 2A Data Science student
-                                    at the University of Waterloo as well as an aspiring
-                                    software developer and data scientist.
-                                </h5>
-                            </Fade>
-                        </div>
+export default function TopCarousel() {
+    return (
+        <section className="section-top-carousel">
+            <div className='carousel-container'>
+                <div className='description-sub'>
+                    <div className='description'>
+                        <Fade bottom opposite>
+                            <h1>
+                                Welcome to the Arctic Blog :D
+                            </h1>
+                        </Fade>
+                        <Fade bottom delay={500} opposite>
+                            <h5>
+                                I'm Marcus Chan, a 2A Computer Science student
+                                at the University of Waterloo as well as an aspiring
+                                software developer and data scientist.
+                            </h5>
+                        </Fade>
                     </div>
                 </div>
-
-
-
-                {/* <Carousel>
-                    <Carousel.Item>
-                        <CustomCarouselContents
-                            image={images.notes}
-                            heading={
-                                <h1 className="carousel-heading">
-                                    Incoming A-Levels or first-year student?
-                                </h1>
-                            }
-                            subheading={
-                                <h4>
-                                    Check out the notes I did for my <a className="carousel-link" href="#notes">A-Levels</a> and 
-                                    for my <a className="carousel-link" href="#notes">first-year</a> courses
-                                    at Waterloo. 
-                                </h4>
-                            }
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <CustomCarouselContents
-                            image={images.notes}
-                            heading={
-                                <h1 className="carousel-heading">
-                                    Current notes update
-                                </h1>
-                            }
-                            subheading={
-                                <h4>
-                                    I am in coop right now, so I am not doing
-                                    notes for any course at the moment.
-                                </h4>
-                            }
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <CustomCarouselContents
-                            image={images.piano}
-                            heading={
-                                <h1 className="carousel-heading">
-                                    Unravel (from Tokyo Ghoul) - Original Piano Arrangement
-                                </h1>
-                            }
-                            subheading={
-                                <h4>
-                                    <a className="carousel-link" href="https://www.youtube.com/watch?v=hHcHlceGFpA">180+ views</a> and counting
-                                </h4>
-                            }
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <CustomCarouselContents
-                            image={images.graph}
-                            heading={
-                                <h1 className="carousel-heading">
-                                    Check out "My Course Graph"
-                                </h1>
-                            }
-                            subheading={
-                                <h4>
-                                    and my other projects
-                                    on my <a className="carousel-link" href="https://github.com/mcpenguin">Github</a> page.
-                                </h4>
-                            }
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <CustomCarouselContents
-                            image={images.penguin}
-                            heading={
-                                <h1 className="carousel-heading">
-                                    Want to connect with me further?
-                                </h1>
-                            }
-                            subheading={
-                                <h4>
-                                    Add me on <a className="carousel-link" href="https://www.linkedin.com/in/marcus-chanwc/">LinkedIn</a> or
-                                    follow me on <a className="carousel-link" href="https://www.instagram.com/mcpenquin/?hl=en">Instagram</a>
-                                </h4>
-                            }
-                        />
-                    </Carousel.Item>
-                </Carousel> */}
-            </section>
-        );
-    }
+            </div>
+        </section>
+    );
 }
