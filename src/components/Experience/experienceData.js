@@ -13,7 +13,8 @@ export default {
         keyAchievements: [
             "Created storyboards for original mathematics-based cartoons",
             "Liaised with team to review each other's work and provide feedback",
-            <>Wrote the storyboard for <a href="https://www.instagram.com/p/CQWYix6gv5n/">Comic 21 - The Riemann Integral</a></>,
+            <>Wrote the storyboards for <a href="https://www.instagram.com/p/CQWYix6gv5n/">Comic 21 - The Riemann Integral</a> and 
+            Comic 28 - Pascal's Triangle and Identity (not out yet)</>,
         ]
     },
     emedasia: {

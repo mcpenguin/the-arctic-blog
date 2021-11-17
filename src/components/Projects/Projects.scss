@@ -36,11 +36,6 @@
     font-weight: 600;
 }
 
-.section-projects-page .row {
-    // padding: 10px;
-    // background-color: #f5f5f5cc;
-}
-
 .section-projects-page .row .col-lg-6 {
     padding: 0;
     @include center;
@@ -49,7 +44,8 @@
     @for $i from 1 to 20 {
         &:nth-child(#{$i}) {
             .project-folder {
-                background-color: hsla(30 * $i - 30, 50%, 80%, 1);
+                // background-color: hsla(30 * $i - 30, 50%, 80%, 1);
+                @include fade(170deg, hsla(30 * $i - 30, 90%, 80%, 1));
             }
         }
     }
@@ -68,7 +64,7 @@
 
     h4 {
         // hide trailing text
-        width: 75%;
+        width: 60%;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -152,37 +148,14 @@
     right: -17%;
     top: 4px;
     height: 55%;
-    margin: 0 3px;
-}
+    margin: 0 5px;
 
-@media (max-width: 480px) {
-    .project-folder .tools-used img {
+    @media (max-width: 800px) {
+        margin: 0 3px;
+    }
+
+    @media (max-width: 480px) {
         top: 12px;
         height: 50%;
     }
 }
-
-/* tool icons */
-/* .project-folder i {
-    margin: 0 4px;
-}
-
-.fa-html5 {
-    color: #d15921;
-}
-
-.fa-css3-alt {
-    color: #264de4;
-}
-
-.fa-js-square {
-    color: #c9ab25;
-}
-
-.fa-node-js {
-    color: #68A063;
-}
-
-.fa-react {
-    color: #35c0e2;
-} */

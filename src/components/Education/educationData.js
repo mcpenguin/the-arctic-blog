@@ -1,7 +1,7 @@
 // module containing education data
 export default {
     waterloo: {
-        title: "Data Science, Honours, Co-op @ University of Waterloo",
+        title: "Computer Science @ University of Waterloo",
         location: "Ontario, Canada",
         date: "2020 - 2025",
         achievements: [

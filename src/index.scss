@@ -101,9 +101,9 @@ ul {
 }
 
 li {
-    font-family: "nunito", sans-serif;
-    font-weight: 400;
-    margin-left: -5px;
+    // font-family: "nunito", sans-serif;
+    // font-weight: 400;
+    margin-left: -10px;
     // margin-bottom: 10px;
 }
 
@@ -131,6 +131,13 @@ li {
 @mixin parallax {
     background-attachment: fixed;
     @include nicebg;
+}
+
+// gradient for fade
+@mixin fade($deg, $color) {
+    // background-color: $color;
+    background: linear-gradient($deg, $color 0%, white 100%);
+    // background: linear-gradient(30deg, #00cccc 0%, #185fe2 50%, #1100ac 100%);
 }
 
 // home page gradient
