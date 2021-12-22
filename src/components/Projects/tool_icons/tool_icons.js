@@ -21,13 +21,14 @@ import jupyter from './jupyter.png'
 import reactbootstrap from './reactbootstrap.jpg'
 import tkinter from './tkinter.png'
 import sass from './sass.png'
+import cpp from './cpp.jpg'
 
 const icons_dict = {
     html, css, js, mongodb, react, nodejs, 
     expressjs, python, mysql, java, joget, 
     pandas, metabase, wordpress, tableau,
     bluehost, beautifulsoup, excel, jupyter,
-    reactbootstrap, tkinter, sass
+    reactbootstrap, tkinter, sass, cpp
 }
 
 const icons_names_dict = {
@@ -53,6 +54,7 @@ const icons_names_dict = {
     reactbootstrap: "React Bootstrap",
     tkinter: "Tkinter",
     sass: "Sass",
+    cpp: "C++",
 }
 
 export { icons_dict, icons_names_dict };

@@ -1,7 +1,7 @@
 @import "../../index";
 
 .section-experience-page {
-    background: url("../Cover/images/experience.png");
+    background: url("../../images/experience.png");
     @include parallax;
     background-size: 85%;
     background-position-y: 80px;

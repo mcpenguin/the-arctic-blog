@@ -1,6 +1,10 @@
 // module to import project content data
 
 const data = {
+    "age": {
+        projectName: "AGE (CS246E Final Project)",
+        iconsUsed: ['cpp'],
+    },
     "blow_it_up": {
         projectName: "BlowItUp (HTN 2021 Winner)",
         iconsUsed: ['html', 'css', 'js'],
