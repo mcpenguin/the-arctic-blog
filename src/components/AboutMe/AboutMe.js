@@ -67,7 +67,6 @@ export default class AboutMe extends Component {
 
         return (
             <section className="section-about-me" id="about-me">
-                <div className='sub'>
                     <Container id="container-about-me">
                         <Row>
                             <Col className="w-50">
@@ -75,18 +74,16 @@ export default class AboutMe extends Component {
                             </Col>
                         </Row>
                         <Row className="align-items-center">
-                            <Col lg={6}>
-                                <div className='personal-photo'>
-                                    <img
-                                        id="personal-photo"
-                                        src={personal_photo}
-                                        alt="personal"
-                                    />
-                                </div>
-                            </Col>
-                            <Col lg={6} className="personal-facts-col">
-                                <div className='wrapper'>
-                                    <div className={`personal-facts`}>
+                            <div className='personal-photo'>
+                                <img
+                                    id="personal-photo"
+                                    src={personal_photo}
+                                    alt="personal"
+                                />
+                            </div>
+                            <div className='wrapper'>
+                                <div className='personal-facts'>
+                                    <div className='first'>
                                         <PersonalFact
                                             iconName='fas fa-pencil-alt'
                                             // icon={NotesIcon}
@@ -114,6 +111,8 @@ export default class AboutMe extends Component {
                                                 CAV: 94 | MAV: 96
                                             </>}
                                         />
+                                    </div>
+                                    <div className='second'>
                                         <PersonalFact
                                             iconName='fas fa-code'
                                             title='Programming Expertise'
@@ -133,10 +132,9 @@ export default class AboutMe extends Component {
                                         />
                                     </div>
                                 </div>
-                            </Col>
+                            </div>
                         </Row>
                     </Container>
-                </div>
             </section>
         )
     }

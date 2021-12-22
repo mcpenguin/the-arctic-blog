@@ -29,7 +29,7 @@ export default class Header extends Component {
             <section className="section-header">
                 <Navbar expand="lg" variant="dark" className="fixed-top">
                     <Navbar.Brand href="/" className="navbar-brand">
-                        <img src={lightbulb} id="navbar-img" /> The Arctic Blog
+                        <img src={lightbulb} id="navbar-img" alt="lightbulb"/> The Arctic Blog
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="my-navbar" />
                     <Navbar.Collapse>

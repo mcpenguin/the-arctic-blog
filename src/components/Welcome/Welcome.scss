@@ -4,8 +4,6 @@
 
 .section-top-welcome {
 	@include homePageGradient(135deg);
-	// background: url("carousel-waves-1920x700.svg");
-	@include parallax;
 	margin-top: 50px;
 	height: 90vh;
 	@include center;
