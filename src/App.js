@@ -5,28 +5,17 @@ import { Component } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    useLocation
+    Route
 } from "react-router-dom";
 
 // import components
 import Header from './components/Header/Header';
-import TopCarousel from './components/TopCarousel/TopCarousel';
 import AboutMe from './components/AboutMe/AboutMe';
 import PageSections from './components/PageSections/PageSections';
-// import Timeline from './components/Timeline/Timeline';
+import Welcome from './components/Welcome/Welcome';
 import ContactMe from './components/ContactMe/ContactMe';
 
-// import components for pages
-import Achievements from './components/Achievements/Achievements';
-import Credits from './components/Credits/Credits';
-import Education from './components/Education/Education';
-import Experience from './components/Experience/Experience';
-import Extracurriculars from './components/Extracurriculars/Extracurriculars';
-import Notes from './components/Notes/Notes';
-import Projects from './components/Projects/Projects';
 import ProjectContent from './components/Projects/ProjectContent';
-import Cover from './components/Cover/Cover';
 import NotFound from './components/404NotFound/404NotFound';
 
 // home page
@@ -44,7 +33,7 @@ class HomePage extends Component {
         return (
             <>
                 <Header />
-                <TopCarousel />
+                <Welcome />
                 <AboutMe />
                 <PageSections />
                 <ContactMe />
@@ -52,126 +41,6 @@ class HomePage extends Component {
         )
     };
 
-}
-
-class AchievementsPage extends Component {
-
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-
-    render() {
-        return (
-            <>
-                <Header />
-                <Achievements />
-                <ContactMe />
-            </>
-        );
-    }
-}
-
-class CreditsPage extends Component {
-
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-
-    render() {
-        return (
-            <>
-                <Header />
-                <Credits />
-                <ContactMe />
-            </>
-        );
-    }
-}
-
-class EducationPage extends Component {
-
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-
-    render() {
-        return (
-            <>
-                <Header />
-                <Education />
-                <ContactMe />
-            </>
-        );
-    }
-}
-
-class ExperiencePage extends Component {
-
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-
-
-    render() {
-        return (
-            <>
-                <Header />
-                <Experience />
-                <ContactMe />
-            </>
-        );
-    }
-}
-
-class ExtracurricularsPage extends Component {
-
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-
-    render() {
-        return (
-            <>
-                <Header />
-                <Extracurriculars />
-                <ContactMe />
-            </>
-        );
-    }
-}
-
-class NotesPage extends Component {
-
-    componentDidMount() {
-        window.scroll(0, 0);
-    }
-
-    render() {
-        return (
-            <>
-                <Header />
-                <Notes />
-                <ContactMe />
-            </>
-        );
-    }
-}
-
-class ProjectsPage extends Component {
-
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-
-    render() {
-        return (
-            <>
-                <Header />
-                <Projects />
-                <ContactMe />
-            </>
-        );
-    }
 }
 
 class IndividualProjectPage extends Component {

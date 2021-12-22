@@ -1,9 +1,6 @@
 // React component class for Education section
 import React, { Component } from 'react';
 
-import Fade from 'react-reveal/Fade';
-import TypeWriterEffect from 'react-typewriter-effect';
-
 // import data
 import data from './educationData';
 

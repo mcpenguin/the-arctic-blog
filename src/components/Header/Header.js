@@ -12,7 +12,6 @@ import lightbulb from './lightbulb.png';
 
 class NavbarLink extends Component {
     render() {
-        const str = `#${this.props.id}`;
         return (
             <Nav.Item>
                 <Link exact to={`/#${this.props.id}`} className="nav-item">

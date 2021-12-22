@@ -1,15 +1,11 @@
 // React component class for About Me section
 
 import React, { Component } from 'react';
-// import Fade from 'react-reveal';
-import TypeWriterEffect from 'react-typewriter-effect';
 import * as courses from '../Notes/courses.json';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-import Fade from 'react-reveal/Fade';
 
 import personal_photo from './personal-photo.jpeg';
 
@@ -27,32 +23,13 @@ const PersonalFact = (props) => {
                     <i className={`personal-facts-icon ${props.iconName}`}></i>
                 </h5>
                 <h5>
-                    {/* <span className='personal-facts-icon'><i className={props.iconName} /></span> */}
-                    {/* <i className={`personal-facts-icon ${props.iconName}`}></i> */}
-                    {/* </h5>
-                <h5> */}
-                    {/* <div className='personal-facts-icon'><i className={props.iconName} /></div> */}
-                    {/* <TypeWriterEffect
-                        text={props.title}
-                        typeSpeed={80}
-                        cursorColor={'#0553ca'}
-                        hideCursorAfterText={true}
-                        textStyle={{
-                            fontSize: "1em",
-                            marginBottom: "5px",
-                            fontWeight: "600",
-                        }}
-                    /> */}
                     {props.title}
                 </h5>
-                {/* </Fade> */}
 
             </div>
-            {/* <Fade up delay={80 * props.title.length}> */}
             <p className="personal-facts-body">
                 {props.body}
             </p>
-            {/* </Fade> */}
         </>
     )
 }

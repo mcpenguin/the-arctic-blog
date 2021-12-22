@@ -1,8 +1,6 @@
 // React component class for ContactMe section
 import React, { Component } from 'react';
 
-import Fade from 'react-reveal/Fade';
-
 // import stylesheet
 import './ContactMe.scss';
 

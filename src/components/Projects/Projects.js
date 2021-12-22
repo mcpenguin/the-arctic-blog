@@ -1,6 +1,6 @@
 // React component class for Projects section
 import React, { Component } from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // import Bootstrap components
 import Container from 'react-bootstrap/Container';
@@ -23,9 +23,6 @@ import project_images from './project_images/project_images';
 // import project data
 import project_data from './projectsData';
 
-// import cover component
-import Cover from '../Cover/Cover';
-
 // tooltip for icon images
 // props:
 // - iconId: id of icon
@@ -44,7 +41,7 @@ class IconTooltip extends Component {
                 delay={{ show: 100, hide: 100 }}
                 overlay={this.renderTooltip}
             >
-                <img className={icons_dict[this.props.iconId]} src={icons_dict[this.props.iconId]} />
+                <img className={icons_dict[this.props.iconId]} src={icons_dict[this.props.iconId]} alt={this.props.iconId}/>
             </OverlayTrigger>
         )
     }
@@ -65,7 +62,7 @@ class ProjectFolder extends Component {
                     </div>
                     <div className="project-image">
                         <Link exact to={`/projects/${this.props.projectId}`}>
-                            <img src={project_images[this.props.projectId] || test_img} />
+                            <img src={project_images[this.props.projectId] || test_img} alt={this.props.projectId} />
                         </Link>
                     </div>
                     <div className="tools-used">
@@ -87,25 +84,6 @@ export default class Projects extends Component {
     render() {
         return (
             <>
-                {/* <Cover 
-                    coverClass='projects'
-                    coverTitle="My Projects"
-                    coverDescription={<>
-                        <p>
-                            Here, I have compiled a list of all of my programming projects, which I have done
-                            either for fun, to solve a particular problem I had in my life, for work or a
-                            combination of all three.
-                        </p>
-                        <p>
-                            Click the image in the 'project folder' to learn more about that project, including a link
-                            to its respective website or repository.
-                        </p>
-                        <p>
-                            I have also included the main languages and tools utilized in each
-                            project. You can hover over the logos to see the names of the languages and tools.
-                        </p>
-                    </>} */}
-                {/* /> */}
                 <section id="projects" class="section-projects-page">
                     <div className="sub">
                         <Container fluid>

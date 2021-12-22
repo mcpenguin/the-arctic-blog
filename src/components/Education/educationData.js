@@ -1,5 +1,5 @@
 // module containing education data
-export default {
+let data = {
     waterloo: {
         title: "Computer Science @ University of Waterloo",
         location: "Ontario, Canada",
@@ -20,3 +20,5 @@ export default {
         ]
     },
 };
+
+export default data;

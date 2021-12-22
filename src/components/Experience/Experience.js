@@ -1,9 +1,6 @@
 // React component class for Experience section
 import React, { Component } from 'react';
 
-import Fade from 'react-reveal/Fade';
-import TypeWriterEffect from 'react-typewriter-effect';
-
 // import data
 import data from './experienceData';
 
@@ -70,18 +67,6 @@ export default class Experience extends Component {
             <section id="experience" class='section-experience-page'>
                 <div class='gradient'>
                     <h3>My Experiences</h3>
-                    {/* <Cover
-                    coverClass="experience"
-                    coverTitle="My Experience"
-                    coverDescription={<>
-                        <p>
-                            I have been working with React for about a year now. I am currently working on
-                            a React based web app that I am building for a client. The app
-                            will be a simple todo list that will allow users to add
-                            tasks and mark them as complete.
-                        </p>
-                    </>}
-                /> */}
                     {
                         Object.keys(data).map(key =>
                             <>

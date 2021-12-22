@@ -58,4 +58,5 @@ class ProjectContent extends Component {
     }
 }
 
-export default (props) => <ProjectContent {...props} />;
+let r = (props) => <ProjectContent {...props} />;
+export default r;

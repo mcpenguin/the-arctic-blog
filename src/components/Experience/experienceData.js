@@ -1,5 +1,5 @@
 // module containing experience data
-export default {
+let data = {
     math135_marker: {
         title: 'Marker for MATH 135 (Algebra for Honours Mathematics)',
         location: "University of Waterloo, Ontario, Canada",
@@ -56,4 +56,6 @@ export default {
             "Created a comprehensive user guide for a truck delivery application, currently used by over 100,000 users",
         ]
     },
-}
+};
+
+export default data;

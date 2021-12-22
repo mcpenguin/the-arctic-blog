@@ -1,6 +1,5 @@
 // module to export achievement data
-export default
-    [
+let data = [
         {
             "title": "Top 20% (20/120)",
             "date": "Apr 2021",
@@ -68,3 +67,5 @@ export default
         }
 
     ];
+
+export default data;

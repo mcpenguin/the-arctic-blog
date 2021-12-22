@@ -1,7 +1,5 @@
 // React component class for Notes section
 import React, { Component } from 'react';
-// import { Fade, Slide } from 'react-reveal';
-import TypeWriterEffect from 'react-typewriter-effect';
 
 // import Bootstrap components
 import Accordion from 'react-bootstrap/Accordion';
@@ -47,7 +45,7 @@ class CourseNotes extends Component {
                 <Accordion.Collapse eventKey={this.props.eventKey}>
                     <Card.Body className="notes-card-body">
                         <Card.Title className="notes-subject-link">
-                            <a href={this.props.notesLink} target="_blank">
+                            <a href={this.props.notesLink} target="_blank" rel="noreferrer">
                                 {this.props.shortTitle} - {this.props.longTitle}
                             </a>
                         </Card.Title>
