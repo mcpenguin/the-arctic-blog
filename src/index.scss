@@ -38,7 +38,7 @@ h1 {
 h2 {
     font-family: "quicksand", sans-serif;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 h3 {
@@ -73,6 +73,10 @@ h5 {
 
     @media (max-width: $tablet_width) {
         font-size: 1.4em;
+    }
+
+    @media (max-width: $mobile_width) {
+        font-size: 1.2em;
     }
 }
 
@@ -143,35 +147,20 @@ li {
 // home page gradient
 @mixin homePageGradient($deg) {
     $colors: (
-        $deg,
-        rgba(245, 245, 245, 0.85),
-        rgba(158, 236, 218, 0.85),
-        rgba(157, 215, 241, 0.85),
-        rgba(149, 180, 238, 0.85),
-        rgba(119, 141, 233, 0.85)
+        // $deg,
+        rgba(245, 245, 245, 0.7) 0%,
+        rgba(118, 235, 207, 0.7) 25%,
+        rgba(113, 198, 238, 0.7) 50%,
+        rgba(104, 148, 230, 0.7) 75%,
+        rgba(125, 94, 238, 0.7) 100%
     );
 
-    // $result: ();
-    // @for $i from 0 through 4 {
-    //     @debug $colors;
-    //     $color: list.index($colors, $i);
-    //     @debug $color;
-    //     $result: append($result, list.index($color, 0));
-    // }
-    // @debug $result;
-
-    background: linear-gradient($colors);
-    background-size: 2000% 2000%;
-    animation: gradientAnimate 15s ease-in-out alternate infinite;
-
-    @keyframes gradientAnimate {
-        0% {
-            background-position: 0% 0%;
-        }
-        100% {
-            background-position: 100% 100%;
-        }
-    }
+    // background-image: linear-gradient($colors);
+    background-image: radial-gradient(
+        farthest-corner at 40px 40px,
+        $colors
+    ), url("images/white-wave.png");
+    background-size: cover;
 }
 
 // general light to dark gradient, given hue and degree
