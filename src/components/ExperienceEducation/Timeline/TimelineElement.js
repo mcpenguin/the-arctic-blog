@@ -22,7 +22,8 @@ const TimelineElement = (props) => {
         <div className="timeline-element"
             style={{
                 "--color": props.color,
-                "--subcolor": props.subcolor
+                "--subcolor": props.subcolor,
+                "--nextcolor": props.nextcolor,
             }}
         >
             <div className="date">
@@ -34,7 +35,9 @@ const TimelineElement = (props) => {
                 <h4>{props.subtitle}</h4>
             </div>
             <div className="body">
-                <div className="connect"></div>
+                <div className="connect">
+                    <div className="connect-line"></div>
+                </div>
                 <div className="content">
                     {props.children}
                 </div>

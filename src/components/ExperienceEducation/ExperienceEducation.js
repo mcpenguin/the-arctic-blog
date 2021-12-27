@@ -24,7 +24,8 @@ const Timeline = (props) => {
             subtitle='MATHSOC Cartoons'
             date='Jan 2022 - Apr 2022'
             color='hsla(180, 80%, 90%, 1)'
-            subcolor='hsla(180, 40%, 40%, 0.5)'
+            subcolor='hsla(180, 40%, 40%, 1)'
+            nextcolor='hsla(200, 40%, 40%, 1)'
         > 
         </TimelineElement>
         <TimelineElement
@@ -32,7 +33,8 @@ const Timeline = (props) => {
             subtitle='MATHSOC Cartoons'
             date='May 2021 - Dec 2021'
             color='hsla(200, 80%, 90%, 1)'
-            subcolor='hsla(200, 40%, 40%, 0.5)'
+            subcolor='hsla(200, 40%, 40%, 1)'
+            nextcolor='hsla(220, 40%, 40%, 1)'
         >
             <ul>
                 <li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
@@ -45,7 +47,8 @@ const Timeline = (props) => {
             subtitle='MATHSOC Cartoons'
             date='May 2021 - Dec 2021'
             color='hsla(220, 80%, 90%, 1)'
-            subcolor='hsla(220, 40%, 40%, 0.5)'
+            subcolor='hsla(220, 40%, 40%, 1)'
+            nextcolor='hsla(240, 40%, 40%, 1)'
         >
             <ul>
                 <li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
