@@ -1,0 +1,28 @@
+@import "../../index.scss";
+
+.section-experience, .section-education {
+    padding: 5vh 2vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .title {
+        width: 30vw;
+
+        @media (max-width: $medium_desktop_width) {
+            width: 100%;
+        }
+    }
+
+    .timeline {
+        width: 60vw;
+
+        @media (max-width: $medium_desktop_width) {
+            width: 100%;
+        }
+    }
+}
+
+.section-education {
+
+}

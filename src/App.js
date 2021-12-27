@@ -15,6 +15,7 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Projects from './components/Projects/Projects';
 import Experience from './components/Experience/Experience';
 import Education from './components/Education/Education';
+import ExperienceEducation from './components/ExperienceEducation/ExperienceEducation';
 import Extracurriculars from './components/Extracurriculars/Extracurriculars';
 import Achievements from './components/Achievements/Achievements';
 import Notes from './components/Notes/Notes';
@@ -41,8 +42,9 @@ class HomePage extends Component {
                 <Welcome />
                 <AboutMe />
                 <Projects />
-                <Experience />
-                <Education />
+                {/* <Experience />
+                <Education /> */}
+                <ExperienceEducation />
                 <Extracurriculars />
                 <Achievements />
                 <Notes />
