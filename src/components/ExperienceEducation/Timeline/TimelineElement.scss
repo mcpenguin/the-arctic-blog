@@ -1,0 +1,44 @@
+@import "../../../index.scss";
+
+.timeline-element {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    .date {
+        color: var(--color);
+        width: 150px;
+        
+        h6 {
+            font-size: 1.7rem;
+        }
+    }
+
+    .node {
+        $node_size: 100px;
+        
+        // circle of color "--color"
+        background:  var(--color);
+        border-radius: 50%;
+        width: $node_size;
+        height: $node_size;
+        border: 10px solid var(--subcolor);
+    }
+
+    .desc {
+        padding-left: 20px;
+
+        // title
+        h3 {
+            padding: 0;
+            text-align: left;
+            font-size: 2.5rem;
+        }
+
+        // subtitle
+        h4 {
+            text-align: left;
+            font-size: 1.8rem;
+        }
+    }
+}

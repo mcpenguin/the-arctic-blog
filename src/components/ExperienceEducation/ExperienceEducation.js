@@ -8,6 +8,9 @@
 // import stylesheet
 import './ExperienceEducation.scss';
 
+// import timeline stuff
+import TimelineElement from './Timeline/TimelineElement';
+
 const experienceData = {};
 const educationData = {};
 
@@ -16,7 +19,15 @@ const educationData = {};
 // and generates the "necessary timeline"
 const Timeline = (props) => {
     return <>
-        <p>Timeline will go here!</p>
+        <TimelineElement
+            title='Director'
+            subtitle='MATHSOC Cartoons'
+            date='Jan 2022 - Apr 2022'
+            color='hsla(240, 80%, 80%, 1)'
+            subcolor='hsla(240, 60%, 60%, 0.5)'
+        >
+
+        </TimelineElement>
     </>;
 }
 
@@ -36,12 +47,12 @@ const Experience = (props) => {
 const Education = (props) => {
     return (
         <section className='section-education'>
-            <div className='title'>
+            {/* <div className='title'>
                 <h2>My Education</h2>
             </div>
             <div className='timeline'>
                 <Timeline data={educationData} />
-            </div>
+            </div> */}
         </section>
     );
 }
