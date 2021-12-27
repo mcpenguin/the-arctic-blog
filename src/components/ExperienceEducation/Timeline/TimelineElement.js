@@ -32,6 +32,8 @@ const TimelineElement = (props) => {
             <div className="desc">
                 <h3>{props.title}</h3>
                 <h4>{props.subtitle}</h4>
+            </div>
+            <div className="body">
                 {props.children}
             </div>
             {/* <div className="body">

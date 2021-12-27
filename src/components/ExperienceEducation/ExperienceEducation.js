@@ -26,16 +26,12 @@ const Timeline = (props) => {
             color='hsla(180, 80%, 90%, 1)'
             subcolor='hsla(180, 40%, 40%, 0.5)'
         >
-            <ul>
-                <li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
-                <li>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</li>
-                <li>and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
-            </ul>
+            
         </TimelineElement>
         <TimelineElement
-            title='Director'
+            title='Writer'
             subtitle='MATHSOC Cartoons'
-            date='Jan 2022 - Apr 2022'
+            date='May 2021 - Dec 2021'
             color='hsla(200, 80%, 90%, 1)'
             subcolor='hsla(200, 40%, 40%, 0.5)'
         >
