@@ -10,9 +10,14 @@ import {
 
 // import components
 import Header from './components/Header/Header';
-import AboutMe from './components/AboutMe/AboutMe';
-import PageSections from './components/PageSections/PageSections';
 import Welcome from './components/Welcome/Welcome';
+import AboutMe from './components/AboutMe/AboutMe';
+import Projects from './components/Projects/Projects';
+import Experience from './components/Experience/Experience';
+import Education from './components/Education/Education';
+import Extracurriculars from './components/Extracurriculars/Extracurriculars';
+import Achievements from './components/Achievements/Achievements';
+import Notes from './components/Notes/Notes';
 import ContactMe from './components/ContactMe/ContactMe';
 
 import ProjectContent from './components/Projects/ProjectContent';
@@ -35,7 +40,12 @@ class HomePage extends Component {
                 <Header />
                 <Welcome />
                 <AboutMe />
-                <PageSections />
+                <Projects />
+                <Experience />
+                <Education />
+                <Extracurriculars />
+                <Achievements />
+                <Notes />
                 <ContactMe />
             </>
         )
