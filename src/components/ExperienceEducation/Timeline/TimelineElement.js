@@ -19,21 +19,24 @@ import "./TimelineElement.scss";
 const TimelineElement = (props) => {
     // node: the "circle" node for the element
     return (
-        <div className="timeline-element">
+        <div className="timeline-element"
+            style={{
+                "--color": props.color,
+                "--subcolor": props.subcolor
+            }}
+        >
             <div className="date">
                 <h6>{props.date}</h6>
             </div>
-            <div className="node" style={{
-                "--color": props.color,
-                "--subcolor": props.subcolor
-            }}></div>
+            <div className="node"></div>
             <div className="desc">
                 <h3>{props.title}</h3>
                 <h4>{props.subtitle}</h4>
-            </div>
-            <div className="body">
                 {props.children}
             </div>
+            {/* <div className="body">
+                {props.children}
+            </div> */}
         </div>
     )
 }

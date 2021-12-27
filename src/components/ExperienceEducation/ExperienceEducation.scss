@@ -1,21 +1,47 @@
 @import "../../index.scss";
 
 .section-experience, .section-education {
-    padding: 5vh 2vw;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
+
+    // width of title, in %
+    $title_width: 35%;
 
     .title {
-        width: 30vw;
+        width: $title_width;
+        @include center;
+
+        background: linear-gradient(
+            180deg,
+            $homepage_colors
+        ), 
+        url('light-blue-geometric.jpg');
 
         @media (max-width: $medium_desktop_width) {
             width: 100%;
         }
+
+        h2 {
+            height: 100%;
+            width: 100%;
+            @include center;
+            text-align: center;
+            background: linear-gradient(
+                0deg,
+                rgba(245,245,245,0) 0%,
+                rgba(245,245,245,0.4) 30%,
+                rgba(245,245,245,0.4) 70%,
+                rgba(245,245,245,0) 100%
+
+            );
+        }
     }
 
     .timeline {
-        width: 60vw;
+        padding: 5vh 3vw;
+        width: 100% - $title_width;
+        background: $off_white;
 
         @media (max-width: $medium_desktop_width) {
             width: 100%;
