@@ -1,13 +1,26 @@
 @import "../../index";
 
+$achievement_colors: (
+    // $deg,
+    rgba(152, 219, 197, 0.95) 0%,
+    rgba(78, 153, 135, 0.95) 25%,
+    rgba(40, 109, 141, 0.95) 50%,
+    rgba(27, 64, 133, 0.95) 60%,
+    rgba(74, 27, 160, 0.95) 100%
+);
+
 .section-achievements-page {
-    background: url("./achievements-bg.svg");
+    background: radial-gradient(
+        farthest-corner at -40px 40px,
+        $achievement_colors
+    ),
+    url("./achievements-bg.svg");
     // @include parallax;
     background-size: cover;
     // min-height: 200vh;
     padding: 40px 0;
     @include center;
-    @include parallax;
+    // @include parallax;
 
     h3 {
         color: $off_white;
@@ -19,8 +32,9 @@
         width: 80%;
         background-color: #f5f5f5ee;
         height: 100%;
-
         border-radius: 20px;
+        // blur border
+        box-shadow: 0px 0px 40px #000031;
 
         @media (max-width: $tablet_width) {
             width: 95%;
@@ -38,7 +52,11 @@
                     font-size: 2.2em;
                     font-weight: 600;
                     // gradient background
-                    background: linear-gradient(135deg, rgb(3, 20, 117) 0%, rgb(109, 181, 230) 100%);
+                    background: linear-gradient(
+                        135deg,
+                        rgb(4, 77, 173) 0%, 
+                        rgb(66, 29, 153) 100%
+                    );
                     background-clip: text;
                     -webkit-background-clip: text;
                     color: transparent;

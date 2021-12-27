@@ -144,21 +144,22 @@ li {
     // background: linear-gradient(30deg, #00cccc 0%, #185fe2 50%, #1100ac 100%);
 }
 
+$homepage_colors: (
+    // $deg,
+    rgba(245, 245, 245, 0.7) 0%,
+    rgba(118, 235, 207, 0.7) 25%,
+    rgba(113, 198, 238, 0.7) 50%,
+    rgba(104, 148, 230, 0.7) 75%,
+    rgba(125, 94, 238, 0.7) 100%
+);
+
 // home page gradient
 @mixin homePageGradient($deg) {
-    $colors: (
-        // $deg,
-        rgba(245, 245, 245, 0.7) 0%,
-        rgba(118, 235, 207, 0.7) 25%,
-        rgba(113, 198, 238, 0.7) 50%,
-        rgba(104, 148, 230, 0.7) 75%,
-        rgba(125, 94, 238, 0.7) 100%
-    );
 
-    // background-image: linear-gradient($colors);
+    // background-image: linear-gradient($homepage_colors);
     background-image: radial-gradient(
         farthest-corner at 40px 40px,
-        $colors
+        $homepage_colors
     ), url("images/white-wave.png");
     background-size: cover;
 }
