@@ -17,7 +17,7 @@ import educationData from './educationData';
 
 const Experience = (props) => {
     return (
-        <section className='section-experience'>
+        <section className='section-experience' id='experience'>
             <div className='title'>
                 <h2>My Experience</h2>
             </div>
@@ -34,7 +34,7 @@ const Experience = (props) => {
 
 const Education = (props) => {
     return (
-        <section className='section-education'>
+        <section className='section-education' id='education'>
             <div className='title'>
                 <h2>My Education</h2>
             </div>
