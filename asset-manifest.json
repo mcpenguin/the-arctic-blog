@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d308b5a.chunk.css",
-    "main.js": "/static/js/main.e043b012.chunk.js",
-    "main.js.map": "/static/js/main.e043b012.chunk.js.map",
+    "main.css": "/static/css/main.80c50351.chunk.css",
+    "main.js": "/static/js/main.658d0735.chunk.js",
+    "main.js.map": "/static/js/main.658d0735.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3cb7352b.js",
     "runtime-main.js.map": "/static/js/runtime-main.3cb7352b.js.map",
-    "static/js/2.48ab79cf.chunk.js": "/static/js/2.48ab79cf.chunk.js",
-    "static/js/2.48ab79cf.chunk.js.map": "/static/js/2.48ab79cf.chunk.js.map",
+    "static/js/2.b08b1864.chunk.js": "/static/js/2.b08b1864.chunk.js",
+    "static/js/2.b08b1864.chunk.js.map": "/static/js/2.b08b1864.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.1d308b5a.chunk.css.map": "/static/css/main.1d308b5a.chunk.css.map",
-    "static/js/2.48ab79cf.chunk.js.LICENSE.txt": "/static/js/2.48ab79cf.chunk.js.LICENSE.txt",
+    "static/css/main.80c50351.chunk.css.map": "/static/css/main.80c50351.chunk.css.map",
+    "static/js/2.b08b1864.chunk.js.LICENSE.txt": "/static/js/2.b08b1864.chunk.js.LICENSE.txt",
     "static/media/Achievements.scss": "/static/media/achievements-bg.68ff5a16.svg",
     "static/media/age.e3c212b4.md": "/static/media/age.e3c212b4.md",
     "static/media/blow_it_up.1406be95.md": "/static/media/blow_it_up.1406be95.md",
@@ -18,10 +18,9 @@
     "static/media/calculator.d58ba088.md": "/static/media/calculator.d58ba088.md",
     "static/media/compass_initiative.041f3ac1.png": "/static/media/compass_initiative.041f3ac1.png",
     "static/media/compass_initiative.e9691c9f.md": "/static/media/compass_initiative.e9691c9f.md",
-    "static/media/Education.scss": "/static/media/education.d9b748e5.jpg",
-    "static/media/Experience.scss": "/static/media/experience.39fdfb84.png",
     "static/media/AboutMe.scss": "/static/media/geometric-1920x1080.a7e6fd37.svg",
     "static/media/joget_fb_marketplace.12c5f35d.md": "/static/media/joget_fb_marketplace.12c5f35d.md",
+    "static/media/ExperienceEducation.scss": "/static/media/light-blue-geometric.1fdec539.jpg",
     "static/media/lightbulb.bb55c61e.png": "/static/media/lightbulb.bb55c61e.png",
     "static/media/linear_collatz.5f8531c3.png": "/static/media/linear_collatz.5f8531c3.png",
     "static/media/linear_collatz.9248fc68.md": "/static/media/linear_collatz.9248fc68.md",
@@ -47,8 +46,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3cb7352b.js",
-    "static/js/2.48ab79cf.chunk.js",
-    "static/css/main.1d308b5a.chunk.css",
-    "static/js/main.e043b012.chunk.js"
+    "static/js/2.b08b1864.chunk.js",
+    "static/css/main.80c50351.chunk.css",
+    "static/js/main.658d0735.chunk.js"
   ]
 }
