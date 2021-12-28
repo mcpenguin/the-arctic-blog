@@ -1,19 +1,25 @@
 // module containing experience data
 let data = [
     {
-        title: 'MATH 135 Marker',
-        subtitle: "University of Waterloo",
-        date: "Sep 2021 - Dec 2021",
+        title: 'Director',
+        subtitle: 'MATHSOC Cartoons',
+        date: 'Jan 2021 - Present',
         content: null,
     },
     {
         title: "Comic Writer",
         subtitle: "MATHSOC Cartoons",
-        date: "May 2021 - Dec 2021",
+        date: "May 2021 - Present",
         content: <ul>
             <li>Created storyboards for original mathematics-based cartoons</li>
             <li>Liaised with team to review each other's work and provide feedback</li>
         </ul>,
+    },
+    {
+        title: 'MATH 135 Marker',
+        subtitle: "University of Waterloo",
+        date: "Sep 2021 - Dec 2021",
+        content: null,
     },
     {
         title: "Data Analyst",
@@ -23,6 +29,15 @@ let data = [
             <li>Analyzed megabytes of transaction records from 41,000+ clinics in Malaysia</li>
             <li>Independently built and implemented a Joget website that allows vendors to sell products through Facebook Live</li>
             <li>Helped to develop a Joget website to manage medical subscriptions for doctors and patients</li>
+        </ul>
+    },
+    {
+        title: "Web Developer",
+        subtitle: "Pure Math Club (PMC)",
+        date: "Jan 2020 - May 2020",
+        content: <ul>
+            <li>Redesigned the University of Waterloo’s Pure Math Club website</li>
+            <li>Built various helper scripts to allow executives to easily add/edit website content</li>
         </ul>
     },
     {
