@@ -9,42 +9,11 @@
 import './ExperienceEducation.scss';
 
 // import timeline stuff
-import TimelineElement from './Timeline/TimelineElement';
+import Timeline from './Timeline/Timeline';
 
 // import data
 import experienceData from './experienceData';
-
-// const experienceData = [];
-const educationData = [];
-
-// timeline functional component
-// takes in a data object as props.data 
-// and generates the "necessary timeline"
-const Timeline = (props) => {
-    if (props.data) {
-        let result = [];
-        // convert data into array of timeline elements
-        for (let i = 0; i < props.data.length; i++) {
-            let element = props.data[i];
-            // value of hue
-            let h = 160 + 100 * (i+1) / props.data.length;
-            result.push(
-                <TimelineElement
-                    key={i}
-                    title={element.title}
-                    subtitle={element.subtitle}
-                    date={element.date}
-                    color={`hsla(${h}, 80%, 90%, 1)`}
-                    subcolor={`hsla(${h}, 40%, 40%, 1)`}
-                    nextcolor={`hsla(${h}, 40%, 40%, 1)`}
-                >
-                    {element.content}
-                </TimelineElement>
-            );
-        }
-        return result;
-    }
-}
+import educationData from './educationData';
 
 const Experience = (props) => {
     return (
@@ -53,7 +22,11 @@ const Experience = (props) => {
                 <h2>My Experience</h2>
             </div>
             <div className='timeline'>
-                <Timeline data={experienceData} />
+                <Timeline 
+                    data={experienceData} 
+                    start={160}
+                    range={120}
+                />
             </div>
         </section>
     );
@@ -62,12 +35,16 @@ const Experience = (props) => {
 const Education = (props) => {
     return (
         <section className='section-education'>
-            {/* <div className='title'>
+            <div className='title'>
                 <h2>My Education</h2>
             </div>
             <div className='timeline'>
-                <Timeline data={educationData} />
-            </div> */}
+                <Timeline 
+                    data={educationData} 
+                    start={280}
+                    range={40}
+                />
+            </div>
         </section>
     );
 }

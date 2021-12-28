@@ -12,12 +12,6 @@
         width: $title_width;
         @include center;
 
-        background: linear-gradient(
-            135deg,
-            $homepage_colors
-        ), 
-        url('light-blue-geometric.jpg');
-
         h2 {
             height: 100%;
             width: 80%;
@@ -43,9 +37,34 @@
         @media (max-width: $medium_desktop_width) {
             width: 100%;
         }
+
+        li {
+            font-weight: 400;
+        }
+    }
+}
+
+.section-experience {
+    .title {
+        background: linear-gradient(
+            135deg,
+            $homepage_colors
+        ), 
+        url('light-blue-geometric.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
 .section-education {
-
+    .title {
+        background: linear-gradient(
+            135deg,
+            rgba(134, 109, 224, 0.7) 0%,
+            rgba(152, 94, 199, 0.7) 100%
+        ), 
+        url('light-blue-geometric.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
