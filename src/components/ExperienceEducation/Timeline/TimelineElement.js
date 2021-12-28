@@ -13,6 +13,7 @@ import "./TimelineElement.scss";
  * @param {string} props.date
  * @param {color_string} props.color
  * @param {color_string} props.subcolor
+ * @param {color_string} props.nextcolor
  * @param {JSX} props.children
  * @returns {React.Component}
  */

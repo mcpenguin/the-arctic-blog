@@ -11,54 +11,39 @@ import './ExperienceEducation.scss';
 // import timeline stuff
 import TimelineElement from './Timeline/TimelineElement';
 
-const experienceData = {};
-const educationData = {};
+// import data
+import experienceData from './experienceData';
+
+// const experienceData = [];
+const educationData = [];
 
 // timeline functional component
 // takes in a data object as props.data 
 // and generates the "necessary timeline"
 const Timeline = (props) => {
-    return <>
-        <TimelineElement
-            title='Director'
-            subtitle='MATHSOC Cartoons'
-            date='Jan 2022 - Apr 2022'
-            color='hsla(180, 80%, 90%, 1)'
-            subcolor='hsla(180, 40%, 40%, 1)'
-            nextcolor='hsla(200, 40%, 40%, 1)'
-        > 
-        </TimelineElement>
-        <TimelineElement
-            title='Writer'
-            subtitle='MATHSOC Cartoons'
-            date='May 2021 - Dec 2021'
-            color='hsla(200, 80%, 90%, 1)'
-            subcolor='hsla(200, 40%, 40%, 1)'
-            nextcolor='hsla(220, 40%, 40%, 1)'
-        >
-            <ul>
-                <li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
-                <li>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</li>
-                <li>and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
-            </ul>
-        </TimelineElement>
-        <TimelineElement
-            title='Writer'
-            subtitle='MATHSOC Cartoons'
-            date='May 2021 - Dec 2021'
-            color='hsla(220, 80%, 90%, 1)'
-            subcolor='hsla(220, 40%, 40%, 1)'
-            nextcolor='hsla(240, 40%, 40%, 1)'
-        >
-            <ul>
-                <li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
-                <li>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</li>
-                <li>and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
-                <li>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</li>
-                <li>and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
-            </ul>
-        </TimelineElement>
-    </>;
+    if (props.data) {
+        let result = [];
+        // convert data into array of timeline elements
+        for (let i = 0; i < props.data.length; i++) {
+            let element = props.data[i];
+            // value of hue
+            let h = 160 + 100 * (i+1) / props.data.length;
+            result.push(
+                <TimelineElement
+                    key={i}
+                    title={element.title}
+                    subtitle={element.subtitle}
+                    date={element.date}
+                    color={`hsla(${h}, 80%, 90%, 1)`}
+                    subcolor={`hsla(${h}, 40%, 40%, 1)`}
+                    nextcolor={`hsla(${h}, 40%, 40%, 1)`}
+                >
+                    {element.content}
+                </TimelineElement>
+            );
+        }
+        return result;
+    }
 }
 
 const Experience = (props) => {
