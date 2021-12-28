@@ -16,12 +16,17 @@
             height: 100%;
             width: 100%;
             font-weight: 800;
-            @include center;
+            
+            padding: 50px 0 0 30px;
 
             background: radial-gradient(
                 rgba(245, 245, 245, 0.5) 0%,
                 rgba(0,0,0,0) 100%
             );
+
+            @media (max-width: $mobile-width) {
+                padding: 0 0 0 10%;
+            }
         }
 
         @media (max-width: $medium_desktop_width) {
