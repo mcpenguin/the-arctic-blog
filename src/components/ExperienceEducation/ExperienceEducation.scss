@@ -14,9 +14,14 @@
 
         h2 {
             height: 100%;
-            width: 80%;
+            width: 100%;
             font-weight: 800;
             @include center;
+
+            background: radial-gradient(
+                rgba(245, 245, 245, 0.5) 0%,
+                rgba(0,0,0,0) 100%
+            );
         }
 
         @media (max-width: $medium_desktop_width) {
