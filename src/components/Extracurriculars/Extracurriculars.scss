@@ -47,6 +47,7 @@
                 .tedx {
                     height: 50%;
                     background: url("./images/tedx.jpg");
+                    background-size: cover;
                     background-position: center;
 
                     border-top: $dark_border;
@@ -65,7 +66,7 @@
                     height: 50%;
                     background: url("./images/sue.jpg");
                     background-position: center;
-                    background-size: 105%;
+                    background-size: cover;
 
                     border-bottom: $dark_border;
 
@@ -88,7 +89,7 @@
                     height: 100%;
                     background: url("./images/rc.jpg"); 
                     background-position: center;
-                    background-size: 100%;
+                    background-size: cover;
 
                     border-left: $dark_border;
                     border-top: $dark_border;
