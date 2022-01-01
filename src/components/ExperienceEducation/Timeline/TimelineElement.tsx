@@ -1,10 +1,30 @@
 // React component for Timeline Element
+import React from 'react';
 
 // takes in
 // - title: the string for the title of the timeline element
 // - subtitle: string
 
 import "./TimelineElement.scss";
+
+class ColorData {
+    color: string;
+    subcolor: string;
+    nextcolor: string;
+
+    // default constructor
+    constructor(color: string, subcolor: string, nextcolor: string) {}
+}
+
+export interface TimelineElementProps {
+    title: string,
+    subtitle: string,
+    date: string,
+    color: string,
+    subcolor: string,
+    nextcolor: string,
+    children: React.ReactNode,
+}
 
 /**
  * 
@@ -17,15 +37,15 @@ import "./TimelineElement.scss";
  * @param {JSX} props.children
  * @returns {React.Component}
  */
-const TimelineElement = (props) => {
+export function TimelineElement(props: TimelineElementProps) {
     // node: the "circle" node for the element
     return (
         <div className="timeline-element"
-            style={{
-                "--color": props.color,
-                "--subcolor": props.subcolor,
-                "--nextcolor": props.nextcolor,
-            }}
+            style={new ColorData(
+                props.color,
+                props.subcolor,
+                props.nextcolor,
+            )}
         >
             <div className="date">
                 <h6>{props.date}</h6>
@@ -49,5 +69,3 @@ const TimelineElement = (props) => {
         </div>
     )
 }
-
-export default TimelineElement;
