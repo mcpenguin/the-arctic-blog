@@ -1,6 +1,12 @@
 // module containing experience data
 let data = [
     {
+        title: 'Discord Moderator',
+        subtitle: 'Computer Science Club (CSC)',
+        date: 'Jan 2022 - Present',
+        content: null,
+    },
+    {
         title: 'Director',
         subtitle: 'MATHSOC Cartoons',
         date: 'Jan 2022 - Present',

@@ -44,20 +44,20 @@ const data = {
         iconsUsed: ['java', 'excel'],
         projectLink: "https://github.com/mcpenguin/hypixel-skyblock-calc",
     },
-    "student_reg_gui": {
-        projectName: "Student Attendance GUI",
-        iconsUsed: ['java'],
-        projectLink: "https://github.com/mcpenguin/student-reg-gui",
-    },
-    "compass_initiative": {
-        projectName: "Compass Website",
-        iconsUsed: ['wordpress', 'bluehost'],
-    },
-    "calculator": {
-        projectName: "Tkinter Calculator",
-        projectLink: "https://github.com/mcpenguin/calculator",
-        iconsUsed:['tkinter', 'python'],
-    },
+    // "student_reg_gui": {
+    //     projectName: "Student Attendance GUI",
+    //     iconsUsed: ['java'],
+    //     projectLink: "https://github.com/mcpenguin/student-reg-gui",
+    // },
+    // "compass_initiative": {
+    //     projectName: "Compass Website",
+    //     iconsUsed: ['wordpress', 'bluehost'],
+    // },
+    // "calculator": {
+    //     projectName: "Tkinter Calculator",
+    //     projectLink: "https://github.com/mcpenguin/calculator",
+    //     iconsUsed:['tkinter', 'python'],
+    // },
 };
 
 export default data;

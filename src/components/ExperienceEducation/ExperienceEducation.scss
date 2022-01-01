@@ -6,7 +6,7 @@
     // justify-content: space-between;
 
     // width of title, in %
-    $title_width: 35%;
+    $title_width: 30%;
 
     .sticky {
         position: fixed;
@@ -16,7 +16,9 @@
 
     .title {
         width: $title_width;
-        @include center;
+        // @include center;
+        // position: sticky;
+        // top: 50px;
 
         h2 {
             height: 100%;
