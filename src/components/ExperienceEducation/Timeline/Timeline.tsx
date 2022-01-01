@@ -1,6 +1,19 @@
 // React component for Timeline
 
-import TimelineElement from './TimelineElement';
+import {TimelineElementProps, TimelineElement} from './TimelineElement';
+
+interface BasicTimelineElementProps {
+    title: string,
+    subtitle: string,
+    date: string,
+    content: JSX.Element
+}
+
+interface TimelineProps {
+    data: Array<BasicTimelineElementProps>,
+    start: number,
+    range: number
+}
 
 /**
  * @param {map} props.data - data for timeline
@@ -8,7 +21,7 @@ import TimelineElement from './TimelineElement';
 // timeline functional component
 // takes in a data object as props.data 
 // and generates the "necessary timeline"
-const Timeline = (props) => {
+export function Timeline(props: TimelineProps): JSX.Element {
     if (props.data) {
         let result = [];
         // convert data into array of timeline elements
@@ -31,8 +44,9 @@ const Timeline = (props) => {
                 </TimelineElement>
             );
         }
-        return result;
+        return <>{result}</>;
     }
+    return null;
 }
 
 export default Timeline;
