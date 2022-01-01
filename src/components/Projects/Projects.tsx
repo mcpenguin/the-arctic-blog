@@ -23,28 +23,26 @@ import project_images from './project_images/project_images';
 // import project data
 import project_data from './projectsData';
 
+let renderTooltip = (props) => (
+    <Tooltip {...props}>
+        {this.props.iconName}
+    </Tooltip>
+);
+
 // tooltip for icon images
 // props:
 // - iconId: id of icon
 // - iconName: name of icon 
-class IconTooltip extends Component {
-    renderTooltip = (props) => (
-        <Tooltip {...props}>
-            {this.props.iconName}
-        </Tooltip>
-    );
-
-    render() {
-        return (
-            <OverlayTrigger
-                placement="bottom"
-                delay={{ show: 100, hide: 100 }}
-                overlay={this.renderTooltip}
-            >
-                <img className={icons_dict[this.props.iconId]} src={icons_dict[this.props.iconId]} alt={this.props.iconId}/>
-            </OverlayTrigger>
-        )
-    }
+function IconTooltip(
+    props: {iconId: string, iconName: string, className: string}
+): OverlayTrigger {
+    return <OverlayTrigger
+            placement="bottom"
+            delay={{ show: 100, hide: 100 }}
+            overlay={this.renderTooltip}
+        >
+            <img className={icons_dict[this.props.iconId]} src={icons_dict[this.props.iconId]} alt={this.props.iconId}/>
+    </OverlayTrigger>;
 }
 
 // class for 'folder' to 'store' the project

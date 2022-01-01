@@ -1,7 +1,6 @@
 // React components for pages
 
 import { Component } from 'react';
-// import Fade from 'react-reveal';
 import {
     BrowserRouter as Router,
     Switch,
@@ -25,13 +24,13 @@ import NotFound from './components/404NotFound/404NotFound';
 // home page
 class HomePage extends Component {
 
-    componentDidMount() {
-        // scroll to hash element if any
-        console.log(this.props.location.hash);
-        if (this.props.location.hash !== '') {
-            document.querySelector(this.props.location.hash).scrollIntoView();
-        }
-    }
+    // componentDidMount() {
+    //     // scroll to hash element if any
+    //     console.log(this.props.location.hash);
+    //     if (this.props.location.hash !== '') {
+    //         document.querySelector(this.props.location.hash).scrollIntoView();
+    //     }
+    // }
 
     render() {
         return (
