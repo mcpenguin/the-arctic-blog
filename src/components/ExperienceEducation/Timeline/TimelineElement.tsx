@@ -41,11 +41,11 @@ export function TimelineElement(props: TimelineElementProps) {
     // node: the "circle" node for the element
     return (
         <div className="timeline-element"
-            style={new ColorData(
-                props.color,
-                props.subcolor,
-                props.nextcolor,
-            )}
+            style={{
+                "--color": props.color, 
+                "--subcolor": props.subcolor, 
+                "--nextcolor": props.nextcolor, 
+            }}
         >
             <div className="date">
                 <h6>{props.date}</h6>

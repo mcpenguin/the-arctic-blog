@@ -21,6 +21,6 @@
     "strict": false
   },
   "include": [
-    "src"
+    "src",
   ]
 }

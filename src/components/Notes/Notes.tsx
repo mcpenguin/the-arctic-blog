@@ -16,6 +16,17 @@ import classData from './courses.json';
 // import stylesheet
 import './Notes.scss';
 
+interface CourseNotesProps {
+    shortTitle: string,
+    longTitle: string,
+    description: string,
+    takenWhen: string,
+    notesStatus: string,
+    professors: string,
+    notesLink: string,
+    eventKey: string
+}
+
 // class for individual course notes
 // props: 
 // - shortTitle: subject short title (e.g. "MATH 146")
@@ -26,53 +37,50 @@ import './Notes.scss';
 // - professors: course professors, as a string (e.g. "Lecturer: Yong Yau")
 // - notesLink: (relative) link to notes pdf
 // - eventKey: the key corresponding to the subject
-class CourseNotes extends Component {
+function CourseNotes(props: CourseNotesProps) {
+    return (
+        <Card className="notes-card">
+            <Card.Header>
+                <Accordion.Toggle
+                    as={Button}
+                    variant="link"
+                    eventKey={props.eventKey}
+                    className="notes-card-link"
+                >
+                    {props.shortTitle}
+                </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey={props.eventKey}>
+                <Card.Body className="notes-card-body">
+                    <Card.Title className="notes-subject-link">
+                        <a href={props.notesLink} target="_blank" rel="noreferrer">
+                            {props.shortTitle} - {props.longTitle}
+                        </a>
+                    </Card.Title>
+                    <p className="notes-taken-when">
+                        {props.takenWhen}
+                        <br />
+                        {props.notesStatus}
+                    </p>
+                    <hr />
+                    <p className="notes-professors">
+                        {props.professors}
+                    </p>
+                    <hr />
+                    <p className="notes-description">
+                        {props.description}
+                    </p>
+                </Card.Body>
+            </Accordion.Collapse>
+        </Card>
+    )
 
-    render() {
-
-        return (
-            <Card className="notes-card">
-                <Card.Header>
-                    <Accordion.Toggle
-                        as={Button}
-                        variant="link"
-                        eventKey={this.props.eventKey}
-                        className="notes-card-link"
-                    >
-                        {this.props.shortTitle}
-                    </Accordion.Toggle>
-                </Card.Header>
-                <Accordion.Collapse eventKey={this.props.eventKey}>
-                    <Card.Body className="notes-card-body">
-                        <Card.Title className="notes-subject-link">
-                            <a href={this.props.notesLink} target="_blank" rel="noreferrer">
-                                {this.props.shortTitle} - {this.props.longTitle}
-                            </a>
-                        </Card.Title>
-                        <p className="notes-taken-when">
-                            {this.props.takenWhen}
-                            <br />
-                            {this.props.notesStatus}
-                        </p>
-                        <hr />
-                        <p className="notes-professors">
-                            {this.props.professors}
-                        </p>
-                        <hr />
-                        <p className="notes-description">
-                            {this.props.description}
-                        </p>
-                    </Card.Body>
-                </Accordion.Collapse>
-            </Card>
-        )
-    }
 }
 
-export default class Notes extends Component {
+export default function Notes() {
 
     // transforms class data from json into list of Card JSX objects
-    transformClassData() {
+    function transformClassData() {
         const cols = [];
         for (let term in classData) {
             const cards = [];
@@ -105,44 +113,43 @@ export default class Notes extends Component {
         return cols;
     }
 
-    render() {
-        return (
-            <section className="section-notes-page" id="notes">
-                <Container fluid>
-                    <Row>
-                        <Col>
-                            <div className='text'>
-                                {/* <Fade top> */}
-                                <h3 id="personal-notes-title">My Personal Notes</h3>
-                                {/* </Fade> */}
-                                {/* <Fade top> */}
-                                <p>
-                                    Here I post my notes for both my university and high school courses, 
-                                    which were handwritten on my iPad using the app GoodNotes 5.
-                                    These are adapted from the original professor's / lecturer's notes. I
-                                    get each professor's permission prior to posting my notes for the course on my website.
-                                </p>
-                                <p>
-                                    The course notes are designed to be Ctrl+F friendly. For the later notes (1B onwards),
-                                    the "key" for each theorem and statement obtained from the original professor's lecture notes are
-                                    highlighted in each heading (e.g. T3.1 = Theorem 3.1), making it easy for revision or reference purposes. 
-                                    A key is located at the start of each notebook.
-                                </p>
-                                <p>
-                                    Click each course link to see the expanded details of that particular
-                                    course, including the full course name, the progress of the notes, the professor
-                                    I took the course with and a brief description of the course. 
-                                    You can then click the blue hyperlink to download the pdf of my notes for that course.
-                                </p>
-                            </div>
+    return (
+        <section className="section-notes-page" id="notes">
+            <Container fluid>
+                <Row>
+                    <Col>
+                        <div className='text'>
+                            {/* <Fade top> */}
+                            <h3 id="personal-notes-title">My Personal Notes</h3>
                             {/* </Fade> */}
-                        </Col>
-                    </Row>
-                    <Row>
-                        {this.transformClassData()}
-                    </Row>
-                </Container>
-            </section>
-        );
-    }
+                            {/* <Fade top> */}
+                            <p>
+                                Here I post my notes for both my university and high school courses,
+                                which were handwritten on my iPad using the app GoodNotes 5.
+                                These are adapted from the original professor's / lecturer's notes. I
+                                get each professor's permission prior to posting my notes for the course on my website.
+                            </p>
+                            <p>
+                                The course notes are designed to be Ctrl+F friendly. For the later notes (1B onwards),
+                                the "key" for each theorem and statement obtained from the original professor's lecture notes are
+                                highlighted in each heading (e.g. T3.1 = Theorem 3.1), making it easy for revision or reference purposes.
+                                A key is located at the start of each notebook.
+                            </p>
+                            <p>
+                                Click each course link to see the expanded details of that particular
+                                course, including the full course name, the progress of the notes, the professor
+                                I took the course with and a brief description of the course.
+                                You can then click the blue hyperlink to download the pdf of my notes for that course.
+                            </p>
+                        </div>
+                        {/* </Fade> */}
+                    </Col>
+                </Row>
+                <Row>
+                    {transformClassData()}
+                </Row>
+            </Container>
+        </section>
+    );
+    
 }

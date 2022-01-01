@@ -26,9 +26,9 @@ class HomePage extends Component {
 
     // componentDidMount() {
     //     // scroll to hash element if any
-    //     console.log(this.props.location.hash);
-    //     if (this.props.location.hash !== '') {
-    //         document.querySelector(this.props.location.hash).scrollIntoView();
+    //     console.log(props.location.hash);
+    //     if (props.location.hash !== '') {
+    //         document.querySelector(props.location.hash).scrollIntoView();
     //     }
     // }
 
@@ -61,7 +61,7 @@ class IndividualProjectPage extends Component {
         return (
             <>
                 <Header />
-                <ProjectContent {...this.props} />
+                <ProjectContent projectId="hi" />
                 <ContactMe />
             </>
         );
