@@ -1,6 +1,6 @@
 // React component for Timeline
 
-import {TimelineElementProps, TimelineElement} from './TimelineElement';
+import {TimelineElement} from './TimelineElement';
 
 interface BasicTimelineElementProps {
     title: string,

@@ -1,5 +1,5 @@
 // React component class for Notes section
-import React, { Component } from 'react';
+import React from 'react';
 
 // import Bootstrap components
 import Accordion from 'react-bootstrap/Accordion';

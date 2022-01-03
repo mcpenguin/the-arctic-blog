@@ -7,15 +7,6 @@ import React from 'react';
 
 import "./TimelineElement.scss";
 
-class ColorData {
-    color: string;
-    subcolor: string;
-    nextcolor: string;
-
-    // default constructor
-    constructor(color: string, subcolor: string, nextcolor: string) {}
-}
-
 export interface TimelineElementProps {
     title: string,
     subtitle: string,
@@ -42,6 +33,7 @@ export function TimelineElement(props: TimelineElementProps) {
     return (
         <div className="timeline-element"
             style={{
+                // @ts-ignore
                 "--color": props.color, 
                 "--subcolor": props.subcolor, 
                 "--nextcolor": props.nextcolor, 

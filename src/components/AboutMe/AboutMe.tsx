@@ -1,6 +1,6 @@
 // React component class for About Me section
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import courses from '../Notes/courses.json';
 
 import Container from 'react-bootstrap/Container';
@@ -41,31 +41,25 @@ const PersonalFact = (props: personalFactProps) => {
 }
 
 const AboutMe = (props) => {
-    // constructor(props) {
-    //     super(props);
-    //     state = {
-    //         isElementVisible: false,
-    //     }
-    // }
-    let [isElementVisible, setIsElementVisible] = useState(false);
-
     // get intersection observer to see whether element is in view
-    let observer = new IntersectionObserver(
-        (entries, observer) => {
-            entries.forEach(entry => {
-                setIsElementVisible(entry.isIntersecting)
-            });
-        },
-        {
-            rootMargin: '0px',
-            // percentage of the windwo you need to see for the animation to start
-            threshold: 0.8,
-        }
-    )
+    // to be used for animations (in the future)
+    // let [isElementVisible, setIsElementVisible] = useState(false);
+    // let observer = new IntersectionObserver(
+    //     (entries, observer) => {
+    //         entries.forEach(entry => {
+    //             setIsElementVisible(entry.isIntersecting)
+    //         });
+    //     },
+    //     {
+    //         rootMargin: '0px',
+    //         // percentage of the windwo you need to see for the animation to start
+    //         threshold: 0.8,
+    //     }
+    // )
 
-    useEffect(() => {
-        observer.observe(document.querySelector('#about-me'));
-    });
+    // useEffect(() => {
+    //     observer.observe(document.querySelector('#about-me'));
+    // });
 
     let coursesList = courses[CURRENT_TERM]['courses'];
     const coursesKeysList = Object.keys(coursesList);
