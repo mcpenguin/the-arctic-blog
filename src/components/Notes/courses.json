@@ -1,4 +1,33 @@
 {
+    "2B": {
+        "title": "2B (W2022)",
+        "courses": {
+            "MATH249": {
+                "shortTitle": "MATH 249",
+                "longTitle": "Introduction to Combinatorics (Advanced Level)",
+                "description": "MATH 249 is an advanced level version of MATH 239.\n\nMATH 239: Introduction to graph theory: colourings, matchings, connectivity, planarity. Introduction to combinatorial analysis: generating series, recurrence relations, binary strings, plane trees.",
+                "takenWhen": "Taken in 2B (Winter 2022) (In-Person)",
+                "professors": "Professor: Kevin Purbhoo",
+                "notesStatus": "Not out yet"
+            },
+            "STAT241": {
+                "shortTitle": "STAT 241",
+                "longTitle": "Statistics (Advanced Level)",
+                "description": "In this course we will introduce the ‘language’ of statistics, and the importance of precision in how we both ask and answer statistical questions. We will explore various methods of statistical analysis, including how to describe data (both numerically and graphically), how to estimate unknown information (such as the proportion of a population who have a particular disease), and how to set and test hypotheses (such as whether a vaccine is effective). The course will approach topics from both practical and theoretical viewpoints, with real-world examples as well as mathematical derivations. By the end of this course you will be familiar with a wide variety of ideas foundational to an understanding of statistics.",
+                "takenWhen": "Taken in 2B (Winter 2022) (In-Person)",
+                "professors": "Professor: Michael Wallace",
+                "notesStatus": "Not out yet"
+            },
+            "CS240E": {
+                "shortTitle": "CS 240E",
+                "longTitle": "Data Structures and Data Management (Enriched)",
+                "description": "The course introduces widely used and effective methods of data organization, focusing on data structures, algorithms, and the performance of these algorithms. Specific topics include priority queues, sorting, dictionaries, data structures for text processing.",
+                "takenWhen": "Taken in 2B (Winter 2022) (In-Person)",
+                "professors": "Professor: Therese Biedl",
+                "notesStatus": "Not out yet"
+            }
+        }
+    },
     "2A": {
         "title": "2A (F2021)",
         "courses": {
@@ -51,11 +80,11 @@
                 "shortTitle": "PSYCH 101",
                 "longTitle": "Introductory Psychology",
                 "description": "A general survey course designed to provide the student with an understanding of the basic concepts and techniques of modern psychology as a behavioural science.",
-                "takenWhen":"Taken in 1B (Winter 2021) (Online)",
+                "takenWhen": "Taken in 1B (Winter 2021) (Online)",
                 "professors": "Professor: Paul Wehr",
                 "notesStatus": "Notes Complete"
             }
-        }   
+        }
     },
     "1A": {
         "title": "1A (F2020)",
@@ -96,9 +125,9 @@
                 "shortTitle": "GEOG 101",
                 "longTitle": "Human Geographies: People, Space and Change",
                 "description": "An introduction to human geography through key subfields of the discipline, examining population change, the rise of cities, our relationship to nature, social inequalities, economic forms, cultural difference and environmental change at the local and global scale.",
-                "takenWhen":"Taken in 1A (Fall 2020) (Online)",
+                "takenWhen": "Taken in 1A (Fall 2020) (Online)",
                 "professors": "Professor: Brent Doberstein",
-                "notesStatus":"Notes Complete"
+                "notesStatus": "Notes Complete"
             }
         }
     },

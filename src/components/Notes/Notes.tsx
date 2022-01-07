@@ -95,7 +95,7 @@ export default function Notes() {
                         takenWhen={courseObject['takenWhen']}
                         notesStatus={courseObject['notesStatus']}
                         professors={courseObject['professors']}
-                        notesLink={`/notes/${term}/${course}.pdf`}
+                        notesLink={`/notes/${course}.pdf`}
                         eventKey={course}
                     />
                 )

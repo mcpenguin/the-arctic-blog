@@ -11,7 +11,7 @@ import personal_photo from './personal-photo.jpeg';
 
 import './AboutMe.scss';
 
-const CURRENT_TERM = '2A'
+const CURRENT_TERM = '2B'
 
 interface personalFactProps {
     iconName: string,
@@ -103,7 +103,7 @@ const AboutMe = (props) => {
                                     iconName='fas fa-graduation-cap'
                                     title='Current Education'
                                     body={<>
-                                        Computer Science, Honours, Co-op (2A in Fall 2021)
+                                        Computer Science, Honours, Co-op (2B)
                                         <br />
                                         University of Waterloo @ Ontario, Canada
                                         <br />
@@ -116,9 +116,9 @@ const AboutMe = (props) => {
                                     iconName='fas fa-code'
                                     title='Programming Expertise'
                                     body={<>
-                                        HTML, CSS (Sass), JS (Node.js, Express.js, React), Python
-                                        (Pandas, Numpy, Matplotlib, BeautifulSoup), Jupyter Notebook, Java (Joget DX), MySQL,
-                                        MongoDB, Racket/Scheme/Lisp, C/C++, Git, Tableau, Metabase
+                                        <span className='pro-title'>Languages:</span> HTML, CSS (Sass), JavaScript/TypeScript, MySQL, Python, Java (Joget DX), Bash, C/C++
+                                        <br />
+                                        <span className='pro-title'>Frameworks:</span> Node.js, Express.js, React, Pandas, NumPy, Matplotlib, Jupyter Notebook, MongoDB, Tableau, Metabase, Git, Heroku
                                     </>}
                                 />
                                 <PersonalFact
