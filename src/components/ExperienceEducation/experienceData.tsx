@@ -22,18 +22,28 @@ let data = [
         title: "Comic Writer",
         subtitle: "MATHSOC Cartoons",
         date: "May 2021 - Present",
-        content: <ul>
-            <li>Created storyboards for original mathematics-based cartoons</li>
+        content: 
+        <ul>
+            <li>Created storyboards for original mathematics and computer science cartoons</li>
             <li>Liaised with team to review each other's work and provide feedback</li>
+            <li>
+                Comics drawn:
+                <ul>
+                    <li><a href="https://www.instagram.com/p/CQV6L71tLQZ/">Comic 21 - The Riemann Integral</a></li>
+                    <li><a href="https://www.instagram.com/p/CWjTHCfFHnB/">Comic 29 - Pascal's Triangle</a></li>
+                    <li><a>Comic 32 - Sorting Algorithms and Big-O Notation (not out yet)</a></li>
+                </ul>
+            </li>
         </ul>,
     },
     {
         title: "Web Developer",
         subtitle: "Pure Math Club (PMC)",
         date: "May 2021 - Present",
-        content: <ul>
+        content: 
+        <ul>
             <li>Redesigned the University of Waterloo’s Pure Math Club website</li>
-            <li>Built various helper scripts to allow executives to easily add/edit website content</li>
+            <li>Built various helper scripts using Node and Bash to allow executives to easily add/edit website content</li>
         </ul>
     },
     {

@@ -8,6 +8,7 @@
     url("./geometric-1920x1080.svg");
     @include parallax;
     text-align: center;
+    display: flex;
 
     .wrapper {
         margin-top: 20px;

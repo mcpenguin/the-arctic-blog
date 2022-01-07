@@ -59,6 +59,14 @@
         li {
             font-weight: 400;
         }
+
+        a {
+            color:rgb(9, 134, 207);
+
+            &:hover {
+                color:rgb(3, 62, 97);
+            }
+        }
     }
 }
 
