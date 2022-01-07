@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.326d65ed.chunk.css",
-    "main.js": "/static/js/main.888dc571.chunk.js",
-    "main.js.map": "/static/js/main.888dc571.chunk.js.map",
+    "main.css": "/static/css/main.16d1f0dc.chunk.css",
+    "main.js": "/static/js/main.2374ddaa.chunk.js",
+    "main.js.map": "/static/js/main.2374ddaa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3cb7352b.js",
     "runtime-main.js.map": "/static/js/runtime-main.3cb7352b.js.map",
     "static/js/2.5a84b60b.chunk.js": "/static/js/2.5a84b60b.chunk.js",
     "static/js/2.5a84b60b.chunk.js.map": "/static/js/2.5a84b60b.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.326d65ed.chunk.css.map": "/static/css/main.326d65ed.chunk.css.map",
+    "static/css/main.16d1f0dc.chunk.css.map": "/static/css/main.16d1f0dc.chunk.css.map",
     "static/js/2.5a84b60b.chunk.js.LICENSE.txt": "/static/js/2.5a84b60b.chunk.js.LICENSE.txt",
     "static/media/Achievements.scss": "/static/media/achievements-bg.68ff5a16.svg",
     "static/media/age.e3c212b4.md": "/static/media/age.e3c212b4.md",
@@ -40,14 +40,14 @@
     "static/media/student_reg_gui.8e32e6b0.jpg": "/static/media/student_reg_gui.8e32e6b0.jpg",
     "static/media/test-img.52d987e0.png": "/static/media/test-img.52d987e0.png",
     "static/media/ContactMe.scss": "/static/media/waves-1920x240.279a412b.svg",
+    "static/media/wclasses_bot.0e891e03.md": "/static/media/wclasses_bot.0e891e03.md",
     "static/media/wclasses_bot.2044e436.jpg": "/static/media/wclasses_bot.2044e436.jpg",
-    "static/media/wclasses_bot.24b1181e.md": "/static/media/wclasses_bot.24b1181e.md",
     "static/media/404NotFound.scss": "/static/media/white-wave.7c3ef65f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3cb7352b.js",
     "static/js/2.5a84b60b.chunk.js",
-    "static/css/main.326d65ed.chunk.css",
-    "static/js/main.888dc571.chunk.js"
+    "static/css/main.16d1f0dc.chunk.css",
+    "static/js/main.2374ddaa.chunk.js"
   ]
 }

@@ -7,3 +7,5 @@ Whilst this has been done before by other Discord bots, my bot is the first Disc
 
 Additionally, the bot is also the first ever online system to successfully integrate Laurier BU courses into its system, making it
 compatible with Double Degree plans as well.
+
+Unfortunately, the bot was created using `Discord.py`, which is no longer maintained. Thus, I am working to slowly transfer the bot to `Discord.js`, in particular so that I can utilize the new features in their latest update (eg slash commands). Thus, the bot is currently not active.
