@@ -13,8 +13,7 @@
     .wrapper {
         margin-top: 20px;
         // gradient 'border'
-        // background: linear-gradient(135deg, #00eeee 0%, #2e68d4 34%, #1907b9 66%, #4d0bc7 100%);
-        @include cyanToDarkBlueAnimatedGradient(20s);
+        // background: linear-gradient(135deg, #00eeee 0%, #2e68d4 34%, #1907b9 66%, #4d0bc7 100%);        @include cyanToDarkBlueAnimatedGradient(20s);
         border-radius: 20px;
         // min-height: 90vh;
 

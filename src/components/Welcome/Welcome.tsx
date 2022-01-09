@@ -14,7 +14,7 @@ export default function TopCarousel() {
                 </Fade>
                 <Fade bottom delay={500} opposite>
                     <h5>
-                        I'm Marcus Chan, a 2A Computer Science student
+                        I'm Marcus Chan, a 2B Computer Science student
                         at the University of Waterloo as well as an aspiring
                         software developer and data scientist.
                     </h5>

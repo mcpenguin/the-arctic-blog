@@ -75,6 +75,21 @@ let data = [
             <li>Catered learning style and music scores to each student to maximize their engagement and learning efficacy</li>
         </ul>
     },
+    // {
+    //     title: "Curator",
+    //     subtitle: "TEDxSunwayUniversity",
+    //     date: "Jan 2019 - Jan 2020",
+    //     content:
+    //     <ul>
+    //         <li>Recruited and worked with the speakers, as well as create the themes, for the club's various events </li>
+    //     </ul>
+    // },
+    // {
+    //     title: "Trombonist",
+    //     subtitle: "Sunway University Ensemble (SUE)",
+    //     date: "Sep 2018 - June 2020",
+    //     content: null
+    // },
     {
         title: "Software Engineer",
         subtitle: "TMS Software Sdn Bhd",

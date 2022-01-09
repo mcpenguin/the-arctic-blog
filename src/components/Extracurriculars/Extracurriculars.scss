@@ -2,7 +2,7 @@
 
 .section-extracurriculars-page {
     background: $off_white;
-    
+
     .sub {
         @include center;
         width: 100%;
@@ -17,162 +17,139 @@
             display: flex;
             flex-wrap: wrap;
             width: 100%;
+            @include center;
+            .ec-sub {
+                .ec {
+                    @include center;
 
-            .gradient {
-                height: 100%;
-                width: 100%;
-                @include center;
+                    .title {
+                        color: $off_white;
+                        text-align: center;
 
-                .title {
-                    color: $off_white;
-                    text-align: center;
+                        @media (max-width: $tablet_width) {
+                            h3 {
+                                font-size: 1.4em;
+                            }
 
-                    @media (max-width: $tablet_width) {
-                        h3 {
-                            font-size: 1.4em;
+                            h4 {
+                                font-size: 1.2em;
+                            }
                         }
-
-                        h4 {
-                            font-size: 1.2em;
-                        }
-                    }
-                }
-            }
-
-            .one {
-                height: 100vh;
-                background: red;
-                width: 65%;
-
-                .tedx {
-                    height: 50%;
-                    background: url("./images/tedx.jpg");
-                    background-size: cover;
-                    background-position: center;
-
-                    border-top: $dark_border;
-                    border-bottom: $dark_border;
-
-                    .gradient {
-                        background: linear-gradient(
-                            135deg,
-                            rgba(68, 144, 216, 0.8) 0%,
-                            rgba(25, 56, 180, 0.8) 100%
-                        );
                     }
                 }
 
-                .sue {
-                    height: 50%;
-                    background: url("./images/sue.jpg");
-                    background-position: center;
-                    background-size: cover;
-
-                    border-bottom: $dark_border;
-
-                    .gradient {
-                        background: linear-gradient(
-                            135deg,
-                            rgba(67, 84, 233, 0.8) 0%,
-                            rgba(179, 121, 226, 0.8) 100%
-                        );
-                    }
-                }
-            }
-
-            .two {
-                height: 100vh;
-                background: blue;
-                width: 35%;
-
-                .rc {
-                    height: 100%;
-                    background: url("./images/rc.jpg"); 
-                    background-position: center;
-                    background-size: cover;
-
-                    border-left: $dark_border;
-                    border-top: $dark_border;
-                    border-bottom: $dark_border;
-
-                    .gradient {
-                        margin-left: -2px;
-                        background: linear-gradient(
-                            135deg,
-                            rgba(226, 95, 176, 0.8) 0%,
-                            rgba(85, 12, 34, 0.8) 100%
-                        );
-                    }
-                }
-            }
-
-            .three {
-                height: 50vh;
-                background: brown;
-                width: 100%;
-
-                .piano {
-                    height: 100%;
-                    background: url("./images/piano.jpg");
-                    background-size: auto 100%;
-                    background-position: center;
-                    background-repeat: no-repeat;
-
-                    border-bottom: $dark_border;
-
-                    .gradient {
-                        background: linear-gradient(
-                            135deg,
-                            rgba(4, 94, 100, 0.8) 0%,
-                            rgba(9, 131, 111, 0.8) 100%
-                        );
-                    }
-                }
-            }
-
-            @media (max-width: $tablet_width) {
-                .one {
-                    height: 80vh;
+                &:nth-of-type(1) {
+                    height: 100vh;
                     background: red;
-                    width: 100%;
-                
+                    width: 65%;
 
                     .tedx {
                         height: 50%;
-                        border: none;
+                        background-image: linear-gradient(
+                                135deg,
+                                rgba(68, 144, 216, 0.8) 0%,
+                                rgba(25, 56, 180, 0.8) 100%
+                            ),
+                            url("./images/tedx.jpg");
+                        background-size: cover;
+                        background-position: center;
+
                         border-top: $dark_border;
+                        border-bottom: $dark_border;
                     }
 
                     .sue {
                         height: 50%;
-                        border: none;
-                        border-top: $dark_border;
+                        background: linear-gradient(135deg, rgba(67, 84, 233, 0.8) 0%, rgba(179, 121, 226, 0.8) 100%),
+                            url("./images/sue.jpg");
+                        background-position: center;
+                        background-size: cover;
+
+                        border-bottom: $dark_border;
+                    }
+
+                    @media (max-width: $tablet_width) {
+                        height: 80vh;
+                        background: red;
+                        width: 100%;
+
+                        .tedx {
+                            height: 50%;
+                            border: none;
+                            border-top: $dark_border;
+                        }
+
+                        .sue {
+                            height: 50%;
+                            border: none;
+                            border-top: $dark_border;
+                        }
                     }
                 }
 
-                .two {
-                    height: 40vh;
-                    width: 100%;
-
-                    border-top: $dark_border;
+                &:nth-of-type(2) {
+                    height: 100vh;
+                    background: blue;
+                    width: 35%;
 
                     .rc {
-                        border: none;
+                        height: 100%;
+                        background-image: linear-gradient(
+                                135deg,
+                                rgba(226, 95, 176, 0.8) 0%,
+                                rgba(85, 12, 34, 0.8) 100%
+                            ),
+                            url("./images/rc.jpg");
+                        background-position: center;
+                        background-size: cover;
+
+                        border-left: $dark_border;
+                        border-top: $dark_border;
+                        border-bottom: $dark_border;
+                    }
+
+                    @media (max-width: $tablet_width) {
+                        height: 40vh;
+                        width: 100%;
+
+                        border-top: $dark_border;
+
+                        .rc {
+                            border: none;
+                        }
                     }
                 }
 
-                .three {
-                    height: 40vh;
+                &:nth-of-type(3) {
+                    height: 50vh;
+                    background: brown;
                     width: 100%;
 
-                    border-top: $dark_border;
-                    border-bottom: $dark_border;
-
                     .piano {
-                        border: none;
+                        height: 100%;
+                        background-image: linear-gradient(135deg, rgba(4, 94, 100, 0.8) 0%, rgba(9, 131, 111, 0.8) 100%),
+                            url("./images/piano.jpg");
+                        background-size: auto 100%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+
+                        border-bottom: $dark_border;
+                    }
+
+                    @media (max-width: $tablet_width) {
+                        height: 40vh;
+                        width: 100%;
+
+                        border-top: $dark_border;
+                        border-bottom: $dark_border;
+
+                        .piano {
+                            border: none;
+                        }
                     }
                 }
             }
         }
+
     }
 }

@@ -10,41 +10,33 @@ export default function Extracurriculars() {
                 <h3>My Extracurriculars and Hobbies</h3>
 
                 <div className='extracurriculars-container'>
-                    <div className='one'>
-                        <div className='tedx'>
-                            <div className='gradient'>
-                                <div className='title'>
-                                    <h3>Curator @ TEDxSunwayUniversity</h3>
-                                    <h4>2019 Committee</h4>
-                                </div>
+                    <div className='ec-sub'>
+                        <div className='ec tedx'>
+                            <div className='title'>
+                                <h3>Curator @ TEDxSunwayUniversity</h3>
+                                <h4>2019 Committee</h4>
                             </div>
                         </div>
-                        <div className='sue'>
-                            <div className='gradient'>
-                                <div className='title'>
-                                    <h3>Trombonist @ Sunway University Ensemble</h3>
-                                    <h4>2018 - 2021</h4>
-                                </div>
+                        <div className='ec sue'>
+                            <div className='title'>
+                                <h3>Trombonist @ Sunway University Ensemble</h3>
+                                <h4>2018 - 2021</h4>
                             </div>
                         </div>
                     </div>
-                    <div className='two'>
-                        <div className='rc'>
-                            <div className='gradient'>
-                                <div className='title'>
-                                    <h3>Rock Climbing</h3>
-                                    <h4>5+ years experience</h4>
-                                </div>
+                    <div className='ec-sub'>
+                        <div className='ec rc'>
+                            <div className='title'>
+                                <h3>Rock Climbing</h3>
+                                <h4>5+ years experience</h4>
                             </div>
                         </div>
                     </div>
-                    <div className='three'>
-                        <div className='piano'>
-                            <div className='gradient'>
-                                <div className='title'>
-                                    <h3>Pianist</h3>
-                                    <h4>12+ years experience</h4>
-                                </div>
+                    <div className='ec-sub'>
+                        <div className='ec piano'>
+                            <div className='title'>
+                                <h3>Pianist</h3>
+                                <h4>12+ years experience</h4>
                             </div>
                         </div>
                     </div>
@@ -55,9 +47,9 @@ export default function Extracurriculars() {
 }
 
 // const Extracurriculars = (props) => {
-//     return <>
+//     return <section id="extracurriculars">
 
-//     </>
+//     </section>
 // }
 
 // export default Extracurriculars;
