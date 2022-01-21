@@ -2,21 +2,13 @@
     "2B": {
         "title": "2B (W2022)",
         "courses": {
-            "MATH249": {
-                "shortTitle": "MATH 249",
-                "longTitle": "Introduction to Combinatorics (Advanced Level)",
-                "description": "MATH 249 is an advanced level version of MATH 239.\n\nMATH 239: Introduction to graph theory: colourings, matchings, connectivity, planarity. Introduction to combinatorial analysis: generating series, recurrence relations, binary strings, plane trees.",
-                "takenWhen": "Taken in 2B (Winter 2022) (In-Person)",
-                "professors": "Professor: Kevin Purbhoo",
-                "notesStatus": "Not out yet"
-            },
             "STAT241": {
                 "shortTitle": "STAT 241",
                 "longTitle": "Statistics (Advanced Level)",
                 "description": "In this course we will introduce the ‘language’ of statistics, and the importance of precision in how we both ask and answer statistical questions. We will explore various methods of statistical analysis, including how to describe data (both numerically and graphically), how to estimate unknown information (such as the proportion of a population who have a particular disease), and how to set and test hypotheses (such as whether a vaccine is effective). The course will approach topics from both practical and theoretical viewpoints, with real-world examples as well as mathematical derivations. By the end of this course you will be familiar with a wide variety of ideas foundational to an understanding of statistics.",
                 "takenWhen": "Taken in 2B (Winter 2022) (In-Person)",
                 "professors": "Professor: Michael Wallace",
-                "notesStatus": "Up to Week 2"
+                "notesStatus": "Up to Week 3"
             },
             "CS240E": {
                 "shortTitle": "CS 240E",
@@ -24,7 +16,7 @@
                 "description": "The course introduces widely used and effective methods of data organization, focusing on data structures, algorithms, and the performance of these algorithms. Specific topics include priority queues, sorting, dictionaries, data structures for text processing.",
                 "takenWhen": "Taken in 2B (Winter 2022) (In-Person)",
                 "professors": "Professor: Therese Biedl",
-                "notesStatus": "Up to Week 2"
+                "notesStatus": "Up to Week 3"
             }
         }
     },
