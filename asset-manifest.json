@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f94e602a.chunk.css",
-    "main.js": "/static/js/main.228a23df.chunk.js",
-    "main.js.map": "/static/js/main.228a23df.chunk.js.map",
+    "main.js": "/static/js/main.e6495bc9.chunk.js",
+    "main.js.map": "/static/js/main.e6495bc9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3cb7352b.js",
     "runtime-main.js.map": "/static/js/runtime-main.3cb7352b.js.map",
     "static/js/2.e2100068.chunk.js": "/static/js/2.e2100068.chunk.js",
@@ -29,7 +29,7 @@
     "static/media/metabase.51a5ad0d.svg": "/static/media/metabase.51a5ad0d.svg",
     "static/media/my_course_graph.94cf1e5c.png": "/static/media/my_course_graph.94cf1e5c.png",
     "static/media/my_course_graph.9ac1d0c5.md": "/static/media/my_course_graph.9ac1d0c5.md",
-    "static/media/personal-photo.ff422d7f.jpeg": "/static/media/personal-photo.ff422d7f.jpeg",
+    "static/media/personal-photo.18517af8.jpg": "/static/media/personal-photo.18517af8.jpg",
     "static/media/Extracurriculars.scss": "/static/media/tedx.67a1fa1c.jpg",
     "static/media/pmc_website.8b8b9da6.md": "/static/media/pmc_website.8b8b9da6.md",
     "static/media/pmc_website.9f6e2bc2.png": "/static/media/pmc_website.9f6e2bc2.png",
@@ -48,6 +48,6 @@
     "static/js/runtime-main.3cb7352b.js",
     "static/js/2.e2100068.chunk.js",
     "static/css/main.f94e602a.chunk.css",
-    "static/js/main.228a23df.chunk.js"
+    "static/js/main.e6495bc9.chunk.js"
   ]
 }
