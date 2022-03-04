@@ -11,6 +11,7 @@ export interface TimelineElementProps {
     title: string,
     subtitle: string,
     date: string,
+    link?: string,
     color: string,
     subcolor: string,
     nextcolor: string,
@@ -22,6 +23,7 @@ export interface TimelineElementProps {
  * @param {string} props.title
  * @param {string} props.subtitle
  * @param {string} props.date
+ * @param {string} props.link
  * @param {color_string} props.color
  * @param {color_string} props.subcolor
  * @param {color_string} props.nextcolor

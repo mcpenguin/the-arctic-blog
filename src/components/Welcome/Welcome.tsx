@@ -9,7 +9,7 @@ export default function TopCarousel() {
             <div className='description'>
                 <Fade bottom opposite>
                     <h1>
-                        Welcome to the Arctic Blog :D
+                        Welcome :D
                     </h1>
                 </Fade>
                 <Fade bottom delay={500} opposite>

@@ -29,7 +29,7 @@ export default function Header() {
         <section className="section-header">
             <Navbar expand="lg" variant="dark" className="fixed-top">
                 <Navbar.Brand href="/" className="navbar-brand">
-                    <img src={lightbulb} id="navbar-img" alt="lightbulb" /> The Arctic Blog
+                    <img src={lightbulb} id="navbar-img" alt="lightbulb" /> Marcus Chan
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="my-navbar" />
                 <Navbar.Collapse>

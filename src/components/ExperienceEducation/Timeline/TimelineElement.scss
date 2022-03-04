@@ -80,6 +80,7 @@ $hue_range: 140;
             margin: 0;
             text-align: left;
             font-size: 2.5rem;
+            font-weight: 600;
 
             @media (max-width: $tablet_width) {
                 font-size: 2rem;
@@ -96,6 +97,14 @@ $hue_range: 140;
             @media (max-width: $tablet_width) {
                 font-size: 1.5rem;
             }
+
+            i {
+                color: $subcolor;
+                margin-right: 2px;
+            }
+
+            color: $subcolor; 
+            text-decoration: none;
         }
     }
 
