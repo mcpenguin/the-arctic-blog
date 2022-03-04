@@ -18,7 +18,6 @@ let data = [
             <li>Wrote a Python script to auto-generate reminders for each comic on Google Calendar, eliminating hours of manual labor</li>
             <li>Launched a Discord advertizing campaign and jump-started the creation of merchandise, increasing the reach of Cartoons</li>
             <li>Comics are published on MathSoc's social media accounts, reaching over 6000 people and garnering over 300 likes</li>
-            <li>Secured funding from MEF and other external sources for the term</li>
         </ul>,
     },
     {
@@ -48,7 +47,7 @@ let data = [
     {
         title: "Web Developer",
         subtitle: "Pure Math Club (PMC)",
-        date: "May 2021 - Present",
+        date: "May 2021 - Dec 2021",
         content: 
         <ul>
             <li>Redesigned the University of Waterloo’s Pure Math Club website</li>
