@@ -126,7 +126,7 @@ const AboutMe = (props) => {
                                     title='Hobbies'
                                     body={<>
                                         Mathematics, coding, arranging/composing piano pieces,
-                                        rock climbing, basketball, watching videos on YouTube
+                                        rock climbing, anime
                                     </>}
                                 />
                             </div>

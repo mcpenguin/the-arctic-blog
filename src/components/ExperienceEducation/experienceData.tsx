@@ -1,7 +1,7 @@
 // module containing experience data
 let data = [
     {
-        title: 'Discord Moderator',
+        title: 'Discord Developer',
         subtitle: 'Computer Science Club (CSC)',
         date: 'Jan 2022 - Present',
         content: null,
@@ -10,7 +10,16 @@ let data = [
         title: 'Director',
         subtitle: 'MATHSOC Cartoons',
         date: 'Jan 2022 - Present',
-        content: null,
+        content:
+        <ul>
+            <li>Oversaw the development of 6 educational cartoons that help undergraduate Math students understand difficult course concepts</li>
+            <li>Managed a team of 3 writers and 5 artists</li>
+            <li>Engaged in constant communication with 70+ student and faculty reviewers to ensure quality assurance of comics</li>
+            <li>Wrote a Python script to auto-generate reminders for each comic on Google Calendar, eliminating hours of manual labor</li>
+            <li>Launched a Discord advertizing campaign and jump-started the creation of merchandise, increasing the reach of Cartoons</li>
+            <li>Comics are published on MathSoc's social media accounts, reaching over 6000 people and garnering over 300 likes</li>
+            <li>Secured funding from MEF and other external sources for the term</li>
+        </ul>,
     },
     {
         title: 'MATH 135 Marker',
@@ -21,7 +30,7 @@ let data = [
     {
         title: "Comic Writer",
         subtitle: "MATHSOC Cartoons",
-        date: "May 2021 - Present",
+        date: "May 2021 - Dec 2021",
         content: 
         <ul>
             <li>Created storyboards for original mathematics and computer science cartoons</li>
@@ -31,7 +40,7 @@ let data = [
                 <ul>
                     <li><a href="https://www.instagram.com/p/CQV6L71tLQZ/">Comic 21 - The Riemann Integral</a></li>
                     <li><a href="https://www.instagram.com/p/CWjTHCfFHnB/">Comic 29 - Pascal's Triangle</a></li>
-                    <li><a>Comic 32 - Sorting Algorithms and Big-O Notation (not out yet)</a></li>
+                    <li><a href="https://www.instagram.com/p/CZkr0mgvt4d/">Comic 32 - Sorting Algorithms and Big-O Notation</a></li>
                 </ul>
             </li>
         </ul>,
