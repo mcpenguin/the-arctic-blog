@@ -22,13 +22,14 @@ import reactbootstrap from './reactbootstrap.jpg'
 import tkinter from './tkinter.png'
 import sass from './sass.png'
 import cpp from './cpp.jpg'
+import reactNative from './react-native.png'
 
 const icons_dict = {
     html, css, js, mongodb, react, nodejs, 
     expressjs, python, mysql, java, joget, 
     pandas, metabase, wordpress, tableau,
     bluehost, beautifulsoup, excel, jupyter,
-    reactbootstrap, tkinter, sass, cpp
+    reactbootstrap, tkinter, sass, cpp, reactNative,
 }
 
 const icons_names_dict = {
@@ -55,6 +56,7 @@ const icons_names_dict = {
     tkinter: "Tkinter",
     sass: "Sass",
     cpp: "C++",
+    reactNative: "React Native",
 }
 
 export { icons_dict, icons_names_dict };

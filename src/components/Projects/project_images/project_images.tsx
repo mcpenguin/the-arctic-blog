@@ -10,11 +10,12 @@ import pmc_website from './pmc_website.png'
 import wclasses_bot from './wclasses_bot.jpg'
 import blow_it_up from './blow_it_up.jpg'
 import age from './age.png'
+import watiamlost from './watiamlost.png'
 
 const project_images = {
     my_course_graph, skyblock_calculator, malaysia_covid,
     student_reg_gui, linear_collatz, compass_initiative, 
-    calculator, pmc_website, wclasses_bot, blow_it_up, age
+    calculator, pmc_website, wclasses_bot, blow_it_up, age, watiamlost
 }
 
 export default project_images;

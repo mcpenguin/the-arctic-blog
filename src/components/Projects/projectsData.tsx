@@ -1,6 +1,10 @@
 // module to import project content data
 
 const data = {
+    "watiamlost": {
+        projectName: "WatIAMLost (Project Program Winner)",
+        iconsUsed: ['nodejs', 'mongodb', 'reactNative', 'expressjs']
+    },
     "age": {
         projectName: "AGE (CS246E Final Project)",
         iconsUsed: ['cpp'],
