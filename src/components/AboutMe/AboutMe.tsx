@@ -83,31 +83,26 @@ const AboutMe = (props) => {
                     <div className='wrapper'>
                         <div className='personal-facts'>
                             <div className='first'>
-                                <PersonalFact
+                                {/* <PersonalFact
                                     iconName='fas fa-pencil-alt'
                                     // icon={NotesIcon}
                                     title='Current Notes Update'
-                                    body={<>
-                                        <ul className=''>{coursesKeysList.map((course_code) =>
-                                            <li>{`${coursesList[course_code]['shortTitle']} - ${coursesList[course_code]['notesStatus']}`}</li>
-                                        )}
-                                        </ul>
-                                    </>}
-                                />
+                                    body='None'
+                                /> */}
                                 <PersonalFact
                                     iconName='fas fa-briefcase'
-                                    title='Latest Coop'
-                                    body={<>Data Analyst @ eMedAsia, Malaysia</>}
+                                    title='Current Coop'
+                                    body={<>Software Developer @ Geotab</>}
                                 />
                                 <PersonalFact
                                     iconName='fas fa-graduation-cap'
                                     title='Current Education'
                                     body={<>
-                                        Computer Science, Honours, Co-op (2B)
+                                        BCS Data Science, Honours, Co-op (2B)
                                         <br />
                                         University of Waterloo @ Ontario, Canada
                                         <br />
-                                        CAV: 94 | MAV: 96
+                                        CAV: 93 | MAV: 94
                                     </>}
                                 />
                             </div>
@@ -116,7 +111,7 @@ const AboutMe = (props) => {
                                     iconName='fas fa-code'
                                     title='Programming Expertise'
                                     body={<>
-                                        <span className='pro-title'>Languages:</span> HTML, CSS (Sass), JavaScript/TypeScript, MySQL, Python, Java (Joget DX), Bash, C/C++
+                                        <span className='pro-title'>Languages:</span> HTML, CSS (Sass), JavaScript/TypeScript, MySQL, Python, Java (Joget DX), Bash, C/C++, C#/.NET
                                         <br />
                                         <span className='pro-title'>Frameworks:</span> Node.js, Express.js, React, Pandas, NumPy, Matplotlib, Jupyter Notebook, MongoDB, Tableau, Metabase, Git, Heroku
                                     </>}

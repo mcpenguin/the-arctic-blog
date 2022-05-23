@@ -1,6 +1,15 @@
 // module containing experience data
 let data = [
     {
+        title: 'Software Developer',
+        subtitle: 'Geotab',
+        date: 'May 2022 - Aug 2022',
+        content:
+        <ul>
+            <li>Worked on an application with <b>2,000,000+ users</b></li>
+        </ul>,
+    },
+    {
         title: 'Discord Developer',
         subtitle: 'Computer Science Club (CSC)',
         date: 'Jan 2022 - Present',
@@ -18,6 +27,7 @@ let data = [
             <li>Wrote a Python script to auto-generate reminders for each comic on Google Calendar, eliminating hours of manual labor</li>
             <li>Launched a Discord advertizing campaign and jump-started the creation of merchandise, increasing the reach of Cartoons</li>
             <li>Comics are published on MathSoc's social media accounts, reaching over 6000 people and garnering over 300 likes</li>
+            <li>Secured funding for the project from MEF and MathSoc</li>
         </ul>,
     },
     {
@@ -83,21 +93,21 @@ let data = [
             <li>Catered learning style and music scores to each student to maximize their engagement and learning efficacy</li>
         </ul>
     },
-    // {
-    //     title: "Curator",
-    //     subtitle: "TEDxSunwayUniversity",
-    //     date: "Jan 2019 - Jan 2020",
-    //     content:
-    //     <ul>
-    //         <li>Recruited and worked with the speakers, as well as create the themes, for the club's various events </li>
-    //     </ul>
-    // },
-    // {
-    //     title: "Trombonist",
-    //     subtitle: "Sunway University Ensemble (SUE)",
-    //     date: "Sep 2018 - June 2020",
-    //     content: null
-    // },
+    {
+        title: "Curator",
+        subtitle: "TEDxSunwayUniversity",
+        date: "Jan 2019 - Jan 2020",
+        content:
+        <ul>
+            <li>Recruited and worked with the speakers and create the themes for the club's various events </li>
+        </ul>
+    },
+    {
+        title: "Trombonist",
+        subtitle: "Sunway University Ensemble (SUE)",
+        date: "Sep 2018 - June 2020",
+        content: null
+    },
     {
         title: "Software Engineer",
         subtitle: "TMS Software Sdn Bhd",
