@@ -19,10 +19,12 @@ export default function Piano() {
         </p>
       </div>
       <div className="videos">
-        <iframe src="https://www.youtube.com/embed/35Xy8lVxx-c" width={videoWidth} height={videoHeight}></iframe>
-        <iframe src="https://www.youtube.com/embed/V2fBT29-neg" width={videoWidth} height={videoHeight}></iframe>
-        <iframe src="https://www.youtube.com/embed/Jzz0SECcmQI" width={videoWidth} height={videoHeight}></iframe>
-        <iframe src="https://www.youtube.com/embed/pYs-qqKJhCM" width={videoWidth} height={videoHeight}></iframe>
+        <iframe src="https://www.youtube.com/embed/35Xy8lVxx-c" title="Gurenge" width={videoWidth} height={videoHeight}></iframe>
+        <iframe src="https://www.youtube.com/embed/V2fBT29-neg" title="Unravel" width={videoWidth} height={videoHeight}></iframe>
+        <iframe src="https://www.youtube.com/embed/Jzz0SECcmQI" title="Swordland" width={videoWidth} height={videoHeight}></iframe>
+        <iframe src="https://www.youtube.com/embed/pYs-qqKJhCM" title="No Game No Life" width={videoWidth} height={videoHeight}></iframe>
+        <iframe src="https://www.youtube.com/embed/YxKdtDZdIgs" title="Dragonhearted" width={videoWidth} height={videoHeight}></iframe>
+        <iframe src="https://www.youtube.com/embed/dvUAKXrpDYE" title="Dragonhearted" width={videoWidth} height={videoHeight}></iframe>
       </div>
     </section>
   )
