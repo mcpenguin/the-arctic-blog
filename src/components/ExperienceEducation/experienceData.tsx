@@ -1,9 +1,15 @@
 // module containing experience data
 let data = [
     {
+        title: 'Discord Moderator',
+        subtitle: 'UW Visual Arts Club',
+        date: 'June 2022 - Present',
+        content: null
+    },
+    {
         title: 'Software Developer',
         subtitle: 'Geotab',
-        date: 'May 2022 - Aug 2022',
+        date: 'May 2022 - Present',
         content:
         <ul>
             <li>Worked on an application with <b>2,000,000+ users</b></li>
@@ -21,8 +27,8 @@ let data = [
         date: 'Jan 2022 - Present',
         content:
         <ul>
-            <li>Oversaw the development of 6 educational cartoons that help undergraduate Math students understand difficult course concepts</li>
-            <li>Managed a team of 3 writers and 5 artists</li>
+            <li>Oversaw the development of 12 educational cartoons that help undergraduate Math students understand difficult course concepts</li>
+            <li>Managed a team of several writers and artists</li>
             <li>Engaged in constant communication with 70+ student and faculty reviewers to ensure quality assurance of comics</li>
             <li>Wrote a Python script to auto-generate reminders for each comic on Google Calendar, eliminating hours of manual labor</li>
             <li>Launched a Discord advertizing campaign and jump-started the creation of merchandise, increasing the reach of Cartoons</li>
@@ -99,7 +105,8 @@ let data = [
         date: "Jan 2019 - Jan 2020",
         content:
         <ul>
-            <li>Recruited and worked with the speakers and create the themes for the club's various events </li>
+            <li>Recruited and worked with speakers to prepare their speeches</li>
+            <li>Created the themes for the club's various events</li>
         </ul>
     },
     {
