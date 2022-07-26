@@ -27,7 +27,7 @@ let data = [
     },
     {
         title: 'Director',
-        subtitle: 'MATHSOC Cartoons',
+        subtitle: 'MathSoc Cartoons',
         date: 'Jan 2022 - Present',
         content:
         <ul>
@@ -52,7 +52,7 @@ let data = [
     },
     {
         title: "Comic Writer",
-        subtitle: "MATHSOC Cartoons",
+        subtitle: "MathSoc Cartoons",
         date: "May 2021 - Dec 2021",
         content: 
         <ul>
@@ -83,7 +83,7 @@ let data = [
         subtitle: "eMedAsia",
         date: "May 2021 - Aug 2021",
         content: <ul>
-            <li>Utilized Metabse to analyze 50+ MB of transaction records from 41,000+ clinics in Malaysia</li>
+            <li>Utilized Metabase to analyze 50+ MB of transaction records from 41,000+ clinics in Malaysia</li>
             <li>Independently built and implemented a Joget website that allows vendors to sell products through Facebook Live</li>
             <li>Contributed to developing and maintaining a Joget website to manage medical subscriptions for doctors and patients</li>
         </ul>
