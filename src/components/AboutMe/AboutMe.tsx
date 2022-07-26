@@ -111,7 +111,7 @@ const AboutMe = (props) => {
                                     iconName='fas fa-code'
                                     title='Programming Expertise'
                                     body={<>
-                                        <span className='pro-title'>Languages:</span> HTML, CSS (Sass), JavaScript/TypeScript, MySQL, Python, Java (Joget DX), Bash, C/C++, C#/.NET
+                                        <span className='pro-title'>Languages:</span> HTML, CSS (Sass), JavaScript/TypeScript, SQL (MySQL, PostgreSQL, SQLite), Python, Java (Joget DX), Bash, C/C++, C#/.NET
                                         <br />
                                         <span className='pro-title'>Frameworks:</span> Node.js, Express.js, React, Pandas, NumPy, Matplotlib, Jupyter Notebook, MongoDB, Tableau, Metabase, Git, Heroku
                                     </>}

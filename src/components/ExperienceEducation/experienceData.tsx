@@ -4,7 +4,7 @@ let data = [
         title: 'Discord Moderator',
         subtitle: 'UW Visual Arts Club',
         date: 'June 2022 - Present',
-        content: null
+        content: null,
     },
     {
         title: 'Software Developer',
@@ -19,7 +19,11 @@ let data = [
         title: 'Discord Developer',
         subtitle: 'Computer Science Club (CSC)',
         date: 'Jan 2022 - Present',
-        content: null,
+        content: <ul>
+            <li>Moderated and added features to the Computer Science Club's Discord server with over 3000+ members</li>
+            <li>Developed the server's Discord bot, Codey, built on TypeScript, Sapphire, Docker and SQLite</li>
+            <li>Built a framework from Sapphire using object-oriented programming to allow Codey to have both regular and slash commands</li>
+        </ul>,
     },
     {
         title: 'Director',
@@ -27,20 +31,24 @@ let data = [
         date: 'Jan 2022 - Present',
         content:
         <ul>
-            <li>Oversaw the development of 12 educational cartoons that help undergraduate Math students understand difficult course concepts</li>
-            <li>Managed a team of several writers and artists</li>
+            <li>Oversaw the development of 12 Math and CS educational cartoons that help undergraduate students understand difficult course concepts</li>
+            <li>Managed a team of several writers and artists, providing feedback on their sketches and artwork</li>
             <li>Engaged in constant communication with 70+ student and faculty reviewers to ensure quality assurance of comics</li>
             <li>Wrote a Python script to auto-generate reminders for each comic on Google Calendar, eliminating hours of manual labor</li>
-            <li>Launched a Discord advertizing campaign and jump-started the creation of merchandise, increasing the reach of Cartoons</li>
-            <li>Comics are published on MathSoc's social media accounts, reaching over 6000 people and garnering over 300 likes</li>
-            <li>Secured funding for the project from MEF and MathSoc</li>
-        </ul>,
+            <li>Launched numerous marketing initiatives, including a Discord advertising campaign, increasing the number of followers on the Instagram by 30%</li>
+            <li>Coordinated with MathSoc executives and reviewers to jump-start the creation of merchandise</li>
+            <li>Published our comics on MathNEWS, the LEARN/Piazza forums of 10+ Waterloo classes, MathSoc's social media accounts and in the FYMSiC newsletter, reaching 1000+ people and garnering 50+ likes per post</li>
+            <li>Prepared and delivered presentations to MathSoc and MEF to secure funding for the initiative</li>
+            <li>Introduced MathSoc Cartoons to a panel of 30+ first-year undergraduate Math & CS professors from various Canadian universities, helping to increase outreach of our comics beyond Waterloo</li>
+        </ul>
     },
     {
         title: 'MATH 135 Marker',
         subtitle: "University of Waterloo",
         date: "Sep 2021 - Dec 2021",
-        content: null,
+        content: <ul>
+            <li>Reviewed and marked 100+ assignments each week</li>
+        </ul>
     },
     {
         title: "Comic Writer",
@@ -75,9 +83,9 @@ let data = [
         subtitle: "eMedAsia",
         date: "May 2021 - Aug 2021",
         content: <ul>
-            <li>Analyzed megabytes of transaction records from 41,000+ clinics in Malaysia</li>
+            <li>Utilized Metabse to analyze 50+ MB of transaction records from 41,000+ clinics in Malaysia</li>
             <li>Independently built and implemented a Joget website that allows vendors to sell products through Facebook Live</li>
-            <li>Helped to develop a Joget website to manage medical subscriptions for doctors and patients</li>
+            <li>Contributed to developing and maintaining a Joget website to manage medical subscriptions for doctors and patients</li>
         </ul>
     },
     {
