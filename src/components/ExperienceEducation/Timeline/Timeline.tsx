@@ -1,6 +1,6 @@
 // React component for Timeline
 
-import { TimelineElement } from './TimelineElement';
+import { TimelineElement } from "./TimelineElement";
 
 interface BasicTimelineElementProps {
   title: string;
@@ -21,7 +21,7 @@ interface TimelineProps {
 // timeline functional component
 // takes in a data object as data
 // and generates the "necessary timeline"
-export const Timeline = (props: TimelineProps): JSX.Element[] => {
+export const Timeline = (props: TimelineProps): JSX.Element => {
   const { data, start, range } = props;
 
   if (data) {
@@ -46,7 +46,8 @@ export const Timeline = (props: TimelineProps): JSX.Element[] => {
         </TimelineElement>,
       );
     }
-    return result;
+    // eslint-disable-next-line react/jsx-no-useless-fragment
+    return <>{result}</>;
   }
   return null;
 };

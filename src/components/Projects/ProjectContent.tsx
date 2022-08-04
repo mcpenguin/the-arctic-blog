@@ -1,57 +1,63 @@
 // React component for individual projects
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 // import markdown parser
-import MarkdownIt from 'markdown-it';
-import parse from 'html-react-parser';
+import MarkdownIt from "markdown-it";
+import parse from "html-react-parser";
 
 // import data
-import project_data from './projectsData';
-import project_images from './project_images/project_images';
-import * as project_content from './project_content/project_content';
+import projectData from "./projectsData";
+import projectImages from "./project_images/project_images";
+import * as projectContent from "./project_content/project_content";
 
-import './ProjectContent.scss';
+import "./ProjectContent.scss";
 
 interface ProjectContentProps {
-    projectId: string,
+  projectId: string;
 }
 
-export default function ProjectContent(props: ProjectContentProps) {
+const ProjectContent = (props: ProjectContentProps) => {
+  const { projectId } = props;
+
   const md = new MarkdownIt();
 
-  const [txt, setTxt] = useState('');
+  const [txt, setTxt] = useState("");
 
   useEffect(() => {
-    fetch(project_content[props.projectId])
+    fetch(projectContent[projectId])
       .then((res) => res.text())
       .then((t) => setTxt(t));
   });
 
-  const link = project_data[props.projectId].projectLink;
+  const link = projectData[projectId].projectLink;
   return (
     <section className="project-content">
       <div
         className="project-cover"
         style={{
-          backgroundImage: `url(${project_images[props.projectId]})`,
+          backgroundImage: `url(${projectImages[projectId]})`,
         }}
       >
         <div className="sub">
           <div className="title">
-            <h1>{project_data[props.projectId].projectName}</h1>
+            <h1>{projectData[projectId].projectName}</h1>
             <h4>
               <i className="icon fas fa-globe" />
-              {typeof link !== 'undefined' ? <a href={link}>Project Link</a> : 'No project link available'}
+              {typeof link !== "undefined" ? (
+                <a href={link}>Project Link</a>
+              ) : (
+                "No project link available"
+              )}
             </h4>
           </div>
         </div>
       </div>
       <div className="project-description">
-        <div className="description">
-          {parse(md.render(txt))}
-        </div>
+        <div className="description">{parse(md.render(txt))}</div>
       </div>
     </section>
   );
-}
+};
+
+export default ProjectContent;

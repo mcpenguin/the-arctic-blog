@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 // module to import project images as dict
 import my_course_graph from './my_course_graph.png';
 import skyblock_calculator from './skyblock_calculator.png';

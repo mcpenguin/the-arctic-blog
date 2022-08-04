@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 // module to export tool icons as dict
 import html from './html.png';
 import css from './css.png';

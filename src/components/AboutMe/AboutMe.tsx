@@ -16,7 +16,7 @@ interface personalFactProps {
   body: React.ReactNode;
 }
 
-function PersonalFact(props: personalFactProps) {
+const PersonalFact = (props: personalFactProps) => {
   const { iconName, title, body } = props;
   return (
     <>
@@ -29,87 +29,85 @@ function PersonalFact(props: personalFactProps) {
       <p className="personal-facts-body">{body}</p>
     </>
   );
-}
+};
 
 // eslint-disable-next-line no-unused-vars
-function AboutMe(props) {
-  return (
-    <section className="section-about-me" id="about-me">
-      <Container id="container-about-me">
-        <Row>
-          <Col className="w-50">
-            <h3 id="about-me-title">Quick Facts</h3>
-          </Col>
-        </Row>
-        <Row className="align-items-center">
-          <div className="personal-photo">
-            <img id="personal-photo" src={personalPhoto} alt="personal" />
-          </div>
-          <div className="wrapper">
-            <div className="personal-facts">
-              <div className="first">
-                {/* <PersonalFact
+const AboutMe = (props) => (
+  <section className="section-about-me" id="about-me">
+    <Container id="container-about-me">
+      <Row>
+        <Col className="w-50">
+          <h3 id="about-me-title">Quick Facts</h3>
+        </Col>
+      </Row>
+      <Row className="align-items-center">
+        <div className="personal-photo">
+          <img id="personal-photo" src={personalPhoto} alt="personal" />
+        </div>
+        <div className="wrapper">
+          <div className="personal-facts">
+            <div className="first">
+              {/* <PersonalFact
                                     iconName='fas fa-pencil-alt'
                                     // icon={NotesIcon}
                                     title='Current Notes Update'
                                     body='None'
                                 /> */}
-                <PersonalFact
-                  iconName="fas fa-briefcase"
-                  title="Current Coop"
-                  body={<>Software Developer @ Geotab</>}
-                />
-                <PersonalFact
-                  iconName="fas fa-graduation-cap"
-                  title="Current Education"
-                  body={(
-                    <>
-                      BCS Data Science, Honours, Co-op (2B)
-                      <br />
-                      University of Waterloo @ Ontario, Canada
-                      <br />
-                      CAV: 93 | MAV: 94
-                    </>
+              <PersonalFact
+                iconName="fas fa-briefcase"
+                title="Current Coop"
+                body={<>Software Developer @ Geotab</>}
+              />
+              <PersonalFact
+                iconName="fas fa-graduation-cap"
+                title="Current Education"
+                body={(
+                  <>
+                    BCS Data Science, Honours, Co-op (2B)
+                    <br />
+                    University of Waterloo @ Ontario, Canada
+                    <br />
+                    CAV: 93 | MAV: 94
+                  </>
                   )}
-                />
-              </div>
-              <div className="second">
-                <PersonalFact
-                  iconName="fas fa-code"
-                  title="Programming Expertise"
-                  body={(
-                    <>
-                      <span className="pro-title">Languages:</span>
-                      {' '}
-                      HTML, CSS
-                      (Sass), JavaScript/TypeScript, SQL (MySQL, PostgreSQL,
-                      SQLite), Python, Java (Joget DX), Bash, C/C++, C#/.NET
-                      <br />
-                      <span className="pro-title">Frameworks:</span>
-                      {' '}
-                      Node.js,
-                      Express.js, React, Pandas, NumPy, Matplotlib, Jupyter
-                      Notebook, MongoDB, Tableau, Metabase, Git, Heroku
-                    </>
+              />
+            </div>
+            <div className="second">
+              <PersonalFact
+                iconName="fas fa-code"
+                title="Programming Expertise"
+                body={(
+                  <>
+                    <span className="pro-title">Languages:</span>
+                    {' '}
+                    HTML, CSS
+                    (Sass), JavaScript/TypeScript, SQL (MySQL, PostgreSQL,
+                    SQLite), Python, Java (Joget DX), Bash, C/C++, C#/.NET
+                    <br />
+                    <span className="pro-title">Frameworks:</span>
+                    {' '}
+                    Node.js,
+                    Express.js, React, Pandas, NumPy, Matplotlib, Jupyter
+                    Notebook, MongoDB, Tableau, Metabase, Git, Heroku
+                  </>
                   )}
-                />
-                <PersonalFact
-                  iconName="far fa-futbol"
-                  title="Hobbies"
-                  body={(
-                    <>
-                      Mathematics, coding, arranging/composing piano pieces,
-                      rock climbing, anime
-                    </>
+              />
+              <PersonalFact
+                iconName="far fa-futbol"
+                title="Hobbies"
+                body={(
+                  <>
+                    Mathematics, coding, arranging/composing piano pieces,
+                    rock climbing, anime
+                  </>
                   )}
-                />
-              </div>
+              />
             </div>
           </div>
-        </Row>
-      </Container>
-    </section>
-  );
-}
+        </div>
+      </Row>
+    </Container>
+  </section>
+);
 
 export default AboutMe;

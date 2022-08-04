@@ -38,7 +38,10 @@
         "namedComponents": "arrow-function",
         "unnamedComponents": "arrow-function"
       }
-    ]
+    ],
+    "quotes": "off",
+    "no-restricted-syntax": "off",
+    "guard-for-in": "off"
   },
   "settings": {
     "import/resolver": {
