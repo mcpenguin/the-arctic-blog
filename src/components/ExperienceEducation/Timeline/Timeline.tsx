@@ -3,33 +3,35 @@
 import { TimelineElement } from './TimelineElement';
 
 interface BasicTimelineElementProps {
-    title: string,
-    subtitle: string,
-    date: string,
-    content: JSX.Element
+  title: string;
+  subtitle: string;
+  date: string;
+  content: JSX.Element;
 }
 
 interface TimelineProps {
-    data: Array<BasicTimelineElementProps>,
-    start: number,
-    range: number
+  data: Array<BasicTimelineElementProps>;
+  start: number;
+  range: number;
 }
 
 /**
- * @param {map} props.data - data for timeline
+ * @param {map} data - data for timeline
  */
 // timeline functional component
-// takes in a data object as props.data
+// takes in a data object as data
 // and generates the "necessary timeline"
-export function Timeline(props: TimelineProps): JSX.Element {
-  if (props.data) {
+export const Timeline = (props: TimelineProps): JSX.Element[] => {
+  const { data, start, range } = props;
+
+  if (data) {
     const result = [];
     // convert data into array of timeline elements
-    for (let i = 0; i < props.data.length; i++) {
-      const element = props.data[i];
+    for (let i = 0; i < data.length; i++) {
+      const element = data[i];
       // value of hue
-      const h = props.start + props.range * i / props.data.length;
-      const hnext = props.start + props.range * (i + 1) / props.data.length;
+      const h = start + (range * i) / data.length;
+      const hnext = start + (range * (i + 1)) / data.length;
       result.push(
         <TimelineElement
           key={i}
@@ -44,9 +46,9 @@ export function Timeline(props: TimelineProps): JSX.Element {
         </TimelineElement>,
       );
     }
-    return <>{result}</>;
+    return result;
   }
   return null;
-}
+};
 
 export default Timeline;

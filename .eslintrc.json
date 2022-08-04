@@ -28,6 +28,16 @@
     "react/jsx-filename-extension": [
       2,
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "no-undef": "off",
+    "no-plusplus": "off",
+    "react/no-unescaped-entities": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
     ]
   },
   "settings": {

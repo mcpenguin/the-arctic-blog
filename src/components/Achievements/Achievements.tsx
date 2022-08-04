@@ -12,7 +12,7 @@ interface AchievementEntryProps {
   date: string;
 }
 
-function AchievementEntry(props: AchievementEntryProps) {
+const AchievementEntry = (props: AchievementEntryProps) => {
   const { title, contestName, date } = props;
   return (
     <div className="achievement">
@@ -25,21 +25,19 @@ function AchievementEntry(props: AchievementEntryProps) {
       </div>
     </div>
   );
-}
+};
 
 // eslint-disable-next-line no-unused-vars
-function Achievements(_props: any) {
-  return (
-    <section id="achievements" className="section-achievements-page">
-      <h3>My Achievements</h3>
-      <div className="achievements-container">
-        {data.map((props) => (
-          // eslint-disable-next-line react/jsx-props-no-spreading
-          <AchievementEntry {...props} />
-        ))}
-      </div>
-    </section>
-  );
-}
+const Achievements = (_props: any) => (
+  <section id="achievements" className="section-achievements-page">
+    <h3>My Achievements</h3>
+    <div className="achievements-container">
+      {data.map((props) => (
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        <AchievementEntry {...props} />
+      ))}
+    </div>
+  </section>
+);
 
 export default Achievements;

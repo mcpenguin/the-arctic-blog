@@ -8,59 +8,57 @@ import React from 'react';
 import './TimelineElement.scss';
 
 export interface TimelineElementProps {
-    title: string,
-    subtitle: string,
-    date: string,
-    link?: string,
-    color: string,
-    subcolor: string,
-    nextcolor: string,
-    children: React.ReactNode,
+  title: string;
+  subtitle: string;
+  date: string;
+  // eslint-disable-next-line react/require-default-props, react/no-unused-prop-types
+  link?: string;
+  color: string;
+  subcolor: string;
+  nextcolor: string;
+  children: React.ReactNode;
 }
 
 /**
  *
- * @param {string} props.title
- * @param {string} props.subtitle
- * @param {string} props.date
- * @param {string} props.link
- * @param {color_string} props.color
- * @param {color_string} props.subcolor
- * @param {color_string} props.nextcolor
- * @param {JSX} props.children
+ * @param {string} title
+ * @param {string} subtitle
+ * @param {string} date
+ * @param {string} link
+ * @param {color_string} color
+ * @param {color_string} subcolor
+ * @param {color_string} nextcolor
+ * @param {JSX} children
  * @returns {React.Component}
  */
-export function TimelineElement(props: TimelineElementProps) {
-  // node: the "circle" node for the element
+export const TimelineElement = (props: TimelineElementProps): JSX.Element => {
+  const {
+    color, subcolor, nextcolor, children, title, subtitle, date,
+  } = props;
   return (
     <div
       className="timeline-element"
       style={{
         // @ts-ignore
-        '--color': props.color,
-        '--subcolor': props.subcolor,
-        '--nextcolor': props.nextcolor,
+        '--color': color,
+        '--subcolor': subcolor,
+        '--nextcolor': nextcolor,
       }}
     >
       <div className="date">
-        <h6>{props.date}</h6>
+        <h6>{date}</h6>
       </div>
       <div className="node" />
       <div className="desc">
-        <h3>{props.title}</h3>
-        <h4>{props.subtitle}</h4>
+        <h3>{title}</h3>
+        <h4>{subtitle}</h4>
       </div>
       <div className="body">
         <div className="connect">
           <div className="connect-line" />
         </div>
-        <div className="content">
-          {props.children}
-        </div>
+        <div className="content">{children}</div>
       </div>
-      {/* <div className="body">
-                {props.children}
-            </div> */}
     </div>
   );
-}
+};
