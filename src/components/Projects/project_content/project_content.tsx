@@ -1,14 +1,14 @@
 // module to import content for projects (i.e. descriptions)
-export {default as my_course_graph} from "./my_course_graph.md"
-export {default as pmc_website} from "./pmc_website.md"
-export {default as joget_fb_marketplace} from "./joget_fb_marketplace.md"
-export {default as skyblock_calculator} from "./skyblock_calculator.md"
-export {default as malaysia_covid} from "./malaysia_covid.md"
-export {default as student_reg_gui} from "./student_reg_gui.md"
-export {default as linear_collatz} from "./linear_collatz.md"
-export {default as compass_initiative} from "./compass_initiative.md"
-export {default as calculator} from "./calculator.md"
-export {default as wclasses_bot} from "./wclasses_bot.md"
-export {default as blow_it_up} from "./blow_it_up.md"
-export {default as age} from "./age.md"
-export {default as watiamlost} from "./watiamlost.md"
+export { default as my_course_graph } from './my_course_graph.md';
+export { default as pmc_website } from './pmc_website.md';
+export { default as joget_fb_marketplace } from './joget_fb_marketplace.md';
+export { default as skyblock_calculator } from './skyblock_calculator.md';
+export { default as malaysia_covid } from './malaysia_covid.md';
+export { default as student_reg_gui } from './student_reg_gui.md';
+export { default as linear_collatz } from './linear_collatz.md';
+export { default as compass_initiative } from './compass_initiative.md';
+export { default as calculator } from './calculator.md';
+export { default as wclasses_bot } from './wclasses_bot.md';
+export { default as blow_it_up } from './blow_it_up.md';
+export { default as age } from './age.md';
+export { default as watiamlost } from './watiamlost.md';

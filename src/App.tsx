@@ -1,11 +1,6 @@
 // React components for pages
-
-import { useEffect } from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route
-} from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // import components
 import Header from './components/Header/Header';
@@ -24,58 +19,63 @@ import NotFound from './components/404NotFound/404NotFound';
 
 // home page
 function HomePage() {
-    return (
-        <>
-            <Header />
-            <Welcome />
-            <AboutMe />
-            <Projects />
-            <ExperienceEducation />
-            <Extracurriculars />
-            <Piano />
-            <Achievements />
-            <Notes />
-            <ContactMe />
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <Welcome />
+      <AboutMe />
+      <Projects />
+      <ExperienceEducation />
+      <Extracurriculars />
+      <Piano />
+      <Achievements />
+      <Notes />
+      <ContactMe />
+    </>
+  );
 }
 
 function IndividualProjectPage(props: any) {
-    useEffect(() => window.scrollTo(0, 0));
-    return (
-        <>
-            <Header />
-            <ProjectContent projectId={props.match.params.projectId} />
-            <ContactMe />
-        </>
-    );
+  React.useEffect(() => window.scrollTo(0, 0));
+  const { match } = props;
+  return (
+    <>
+      <Header />
+      <ProjectContent projectId={match.params.projectId} />
+      <ContactMe />
+    </>
+  );
 }
 
 function NotFoundSection() {
-    return (
-        <>
-            <Header />
-            <NotFound />
-            <ContactMe />
-        </>
-    )
+  return (
+    <>
+      <Header />
+      <NotFound />
+      <ContactMe />
+    </>
+  );
 }
 
 export default function App() {
-    return (
-        <Router forceRefresh={true} basename={`${process.env.PUBLIC_URL}`}>
-            <Switch>
-                <Route exact path="/" component={HomePage} />
-                {/* <Route exact path="/projects" component={ProjectsPage} /> */}
-                <Route exact path="/projects/:projectId" component={IndividualProjectPage} />
-                {/* <Route exact path="/experience" component={ExperiencePage} /> */}
-                {/* <Route exact path="/education" component={EducationPage} /> */}
-                {/* <Route exact path="/extracurriculars" component={ExtracurricularsPage} /> */}
-                {/* <Route exact path="/achievements" component={AchievementsPage} /> */}
-                {/* <Route exact path="/notes" component={NotesPage} /> */}
-                {/* <Route exact path="/credits" component={CreditsPage} /> */}
-                <Route component={NotFoundSection} />
-            </Switch>
-        </Router>
-    )
+  return (
+    <Router forceRefresh basename={`${process.env.PUBLIC_URL}`}>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        {/* <Route exact path="/projects" component={ProjectsPage} /> */}
+        <Route
+          exact
+          path="/projects/:projectId"
+          component={IndividualProjectPage}
+        />
+        {/* <Route exact path="/experience" component={ExperiencePage} /> */}
+        {/* <Route exact path="/education" component={EducationPage} /> */}
+        {/* <Route exact path="/extracurriculars" component={ExtracurricularsPage} /> */}
+        {/* <Route exact path="/achievements" component={AchievementsPage} /> */}
+        {/* <Route exact path="/notes" component={NotesPage} /> */}
+        {/* <Route exact path="/credits" component={CreditsPage} /> */}
+        <Route component={NotFoundSection} />
+      </Switch>
+    </Router>
+  );
 }

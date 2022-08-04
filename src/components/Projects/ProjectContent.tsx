@@ -18,37 +18,40 @@ interface ProjectContentProps {
 }
 
 export default function ProjectContent(props: ProjectContentProps) {
-    let md = new MarkdownIt();
+  const md = new MarkdownIt();
 
-    let [txt, setTxt] = useState("");
+  const [txt, setTxt] = useState('');
 
-    useEffect(() => {
-        fetch(project_content[props.projectId])
-            .then(res => res.text())
-            .then(t => setTxt(t));
-    });
+  useEffect(() => {
+    fetch(project_content[props.projectId])
+      .then((res) => res.text())
+      .then((t) => setTxt(t));
+  });
 
-    let link = project_data[props.projectId].projectLink;
-    return (
-        <section className='project-content'>
-            <div className='project-cover' style={{
-                backgroundImage: `url(${project_images[props.projectId]})`,
-            }}>
-                <div className='sub'>
-                    <div className='title'>
-                        <h1>{project_data[props.projectId].projectName}</h1>
-                        <h4>
-                            <i className='icon fas fa-globe'></i>
-                            {typeof link !== "undefined" ? <a href={link}>Project Link</a> : "No project link available"}
-                        </h4>
-                    </div>
-                </div>
-            </div>
-            <div className='project-description'>
-                <div className='description'>
-                    {parse(md.render(txt))}
-                </div>
-            </div>
-        </section>
-    );
+  const link = project_data[props.projectId].projectLink;
+  return (
+    <section className="project-content">
+      <div
+        className="project-cover"
+        style={{
+          backgroundImage: `url(${project_images[props.projectId]})`,
+        }}
+      >
+        <div className="sub">
+          <div className="title">
+            <h1>{project_data[props.projectId].projectName}</h1>
+            <h4>
+              <i className="icon fas fa-globe" />
+              {typeof link !== 'undefined' ? <a href={link}>Project Link</a> : 'No project link available'}
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div className="project-description">
+        <div className="description">
+          {parse(md.render(txt))}
+        </div>
+      </div>
+    </section>
+  );
 }
