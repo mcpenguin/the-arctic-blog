@@ -26,7 +26,7 @@
 
                 h1 {
                     font-weight: 300;
-                    font-size: 3em;
+                    font-size: 2em;
                     width: 100%;
                     text-align: center;
                 }
@@ -67,6 +67,14 @@
         .description {
             width: 60%;
             text-align: left;
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 2.2em;
+            }
 
             @media (max-width: $mobile_width) {
                 width: 90%;

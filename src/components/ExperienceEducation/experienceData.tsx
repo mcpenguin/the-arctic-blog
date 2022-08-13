@@ -2,28 +2,44 @@
 // module containing experience data
 const data = [
   {
-    title: 'Discord Moderator',
-    subtitle: 'UW Visual Arts Club',
-    date: 'June 2022 - Present',
+    title: "Discord Moderator",
+    subtitle: "UW Visual Arts Club",
+    date: "June 2022 - Present",
     content: null,
   },
   {
-    title: 'Software Developer',
-    subtitle: 'Geotab',
-    date: 'May 2022 - Present',
+    title: "Software Developer",
+    subtitle: "Geotab",
+    date: "May 2022 - Present",
     content: (
       <ul>
         <li>
-          Worked on an application with
-          <b>2,000,000+ users</b>
+          Developed a new API endpoint using <b>C#</b> and <b>PostgreSQL</b>{" "}
+          from the controller layer to the repository layer to evaluate the
+          electrical efficiency of vehicles
+        </li>
+        <li>
+          Employed <b>test driven development</b> principles to implement the
+          logic for calculating the efficiency over multiple sub-periods and to
+          handle time zones
+        </li>
+        <li>
+          Participated in numerous architecture and design discussions with
+          product and sales to investigate how to mitigate the algorithm’s
+          memory usage and optimize its performance
+        </li>
+        <li>
+          Implemented a custom script using <b>Pandas</b> to investigate vehicle
+          anomalies for <b>3,000,000+ trips</b>, sharing the findings with other
+          non-technical teams
         </li>
       </ul>
     ),
   },
   {
-    title: 'Discord Developer',
-    subtitle: 'Computer Science Club (CSC)',
-    date: 'Jan 2022 - Present',
+    title: "Discord Developer",
+    subtitle: "Computer Science Club (CSC)",
+    date: "Jan 2022 - Present",
     content: (
       <ul>
         <li>
@@ -42,9 +58,9 @@ const data = [
     ),
   },
   {
-    title: 'Director',
-    subtitle: 'MathSoc Cartoons',
-    date: 'Jan 2022 - Present',
+    title: "Director",
+    subtitle: "MathSoc Cartoons",
+    date: "Jan 2022 - Present",
     content: (
       <ul>
         <li>
@@ -90,9 +106,9 @@ const data = [
     ),
   },
   {
-    title: 'MATH 135 Marker',
-    subtitle: 'University of Waterloo',
-    date: 'Sep 2021 - Dec 2021',
+    title: "MATH 135 Marker",
+    subtitle: "University of Waterloo",
+    date: "Sep 2021 - Dec 2021",
     content: (
       <ul>
         <li>Reviewed and marked 100+ assignments each week</li>
@@ -100,9 +116,9 @@ const data = [
     ),
   },
   {
-    title: 'Comic Writer',
-    subtitle: 'MathSoc Cartoons',
-    date: 'May 2021 - Dec 2021',
+    title: "Comic Writer",
+    subtitle: "MathSoc Cartoons",
+    date: "May 2021 - Dec 2021",
     content: (
       <ul>
         <li>
@@ -136,9 +152,9 @@ const data = [
     ),
   },
   {
-    title: 'Web Developer',
-    subtitle: 'Pure Math Club (PMC)',
-    date: 'May 2021 - Dec 2021',
+    title: "Web Developer",
+    subtitle: "Pure Math Club (PMC)",
+    date: "May 2021 - Dec 2021",
     content: (
       <ul>
         <li>Redesigned the University of Waterloo’s Pure Math Club website</li>
@@ -150,9 +166,9 @@ const data = [
     ),
   },
   {
-    title: 'Data Analyst',
-    subtitle: 'eMedAsia',
-    date: 'May 2021 - Aug 2021',
+    title: "Data Analyst",
+    subtitle: "eMedAsia",
+    date: "May 2021 - Aug 2021",
     content: (
       <ul>
         <li>
@@ -171,9 +187,9 @@ const data = [
     ),
   },
   {
-    title: 'Mathematics Tutor',
-    subtitle: 'Dignity for Children Foundation',
-    date: 'June 2019 - Dec 2019',
+    title: "Mathematics Tutor",
+    subtitle: "Dignity for Children Foundation",
+    date: "June 2019 - Dec 2019",
     content: (
       <ul>
         <li>
@@ -192,9 +208,9 @@ const data = [
     ),
   },
   {
-    title: 'Piano Tutor',
-    subtitle: 'Shelter Home for Children',
-    date: 'Apr 2019 - Jan 2020',
+    title: "Piano Tutor",
+    subtitle: "Shelter Home for Children",
+    date: "Apr 2019 - Jan 2020",
     content: (
       <ul>
         <li>
@@ -208,9 +224,9 @@ const data = [
     ),
   },
   {
-    title: 'Curator',
-    subtitle: 'TEDxSunwayUniversity',
-    date: 'Jan 2019 - Jan 2020',
+    title: "Curator",
+    subtitle: "TEDxSunwayUniversity",
+    date: "Jan 2019 - Jan 2020",
     content: (
       <ul>
         <li>Recruited and worked with speakers to prepare their speeches</li>
@@ -219,15 +235,15 @@ const data = [
     ),
   },
   {
-    title: 'Trombonist',
-    subtitle: 'Sunway University Ensemble (SUE)',
-    date: 'Sep 2018 - June 2020',
+    title: "Trombonist",
+    subtitle: "Sunway University Ensemble (SUE)",
+    date: "Sep 2018 - June 2020",
     content: null,
   },
   {
-    title: 'Software Engineer',
-    subtitle: 'TMS Software Sdn Bhd',
-    date: 'May 2018 - July 2018',
+    title: "Software Engineer",
+    subtitle: "TMS Software Sdn Bhd",
+    date: "May 2018 - July 2018",
     content: (
       <ul>
         <li>
