@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.12e31489.chunk.css",
-    "main.js": "/static/js/main.d1d7bccd.chunk.js",
-    "main.js.map": "/static/js/main.d1d7bccd.chunk.js.map",
+    "main.css": "/static/css/main.36f3869e.chunk.css",
+    "main.js": "/static/js/main.f685addd.chunk.js",
+    "main.js.map": "/static/js/main.f685addd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cf12e209.js",
     "runtime-main.js.map": "/static/js/runtime-main.cf12e209.js.map",
     "static/js/2.c7cfe355.chunk.js": "/static/js/2.c7cfe355.chunk.js",
     "static/js/2.c7cfe355.chunk.js.map": "/static/js/2.c7cfe355.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.12e31489.chunk.css.map": "/static/css/main.12e31489.chunk.css.map",
+    "static/css/main.36f3869e.chunk.css.map": "/static/css/main.36f3869e.chunk.css.map",
     "static/js/2.c7cfe355.chunk.js.LICENSE.txt": "/static/js/2.c7cfe355.chunk.js.LICENSE.txt",
     "static/media/Achievements.scss": "/static/media/achievements-bg.68ff5a16.svg",
     "static/media/age.e3c212b4.md": "/static/media/age.e3c212b4.md",
@@ -49,7 +49,7 @@
   "entrypoints": [
     "static/js/runtime-main.cf12e209.js",
     "static/js/2.c7cfe355.chunk.js",
-    "static/css/main.12e31489.chunk.css",
-    "static/js/main.d1d7bccd.chunk.js"
+    "static/css/main.36f3869e.chunk.css",
+    "static/js/main.f685addd.chunk.js"
   ]
 }
