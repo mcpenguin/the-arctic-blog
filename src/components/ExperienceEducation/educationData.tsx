@@ -7,14 +7,18 @@ const data = [
     content: (
       <ul>
         <li>
-          Recipient of the CAD$20,000 Faculty of Mathematics Global Scholarship,
+          Recipient of the <b>CAD$20,000</b> Faculty of Mathematics Global Scholarship,
           awarded to only ten international students every year
+        </li>
+        <li>
+          Recipient of the <b>CAD$15,000</b> Computer Science International Upper-Year Scholarship,
+          awarded to only eight international students every term
         </li>
         <li>
           Transferred from Honours Mathematics to BMath Data Science in 1B, and
           then to BCS CS in the subsequent term
         </li>
-        <li>CAV: 94 (MAV: 96)</li>
+        <li>CAV: 93 (MAV: 94)</li>
       </ul>
     ),
   },

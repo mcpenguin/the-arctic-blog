@@ -3,6 +3,8 @@
 .section-experience, .section-education {
     display: flex;
     flex-flow: row wrap;
+    @include center;
+    background: $off_white;
     // justify-content: space-between;
 
     // width of title, in %
@@ -15,8 +17,8 @@
     }
 
     .title {
-        width: $title_width;
-        // @include center;
+        width: 100%;
+        padding-bottom: 30px;
         // position: sticky;
         // top: 50px;
 
@@ -24,6 +26,7 @@
             height: 100%;
             width: 100%;
             font-weight: 800;
+            text-align: center;
             
             padding: 50px 0 0 30px;
 
@@ -49,12 +52,7 @@
 
     .timeline {
         padding: 5vh 3vw;
-        width: 100% - $title_width;
-        background: $off_white;
-
-        @media (max-width: $medium_desktop_width) {
-            width: 100%;
-        }
+        width: 80%;
         font-weight: 400;
 
         a {
@@ -63,6 +61,10 @@
             &:hover {
                 color:rgb(3, 62, 97);
             }
+        }
+
+        @media (max-width: $medium_desktop_width) {
+            width: 100%;
         }
     }
 }
