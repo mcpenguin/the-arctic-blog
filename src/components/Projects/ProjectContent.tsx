@@ -8,8 +8,8 @@ import parse from "html-react-parser";
 
 // import data
 import projectData from "./projectsData";
-import projectImages from "./project_images/project_images";
-import * as projectContent from "./project_content/project_content";
+import projectImages from "../../../public/assets/Projects/project_images/project_images";
+import * as projectContent from "../../../public/assets/Projects/project_content/project_content";
 
 import "./ProjectContent.scss";
 

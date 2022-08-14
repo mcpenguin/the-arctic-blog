@@ -18,9 +18,9 @@ import testImg from "./test-img.png";
 import {
   icons_dict as iconsDict,
   icons_names_dict as iconsNamesDict,
-} from "./tool_icons/tool_icons";
+} from "../../../public/assets/Projects/tool_icons/tool_icons";
 // import images
-import projectImages from "./project_images/project_images";
+import projectImages from "../../../public/assets/Projects/project_images/project_images";
 
 // import project data
 import projectData from "./projectsData";
