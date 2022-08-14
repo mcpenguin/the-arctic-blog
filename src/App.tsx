@@ -9,7 +9,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import ExperienceEducation from "./components/ExperienceEducation/ExperienceEducation";
 import Extracurriculars from "./components/Extracurriculars/Extracurriculars";
-import Piano from "./components/Piano/Piano";
+// import Piano from "./components/Piano/Piano";
 import Achievements from "./components/Achievements/Achievements";
 import Notes from "./components/Notes/Notes";
 import ContactMe from "./components/ContactMe/ContactMe";
@@ -26,7 +26,7 @@ const HomePage = () => (
     <Projects />
     <ExperienceEducation />
     <Extracurriculars />
-    <Piano />
+    {/* <Piano /> */}
     <Achievements />
     <Notes />
     <ContactMe />
