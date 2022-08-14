@@ -36,6 +36,10 @@ $hue_range: 140;
             padding: 5px 0 0 ($small_node_size + 20px);
             order: 3;
         }
+
+        @media (max-width: 400px) {
+            padding: 5px 0 0 20px;
+        }
         
         h6 {
             font-size: 1.5rem;
@@ -63,6 +67,10 @@ $hue_range: 140;
             height: $small_node_size;
             border: math.div($small_node_size, 8) solid $subcolor;
         }
+
+        @media (max-width: 400px) {
+            display: none;
+        }
     }
 
     .desc {    
@@ -72,6 +80,10 @@ $hue_range: 140;
         @media (max-width: $tablet_width) {
             width: 80%;
             order: 2;
+        }
+
+        @media (max-width: 400px) {
+            width: 100%;
         }
 
         // title
@@ -119,6 +131,10 @@ $hue_range: 140;
             padding: 10px 0 40px 0;
         }
 
+        @media (max-width: 400px) {
+            padding: 10px 0 10px 0px;
+        }
+
         .connect {
             width: $node_size;
             height: 100%;
@@ -132,8 +148,8 @@ $hue_range: 140;
                 top: -40px;
             }
 
-            @media (max-width: $mobile_width) {
-                top: -70px;
+            @media (max-width: 400px) {
+                display: none;
             }
 
             .connect-line {
