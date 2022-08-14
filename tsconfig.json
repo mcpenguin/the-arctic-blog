@@ -16,11 +16,18 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "strict": false,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "incremental": true
   },
   "include": [
-    "src"
-, "public/assets/Projects/project_content", "public/assets/Projects/project_images", "public/assets/Projects/tool_icons"  ]
+    "src",
+    "public/assets/Projects/project_content",
+    "public/assets/Projects/project_images",
+    "public/assets/Projects/tool_icons"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
