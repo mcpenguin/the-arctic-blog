@@ -8,8 +8,6 @@ import parse from "html-react-parser";
 
 // import data
 import projectData from "./projectsData";
-import projectImages from "./project_images/project_images";
-import * as projectContent from "./project_content/project_content";
 
 import "./ProjectContent.scss";
 
@@ -25,7 +23,7 @@ const ProjectContent = (props: ProjectContentProps) => {
   const [txt, setTxt] = useState("");
 
   useEffect(() => {
-    fetch(projectContent[projectId])
+    fetch(`/assets/Projects/content/${projectId}.md`)
       .then((res) => res.text())
       .then((t) => setTxt(t));
   });
@@ -36,7 +34,7 @@ const ProjectContent = (props: ProjectContentProps) => {
       <div
         className="project-cover"
         style={{
-          backgroundImage: `url(${projectImages[projectId]})`,
+          backgroundImage: `url(/assets/Projects/images/${projectId}.jpg)`,
         }}
       >
         <div className="sub">

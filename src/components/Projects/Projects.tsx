@@ -11,16 +11,8 @@ import Tooltip from "react-bootstrap/Tooltip";
 // import stylesheet
 import "./Projects.scss";
 
-// filler image
-import testImg from "./test-img.png";
-
 // import icons dict
-import {
-  icons_dict as iconsDict,
-  icons_names_dict as iconsNamesDict,
-} from "./tool_icons/tool_icons";
-// import images
-import projectImages from "./project_images/project_images";
+import iconsNamesDict from "./ToolIcons";
 
 // import project data
 import projectData from "./projectsData";
@@ -48,7 +40,11 @@ const IconTooltip = (props: {
       delay={{ show: 100, hide: 100 }}
       overlay={renderTooltip(props)}
     >
-      <img className={iconsDict[iconId]} src={iconsDict[iconId]} alt={iconId} />
+      <img
+        className={iconId}
+        src={`/assets/Projects/toolIcons/${iconId}.png`}
+        alt={iconId}
+      />
     </OverlayTrigger>
   );
 };
@@ -68,7 +64,10 @@ const ProjectFolder = (props: any) => {
         </div>
         <div className="project-image">
           <Link exact to={`/projects/${projectId}`}>
-            <img src={projectImages[projectId] || testImg} alt={projectId} />
+            <img
+              src={`/assets/Projects/images/${projectId}.jpg`}
+              alt={projectId}
+            />
           </Link>
         </div>
         <div className="tools-used">

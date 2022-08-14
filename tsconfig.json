@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "public/assets/Projects/project_content", "public/assets/Projects/project_images", "public/assets/Projects/toolIcons"  ]
 }

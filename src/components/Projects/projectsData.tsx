@@ -3,7 +3,7 @@
 const data = {
   watiamlost: {
     projectName: 'WatIAMLost (Project Program Winner)',
-    iconsUsed: ['nodejs', 'mongodb', 'reactNative', 'expressjs'],
+    iconsUsed: ['nodejs', 'mongodb', 'reactnative', 'expressjs'],
   },
   age: {
     projectName: 'AGE (CS246E Final Project)',
@@ -39,10 +39,10 @@ const data = {
     iconsUsed: ['mysql', 'beautifulsoup', 'jupyter', 'python'],
     projectLink: 'https://github.com/mcpenguin/malaysia-covid',
   },
-  joget_fb_marketplace: {
-    projectName: 'Joget FB Marketplace',
-    iconsUsed: ['joget', 'java', 'mysql', 'js'],
-  },
+  // joget_fb_marketplace: {
+  //   projectName: 'Joget FB Marketplace',
+  //   iconsUsed: ['joget', 'java', 'mysql', 'js'],
+  // },
   skyblock_calculator: {
     projectName: 'Skyblock Calculator',
     iconsUsed: ['java', 'excel'],
