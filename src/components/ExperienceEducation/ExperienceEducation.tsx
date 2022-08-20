@@ -12,7 +12,9 @@ import experienceData from "./experienceData";
 import educationData from "./educationData";
 
 const Experience = () => {
-  const [showNonTechJobs, setShowNonTechJobs] = useState(false);
+  const [showTechJobs, setShowTechJobs] = useState(true);
+  const [showEC, setShowEC] = useState(false);
+  const [showHS, setShowHS] = useState(false);
 
   return (
     <section className="section-experience" id="experience">
@@ -20,15 +22,35 @@ const Experience = () => {
         <h2>My Experience</h2>
       </div>
       <div className="filters">
-        <label className="container" htmlFor="show-non-tech-jobs">
-          Show non-tech jobs
+        <label className="cont" htmlFor="show-tech-jobs">
+          Show dev roles
           <input
             type="checkbox"
             className="checkbox"
-            id="show-non-tech-jobs"
-            onClick={() => setShowNonTechJobs(!showNonTechJobs)}
+            id="show-tech-jobs"
+            onClick={() => setShowTechJobs(!showTechJobs)}
           />
-          <div className={`checkmark ${showNonTechJobs ? "checked" : ""}`} />
+          <div className={`checkmark ${showTechJobs ? "checked" : ""}`} />
+        </label>
+        <label className="cont" htmlFor="show-ec">
+          Show extra-curriculars
+          <input
+            type="checkbox"
+            className="checkbox"
+            id="show-ec"
+            onClick={() => setShowEC(!showEC)}
+          />
+          <div className={`checkmark ${showEC ? "checked" : ""}`} />
+        </label>
+        <label className="cont" htmlFor="show-hs">
+          Show HS experiences
+          <input
+            type="checkbox"
+            className="checkbox"
+            id="show-hs"
+            onClick={() => setShowHS(!showHS)}
+          />
+          <div className={`checkmark ${showHS ? "checked" : ""}`} />
         </label>
       </div>
       <div className="timeline">
@@ -37,7 +59,9 @@ const Experience = () => {
           start={160}
           range={120}
           filters={{
-            showNonTechJobs,
+            showTechJobs,
+            showEC,
+            showHS,
           }}
         />
       </div>

@@ -11,12 +11,6 @@
   // width of title, in %
   $title_width: 30%;
 
-  .sticky {
-    position: fixed;
-    top: -20vh;
-    width: $title_width;
-  }
-
   .title {
     width: 100%;
     padding-bottom: 30px;
@@ -65,6 +59,7 @@
     }
 
     @media (max-width: $large_desktop_width) {
+			padding: 5vh 5vw;
       width: 90%;
     }
 
@@ -122,17 +117,21 @@
   }
 
   .filters {
-    height: 10vh;
-    width: 100%;
-    padding: 0 10vw;
-    @include center;
+    // height: 600px;
+    width: 90%;
+    padding: 3vh 0 0 0;
+    display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
 
-    .container {
+    .cont {
       font-size: 1.5em;
       font-weight: 600;
       cursor: pointer;
-      display: flex;
-      position: relative;
+			padding: 10px 2vw;
+			@include center;
 
       /* Hide browser's default checkbox */
       input {
@@ -141,17 +140,18 @@
         cursor: pointer;
         height: 0;
         width: 0;
+				// width: 50%;
       }
 
       @media (max-width: $tablet_width) {
-        font-size: 1em;
+        font-size: 1.2em;
       }
 
       // Create a custom checkbox
 			@include customCheckmark(30px);
 
 			@media (max-width: $tablet_width) {
-				@include customCheckmark(20px);
+				@include customCheckmark(25px);
 			}
       
     }

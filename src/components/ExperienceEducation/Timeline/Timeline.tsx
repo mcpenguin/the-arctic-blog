@@ -37,8 +37,10 @@ export const Timeline = (props: TimelineProps): JSX.Element => {
       const h = start + (range * i) / data.length;
       const hnext = start + (range * (i + 1)) / data.length;
       if (
-        filters.showNonTechJobs
-        || element.tags.includes("tech")
+        ((filters.showEC && element.tags.includes("ec"))
+        || (filters.showTechJobs && element.tags.includes("tech"))
+        || element.tags.includes("edu"))
+        && (filters.showHS || !element.tags.includes("hs"))
       ) {
         result.push(
           <TimelineElement
