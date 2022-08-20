@@ -102,13 +102,13 @@
 			-ms-transform: rotate(45deg);
 			transform: rotate(45deg);
 		}
+	}
 
-		.checked {
-			background: $dark_blue;
+	.checked {
+		background: $dark_blue;
 
-			&::after {
-				display: block;
-			}
+		&::after {
+			display: block;
 		}
 	}
 }

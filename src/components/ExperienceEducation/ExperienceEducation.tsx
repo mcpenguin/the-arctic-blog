@@ -22,12 +22,24 @@ const Experience = () => {
       <div className="filters">
         <label className="container" htmlFor="show-non-tech-jobs">
           Show non-tech jobs
-          <input type="checkbox" className="checkbox" id="show-non-tech-jobs" onClick={() => setShowNonTechJobs(!showNonTechJobs)} />
-          <div className={`checkmark ${showNonTechJobs ? 'checked' : ''}`} />
+          <input
+            type="checkbox"
+            className="checkbox"
+            id="show-non-tech-jobs"
+            onClick={() => setShowNonTechJobs(!showNonTechJobs)}
+          />
+          <div className={`checkmark ${showNonTechJobs ? "checked" : ""}`} />
         </label>
       </div>
       <div className="timeline">
-        <Timeline data={experienceData} start={160} range={120} />
+        <Timeline
+          data={experienceData}
+          start={160}
+          range={120}
+          filters={{
+            showNonTechJobs,
+          }}
+        />
       </div>
     </section>
   );
@@ -39,7 +51,7 @@ const Education = () => (
       <h2>My Education</h2>
     </div>
     <div className="timeline">
-      <Timeline data={educationData} start={280} range={40} />
+      <Timeline data={educationData} start={280} range={40} filters={{}} />
     </div>
   </section>
 );

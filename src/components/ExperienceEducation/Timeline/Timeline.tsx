@@ -7,12 +7,14 @@ interface BasicTimelineElementProps {
   subtitle: string;
   date: string;
   content: JSX.Element;
+  tags?: string[];
 }
 
 interface TimelineProps {
   data: Array<BasicTimelineElementProps>;
   start: number;
   range: number;
+  filters: { [key: string]: boolean };
 }
 
 /**
@@ -22,7 +24,9 @@ interface TimelineProps {
 // takes in a data object as data
 // and generates the "necessary timeline"
 export const Timeline = (props: TimelineProps): JSX.Element => {
-  const { data, start, range } = props;
+  const {
+    data, start, range, filters,
+  } = props;
 
   if (data) {
     const result = [];
@@ -32,19 +36,24 @@ export const Timeline = (props: TimelineProps): JSX.Element => {
       // value of hue
       const h = start + (range * i) / data.length;
       const hnext = start + (range * (i + 1)) / data.length;
-      result.push(
-        <TimelineElement
-          key={i}
-          title={element.title}
-          subtitle={element.subtitle}
-          date={element.date}
-          color={`hsla(${h}, 80%, 90%, 1)`}
-          subcolor={`hsla(${h}, 40%, 40%, 1)`}
-          nextcolor={`hsla(${hnext}, 40%, 40%, 1)`}
-        >
-          {element.content}
-        </TimelineElement>,
-      );
+      if (
+        filters.showNonTechJobs
+        || element.tags.includes("tech")
+      ) {
+        result.push(
+          <TimelineElement
+            key={i}
+            title={element.title}
+            subtitle={element.subtitle}
+            date={element.date}
+            color={`hsla(${h}, 80%, 90%, 1)`}
+            subcolor={`hsla(${h}, 40%, 40%, 1)`}
+            nextcolor={`hsla(${hnext}, 40%, 40%, 1)`}
+          >
+            {element.content}
+          </TimelineElement>,
+        );
+      }
     }
     // eslint-disable-next-line react/jsx-no-useless-fragment
     return <>{result}</>;

@@ -21,20 +21,22 @@ const data = [
         <li>CAV: 93 (MAV: 94)</li>
       </ul>
     ),
+    tags: ['edu'],
   },
-  {
-    title: 'Cambridge A-Levels',
-    subtitle: 'Sunway College',
-    date: '2018 - 2020',
-    content: (
-      <ul>
-        <li>
-          Achieved 4 A*s (Chemistry, Physics, Mathematics, Further Mathematics)
-        </li>
-        <li>Recipient of the Jeffrey Cheah Entrance Scholarship</li>
-      </ul>
-    ),
-  },
+  // {
+  //   title: 'Cambridge A-Levels',
+  //   subtitle: 'Sunway College',
+  //   date: '2018 - 2020',
+  //   content: (
+  //     <ul>
+  //       <li>
+  //         Achieved 4 A*s (Chemistry, Physics, Mathematics, Further Mathematics)
+  //       </li>
+  //       <li>Recipient of the Jeffrey Cheah Entrance Scholarship</li>
+  //     </ul>
+  //   ),
+  //   tags: ['edu'],
+  // },
 ];
 
 export default data;

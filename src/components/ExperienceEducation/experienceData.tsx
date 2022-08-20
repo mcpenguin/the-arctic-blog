@@ -2,10 +2,31 @@
 // module containing experience data
 const data = [
   {
+    title: "CodeyBot Developer Lead",
+    subtitle: "Computer Science Club (CSC)",
+    date: "Aug 2022 - Present",
+    content: (
+      <ul>
+        <li>
+          Led a team of <b>7 developers</b> to build the server's Discord bot,
+          CodeyBot, built on{" "}
+          <b>TypeScript, Node.js, Sapphire, Docker and SQLite</b> and deployed
+          on <b>Google Cloud Platform</b>
+        </li>
+        <li>
+          Moderated and added features to the Computer Science Club's Discord
+          server with <b>3,000+ members</b>
+        </li>
+      </ul>
+    ),
+    tags: ['ec', 'tech'],
+  },
+  {
     title: "Discord Moderator",
     subtitle: "UW Visual Arts Club",
     date: "June 2022 - Present",
     content: null,
+    tags: ['ec'],
   },
   {
     title: "Software Developer",
@@ -35,11 +56,12 @@ const data = [
         </li>
       </ul>
     ),
+    tags: ['coop', 'tech'],
   },
   {
-    title: "Discord Developer",
+    title: "CodeyBot Developer",
     subtitle: "Computer Science Club (CSC)",
-    date: "Jan 2022 - Present",
+    date: "Jan 2022 - Aug 2022",
     content: (
       <ul>
         <li>
@@ -56,6 +78,7 @@ const data = [
         </li>
       </ul>
     ),
+    tags: ['ec', 'tech'],
   },
   {
     title: "Director",
@@ -104,6 +127,7 @@ const data = [
         </li>
       </ul>
     ),
+    tags: ['ec'],
   },
   {
     title: "MATH 135 Marker",
@@ -114,6 +138,7 @@ const data = [
         <li>Reviewed and marked 100+ assignments each week</li>
       </ul>
     ),
+    tags: ['ec'],
   },
   {
     title: "Comic Writer",
@@ -150,6 +175,7 @@ const data = [
         </li>
       </ul>
     ),
+    tags: ['ec'],
   },
   {
     title: "Web Developer",
@@ -164,6 +190,7 @@ const data = [
         </li>
       </ul>
     ),
+    tags: ['ec', 'tech'],
   },
   {
     title: "Data Analyst",
@@ -185,6 +212,7 @@ const data = [
         </li>
       </ul>
     ),
+    tags: ['coop', 'tech'],
   },
   {
     title: "Mathematics Tutor",
@@ -206,6 +234,7 @@ const data = [
         </li>
       </ul>
     ),
+    tags: ['ec', 'hs'],
   },
   {
     title: "Piano Tutor",
@@ -222,6 +251,7 @@ const data = [
         </li>
       </ul>
     ),
+    tags: ['ec', 'hs'],
   },
   {
     title: "Curator",
@@ -233,12 +263,14 @@ const data = [
         <li>Created the themes for the club's various events</li>
       </ul>
     ),
+    tags: ['ec', 'hs'],
   },
   {
     title: "Trombonist",
     subtitle: "Sunway University Ensemble (SUE)",
     date: "Sep 2018 - June 2020",
     content: null,
+    tags: ['ec', 'hs'],
   },
   {
     title: "Software Engineer",
@@ -260,6 +292,7 @@ const data = [
         </li>
       </ul>
     ),
+    tags: ['coop', 'tech', 'hs'],
   },
 ];
 
