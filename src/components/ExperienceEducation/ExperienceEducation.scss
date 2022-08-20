@@ -1,100 +1,172 @@
 @import "../../index.scss";
 
-.section-experience, .section-education {
-    display: flex;
-    flex-flow: row wrap;
-    @include center;
-    background: $off_white;
-    // justify-content: space-between;
+.section-experience,
+.section-education {
+  display: flex;
+  flex-flow: row wrap;
+  @include center;
+  background: $off_white;
+  // justify-content: space-between;
 
-    // width of title, in %
-    $title_width: 30%;
+  // width of title, in %
+  $title_width: 30%;
 
-    .sticky {
-        position: fixed;
-        top: -20vh;
-        width: $title_width;
+  .sticky {
+    position: fixed;
+    top: -20vh;
+    width: $title_width;
+  }
+
+  .title {
+    width: 100%;
+    padding-bottom: 30px;
+    // position: sticky;
+    // top: 50px;
+
+    h2 {
+      height: 100%;
+      width: 100%;
+      font-weight: 800;
+      text-align: center;
+
+      padding: 50px 0 0 30px;
+
+      // background: radial-gradient(
+      //     rgba(245, 245, 245, 0.5) 0%,
+      //     rgba(0,0,0,0) 100%
+      // );
+
+      @media (max-width: $mobile-width) {
+        padding: 0 0 0 10%;
+      }
     }
 
-    .title {
-        width: 100%;
-        padding-bottom: 30px;
-        // position: sticky;
-        // top: 50px;
+    @media (max-width: $medium_desktop_width) {
+      width: 100%;
+      padding: 50px 0;
 
-        h2 {
-            height: 100%;
-            width: 100%;
-            font-weight: 800;
-            text-align: center;
-            
-            padding: 50px 0 0 30px;
+      h2 {
+        background: none;
+      }
+    }
+  }
 
-            // background: radial-gradient(
-            //     rgba(245, 245, 245, 0.5) 0%,
-            //     rgba(0,0,0,0) 100%
-            // );
+  .timeline {
+    padding: 5vh 10vw;
+    width: 80%;
+    font-weight: 400;
 
-            @media (max-width: $mobile-width) {
-                padding: 0 0 0 10%;
-            }
-        }
+    a {
+      color: rgb(9, 134, 207);
 
-        @media (max-width: $medium_desktop_width) {
-            width: 100%;
-            padding: 50px 0;
-
-            h2 {
-                background: none;
-            }
-        }
+      &:hover {
+        color: rgb(3, 62, 97);
+      }
     }
 
-    .timeline {
-        padding: 5vh 10vw;
-        width: 80%;
-        font-weight: 400;
-
-        a {
-            color:rgb(9, 134, 207);
-
-            &:hover {
-                color:rgb(3, 62, 97);
-            }
-        }
-
-        @media (max-width: $large_desktop_width) {
-            width: 90%;
-        }
-
-        @media (max-width: $medium_desktop_width) {
-            width: 100%;
-            padding: 5vh 3vw;
-        }
+    @media (max-width: $large_desktop_width) {
+      width: 90%;
     }
+
+    @media (max-width: $medium_desktop_width) {
+      width: 100%;
+      padding: 5vh 3vw;
+    }
+  }
+}
+
+@mixin customCheckmark($size) {
+	// Create a custom checkbox
+	.checkmark {
+		height: $size;
+		width: $size;
+		background: rgb(67, 214, 201);
+		margin: 0 10px;
+		top: 0;
+		left: 0;
+		display: block;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			display: none;
+
+			left: $size * 0.4;
+			top: $size * 0.2;
+			width: $size * 0.3;
+			height: $size * 0.5;
+			border: solid $off_white;
+			border-width: 0 3px 3px 0;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+
+		.checked {
+			background: $dark_blue;
+
+			&::after {
+				display: block;
+			}
+		}
+	}
 }
 
 .section-experience {
-    .title {
-        background: linear-gradient(
-            135deg,
-            $homepage_colors
-        ), 
-        url('light-blue-geometric.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+  .title {
+    background: linear-gradient(135deg, $homepage_colors),
+      url("light-blue-geometric.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .filters {
+    height: 10vh;
+    width: 100%;
+    padding: 0 10vw;
+    @include center;
+
+    .container {
+      font-size: 1.5em;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      position: relative;
+
+      /* Hide browser's default checkbox */
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      @media (max-width: $tablet_width) {
+        font-size: 1em;
+      }
+
+      // Create a custom checkbox
+			@include customCheckmark(30px);
+
+			@media (max-width: $tablet_width) {
+				@include customCheckmark(20px);
+			}
+      
     }
+  }
 }
 
 .section-education {
-    .title {
-        background: linear-gradient(
-            135deg,
-            rgba(134, 109, 224, 0.7) 0%,
-            rgba(152, 94, 199, 0.7) 100%
-        ), 
-        url('light-blue-geometric.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+  .title {
+    background: linear-gradient(
+        135deg,
+        rgba(134, 109, 224, 0.7) 0%,
+        rgba(152, 94, 199, 0.7) 100%
+      ),
+      url("light-blue-geometric.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

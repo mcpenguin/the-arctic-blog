@@ -1,14 +1,14 @@
 // React component class for About Me section
 
-import React from 'react';
+import React from "react";
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-import personalPhoto from './personal-photo.jpg';
+import personalPhoto from "./personal-photo.jpg";
 
-import './AboutMe.scss';
+import "./AboutMe.scss";
 
 interface personalFactProps {
   iconName: string;
@@ -69,7 +69,7 @@ const AboutMe = (props) => (
                     <br />
                     CAV: 93 | MAV: 94
                   </>
-                  )}
+                )}
               />
             </div>
             <div className="second">
@@ -78,29 +78,29 @@ const AboutMe = (props) => (
                 title="Programming Expertise"
                 body={(
                   <>
-                    <span className="pro-title">Languages:</span>
-                    {' '}
-                    HTML, CSS
-                    (Sass), JavaScript/TypeScript, SQL (MySQL, PostgreSQL,
-                    SQLite), Python, Java (Joget DX), Bash, C/C++, C#/.NET
+                    <span className="pro-title">Languages:</span>{" "}
+                    JavaScript/TypeScript, SQL (MySQL, PostgreSQL, SQLite),
+                    Python, C/C++, C\#/.NET, Java, Bash, HTML, CSS (Sass/SCSS)
                     <br />
-                    <span className="pro-title">Frameworks:</span>
-                    {' '}
-                    Node.js,
-                    Express.js, React, Pandas, NumPy, Matplotlib, Jupyter
-                    Notebook, MongoDB, Tableau, Metabase, Git, Heroku
+                    <span className="pro-title">Frameworks:</span> Node.js,
+                    Express.js, React, Next.js, Pandas, NumPy, Matplotlib,
+                    BeautifulSoup, Selenium, MongoDB
+                    <br />
+                    <span className="pro-title">Tools:</span> Linux, Google
+                    Cloud Platform, Docker, Git, JetBrains Rider, Metabase,
+                    Heroku, Tableau
                   </>
-                  )}
+                )}
               />
               <PersonalFact
                 iconName="far fa-futbol"
                 title="Hobbies"
                 body={(
                   <>
-                    Mathematics, coding, arranging/composing piano pieces,
-                    rock climbing, anime
+                    Mathematics, coding, arranging/composing piano pieces, rock
+                    climbing, anime, drawing
                   </>
-                  )}
+                )}
               />
             </div>
           </div>
