@@ -4,9 +4,10 @@
 .section-education {
   display: flex;
   flex-flow: row wrap;
-  @include center;
+  // @include center;
   background: $off_white;
-  // justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
 
   // width of title, in %
   $title_width: 30%;
@@ -22,8 +23,7 @@
       width: 100%;
       font-weight: 800;
       text-align: center;
-
-      padding: 50px 0 0 30px;
+      padding: 50px 0 0 0;
 
       // background: radial-gradient(
       //     rgba(245, 245, 245, 0.5) 0%,
@@ -44,10 +44,12 @@
       }
     }
   }
+}
 
-  .timeline {
-    padding: 5vh 10vw;
-    width: 80%;
+.section-experience {
+	.timeline {
+    padding: 2vh 0 5vh 10vw;
+    width: 100%;
     font-weight: 400;
 
     a {
@@ -59,57 +61,82 @@
     }
 
     @media (max-width: $large_desktop_width) {
-			padding: 5vh 5vw;
+      // padding: 5vh 5vw;
+      padding: 0;
       width: 90%;
     }
 
     @media (max-width: $medium_desktop_width) {
       width: 100%;
-      padding: 5vh 3vw;
+    }
+  }
+}
+
+.section-education {
+	.timeline {
+    padding: 5vh 0 5vh 10vw;
+    width: 100%;
+    font-weight: 400;
+
+    a {
+      color: rgb(9, 134, 207);
+
+      &:hover {
+        color: rgb(3, 62, 97);
+      }
+    }
+
+    @media (max-width: $large_desktop_width) {
+      width: 90%;
+    }
+
+    @media (max-width: $medium_desktop_width) {
+      width: 100%;
     }
   }
 }
 
 @mixin customCheckmark($size) {
-	// Create a custom checkbox
-	.checkmark {
-		height: $size;
-		width: $size;
-		background: rgb(67, 214, 201);
-		margin: 0 10px;
-		top: 0;
-		left: 0;
-		display: block;
-		position: relative;
+  // Create a custom checkbox
+  .checkmark {
+    height: $size;
+    width: $size;
+    background: rgb(67, 214, 201);
+    margin: 0 10px;
+    top: 0;
+    left: 0;
+    display: block;
+    position: relative;
 
-		&::after {
-			content: "";
-			position: absolute;
-			display: none;
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
 
-			left: $size * 0.4;
-			top: $size * 0.2;
-			width: $size * 0.3;
-			height: $size * 0.5;
-			border: solid $off_white;
-			border-width: 0 3px 3px 0;
-			-webkit-transform: rotate(45deg);
-			-ms-transform: rotate(45deg);
-			transform: rotate(45deg);
-		}
-	}
+      left: $size * 0.4;
+      top: $size * 0.2;
+      width: $size * 0.3;
+      height: $size * 0.5;
+      border: solid $off_white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
 
-	.checked {
-		background: $dark_blue;
+  .checked {
+    background: $dark_blue;
 
-		&::after {
-			display: block;
-		}
-	}
+    &::after {
+      display: block;
+    }
+  }
 }
 
 .section-experience {
   .title {
+    @include center;
     background: linear-gradient(135deg, $homepage_colors),
       url("light-blue-geometric.jpg");
     background-repeat: no-repeat;
@@ -119,19 +146,19 @@
   .filters {
     // height: 600px;
     width: 90%;
-    padding: 3vh 0 0 0;
+    padding: 30px;
     display: flex;
-		justify-content: center;
-		align-items: flex-start;
-		flex-direction: row;
-		flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     .cont {
       font-size: 1.5em;
       font-weight: 600;
       cursor: pointer;
-			padding: 10px 2vw;
-			@include center;
+      padding: 0 2vw;
+      @include center;
 
       /* Hide browser's default checkbox */
       input {
@@ -140,20 +167,20 @@
         cursor: pointer;
         height: 0;
         width: 0;
-				// width: 50%;
+        // width: 50%;
       }
 
       @media (max-width: $tablet_width) {
         font-size: 1.2em;
+        width: 70vw;
       }
 
       // Create a custom checkbox
-			@include customCheckmark(30px);
+      @include customCheckmark(30px);
 
-			@media (max-width: $tablet_width) {
-				@include customCheckmark(25px);
-			}
-      
+      @media (max-width: $tablet_width) {
+        @include customCheckmark(25px);
+      }
     }
   }
 }

@@ -1,11 +1,11 @@
 // React component for Timeline Element
-import React from 'react';
+import React from "react";
 
 // takes in
 // - title: the string for the title of the timeline element
 // - subtitle: string
 
-import './TimelineElement.scss';
+import "./TimelineElement.scss";
 
 export interface TimelineElementProps {
   title: string;
@@ -40,24 +40,24 @@ export const TimelineElement = (props: TimelineElementProps): JSX.Element => {
       className="timeline-element"
       style={{
         // @ts-ignore
-        '--color': color,
-        '--subcolor': subcolor,
-        '--nextcolor': nextcolor,
+        "--color": color,
+        "--subcolor": subcolor,
+        "--nextcolor": nextcolor,
       }}
     >
-      <div className="date">
-        <h6>{date}</h6>
-      </div>
-      <div className="node" />
-      <div className="desc">
-        <h3>{title}</h3>
-        <h4>{subtitle}</h4>
-      </div>
-      <div className="body">
+      <div className="line">
+        <div className="node" />
         <div className="connect">
           <div className="connect-line" />
         </div>
-        <div className="content">{children}</div>
+      </div>
+      <div className="desc">
+        <h3>{title}</h3>
+        <h4>{subtitle}</h4>
+        <h6>{date}</h6>
+        <div className="body">
+          <div className="content">{children}</div>
+        </div>
       </div>
     </div>
   );
