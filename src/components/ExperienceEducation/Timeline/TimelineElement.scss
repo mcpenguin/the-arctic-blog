@@ -14,11 +14,7 @@ $hue_range: 140;
   margin-bottom: -30px;
 
   @media (max-width: 450px) {
-    margin-bottom: -80px;
-  }
-
-  &:last-of-type {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   width: 100%;
@@ -96,6 +92,7 @@ $hue_range: 140;
 
     @media (max-width: 450px) {
       width: 100%;
+      padding: 0 10px 0 30px;
     }
 
     // title

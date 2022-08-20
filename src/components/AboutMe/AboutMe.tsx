@@ -63,7 +63,7 @@ const AboutMe = (props) => (
                 title="Current Education"
                 body={(
                   <>
-                    BCS Data Science, Honours, Co-op (2B)
+                    BCS Data Science, Honours, Co-op (3A)
                     <br />
                     University of Waterloo @ Ontario, Canada
                     <br />
@@ -80,7 +80,7 @@ const AboutMe = (props) => (
                   <>
                     <span className="pro-title">Languages:</span>{" "}
                     JavaScript/TypeScript, SQL (MySQL, PostgreSQL, SQLite),
-                    Python, C/C++, C\#/.NET, Java, Bash, HTML, CSS (Sass/SCSS)
+                    Python, C/C++, C#/.NET, Java, Bash, HTML, CSS (Sass/SCSS)
                     <br />
                     <span className="pro-title">Frameworks:</span> Node.js,
                     Express.js, React, Next.js, Pandas, NumPy, Matplotlib,

@@ -8,8 +8,8 @@ const data = [
     content: (
       <ul>
         <li>
-          Led a team of <b>7 developers</b> to build the server's Discord bot,
-          CodeyBot, built on{" "}
+          Led a team of <b>several developers</b> to build the server's Discord
+          bot, CodeyBot, built on{" "}
           <b>TypeScript, Node.js, Sapphire, Docker and SQLite</b> and deployed
           on <b>Google Cloud Platform</b>
         </li>
@@ -17,16 +17,20 @@ const data = [
           Moderated and added features to the Computer Science Club's Discord
           server with <b>3,000+ members</b>
         </li>
+        <li>
+          Built a framework from Sapphire using object-oriented programming to
+          allow Codey to have both regular and slash commands
+        </li>
       </ul>
     ),
-    tags: ['ec', 'tech'],
+    tags: ["ec", "tech"],
   },
   {
     title: "Discord Moderator",
     subtitle: "UW Visual Arts Club",
     date: "June 2022 - Present",
     content: null,
-    tags: ['ec'],
+    tags: ["ec"],
   },
   {
     title: "Software Developer",
@@ -56,7 +60,7 @@ const data = [
         </li>
       </ul>
     ),
-    tags: ['coop', 'tech'],
+    tags: ["coop", "tech"],
   },
   {
     title: "CodeyBot Developer",
@@ -65,20 +69,11 @@ const data = [
     content: (
       <ul>
         <li>
-          Moderated and added features to the Computer Science Club's Discord
-          server with over 3000+ members
-        </li>
-        <li>
-          Developed the server's Discord bot, Codey, built on TypeScript,
-          Sapphire, Docker and SQLite
-        </li>
-        <li>
-          Built a framework from Sapphire using object-oriented programming to
-          allow Codey to have both regular and slash commands
+          Responsibilities are similar to those done as a lead - see above
         </li>
       </ul>
     ),
-    tags: ['ec', 'tech'],
+    tags: ["ec", "tech"],
   },
   {
     title: "Director",
@@ -127,7 +122,7 @@ const data = [
         </li>
       </ul>
     ),
-    tags: ['ec'],
+    tags: ["ec"],
   },
   {
     title: "MATH 135 Marker",
@@ -138,7 +133,7 @@ const data = [
         <li>Reviewed and marked 100+ assignments each week</li>
       </ul>
     ),
-    tags: ['ec'],
+    tags: ["ec"],
   },
   {
     title: "Comic Writer",
@@ -175,7 +170,7 @@ const data = [
         </li>
       </ul>
     ),
-    tags: ['ec'],
+    tags: ["ec"],
   },
   {
     title: "Web Developer",
@@ -183,14 +178,17 @@ const data = [
     date: "May 2021 - Dec 2021",
     content: (
       <ul>
-        <li>Redesigned the University of Waterloo’s Pure Math Club website</li>
         <li>
-          Built various helper scripts using Node and Bash to allow executives
+          Redesigned the University of Waterloo’s Pure Math Club website using{" "}
+          <b>React, Sass and Node</b>
+        </li>
+        <li>
+          Built various helper scripts to allow executives
           to easily add/edit website content
         </li>
       </ul>
     ),
-    tags: ['ec', 'tech'],
+    tags: ["ec", "tech"],
   },
   {
     title: "Data Analyst",
@@ -199,8 +197,8 @@ const data = [
     content: (
       <ul>
         <li>
-          Utilized Metabase to analyze 50+ MB of transaction records from
-          41,000+ clinics in Malaysia
+          Utilized <b>Metabase</b> to analyze 50+ MB of transaction records from{" "}
+          <b>41,000+</b> clinics in Malaysia
         </li>
         <li>
           Independently built and implemented a Joget website that allows
@@ -212,7 +210,7 @@ const data = [
         </li>
       </ul>
     ),
-    tags: ['coop', 'tech'],
+    tags: ["coop", "tech"],
   },
   {
     title: "Mathematics Tutor",
@@ -234,7 +232,7 @@ const data = [
         </li>
       </ul>
     ),
-    tags: ['ec', 'hs'],
+    tags: ["ec", "hs"],
   },
   {
     title: "Piano Tutor",
@@ -251,7 +249,7 @@ const data = [
         </li>
       </ul>
     ),
-    tags: ['ec', 'hs'],
+    tags: ["ec", "hs"],
   },
   {
     title: "Curator",
@@ -263,14 +261,14 @@ const data = [
         <li>Created the themes for the club's various events</li>
       </ul>
     ),
-    tags: ['ec', 'hs'],
+    tags: ["ec", "hs"],
   },
   {
     title: "Trombonist",
     subtitle: "Sunway University Ensemble (SUE)",
     date: "Sep 2018 - June 2020",
     content: null,
-    tags: ['ec', 'hs'],
+    tags: ["ec", "hs"],
   },
   {
     title: "Software Engineer",
@@ -292,7 +290,7 @@ const data = [
         </li>
       </ul>
     ),
-    tags: ['coop', 'tech', 'hs'],
+    tags: ["coop", "tech", "hs"],
   },
 ];
 

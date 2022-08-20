@@ -24,20 +24,11 @@
       font-weight: 800;
       text-align: center;
       padding: 50px 0 0 0;
-
-      // background: radial-gradient(
-      //     rgba(245, 245, 245, 0.5) 0%,
-      //     rgba(0,0,0,0) 100%
-      // );
-
-      @media (max-width: $mobile-width) {
-        padding: 0 0 0 10%;
-      }
     }
 
     @media (max-width: $medium_desktop_width) {
       width: 100%;
-      padding: 50px 0;
+			font-size: 0.8rem;
 
       h2 {
         background: none;
@@ -145,8 +136,8 @@
 
   .filters {
     // height: 600px;
-    width: 90%;
-    padding: 30px;
+    width: 100%;
+    padding: min(30px, 3vw);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -159,6 +150,10 @@
       cursor: pointer;
       padding: 0 2vw;
       @include center;
+
+			@media (max-width: 450px) {
+				padding: 0;
+			}
 
       /* Hide browser's default checkbox */
       input {
@@ -189,8 +184,8 @@
   .title {
     background: linear-gradient(
         135deg,
-        rgba(134, 109, 224, 0.7) 0%,
-        rgba(152, 94, 199, 0.7) 100%
+        rgba(199, 183, 255, 0.7) 0%,
+        rgba(225, 188, 255, 0.7) 100%
       ),
       url("light-blue-geometric.jpg");
     background-repeat: no-repeat;
