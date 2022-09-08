@@ -2,6 +2,13 @@
 // module containing experience data
 const data = [
   {
+    title: "MATH 137/138 Tutor",
+    subtitle: "UW Tutorial Centre",
+    date: "Sep 2022 - Present",
+    content: null,
+    tags: ["ec"],
+  },
+  {
     title: "CodeyBot Developer Lead",
     subtitle: "Computer Science Club (CSC)",
     date: "Aug 2022 - Present",
@@ -28,14 +35,14 @@ const data = [
   {
     title: "Discord Moderator",
     subtitle: "UW Visual Arts Club",
-    date: "June 2022 - Present",
+    date: "June 2022 - Sep 2022",
     content: null,
     tags: ["ec"],
   },
   {
     title: "Software Developer",
     subtitle: "Geotab",
-    date: "May 2022 - Present",
+    date: "May 2022 - Aug 2022",
     content: (
       <ul>
         <li>
