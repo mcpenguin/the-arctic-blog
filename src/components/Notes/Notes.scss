@@ -104,3 +104,12 @@
     font-size: 1rem;
     text-align: justify;
 }
+
+/* 
+This is hardcoded because 3A only has one element 
+We use !important because we are overriding Bootstrap's properties
+*/
+.CS350 {
+    border: 1px solid black !important;
+    border-radius: calc(0.25rem - 1px) !important;
+}

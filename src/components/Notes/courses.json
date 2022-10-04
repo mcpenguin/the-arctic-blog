@@ -1,4 +1,17 @@
 {
+  "3A": {
+    "title": "3A (F2022)",
+    "courses": {
+      "CS350": {
+        "shortTitle": "CS 350",
+        "longTitle": "Operating Systems",
+        "description": "An introduction to the fundamentals of operating system function, design, and implementation. Topics include concurrency, synchronization, processes, threads, scheduling, memory management, file systems, device management, and security.",
+        "takenWhen": "Taken in 3A (Fall 2022) (In-Person)",
+        "professors": "Profesor: Kevin Lanctot",
+        "notesStatus": "Up to Week 4"
+      }
+    }
+  },
   "2B": {
     "title": "2B (W2022)",
     "courses": {

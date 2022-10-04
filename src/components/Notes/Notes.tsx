@@ -51,7 +51,7 @@ const CourseNotes = (props: CourseNotesProps) => {
     eventKey,
   } = props;
   return (
-    <Card className="notes-card">
+    <Card className={`notes-card ${eventKey}`}>
       <Card.Header>
         <Accordion.Toggle
           as={Button}
