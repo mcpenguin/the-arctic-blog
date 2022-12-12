@@ -7,8 +7,16 @@
         "longTitle": "Operating Systems",
         "description": "An introduction to the fundamentals of operating system function, design, and implementation. Topics include concurrency, synchronization, processes, threads, scheduling, memory management, file systems, device management, and security.",
         "takenWhen": "Taken in 3A (Fall 2022) (In-Person)",
-        "professors": "Profesor: Kevin Lanctot",
-        "notesStatus": "Up to Week 4"
+        "professors": "Professor: Kevin Lanctot",
+        "notesStatus": "Notes Complete"
+      },
+      "STAT330": {
+        "shortTitle": "STAT 330",
+        "longTitle": "Mathematical Statistics",
+        "description": "This course provides a mathematically rigorous treatment for topics covered in STAT 230 and 231, and to make essential extensions to the multivariate case. Maximum likelihood estimation. Random variables and distribution theory. Generating functions. Functions of random variables. Limiting distributions. Large sample theory of likelihood methods. Likelihood ratio tests. Joint probability (density) functions, marginal probability (density) functions, and conditional probability (density) functions of two or more random variables are discussed. Topics covered include independence of random variables, conditional expectation and the determination of the distribution of functions of random variables using the cumulative distribution method, change of variable and moment generating functions. Properties of the Multinomial and Bivariate Normal distributions are proved. Limiting distributions, including convergence in probability and convergence in distribution, are discussed. Important results, including the Weak Law of Large Numbers, Central Limit Theorem, Slutsky's theorem, and the Delta Method, are introduced with applications. The maximum likelihood method is discussed for the multi-parameter case. Asymptotic properties of the maximum likelihood estimator are examined and used to construct confidence intervals or regions. Tests for simple and composite hypotheses are constructed using the Likelihood Ratio Test.",
+        "takenWhen": "Taken in 3A (Fall 2022) (In-Person)",
+        "professors": "Professor: Peijun Sang",
+        "notesStatus": "Notes Complete"
       }
     }
   },
