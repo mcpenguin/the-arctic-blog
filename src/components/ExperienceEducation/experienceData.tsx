@@ -4,7 +4,7 @@ const data = [
   {
     title: "MATH 137/138 Tutor",
     subtitle: "UW Tutorial Centre",
-    date: "Sep 2022 - Present",
+    date: "Sep 2022 - Dec 2022",
     content: null,
     tags: ["ec"],
   },
@@ -145,7 +145,7 @@ const data = [
   {
     title: "Comic Writer",
     subtitle: "MathSoc Cartoons",
-    date: "May 2021 - Dec 2021",
+    date: "May 2021 - Dec 2022",
     content: (
       <ul>
         <li>
@@ -160,17 +160,32 @@ const data = [
           <ul>
             <li>
               <a href="https://www.instagram.com/p/CQV6L71tLQZ/">
-                Comic 21 - The Riemann Integral
+                Comic 21 - The Riemann Integral (MATH 138)
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/p/CWjTHCfFHnB/">
-                Comic 29 - Pascal's Triangle
+                Comic 29 - Pascal's Triangle (MATH 239)
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/p/CZkr0mgvt4d/">
-                Comic 32 - Sorting Algorithms and Big-O Notation
+                Comic 32 - Sorting Algorithms and Big-O Notation (CS 136)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/p/Cj_WJ23O781/?hl=en">
+                Comic 45 - Limits and Convergence (MATH 137)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/p/ClHg3EKOsl0/?hl=en">
+                Comic 47 - The Epsilon-Delta Definition of a Limit (MATH 137)
+              </a>
+            </li>
+            <li>
+              <a href="about:blank">
+                Comic 49 - Dijkstra's Algorithm (CS 341) (not out yet)
               </a>
             </li>
           </ul>
