@@ -2,6 +2,20 @@
 // module containing experience data
 const data = [
   {
+    title: "Student Representive",
+    subtitle: "Statistics and Actuarial Science Committee",
+    date: "Jan 2023 - Present",
+    content: null,
+    tags: ["ec"],
+  },
+  {
+    title: "Software Developer",
+    subtitle: "Ansys",
+    date: "Jan 2023 - Present",
+    content: null,
+    tags: ["coop", "tech"],
+  },
+  {
     title: "MATH 137/138 Tutor",
     subtitle: "UW Tutorial Centre",
     date: "Sep 2022 - Dec 2022",
@@ -15,7 +29,7 @@ const data = [
     content: (
       <ul>
         <li>
-          Led a team of <b>several developers</b> to build the server's Discord
+          Led a team of <b>6 developers</b> to build the server's Discord
           bot, CodeyBot, built on{" "}
           <b>TypeScript, Node.js, Sapphire, Docker and SQLite</b> and deployed
           on <b>Google Cloud Platform</b>
@@ -27,6 +41,10 @@ const data = [
         <li>
           Built a framework from Sapphire using object-oriented programming to
           allow Codey to have both regular and slash commands
+        </li>
+        <li>
+          Held weekly scrum meetings and managed the team's workload using a kanban board
+          on GitHub Projects
         </li>
       </ul>
     ),
@@ -184,8 +202,8 @@ const data = [
               </a>
             </li>
             <li>
-              <a href="about:blank">
-                Comic 49 - Dijkstra's Algorithm (CS 341) (not out yet)
+              <a href="https://www.instagram.com/p/Cof4dlxuIth/?hl=en">
+                Comic 49 - Dijkstra's Algorithm (CS 341)
               </a>
             </li>
           </ul>
@@ -205,8 +223,8 @@ const data = [
           <b>React, Sass and Node</b>
         </li>
         <li>
-          Built various helper scripts to allow executives
-          to easily add/edit website content
+          Built various helper scripts to allow executives to easily add/edit
+          website content
         </li>
       </ul>
     ),
