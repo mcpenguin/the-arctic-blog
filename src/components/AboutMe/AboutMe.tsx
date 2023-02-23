@@ -56,7 +56,7 @@ const AboutMe = (props) => (
               <PersonalFact
                 iconName="fas fa-briefcase"
                 title="Current Coop"
-                body={<>Software Developer @ Geotab</>}
+                body={<>R&D Engineer @ Ansys</>}
               />
               <PersonalFact
                 iconName="fas fa-graduation-cap"
