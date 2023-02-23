@@ -9,11 +9,18 @@ const data = [
     tags: ["ec"],
   },
   {
-    title: "Software Developer",
+    title: "R&D Engineer",
     subtitle: "Ansys",
     date: "Jan 2023 - Present",
     content: null,
     tags: ["coop", "tech"],
+  },
+  {
+    title: "Computer Science Representative",
+    subtitle: "MathSoc Council",
+    date: "Jan 2023 - Present",
+    content: null,
+    tags: ["ec"],
   },
   {
     title: "MATH 137/138 Tutor",

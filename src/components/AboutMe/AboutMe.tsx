@@ -83,12 +83,12 @@ const AboutMe = (props) => (
                     Python, C/C++, C#/.NET, Java, Bash, HTML, CSS (Sass/SCSS)
                     <br />
                     <span className="pro-title">Frameworks:</span> Node.js,
-                    Express.js, React, Next.js, Pandas, NumPy, Matplotlib,
+                    Express.js, React, Angular, Next.js, Pandas, NumPy, Matplotlib,
                     BeautifulSoup, Selenium, MongoDB
                     <br />
                     <span className="pro-title">Tools:</span> Linux, Google
                     Cloud Platform, Docker, Git, JetBrains Rider, Metabase,
-                    Heroku, Tableau
+                    Heroku, Tableau, Microsoft Azure
                   </>
                 )}
               />
@@ -98,7 +98,7 @@ const AboutMe = (props) => (
                 body={(
                   <>
                     Mathematics, coding, arranging/composing piano pieces, rock
-                    climbing, anime, drawing
+                    climbing, anime
                   </>
                 )}
               />
