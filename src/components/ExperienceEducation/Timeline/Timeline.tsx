@@ -1,5 +1,7 @@
 // React component for Timeline
 
+import { Converter } from "showdown";
+import MdConverter from "../../../helpers/mdConverter";
 import { TimelineElement } from "./TimelineElement";
 
 interface BasicTimelineElementProps {
@@ -29,6 +31,9 @@ export const Timeline = (props: TimelineProps): JSX.Element => {
   } = props;
 
   if (data) {
+    const test = new MdConverter();
+    test.convertMarkdownFile('./content/test.md');
+
     const result = [];
     // convert data into array of timeline elements
     for (let i = 0; i < data.length; i++) {

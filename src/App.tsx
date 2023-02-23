@@ -16,6 +16,7 @@ import ContactMe from "./components/ContactMe/ContactMe";
 
 import ProjectContent from "./components/Projects/ProjectContent";
 import NotFound from "./components/404NotFound/404NotFound";
+import MdConverter from "./helpers/mdConverter";
 
 // home page
 const HomePage = () => (
@@ -63,12 +64,6 @@ const App = () => (
         path="/projects/:projectId"
         component={IndividualProjectPage}
       />
-      {/* <Route exact path="/experience" component={ExperiencePage} /> */}
-      {/* <Route exact path="/education" component={EducationPage} /> */}
-      {/* <Route exact path="/extracurriculars" component={ExtracurricularsPage} /> */}
-      {/* <Route exact path="/achievements" component={AchievementsPage} /> */}
-      {/* <Route exact path="/notes" component={NotesPage} /> */}
-      {/* <Route exact path="/credits" component={CreditsPage} /> */}
       <Route component={NotFoundSection} />
     </Switch>
   </Router>
