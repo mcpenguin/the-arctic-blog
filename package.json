@@ -46,7 +46,7 @@
     "fs": "0.0.1-security"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build && cp build/index.html build/404.html",
