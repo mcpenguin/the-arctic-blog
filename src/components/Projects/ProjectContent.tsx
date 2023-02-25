@@ -1,10 +1,6 @@
 // React component for individual projects
 
-import React, { useState, useEffect } from "react";
-
-// import markdown parser
-import MarkdownIt from "markdown-it";
-import parse from "html-react-parser";
+import Markdown from "../Common/Markdown";
 
 // import data
 import projectData from "./projectsData";
@@ -17,16 +13,7 @@ interface ProjectContentProps {
 
 const ProjectContent = (props: ProjectContentProps) => {
   const { projectId } = props;
-
-  const md = new MarkdownIt();
-
-  const [txt, setTxt] = useState("");
-
-  useEffect(() => {
-    fetch(`/assets/Projects/content/${projectId}.md`)
-      .then((res) => res.text())
-      .then((t) => setTxt(t));
-  });
+  const projectContentLink = `/assets/Projects/content/${projectId}.md`;
 
   const link = projectData[projectId].projectLink;
   return (
@@ -52,7 +39,7 @@ const ProjectContent = (props: ProjectContentProps) => {
         </div>
       </div>
       <div className="project-description">
-        <div className="description">{parse(md.render(txt))}</div>
+        <Markdown customClassName="description" markdownLink={projectContentLink} />
       </div>
     </section>
   );
