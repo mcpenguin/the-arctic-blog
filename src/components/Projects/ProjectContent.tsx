@@ -1,6 +1,6 @@
 // React component for individual projects
 
-import Markdown from "../Common/Markdown";
+import { MarkdownFromFile } from "../Common/Markdown";
 
 // import data
 import projectData from "./projectsData";
@@ -39,7 +39,10 @@ const ProjectContent = (props: ProjectContentProps) => {
         </div>
       </div>
       <div className="project-description">
-        <Markdown customClassName="description" markdownLink={projectContentLink} />
+        <MarkdownFromFile
+          customClassName="description"
+          markdownLink={projectContentLink}
+        />
       </div>
     </section>
   );

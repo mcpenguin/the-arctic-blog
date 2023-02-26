@@ -4,23 +4,12 @@ const data = [
     title: 'BCS Computer Science',
     subtitle: 'University of Waterloo',
     date: '2020 - 2025',
-    content: (
-      <ul>
-        <li>
-          Recipient of the <b>CAD$20,000</b> Faculty of Mathematics Global Scholarship,
-          awarded to only ten international students every year
-        </li>
-        <li>
-          Recipient of the <b>CAD$15,000</b> Computer Science International Upper-Year Scholarship,
-          awarded to only eight international students every term
-        </li>
-        <li>
-          Transferred from Honours Mathematics to BMath Data Science in 1B, and
-          then to BCS CS in the subsequent term
-        </li>
-        <li>CAV: 93 (MAV: 94)</li>
-      </ul>
-    ),
+    content: `
+    - Recipient of the **CAD$20,000** Faculty of Mathematics Global Scholarship,
+    awarded to only ten international students every year
+    - Recipient of the **CAD$15,000** Computer Science International Upper-Year Scholarship, awarded to only eight international students every term
+    - Transferred from Honours Mathematics to BMath Data Science in 1B, and then to BCS CS in the subsequent term
+    `,
     tags: ['edu'],
   },
   // {

@@ -1,12 +1,13 @@
 // React component for Timeline
 
 import { TimelineElement } from "./TimelineElement";
+import { MarkdownFromContent } from "../../Common/Markdown";
 
 interface BasicTimelineElementProps {
   title: string;
   subtitle: string;
   date: string;
-  content: JSX.Element;
+  content?: string; // markdown content
   tags?: string[];
 }
 
@@ -38,8 +39,8 @@ export const Timeline = (props: TimelineProps): JSX.Element => {
       const hnext = start + (range * (i + 1)) / data.length;
       if (
         ((filters.showEC && element.tags.includes("ec"))
-        || (filters.showTechJobs && element.tags.includes("tech"))
-        || element.tags.includes("edu"))
+          || (filters.showTechJobs && element.tags.includes("tech"))
+          || element.tags.includes("edu"))
         && (filters.showHS || !element.tags.includes("hs"))
       ) {
         result.push(
@@ -52,7 +53,7 @@ export const Timeline = (props: TimelineProps): JSX.Element => {
             subcolor={`hsla(${h}, 40%, 40%, 1)`}
             nextcolor={`hsla(${hnext}, 40%, 40%, 1)`}
           >
-            {element.content}
+            <MarkdownFromContent markdownContent={element.content} customClassName="" />
           </TimelineElement>,
         );
       }
