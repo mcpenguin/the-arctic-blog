@@ -26,7 +26,7 @@
     }
 
     .notes-accordion {
-        margin: 10px 0;
+        margin: 10px 20px;
     }
 
     .row {
@@ -38,7 +38,8 @@
 
 .notes-card {
     background-color: #b2d0db;
-    border: 1px solid #000031;
+    border: 2px solid #000031;
+    border-radius: 20px;
 }
 
 @for $i from 1 through 6 {

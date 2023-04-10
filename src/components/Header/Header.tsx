@@ -38,7 +38,6 @@ const Header = () => (
           <NavbarLink id="projects" title="Projects" />
           <NavbarLink id="experience" title="Experience" />
           <NavbarLink id="education" title="Education" />
-          <NavbarLink id="achievements" title="Achievements" />
           <NavbarLink id="notes" title="Notes" />
           <NavbarLink id="contact-me" title="Contact Me" />
         </Nav>
