@@ -9,27 +9,6 @@ const data = [
     tags: ["ec"],
   },
   {
-    title: "R&D Engineer",
-    subtitle: "Ansys",
-    date: "Jan 2023 - Present",
-    content: null,
-    tags: ["coop", "tech"],
-  },
-  {
-    title: "Computer Science Representative",
-    subtitle: "MathSoc Council",
-    date: "Jan 2023 - Present",
-    content: null,
-    tags: ["ec"],
-  },
-  {
-    title: "MATH 137/138 Tutor",
-    subtitle: "UW Tutorial Centre",
-    date: "Sep 2022 - Dec 2022",
-    content: null,
-    tags: ["ec"],
-  },
-  {
     title: "CodeyBot Developer Lead",
     subtitle: "Computer Science Club (CSC)",
     date: "Aug 2022 - Present",
@@ -56,6 +35,27 @@ const data = [
       </ul>
     ),
     tags: ["ec", "tech"],
+  },
+  {
+    title: "Computer Science Representative",
+    subtitle: "MathSoc Council",
+    date: "Jan 2023 - Apr 2023",
+    content: null,
+    tags: ["ec"],
+  },
+  {
+    title: "R&D Engineer",
+    subtitle: "Ansys",
+    date: "Jan 2023 - Apr 2023",
+    content: null,
+    tags: ["coop", "tech"],
+  },
+  {
+    title: "MATH 137/138 Tutor",
+    subtitle: "UW Tutorial Centre",
+    date: "Sep 2022 - Dec 2022",
+    content: null,
+    tags: ["ec"],
   },
   {
     title: "Discord Moderator",
