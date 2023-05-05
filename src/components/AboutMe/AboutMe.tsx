@@ -47,27 +47,27 @@ const AboutMe = (props) => (
         <div className="wrapper">
           <div className="personal-facts">
             <div className="first">
-              {/* <PersonalFact
-                                    iconName='fas fa-pencil-alt'
-                                    // icon={NotesIcon}
-                                    title='Current Notes Update'
-                                    body='None'
-                                /> */}
               <PersonalFact
+                iconName="fas fa-pencil-alt"
+                // icon={NotesIcon}
+                title="Current Notes Update"
+                body={<>None</>}
+              />
+              {/* <PersonalFact
                 iconName="fas fa-briefcase"
                 title="Current Coop"
                 body={<>R&D Engineer @ Ansys</>}
-              />
+              /> */}
               <PersonalFact
                 iconName="fas fa-graduation-cap"
                 title="Current Education"
                 body={(
                   <>
-                    BCS Data Science, Honours, Co-op (3A)
+                    BCS Data Science, Honours, Co-op (3B)
                     <br />
                     University of Waterloo @ Ontario, Canada
                     <br />
-                    CAV: 93 | MAV: 94
+                    CAV: 92 | MAV: 93
                   </>
                 )}
               />
@@ -83,8 +83,8 @@ const AboutMe = (props) => (
                     Python, C/C++, C#/.NET, Java, Bash, HTML, CSS (Sass/SCSS)
                     <br />
                     <span className="pro-title">Frameworks:</span> Node.js,
-                    Express.js, React, Angular, Next.js, Pandas, NumPy, Matplotlib,
-                    BeautifulSoup, Selenium, MongoDB
+                    Express.js, React, Angular, Next.js, Pandas, NumPy,
+                    Matplotlib, BeautifulSoup, Selenium, MongoDB
                     <br />
                     <span className="pro-title">Tools:</span> Linux, Google
                     Cloud Platform, Docker, Git, JetBrains Rider, Metabase,

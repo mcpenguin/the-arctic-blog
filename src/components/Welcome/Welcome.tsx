@@ -11,7 +11,7 @@ const TopCarousel = (): JSX.Element => (
       </Fade>
       <Fade bottom delay={500} opposite>
         <h5>
-          I'm Marcus Chan, a 3A Computer Science student at the University of
+          I'm Marcus Chan, a 3B Computer Science student at the University of
           Waterloo as well as an aspiring software developer and data
           scientist.
         </h5>

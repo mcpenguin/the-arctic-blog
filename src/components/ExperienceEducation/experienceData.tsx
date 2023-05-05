@@ -15,8 +15,8 @@ const data = [
     content: (
       <ul>
         <li>
-          Led a team of <b>6 developers</b> to build the server's Discord
-          bot, CodeyBot, built on{" "}
+          Led a team of <b>6 developers</b> to build the server's Discord bot,
+          CodeyBot, built on{" "}
           <b>TypeScript, Node.js, Sapphire, Docker and SQLite</b> and deployed
           on <b>Google Cloud Platform</b>
         </li>
@@ -29,8 +29,8 @@ const data = [
           allow Codey to have both regular and slash commands
         </li>
         <li>
-          Held weekly scrum meetings and managed the team's workload using a kanban board
-          on GitHub Projects
+          Held weekly scrum meetings and managed the team's workload using a
+          kanban board on GitHub Projects
         </li>
       </ul>
     ),
@@ -47,7 +47,18 @@ const data = [
     title: "R&D Engineer",
     subtitle: "Ansys",
     date: "Jan 2023 - Apr 2023",
-    content: null,
+    content: (
+      <ul>
+        <li>
+          Maintained and developed administration and user portals using{" "}
+          <b>C#, Angular and MongoDB</b>
+        </li>
+        <li>
+          Automated the approval and deployment of applications to an e-commerce
+          platform, saving <b>20+ hours</b> of manual work
+        </li>
+      </ul>
+    ),
     tags: ["coop", "tech"],
   },
   {
