@@ -34,6 +34,11 @@ const data = {
     iconsUsed: ['react', 'reactbootstrap', 'nodejs'],
     projectLink: 'https://linear-collatz.herokuapp.com/',
   },
+  cs241_syntax_highlighting: {
+    projectName: 'CS241 Syntax Highlighting',
+    iconsUsed: ['vscode'],
+    projectLink: 'https://github.com/mcpenguin/cs241-syntax-highlighting',
+  },
   malaysia_covid: {
     projectName: 'Malaysia COVID-19 Data',
     iconsUsed: ['mysql', 'beautifulsoup', 'jupyter', 'python'],

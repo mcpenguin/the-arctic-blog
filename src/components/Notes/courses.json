@@ -25,6 +25,14 @@
         "takenWhen": "Taken in 3B (Spring 2023) (In-Person)",
         "professors": "Professor: Peter Balka",
         "notesStatus": "Up to Week 3"
+      },
+      "ENGL306A": {
+        "shortTitle": "ENGL 306A",
+        "longTitle": "Introduction to Linguistics",
+        "description": "Introduction to linguistics and the principles of linguistic analysis through an examination of English phonology, forms, syntax, and discourse.",
+        "takenWhen": "Taken in 3B (Spring 2023) (In-Person)",
+        "professors": "Professor: Randy Harris",
+        "notesStatus": "Up to Week 3"
       }
     }
   },

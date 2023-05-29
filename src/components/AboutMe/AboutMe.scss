@@ -96,6 +96,12 @@
         }
     }
 
+    a, span {
+        font-weight: 400;
+        font-size: 1.05rem;
+        color: rgb(25, 25, 25);
+    }
+
     .personal-facts-head {
         h5 {
             background: linear-gradient(90deg, rgb(4, 83, 201) 0%, rgb(42, 59, 211) 50%, rgb(32, 4, 156) 100%);

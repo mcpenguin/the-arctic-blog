@@ -8,13 +8,39 @@ import Col from "react-bootstrap/Col";
 
 import personalPhoto from "./personal-photo.jpg";
 
+import classData from "../Notes/courses.json";
+
 import "./AboutMe.scss";
+
+const CURRENT_TERM = "3B";
 
 interface personalFactProps {
   iconName: string;
   title: string;
   body: React.ReactNode;
 }
+
+interface NotesMetadata {
+  shortTitle: string;
+  longTitle: string;
+  description: string;
+  takenWhen: string;
+  notesStatus: string;
+  professors: string;
+}
+
+const getNotesStatus = () => {
+  const latestCourses: { [key: string]: NotesMetadata } = classData[CURRENT_TERM].courses;
+  const res = [];
+  for (const metadata of Object.values(latestCourses)) {
+    res.push(
+      <span>
+        <a href="#notes"><strong>{metadata.shortTitle}</strong>: {metadata.notesStatus}</a> <br />
+      </span>,
+    );
+  }
+  return res;
+};
 
 const PersonalFact = (props: personalFactProps) => {
   const { iconName, title, body } = props;
@@ -51,7 +77,7 @@ const AboutMe = (props) => (
                 iconName="fas fa-pencil-alt"
                 // icon={NotesIcon}
                 title="Current Notes Update"
-                body={<>None</>}
+                body={getNotesStatus()}
               />
               {/* <PersonalFact
                 iconName="fas fa-briefcase"
@@ -62,13 +88,13 @@ const AboutMe = (props) => (
                 iconName="fas fa-graduation-cap"
                 title="Current Education"
                 body={(
-                  <>
+                  <span>
                     BCS Data Science, Honours, Co-op (3B)
                     <br />
                     University of Waterloo @ Ontario, Canada
                     <br />
                     CAV: 92 | MAV: 93
-                  </>
+                  </span>
                 )}
               />
             </div>
@@ -96,10 +122,10 @@ const AboutMe = (props) => (
                 iconName="far fa-futbol"
                 title="Hobbies"
                 body={(
-                  <>
+                  <span>
                     Mathematics, coding, arranging/composing piano pieces, rock
                     climbing, anime
-                  </>
+                  </span>
                 )}
               />
             </div>

@@ -17,7 +17,7 @@ import classData from "./courses.json";
 // import stylesheet
 import "./Notes.scss";
 
-interface CourseNotesProps {
+export interface CourseNotesProps {
   shortTitle: string;
   longTitle: string;
   description: string;

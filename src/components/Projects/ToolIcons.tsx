@@ -24,6 +24,7 @@ const iconsNamesDict = {
   sass: 'Sass',
   cpp: 'C++',
   reactnative: 'React Native',
+  vscode: "VSCode Extension",
 };
 
 export default iconsNamesDict;

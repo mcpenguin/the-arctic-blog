@@ -18,7 +18,7 @@ const data = [
           Transferred from Honours Mathematics to BMath Data Science in 1B, and
           then to BCS CS in the subsequent term
         </li>
-        <li>CAV: 93 (MAV: 94)</li>
+        <li>CAV: 92 (MAV: 93)</li>
       </ul>
     ),
     tags: ['edu'],
