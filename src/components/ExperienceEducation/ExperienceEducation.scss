@@ -39,7 +39,7 @@
 
 .section-experience {
 	.timeline {
-    padding: 2vh 0 5vh 10vw;
+    padding: 5vh 3vw;
     width: 100%;
     font-weight: 400;
 
@@ -65,7 +65,7 @@
 
 .section-education {
 	.timeline {
-    padding: 5vh 0 5vh 10vw;
+    padding: 5vh 5vw;
     width: 100%;
     font-weight: 400;
 
@@ -126,6 +126,7 @@
 }
 
 .section-experience {
+
   .title {
     @include center;
     background: linear-gradient(135deg, $homepage_colors),

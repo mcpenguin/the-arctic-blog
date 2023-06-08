@@ -82,7 +82,7 @@ $hue_range: 140;
 
   .desc {
     width: 65%;
-    padding: 15px 20px 15px 20px;
+    padding: 10px 20px 15px 20px;
     order: 3;
 
     @media (max-width: $tablet_width) {
@@ -92,7 +92,7 @@ $hue_range: 140;
 
     @media (max-width: 450px) {
       width: 100%;
-      padding: 0 10px 0 30px;
+      padding: 0 10px 0 20px;
     }
 
     // title
@@ -100,7 +100,7 @@ $hue_range: 140;
       margin: 0;
       padding: 0;
       text-align: left;
-      font-size: 2.5em;
+      font-size: 3rem;
       font-weight: 600;
 
       @media (max-width: $tablet_width) {
@@ -112,7 +112,7 @@ $hue_range: 140;
     h4 {
       margin-top: 5px;
       text-align: left;
-      font-size: 1.8rem;
+      font-size: 2rem;
 
       @media (max-width: $tablet_width) {
         font-size: 1.5rem;
@@ -128,7 +128,7 @@ $hue_range: 140;
     }
 
     h6 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin-top: 5px;
 
       @media (max-width: $tablet_width) {
@@ -140,6 +140,8 @@ $hue_range: 140;
   .body {
     order: 5;
     width: 100%;
+    font-size: 1.3rem;
+    font-weight: 400;
 
     display: flex;
 
@@ -152,12 +154,10 @@ $hue_range: 140;
     }
 
     .content {
-      width: 80%;
       padding: 10px 0 10px 10px;
 
       @media (max-width: $tablet_width) {
         width: 90%;
-        // padding: 10px 0 40px 0px;
       }
     }
   }

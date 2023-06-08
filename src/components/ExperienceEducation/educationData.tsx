@@ -1,7 +1,7 @@
 // module containing education data
 const data = [
   {
-    title: 'BCS Computer Science',
+    title: 'BCS Computer Science (Data Science)',
     subtitle: 'University of Waterloo',
     date: '2020 - 2025',
     content: (
@@ -23,20 +23,6 @@ const data = [
     ),
     tags: ['edu'],
   },
-  // {
-  //   title: 'Cambridge A-Levels',
-  //   subtitle: 'Sunway College',
-  //   date: '2018 - 2020',
-  //   content: (
-  //     <ul>
-  //       <li>
-  //         Achieved 4 A*s (Chemistry, Physics, Mathematics, Further Mathematics)
-  //       </li>
-  //       <li>Recipient of the Jeffrey Cheah Entrance Scholarship</li>
-  //     </ul>
-  //   ),
-  //   tags: ['edu'],
-  // },
 ];
 
 export default data;
