@@ -88,11 +88,13 @@ const AboutMe = (props) => (
                 title="Current Education"
                 body={(
                   <span>
-                    BCS Data Science, Honours, Co-op (3B)
+                    BCS Computer Science (Data Science), Honours, Co-op ({CURRENT_TERM})
                     <br />
                     University of Waterloo @ Ontario, Canada
                     <br />
-                    CAV: 92 | MAV: 93
+                    <em>Recipient of $37,000+ worth of academic scholarships</em>
+                    <br />
+                    <strong>CAV: 92 | GPA: 3.9/4.0</strong>
                   </span>
                 )}
               />

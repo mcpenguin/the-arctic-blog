@@ -37,7 +37,6 @@ const Header = () => (
         <Nav id="my-navbar" className="ml-auto">
           <NavbarLink id="projects" title="Projects" />
           <NavbarLink id="experience" title="Experience" />
-          <NavbarLink id="education" title="Education" />
           <NavbarLink id="notes" title="Notes" />
           <NavbarLink id="contact-me" title="Contact Me" />
         </Nav>

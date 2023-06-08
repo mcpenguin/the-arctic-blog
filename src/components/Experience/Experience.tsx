@@ -1,7 +1,7 @@
-// React component class for combined Experience and Education section
+// React component class for Experience section
 
 // import stylesheet
-import "./ExperienceEducation.scss";
+import "./Experience.scss";
 
 // import timeline stuff
 import { useState } from "react";
@@ -9,7 +9,6 @@ import Timeline from "./Timeline/Timeline";
 
 // import data
 import experienceData from "./experienceData";
-import educationData from "./educationData";
 
 const Experience = () => {
   const [showTechJobs, setShowTechJobs] = useState(true);
@@ -69,22 +68,4 @@ const Experience = () => {
   );
 };
 
-const Education = () => (
-  <section className="section-education" id="education">
-    <div className="title">
-      <h2>My Education</h2>
-    </div>
-    <div className="timeline">
-      <Timeline data={educationData} start={280} range={40} filters={{}} />
-    </div>
-  </section>
-);
-
-const ExperienceEducation = () => (
-  <>
-    <Experience />
-    <Education />
-  </>
-);
-
-export default ExperienceEducation;
+export default Experience;
