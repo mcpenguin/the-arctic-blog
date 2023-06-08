@@ -8,9 +8,6 @@ import Welcome from "./components/Welcome/Welcome";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import ExperienceEducation from "./components/ExperienceEducation/ExperienceEducation";
-// import Extracurriculars from "./components/Extracurriculars/Extracurriculars";
-// import Piano from "./components/Piano/Piano";
-// import Achievements from "./components/Achievements/Achievements";
 import Notes from "./components/Notes/Notes";
 import ContactMe from "./components/ContactMe/ContactMe";
 
@@ -25,10 +22,6 @@ const HomePage = () => (
     <AboutMe />
     <Projects />
     <ExperienceEducation />
-    {/* <Extracurriculars /> */}
-    {/* <Piano /> */}
-    {/* <Achievements /> */}
-    <Notes />
     <ContactMe />
   </>
 );
@@ -45,6 +38,14 @@ const IndividualProjectPage = (props: any) => {
   );
 };
 
+const NotesPage = () => (
+  <>
+    <Header />
+    <Notes />
+    <ContactMe />
+  </>
+);
+
 const NotFoundSection = () => (
   <>
     <Header />
@@ -57,18 +58,12 @@ const App = () => (
   <Router forceRefresh basename={`${process.env.PUBLIC_URL}`}>
     <Switch>
       <Route exact path="/" component={HomePage} />
-      {/* <Route exact path="/projects" component={ProjectsPage} /> */}
+      <Route exact path="/notes" component={NotesPage} />
       <Route
         exact
         path="/projects/:projectId"
         component={IndividualProjectPage}
       />
-      {/* <Route exact path="/experience" component={ExperiencePage} /> */}
-      {/* <Route exact path="/education" component={EducationPage} /> */}
-      {/* <Route exact path="/extracurriculars" component={ExtracurricularsPage} /> */}
-      {/* <Route exact path="/achievements" component={AchievementsPage} /> */}
-      {/* <Route exact path="/notes" component={NotesPage} /> */}
-      {/* <Route exact path="/credits" component={CreditsPage} /> */}
       <Route component={NotFoundSection} />
     </Switch>
   </Router>

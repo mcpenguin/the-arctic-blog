@@ -10,15 +10,15 @@ import "./Header.scss";
 import lightbulb from "./lightbulb.png";
 
 interface NavbarLinkProps {
-  id: string;
   title: string;
+  link: string;
 }
 
 const NavbarLink = (props: NavbarLinkProps) => {
-  const { id, title } = props;
+  const { title, link } = props;
   return (
     <Nav.Item>
-      <Link exact to={`/#${id}`} className="nav-item">
+      <Link exact to={link} className="nav-item">
         {title}
       </Link>
     </Nav.Item>
@@ -35,11 +35,11 @@ const Header = () => (
       <Navbar.Toggle aria-controls="my-navbar" />
       <Navbar.Collapse>
         <Nav id="my-navbar" className="ml-auto">
-          <NavbarLink id="projects" title="Projects" />
-          <NavbarLink id="experience" title="Experience" />
-          <NavbarLink id="education" title="Education" />
-          <NavbarLink id="notes" title="Notes" />
-          <NavbarLink id="contact-me" title="Contact Me" />
+          <NavbarLink link="/#projects" title="Projects" />
+          <NavbarLink link="/#experience" title="Experience" />
+          <NavbarLink link="/#education" title="Education" />
+          <NavbarLink link="/notes" title="Notes" />
+          <NavbarLink link="/#contact-me" title="Contact Me" />
         </Nav>
       </Navbar.Collapse>
     </Navbar>

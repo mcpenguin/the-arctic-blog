@@ -20,7 +20,6 @@ import "./Notes.scss";
 export interface CourseNotesProps {
   shortTitle: string;
   longTitle: string;
-  description: string;
   takenWhen: string;
   notesStatus: string;
   professors: string;
@@ -43,7 +42,6 @@ const CourseNotes = (props: CourseNotesProps) => {
   const {
     shortTitle,
     longTitle,
-    description,
     takenWhen,
     notesStatus,
     professors,
@@ -76,8 +74,6 @@ const CourseNotes = (props: CourseNotesProps) => {
           </p>
           <hr />
           <p className="notes-professors">{professors}</p>
-          <hr />
-          <p className="notes-description">{description}</p>
         </Card.Body>
       </Accordion.Collapse>
     </Card>
@@ -96,7 +92,6 @@ const transformClassData = () => {
         <CourseNotes
           shortTitle={courseObject.shortTitle}
           longTitle={courseObject.longTitle}
-          description={courseObject.description}
           takenWhen={courseObject.takenWhen}
           notesStatus={courseObject.notesStatus}
           professors={courseObject.professors}
