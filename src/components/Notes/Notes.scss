@@ -1,26 +1,34 @@
 @import "../../index";
 
 .section-notes-page {
-    background-color: #ecebeb;
+    background-image: url("./green-stacked-peaks.svg");
+    @include parallax;
     text-align: center;
     padding: 20px 5%;
     padding-bottom: 50px;
 
-    .container-fluid .row .col {
-        @include center;
+    .notes-container {
+        padding: 20px 2%;
 
         .text {
-            width: 80%;
-            // text-align: left;
-
+            @include center;
+            
             h3 {
                 font-weight: 600;
                 padding: 5px 0;
-                // text-align: left;
 
                 @media (max-width: $tablet_width) {
                     margin-top: 20px;
                 }
+            }
+
+            p {
+                @include center;
+                width: 80%;
+                padding: 20px;
+                background: #fffff5;
+                border: 2px solid #000031;
+                border-radius: 20px;
             }
         }
     }
@@ -44,7 +52,7 @@
 
 @for $i from 1 through 6 {
     .notes-card:nth-child(#{$i}) {
-        background-color: hsla(170 + $i * 10, 90%, 70%, 1);
+        background-color: hsla(180 + $i * 10, 90%, 75%, 1);
     }
 }
 

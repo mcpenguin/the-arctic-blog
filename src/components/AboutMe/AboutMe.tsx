@@ -23,7 +23,6 @@ interface personalFactProps {
 interface NotesMetadata {
   shortTitle: string;
   longTitle: string;
-  description: string;
   takenWhen: string;
   notesStatus: string;
   professors: string;
