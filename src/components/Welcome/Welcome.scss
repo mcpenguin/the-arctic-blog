@@ -6,6 +6,7 @@
 	@include homePageGradient(135deg);
 	margin-top: 50px;
 	height: 90vh;
+	border-bottom: 5px black solid;
 	@include center;
 
 	.description {

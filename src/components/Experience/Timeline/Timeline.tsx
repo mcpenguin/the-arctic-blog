@@ -49,8 +49,8 @@ export const Timeline = (props: TimelineProps): JSX.Element => {
             subtitle={element.subtitle}
             date={element.date}
             color={`hsla(${h}, 80%, 90%, 1)`}
-            subcolor={`hsla(${h}, 40%, 40%, 1)`}
-            nextcolor={`hsla(${hnext}, 40%, 40%, 1)`}
+            subcolor={`hsla(${h}, 60%, 30%, 1)`}
+            nextcolor={`hsla(${hnext}, 60%, 30%, 1)`}
           >
             {element.content}
           </TimelineElement>,
