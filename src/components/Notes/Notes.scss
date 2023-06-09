@@ -4,8 +4,16 @@
     background-image: url("./green-stacked-peaks.svg");
     @include parallax;
     text-align: center;
-    padding: 20px 5%;
+    padding: 20px 1%;
     padding-bottom: 50px;
+
+    .notes-accordion {
+        margin-bottom: 20px;
+
+        @media (max-width: $mobile_width) {
+            margin: 0;
+        }
+    }
 
     .notes-container {
         padding: 20px 2%;
