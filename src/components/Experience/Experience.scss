@@ -1,0 +1,168 @@
+@import "../../index.scss";
+
+.section-experience,
+.section-education {
+  display: flex;
+  flex-flow: row wrap;
+  // @include center;
+  background: $off_white;
+  align-items: center;
+  justify-content: space-around;
+
+  // width of title, in %
+  $title_width: 30%;
+
+  .title {
+    width: 100%;
+    padding-bottom: 30px;
+    // position: sticky;
+    // top: 50px;
+
+    h2 {
+      height: 100%;
+      width: 100%;
+      font-weight: 800;
+      text-align: center;
+      padding: 40px 0 0 0;
+    }
+
+    @media (max-width: $medium_desktop_width) {
+      width: 100%;
+
+      h2 {
+        background: none;
+      }
+    }
+  }
+}
+
+.section-experience {
+  background-image: linear-gradient(135deg, $homepage_colors), url('light-blue-geometric.jpg');
+  @include parallax;
+
+  .exp-wrapper {
+    margin: 70px 0;
+    width: min(80vw, 1500px);
+    background: rgba(248, 248, 248, 0.8);
+    border-radius: 20px;
+
+    @media (max-width: 1000px) {
+      width: 100vw;
+      margin: 0;
+      border-radius: 0;
+      background: rgba(248, 248, 248)
+    }
+  }
+
+	.timeline {
+    padding: 5vh 0;
+    width: 100%;
+    font-weight: 400;
+
+    a {
+      color: rgb(9, 134, 207);
+
+      &:hover {
+        color: rgb(3, 62, 97);
+      }
+    }
+
+    @media (max-width: $large_desktop_width) {
+      // padding: 5vh 5vw;
+      padding: 0;
+      width: 90%;
+    }
+
+    @media (max-width: $medium_desktop_width) {
+      width: 100%;
+    }
+  }
+}
+
+@mixin customCheckmark($size) {
+  // Create a custom checkbox
+  .checkmark {
+    height: $size;
+    width: $size;
+    background: rgb(67, 214, 201);
+    margin: 0 10px;
+    top: 0;
+    left: 0;
+    display: block;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+
+      left: $size * 0.4;
+      top: $size * 0.2;
+      width: $size * 0.3;
+      height: $size * 0.5;
+      border: solid $off_white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+
+  .checked {
+    background: $dark_blue;
+
+    &::after {
+      display: block;
+    }
+  }
+}
+
+.section-experience {
+
+  // background: linear-gradient(105deg, $homepage_colors_light);
+  border-top: 5px black solid;
+  border-bottom: 5px black solid;
+
+  .title {
+    @include center;
+  }
+
+  .filters {
+    width: 100%;
+    @include center;
+
+    .cont {
+      font-size: 1.5em;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0 1vw;
+      @include center;
+
+			@media (max-width: 450px) {
+				padding: 0;
+			}
+
+      /* Hide browser's default checkbox */
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        // width: 50%;
+      }
+
+      @media (max-width: $tablet_width) {
+        font-size: 1.2em;
+        width: 70vw;
+      }
+
+      // Create a custom checkbox
+      @include customCheckmark(30px);
+
+      @media (max-width: $tablet_width) {
+        @include customCheckmark(25px);
+      }
+    }
+  }
+}

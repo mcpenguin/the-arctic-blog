@@ -6,11 +6,6 @@
     margin-bottom: 40px;
 }
 
-#my-navbar {
-    font-family: 'nunito', sans-serif;
-    font-weight: 500;
-}
-
 nav {
     background-color: #000031;
 }
@@ -27,9 +22,10 @@ nav {
 }
 
 .nav-item {
+    font-weight: 500;
     margin: 0 8px;
-    font-size: 0.95em;
-    color: #c1c1dd !important;
+    font-size: 1.3rem;
+    color: #b7d2ff !important;
     font-family: 'Quicksand', sans-serif;
 
     @media (max-width: $desktop_width) {

@@ -1,32 +1,46 @@
 @import "../../index";
 
 .section-notes-page {
-    background-color: #ecebeb;
+    background-image: url("./green-stacked-peaks.svg");
+    @include parallax;
     text-align: center;
-    padding: 20px 5%;
+    padding: 20px 1%;
     padding-bottom: 50px;
 
-    .container-fluid .row .col {
-        @include center;
+    .notes-accordion {
+        margin-bottom: 20px;
+
+        @media (max-width: $mobile_width) {
+            margin: 0;
+        }
+    }
+
+    .notes-container {
+        padding: 20px 2%;
 
         .text {
-            width: 80%;
-            // text-align: left;
-
+            @include center;
+            
             h3 {
                 font-weight: 600;
                 padding: 5px 0;
-                // text-align: left;
 
                 @media (max-width: $tablet_width) {
                     margin-top: 20px;
                 }
             }
-        }
-    }
 
-    .notes-accordion {
-        margin: 10px 20px;
+            p {
+                @include center;
+                width: 100%;
+                padding: 20px;
+                margin: 10px 10%;
+                background: #fffff58e;
+                border: 2px solid #000031;
+                border-radius: 20px;
+                font-weight: 500;
+            }
+        }
     }
 
     .row {
@@ -40,18 +54,27 @@
     background-color: #b2d0db;
     border: 2px solid #000031;
     border-radius: 20px;
+    margin: 0 20px;
+
+    .notes-card-body {
+        background-color: #ecebeb;
+        color: #000031;
+        font-weight: 400;
+        border-radius: 0;
+    }
+}
+
+.notes-accordion .notes-card:last-of-type {
+    .notes-card-body {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
 }
 
 @for $i from 1 through 6 {
     .notes-card:nth-child(#{$i}) {
-        background-color: hsla(170 + $i * 10, 90%, 70%, 1);
+        background-color: hsla(180 + $i * 10, 90%, 70%, 1);
     }
-}
-
-.notes-card-body {
-    background-color: #ecebeb;
-    color: #000031;
-    font-weight: 400;
 }
 
 .notes-card-link {

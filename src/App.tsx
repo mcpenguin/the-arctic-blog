@@ -7,10 +7,7 @@ import Header from "./components/Header/Header";
 import Welcome from "./components/Welcome/Welcome";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
-import ExperienceEducation from "./components/ExperienceEducation/ExperienceEducation";
-// import Extracurriculars from "./components/Extracurriculars/Extracurriculars";
-// import Piano from "./components/Piano/Piano";
-// import Achievements from "./components/Achievements/Achievements";
+import Experience from "./components/Experience/Experience";
 import Notes from "./components/Notes/Notes";
 import ContactMe from "./components/ContactMe/ContactMe";
 
@@ -24,10 +21,7 @@ const HomePage = () => (
     <Welcome />
     <AboutMe />
     <Projects />
-    <ExperienceEducation />
-    {/* <Extracurriculars /> */}
-    {/* <Piano /> */}
-    {/* <Achievements /> */}
+    <Experience />
     <Notes />
     <ContactMe />
   </>
@@ -63,12 +57,6 @@ const App = () => (
         path="/projects/:projectId"
         component={IndividualProjectPage}
       />
-      {/* <Route exact path="/experience" component={ExperiencePage} /> */}
-      {/* <Route exact path="/education" component={EducationPage} /> */}
-      {/* <Route exact path="/extracurriculars" component={ExtracurricularsPage} /> */}
-      {/* <Route exact path="/achievements" component={AchievementsPage} /> */}
-      {/* <Route exact path="/notes" component={NotesPage} /> */}
-      {/* <Route exact path="/credits" component={CreditsPage} /> */}
       <Route component={NotFoundSection} />
     </Switch>
   </Router>

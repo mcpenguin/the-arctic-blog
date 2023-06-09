@@ -20,7 +20,6 @@ import "./Notes.scss";
 export interface CourseNotesProps {
   shortTitle: string;
   longTitle: string;
-  description: string;
   takenWhen: string;
   notesStatus: string;
   professors: string;
@@ -43,7 +42,6 @@ const CourseNotes = (props: CourseNotesProps) => {
   const {
     shortTitle,
     longTitle,
-    description,
     takenWhen,
     notesStatus,
     professors,
@@ -76,8 +74,6 @@ const CourseNotes = (props: CourseNotesProps) => {
           </p>
           <hr />
           <p className="notes-professors">{professors}</p>
-          <hr />
-          <p className="notes-description">{description}</p>
         </Card.Body>
       </Accordion.Collapse>
     </Card>
@@ -96,7 +92,6 @@ const transformClassData = () => {
         <CourseNotes
           shortTitle={courseObject.shortTitle}
           longTitle={courseObject.longTitle}
-          description={courseObject.description}
           takenWhen={courseObject.takenWhen}
           notesStatus={courseObject.notesStatus}
           professors={courseObject.professors}
@@ -119,38 +114,18 @@ const transformClassData = () => {
 
 const Notes = () => (
   <section className="section-notes-page" id="notes">
-    <Container fluid>
+    <Container fluid className="notes-container">
       <Row>
-        <Col>
-          <div className="text">
-            {/* <Fade top> */}
-            <h3 id="personal-notes-title">My Personal Notes</h3>
-            {/* </Fade> */}
-            {/* <Fade top> */}
-            <p>
-              Here I post my notes for both my university and high school
-              courses, which were handwritten on my iPad using the app GoodNotes
-              5. These are adapted from the original professor's / lecturer's
-              notes. I get each professor's permission prior to posting my notes
-              for the course on my website.
-            </p>
-            <p>
-              The course notes are designed to be Ctrl+F friendly. For the later
-              notes (1B onwards), the "key" for each theorem and statement
-              obtained from the original professor's lecture notes are
-              highlighted in each heading (e.g. T3.1 = Theorem 3.1), making it
-              easy for revision or reference purposes. A key is located at the
-              start of each notebook.
-            </p>
-            <p>
-              Click each course link to see the expanded details of that
-              particular course, including the full course name, the progress of
-              the notes, the professor I took the course with and a brief
-              description of the course. You can then click the blue hyperlink
-              to download the pdf of my notes for that course.
-            </p>
-          </div>
-          {/* </Fade> */}
+        <Col className="text">
+          <h3 id="personal-notes-title">My Personal Notes</h3>
+          <p>
+            Here I post my notes for both my university and high school
+            courses, which were handwritten on my iPad using the app GoodNotes
+            5. These are adapted from the original professor's / lecturer's
+            notes, and will often contain diagrams, screenshots from the
+            reference materials. I get each professor's permission prior to posting my notes
+            for the course on my website, and credit them at the front of the notes.
+          </p>
         </Col>
       </Row>
       <Row>{transformClassData()}</Row>

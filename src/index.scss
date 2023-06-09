@@ -49,11 +49,6 @@ h3 {
     font-family: "Quicksand", sans-serif;
 
     padding: 20px;
-    // background-color: $off_white;
-
-    @media (max-width: $tablet_width) {
-        font-size: 2em;
-    }
 }
 
 h4 {
@@ -151,6 +146,13 @@ $homepage_colors: (
     rgba(113, 198, 238, 0.7) 50%,
     rgba(104, 148, 230, 0.7) 75%,
     rgba(125, 94, 238, 0.7) 100%
+);
+
+$homepage_colors_light: (
+    // $deg,
+    rgb(202, 254, 243) 0%,
+    rgb(245, 245, 245) 50%,
+    rgb(217, 230, 255) 100%,
 );
 
 // home page gradient

@@ -5,34 +5,30 @@
       "CS480": {
         "shortTitle": "CS 480",
         "longTitle": "Introduction to Machine Learning",
-        "description": "Introduction to modeling and algorithmic techniques for machines to learn concepts from data. Generalization: underfitting, overfitting, cross-validation. Tasks: classification, regression, clustering. Optimization-based learning: loss minimization. regularization. Statistical learning: maximum likelihood, Bayesian learning. Algorithms: nearest neighbour, (generalized) linear regression, mixtures of Gaussians, Gaussian processes, kernel methods, support vector machines, deep learning, sequence learning, ensemble techniques. Large scale learning: distributed learning and stream learning. Applications: Natural language processing, computer vision, data mining, human computer interaction, information retrieval.",
         "takenWhen": "Taken in 3B (Spring 2023) (In-Person)",
         "professors": "Professor: Hongyang Zhang",
-        "notesStatus": "Up to Week 4"
+        "notesStatus": "Up to Week 5"
       },
       "CS486": {
         "shortTitle": "CS 486",
         "longTitle": "Introduction to Artificial Intelligence",
-        "description": "Goals and methods of artificial intelligence. Methods of general problem solving. Knowledge representation and reasoning. Planning. Reasoning about uncertainty. Machine learning. Multi-agent systems. Natural language processing.",
         "takenWhen": "Taken in 3B (Spring 2023) (In-Person)",
         "professors": "Professors: Pascal Poupart & Sriram Ganapathi Subramanian",
-        "notesStatus": "Up to Week 4"
+        "notesStatus": "Up to Week 5"
       },
       "STAT331": {
         "shortTitle": "STAT 331",
         "longTitle": "Applied Linear Models",
-        "description": "Modeling the relationship between a response variable and several explanatory variables (an output-input system) via regression models. Least squares algorithm for estimation of parameters. Hypothesis testing and prediction. Model diagnostics and improvement. Algorithms for variable selection. Nonlinear regression and other methods.",
         "takenWhen": "Taken in 3B (Spring 2023) (In-Person)",
         "professors": "Professor: Peter Balka",
-        "notesStatus": "Up to Week 4"
+        "notesStatus": "Up to Week 5"
       },
       "ENGL306A": {
         "shortTitle": "ENGL 306A",
         "longTitle": "Introduction to Linguistics",
-        "description": "Introduction to linguistics and the principles of linguistic analysis through an examination of English phonology, forms, syntax, and discourse.",
         "takenWhen": "Taken in 3B (Spring 2023) (In-Person)",
         "professors": "Professor: Randy Harris",
-        "notesStatus": "Up to Week 4"
+        "notesStatus": "Up to Week 5"
       }
     }
   },
@@ -42,7 +38,7 @@
       "CS350": {
         "shortTitle": "CS 350",
         "longTitle": "Operating Systems",
-        "description": "An introduction to the fundamentals of operating system function, design, and implementation. Topics include concurrency, synchronization, processes, threads, scheduling, memory management, file systems, device management, and security.",
+
         "takenWhen": "Taken in 3A (Fall 2022) (In-Person)",
         "professors": "Professor: Kevin Lanctot",
         "notesStatus": "Notes Complete"
@@ -50,7 +46,7 @@
       "STAT330": {
         "shortTitle": "STAT 330",
         "longTitle": "Mathematical Statistics",
-        "description": "This course provides a mathematically rigorous treatment for topics covered in STAT 230 and 231, and to make essential extensions to the multivariate case. Maximum likelihood estimation. Random variables and distribution theory. Generating functions. Functions of random variables. Limiting distributions. Large sample theory of likelihood methods. Likelihood ratio tests. Joint probability (density) functions, marginal probability (density) functions, and conditional probability (density) functions of two or more random variables are discussed. Topics covered include independence of random variables, conditional expectation and the determination of the distribution of functions of random variables using the cumulative distribution method, change of variable and moment generating functions. Properties of the Multinomial and Bivariate Normal distributions are proved. Limiting distributions, including convergence in probability and convergence in distribution, are discussed. Important results, including the Weak Law of Large Numbers, Central Limit Theorem, Slutsky's theorem, and the Delta Method, are introduced with applications. The maximum likelihood method is discussed for the multi-parameter case. Asymptotic properties of the maximum likelihood estimator are examined and used to construct confidence intervals or regions. Tests for simple and composite hypotheses are constructed using the Likelihood Ratio Test.",
+
         "takenWhen": "Taken in 3A (Fall 2022) (In-Person)",
         "professors": "Professor: Peijun Sang",
         "notesStatus": "Notes Complete"
@@ -63,7 +59,7 @@
       "STAT241": {
         "shortTitle": "STAT 241",
         "longTitle": "Statistics (Advanced Level)",
-        "description": "In this course we will introduce the ‘language’ of statistics, and the importance of precision in how we both ask and answer statistical questions. We will explore various methods of statistical analysis, including how to describe data (both numerically and graphically), how to estimate unknown information (such as the proportion of a population who have a particular disease), and how to set and test hypotheses (such as whether a vaccine is effective). The course will approach topics from both practical and theoretical viewpoints, with real-world examples as well as mathematical derivations. By the end of this course you will be familiar with a wide variety of ideas foundational to an understanding of statistics.",
+
         "takenWhen": "Taken in 2B (Winter 2022) (In-Person)",
         "professors": "Professor: Michael Wallace",
         "notesStatus": "Notes Complete"
@@ -71,7 +67,7 @@
       "CS240E": {
         "shortTitle": "CS 240E",
         "longTitle": "Data Structures and Data Management (Enriched)",
-        "description": "The course introduces widely used and effective methods of data organization, focusing on data structures, algorithms, and the performance of these algorithms. Specific topics include priority queues, sorting, dictionaries, data structures for text processing.",
+
         "takenWhen": "Taken in 2B (Winter 2022) (In-Person)",
         "professors": "Professor: Therese Biedl",
         "notesStatus": "Notes Complete"
@@ -79,7 +75,7 @@
       "MATH249": {
         "shortTitle": "MATH 249",
         "longTitle": "Introduction to Combinatorics (Advanced Level)",
-        "description": "Introduction to graph theory: colourings, matchings, connectivity, planarity. Introduction to combinatorial analysis: generating series, recurrence relations, binary strings, plane trees.",
+
         "takenWhen": "Taken in 2B (Winter 2022) (In-Person)",
         "professors": "Professor: Kevin Purbhoo",
         "notesStatus": "Notes Complete"
@@ -92,7 +88,7 @@
       "MATH247": {
         "shortTitle": "MATH 247",
         "longTitle": "Calculus 3 (Advanced Level)",
-        "description": "MATH 247 is an advanced level version of MATH 237.\n\nMATH 237: Calculus of functions of several variables. Limits, continuity, differentiability, the chain rule. The gradient vector and the directional derivative. Taylor's formula. Optimization problems. Mappings and the Jacobian. Multiple integrals in various co-ordinate systems.",
+
         "takenWhen": "Taken in 2A (Fall 2021) (Online)",
         "professors": "Professor: Blake Madill",
         "notesStatus": "Notes Complete"
@@ -100,7 +96,7 @@
       "STAT240": {
         "shortTitle": "STAT 240",
         "longTitle": "Probability (Advanced Level)",
-        "description": "STAT 240 is an advanced level version of STAT 230.\n\nSTAT 230: This course provides an introduction to probability models including sample spaces, mutually exclusive and independent events, conditional probability and Bayes' Theorem. The named distributions (Discrete Uniform, Hypergeometric, Binomial, Negative Binomial, Geometric, Poisson, Continuous Uniform, Exponential, Normal (Gaussian), and Multinomial) are used to model real phenomena. Discrete and continuous univariate random variables and their distributions are discussed. Joint probability functions, marginal probability functions, and conditional probability functions of two or more discrete random variables and functions of random variables are also discussed. Students learn how to calculate and interpret means, variances and covariances particularly for the named distributions. The Central Limit Theorem is used to approximate probabilities.",
+
         "takenWhen": "Taken in 2A (Fall 2021) (Online)",
         "professors": "Professor: Qin Ying-Li",
         "notesStatus": "Notes Complete"
@@ -108,7 +104,7 @@
       "MATH235": {
         "shortTitle": "MATH 235",
         "longTitle": "Linear Algebra 2",
-        "description": "Orthogonal and unitary matrices and transformations. Orthogonal projections, Gram-Schmidt procedure, best approximations, least-squares. Inner products, angles and orthogonality, orthogonal diagonalization, singular value decomposition, applications.",
+
         "takenWhen": "Taken in 2A (Fall 2021) (In-Person)",
         "professors": "Professor: Nickolas Rollick",
         "notesStatus": "Up to Class 17"
@@ -121,7 +117,7 @@
       "MATH146": {
         "shortTitle": "MATH 146",
         "longTitle": "Linear Algebra 1 (Advanced Level)",
-        "description": "MATH 146 is an advanced level version of MATH 136.\n\nMATH 136: Systems of linear equations, matrix algebra, elementary matrices, computational issues. Real n-space, vector spaces and subspaces, basis and dimension, rank of a matrix, linear transformations, and matrix representations. Determinants, eigenvalues and diagonalization, applications.",
+
         "takenWhen": "Taken in 1B (Winter 2021) (Online)",
         "professors": "Professors: Ross Willard and Giang Tran",
         "notesStatus": "Notes Complete"
@@ -129,7 +125,7 @@
       "MATH148": {
         "shortTitle": "MATH 148",
         "longTitle": "Calculus 2 (Advanced Level)",
-        "description": "MATH 148 is an advanced level version of MATH 138.\n\nMATH 138: Introduction to the Riemann integral and approximations. Antiderivatives and the Fundamental theorem of calculus. Change of variables, Methods of integration. Applications of the integral. Improper integrals. Linear and separable differential equations and applications. Tests for convergence for series. Binomial series, Functions defined as power series and Taylor series. Vector (parametric) curves in R2. Suitable topics are illustrated using computer software.",
+
         "takenWhen": "Taken in 1B (Winter 2021) (Online)",
         "professors": "Professor: Stephen New",
         "notesStatus": "Notes Complete"
@@ -137,7 +133,7 @@
       "PSYCH101": {
         "shortTitle": "PSYCH 101",
         "longTitle": "Introductory Psychology",
-        "description": "A general survey course designed to provide the student with an understanding of the basic concepts and techniques of modern psychology as a behavioural science.",
+
         "takenWhen": "Taken in 1B (Winter 2021) (Online)",
         "professors": "Professor: Paul Wehr",
         "notesStatus": "Notes Complete"
@@ -150,7 +146,7 @@
       "MATH145": {
         "shortTitle": "MATH 145",
         "longTitle": "Algebra (Advanced Level)",
-        "description": "MATH 145 is an advanced-level version of MATH 135.\n\nMATH 135: An introduction to the language of mathematics and proof techniques through a study of the basic algebraic systems of mathematics: the integers, the integers modulo n, the rational numbers, the real numbers, the complex numbers and polynomials.",
+
         "takenWhen": "Taken in 1A (Fall 2020) (Online)",
         "professors": "Professor: Nickolas Rollick",
         "notesStatus": "Notes Complete"
@@ -158,7 +154,7 @@
       "MATH147": {
         "shortTitle": "MATH 147",
         "longTitle": "Calculus 1 (Advanced Level)",
-        "description": "MATH 147 is an advanced-level version of MATH 137.\n\nMATH 137: Absolute values and inequalities. Sequences and their limits. Introduction to series. Limits of functions and continuity. The Intermediate Value theorem and approximate solutions to equations. Derivatives, linear approximation, and Newton's method. The Mean Value theorem and error bounds. Applications of the Mean Value theorem, Taylor polynomials, and Taylor's theorem, Big-O notation. Suitable topics are illustrated using computer software.",
+
         "takenWhen": "Taken in 1A (Fall 2020) (Online)",
         "professors": "Professor: Brian Forrest",
         "notesStatus": "Notes Complete"
@@ -166,7 +162,7 @@
       "CS145": {
         "shortTitle": "CS 145",
         "longTitle": "Designing Functional Programs (Advanced Level)",
-        "description": "CS 145 is an advanced-level version of CS 135.\n\nCS 135: An introduction to the fundamentals of computer science through the application of elementary programming patterns in the functional style of programming. Syntax and semantics of a functional programming language. Tracing via substitution. Design, testing, and documentation. Linear and nonlinear data structures. Recursive data definitions. Abstraction and encapsulation. Generative and structural recursion. Historical context.",
+
         "takenWhen": "Taken in 1A (Fall 2020) (Online)",
         "professors": "Professor: Gordon Cormack",
         "notesStatus": "Notes Complete"
@@ -174,7 +170,7 @@
       "PHIL145": {
         "shortTitle": "PHIL 145",
         "longTitle": "Critical Thinking",
-        "description": "An analysis of basic types of reasoning, structure of arguments, critical assessment of information, common fallacies, problems of clarity and meaning.",
+
         "takenWhen": "Taken in 1A (Fall 2020) (Online)",
         "professors": "Professor: Greg Andres",
         "notesStatus": "Notes Complete"
@@ -182,7 +178,7 @@
       "GEOG101": {
         "shortTitle": "GEOG 101",
         "longTitle": "Human Geographies: People, Space and Change",
-        "description": "An introduction to human geography through key subfields of the discipline, examining population change, the rise of cities, our relationship to nature, social inequalities, economic forms, cultural difference and environmental change at the local and global scale.",
+
         "takenWhen": "Taken in 1A (Fall 2020) (Online)",
         "professors": "Professor: Brent Doberstein",
         "notesStatus": "Notes Complete"
@@ -195,7 +191,7 @@
       "Chem": {
         "shortTitle": "Chemistry",
         "longTitle": "9701",
-        "description": "Cambridge International AS and A Level Chemistry builds on the skills acquired at Cambridge IGCSE (or equivalent) level. The syllabus includes the main theoretical concepts which are fundamental to the subject, some current applications of chemistry, and a strong emphasis on advanced practical skills. Practical skills are assessed in a timetabled practical examination.",
+
         "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
         "professors": "Lecturer: Jing Ying Hoo",
         "notesStatus": "Notes Complete"
@@ -203,7 +199,7 @@
       "FPM1": {
         "shortTitle": "Further Pure Mathematics 1",
         "longTitle": "9231/1",
-        "description": "Cambridge International A Level Further Mathematics develops and extends a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
+
         "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
         "professors": "Lecturer: Yong Yau",
         "notesStatus": "Notes Complete"
@@ -211,7 +207,7 @@
       "FPM2": {
         "shortTitle": "Further Pure Mathematics 2",
         "longTitle": "9231/2",
-        "description": "Cambridge International A Level Further Mathematics develops and extends a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
+
         "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
         "professors": "Lecturer: Yong Yau",
         "notesStatus": "Notes Complete"
@@ -219,7 +215,7 @@
       "FPS": {
         "shortTitle": "Further Pure Statistics",
         "longTitle": "9231/4",
-        "description": "Cambridge International A Level Further Mathematics develops and extends a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
+
         "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
         "professors": "Lecturer: Madam Lim",
         "notesStatus": "Notes Complete"
@@ -227,7 +223,7 @@
       "PM3": {
         "shortTitle": "Pure Mathematics 3",
         "longTitle": "9709/3",
-        "description": "Cambridge International A Level Mathematics develops a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
+
         "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
         "professors": "Lecturer: Yong Yau",
         "notesStatus": "Notes Complete"
@@ -235,7 +231,7 @@
       "M1": {
         "shortTitle": "Mechanics 1",
         "longTitle": "9709/6",
-        "description": "Cambridge International A Level Mathematics develops a set of transferable skills. These include the skill of working with mathematical information, as well as the ability to think logically and independently, consider accuracy, model situations mathematically, analyse results and reflect on findings.",
+
         "takenWhen": "Taken in Sunway College (Fall 2018 - Spring 2020)",
         "professors": "Lecturer: Amy Khoo",
         "notesStatus": "Notes Complete"
