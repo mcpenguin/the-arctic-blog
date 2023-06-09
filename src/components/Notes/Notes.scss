@@ -35,10 +35,6 @@
         }
     }
 
-    .notes-accordion {
-        margin: 20px;
-    }
-
     .row {
         @media (max-width: $tablet_width) {
             margin: 0 -20px;
@@ -50,18 +46,27 @@
     background-color: #b2d0db;
     border: 2px solid #000031;
     border-radius: 20px;
+    margin: 0 20px;
+
+    .notes-card-body {
+        background-color: #ecebeb;
+        color: #000031;
+        font-weight: 400;
+        border-radius: 0;
+    }
+}
+
+.notes-accordion .notes-card:last-of-type {
+    .notes-card-body {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
 }
 
 @for $i from 1 through 6 {
     .notes-card:nth-child(#{$i}) {
         background-color: hsla(180 + $i * 10, 90%, 70%, 1);
     }
-}
-
-.notes-card-body {
-    background-color: #ecebeb;
-    color: #000031;
-    font-weight: 400;
 }
 
 .notes-card-link {
