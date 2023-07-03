@@ -19,10 +19,10 @@ const data = {
     iconsUsed: ['expressjs', 'react', 'nodejs'],
     projectLink: 'https://course-graph.herokuapp.com/',
   },
-  wclasses_bot: {
-    projectName: 'WClasses Discord Bot',
-    iconsUsed: ['mongodb', 'beautifulsoup', 'python'],
-    projectLink: 'https://discord.com/api/oauth2/authorize?client_id=877440425718333460&permissions=2048&scope=bot',
+  wclasses: {
+    projectName: 'WClasses Website',
+    iconsUsed: ['mongodb', 'beautifulsoup', 'react', 'nextjs'],
+    projectLink: 'https://wclasses.vercel.app/',
   },
   pmc_website: {
     projectName: 'Pure Math Club Website',
@@ -48,11 +48,11 @@ const data = {
   //   projectName: 'Joget FB Marketplace',
   //   iconsUsed: ['joget', 'java', 'mysql', 'js'],
   // },
-  skyblock_calculator: {
-    projectName: 'Skyblock Calculator',
-    iconsUsed: ['java', 'excel'],
-    projectLink: 'https://github.com/mcpenguin/hypixel-skyblock-calc',
-  },
+  // skyblock_calculator: {
+  //   projectName: 'Skyblock Calculator',
+  //   iconsUsed: ['java', 'excel'],
+  //   projectLink: 'https://github.com/mcpenguin/hypixel-skyblock-calc',
+  // },
   // "student_reg_gui": {
   //     projectName: "Student Attendance GUI",
   //     iconsUsed: ['java'],

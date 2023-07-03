@@ -25,6 +25,7 @@ const iconsNamesDict = {
   cpp: 'C++',
   reactnative: 'React Native',
   vscode: "VSCode Extension",
+  nextjs: 'Next.js',
 };
 
 export default iconsNamesDict;
