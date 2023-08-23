@@ -2,6 +2,13 @@
 // module containing experience data
 const data = [
   {
+    title: "Software/Data Engineer",
+    subtitle: "Miovision",
+    date: "Sep 2023 - Dec 2023",
+    content: null,
+    tags: ["coop", "tech"],
+  },
+  {
     title: "Student Representive",
     subtitle: "Statistics and Actuarial Science Committee",
     date: "Jan 2023 - Present",
@@ -11,7 +18,7 @@ const data = [
   {
     title: "CodeyBot Developer Lead",
     subtitle: "Computer Science Club (CSC)",
-    date: "Aug 2022 - Present",
+    date: "Aug 2022 - Dec 2023",
     content: (
       <ul>
         <li>

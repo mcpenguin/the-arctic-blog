@@ -134,6 +134,13 @@
     color: #ffffff;
 }
 
+.wrapper .kaggle:hover,
+.wrapper .kaggle:hover .tooltip,
+.wrapper .kaggle:hover .tooltip::before {
+    background-color: rgb(4, 93, 128);
+    color: #ffffff;
+}
+
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {

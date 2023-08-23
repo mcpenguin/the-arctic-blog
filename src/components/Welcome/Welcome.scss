@@ -10,14 +10,14 @@
 	@include center;
 
 	.description {
-		width: 60%;
+		width: 80%;
 
 		h1 {
 			margin-bottom: 25px;
 		}
 		
 		h1, h5 {
-			text-align: center;
+			// text-align: center;
 		}
 
 		@media (max-width: $tablet_width) {

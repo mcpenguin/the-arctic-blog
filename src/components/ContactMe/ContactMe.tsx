@@ -40,16 +40,16 @@ const ContactMe = () => (
           logo="fas fa-envelope"
         />
         <ContactMePage
-          icon="instagram"
-          title="Instagram"
-          link="https://www.instagram.com/mcpenquin"
-          logo="fab fa-instagram"
-        />
-        <ContactMePage
           icon="linkedin"
           title="LinkedIn"
           link="https://www.linkedin.com/in/marcus-chanwc/"
           logo="fab fa-linkedin"
+        />
+        <ContactMePage
+          icon="kaggle"
+          title="Kaggle"
+          link="https://www.kaggle.com/mcpenguin"
+          logo="fab fa-kaggle"
         />
         <ContactMePage
           icon="github"

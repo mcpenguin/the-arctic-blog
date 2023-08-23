@@ -18,6 +18,7 @@ interface personalFactProps {
   iconName: string;
   title: string;
   body: React.ReactNode;
+  show: boolean;
 }
 
 interface NotesMetadata {
@@ -34,7 +35,10 @@ const getNotesStatus = () => {
   for (const metadata of Object.values(latestCourses)) {
     res.push(
       <span>
-        <a href="#notes"><strong>{metadata.shortTitle}</strong>: {metadata.notesStatus}</a> <br />
+        <a href="#notes">
+          <strong>{metadata.shortTitle}</strong>: {metadata.notesStatus}
+        </a>{" "}
+        <br />
       </span>,
     );
   }
@@ -42,18 +46,23 @@ const getNotesStatus = () => {
 };
 
 const PersonalFact = (props: personalFactProps) => {
-  const { iconName, title, body } = props;
-  return (
-    <>
-      <div className="personal-facts-head">
-        <h5>
-          <i className={`personal-facts-icon ${iconName}`} />
-        </h5>
-        <h5>{title}</h5>
-      </div>
-      <p className="personal-facts-body">{body}</p>
-    </>
-  );
+  const {
+    iconName, title, body, show,
+  } = props;
+  if (show) {
+    return (
+      <>
+        <div className="personal-facts-head">
+          <h5>
+            <i className={`personal-facts-icon ${iconName}`} />
+          </h5>
+          <h5>{title}</h5>
+        </div>
+        <p className="personal-facts-body">{body}</p>
+      </>
+    );
+  }
+  return null;
 };
 
 // eslint-disable-next-line no-unused-vars
@@ -77,26 +86,32 @@ const AboutMe = (props) => (
                 // icon={NotesIcon}
                 title="Current Notes Update"
                 body={getNotesStatus()}
+                show={false}
               />
-              {/* <PersonalFact
+              <PersonalFact
                 iconName="fas fa-briefcase"
                 title="Current Coop"
-                body={<>R&D Engineer @ Ansys</>}
-              /> */}
+                body={<>Software/Data Engineer @ Miovision</>}
+                show
+              />
               <PersonalFact
                 iconName="fas fa-graduation-cap"
                 title="Current Education"
                 body={(
                   <span>
-                    BCS Computer Science (Data Science), Honours, Co-op ({CURRENT_TERM})
+                    BCS Computer Science (Data Science), Honours, Co-op (
+                    {CURRENT_TERM})
                     <br />
                     University of Waterloo @ Ontario, Canada
                     <br />
-                    <em>Recipient of $37,000+ worth of academic scholarships</em>
+                    <em>
+                      Recipient of $37,000+ worth of academic scholarships
+                    </em>
                     <br />
                     <strong>CAV: 92 | GPA: 3.9/4.0</strong>
                   </span>
                 )}
+                show
               />
             </div>
             <div className="second">
@@ -111,13 +126,15 @@ const AboutMe = (props) => (
                     <br />
                     <span className="pro-title">Frameworks:</span> Node.js,
                     Express.js, React, Angular, Next.js, Pandas, NumPy,
-                    Matplotlib, BeautifulSoup, Selenium, MongoDB
+                    Matplotlib, SciKitLearn, PyTorch, BeautifulSoup, Selenium,
+                    MongoDB
                     <br />
                     <span className="pro-title">Tools:</span> Linux, Google
                     Cloud Platform, Docker, Git, JetBrains Rider, Metabase,
                     Heroku, Tableau, Microsoft Azure
                   </>
                 )}
+                show
               />
               <PersonalFact
                 iconName="far fa-futbol"
@@ -128,6 +145,7 @@ const AboutMe = (props) => (
                     climbing, anime
                   </span>
                 )}
+                show
               />
             </div>
           </div>
