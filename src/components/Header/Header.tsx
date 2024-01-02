@@ -12,15 +12,28 @@ import lightbulb from "./lightbulb.png";
 interface NavbarLinkProps {
   id: string;
   title: string;
+  // eslint-disable-next-line react/require-default-props
+  link?: string;
 }
 
 const NavbarLink = (props: NavbarLinkProps) => {
-  const { id, title } = props;
+  // eslint-disable-next-line prefer-const
+  let { id, title, link } = props;
+  if (!link) {
+    link = `/#${id}`;
+    return (
+      <Nav.Item>
+        <Link exact to={link} className="nav-item">
+          {title}
+        </Link>
+      </Nav.Item>
+    );
+  }
   return (
     <Nav.Item>
-      <Link exact to={`/#${id}`} className="nav-item">
+      <a href={link} className="nav-item">
         {title}
-      </Link>
+      </a>
     </Nav.Item>
   );
 };
@@ -39,6 +52,7 @@ const Header = () => (
           <NavbarLink id="experience" title="Experience" />
           <NavbarLink id="notes" title="Notes" />
           <NavbarLink id="contact-me" title="Contact Me" />
+          <NavbarLink id="resume" title="Resume" link="/assets/resume/marcus_chan_resume.pdf" />
         </Nav>
       </Navbar.Collapse>
     </Navbar>
