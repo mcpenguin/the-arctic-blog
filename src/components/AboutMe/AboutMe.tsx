@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 
 import personalPhoto from "./personal-photo.jpg";
 
-import classData from "../Notes/courses.json";
+// import classData from "../Notes/courses.json";
 
 import "./AboutMe.scss";
 
@@ -21,29 +21,29 @@ interface personalFactProps {
   show: boolean;
 }
 
-interface NotesMetadata {
-  shortTitle: string;
-  longTitle: string;
-  takenWhen: string;
-  notesStatus: string;
-  professors: string;
-}
+// interface NotesMetadata {
+//   shortTitle: string;
+//   longTitle: string;
+//   takenWhen: string;
+//   notesStatus: string;
+//   professors: string;
+// }
 
-const getNotesStatus = () => {
-  const latestCourses: { [key: string]: NotesMetadata } = classData[CURRENT_TERM].courses;
-  const res = [];
-  for (const metadata of Object.values(latestCourses)) {
-    res.push(
-      <span>
-        <a href="#notes">
-          <strong>{metadata.shortTitle}</strong>: {metadata.notesStatus}
-        </a>{" "}
-        <br />
-      </span>,
-    );
-  }
-  return res;
-};
+// const getNotesStatus = () => {
+//   const latestCourses: { [key: string]: NotesMetadata } = classData[CURRENT_TERM].courses;
+//   const res = [];
+//   for (const metadata of Object.values(latestCourses)) {
+//     res.push(
+//       <span>
+//         <a href="#notes">
+//           <strong>{metadata.shortTitle}</strong>: {metadata.notesStatus}
+//         </a>{" "}
+//         <br />
+//       </span>,
+//     );
+//   }
+//   return res;
+// };
 
 const PersonalFact = (props: personalFactProps) => {
   const {
@@ -81,17 +81,30 @@ const AboutMe = (props) => (
         <div className="wrapper">
           <div className="personal-facts">
             <div className="first">
-              <PersonalFact
+              {/* <PersonalFact
                 iconName="fas fa-pencil-alt"
                 // icon={NotesIcon}
                 title="Current Notes Update"
-                body={getNotesStatus()}
+                body={<>
+                  <p>Spring 2023: </p>
+                </>}
                 show={false}
-              />
+              /> */}
               <PersonalFact
                 iconName="fas fa-briefcase"
-                title="Current Coop"
-                body={<>Software/Data Engineer @ Miovision</>}
+                title="Incoming Co-Ops"
+                body={(
+                  <>
+                    <span>
+                      Software Engineer - Computational Vision @ Miovision
+                      (Spring 2024)
+                    </span>
+                    <br />
+                    <span>
+                      Software Developer - Google Cloud @ Google (Fall 2024)
+                    </span>
+                  </>
+                )}
                 show
               />
               <PersonalFact
@@ -126,7 +139,7 @@ const AboutMe = (props) => (
                     <br />
                     <span className="pro-title">Frameworks:</span> Node.js,
                     Express.js, React, Angular, Next.js, Pandas, NumPy,
-                    Matplotlib, SciKitLearn, PyTorch, BeautifulSoup, Selenium,
+                    Matplotlib, Seaborn, SciKitLearn, PyTorch, BeautifulSoup, Selenium,
                     MongoDB
                     <br />
                     <span className="pro-title">Tools:</span> Linux, Google

@@ -2,10 +2,39 @@
 // module containing experience data
 const data = [
   {
-    title: "Software/Data Engineer",
+    title: "Software Developer - Google Cloud (Incoming)",
+    subtitle: "Google",
+    date: "Sep 2024 - Dec 2024",
+    content: null,
+    tags: ["coop", "tech"],
+  },
+  {
+    title: "Software Developer - Computational Vision (Incoming)",
+    subtitle: "Miovision",
+    date: "May 2024 - Aug 2024",
+    content: null,
+    tags: ["coop", "tech"],
+  },
+  {
+    title: "Software Developer - Traffic Analytics",
     subtitle: "Miovision",
     date: "Sep 2023 - Dec 2023",
-    content: null,
+    content: (
+      <ul>
+        <li>
+          Spearheaded the development of the homepage for the company’s main
+          application using <b>C#, Nest.js, Angular, RxJS and Tailwind SCSS</b>
+        </li>
+        <li>
+          Led the creation of a new tabular component using the <b>revo-grid</b>{" "}
+          library, demoing the feature to technical stakeholders
+        </li>
+        <li>
+          Produced extensive documentation and diagrams for my work, reducing
+          developer onboarding time
+        </li>
+      </ul>
+    ),
     tags: ["coop", "tech"],
   },
   {
