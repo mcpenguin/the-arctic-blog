@@ -92,16 +92,11 @@ const AboutMe = (props) => (
               /> */}
               <PersonalFact
                 iconName="fas fa-briefcase"
-                title="Incoming Co-Ops"
+                title="Current Co-Op"
                 body={(
                   <>
                     <span>
-                      Software Engineer - Computational Vision @ Miovision
-                      (Spring 2024)
-                    </span>
-                    <br />
-                    <span>
-                      Software Developer - Google Cloud @ Google (Fall 2024)
+                      Software Developer - Google Cloud @ Google, Sunnyvale (Fall 2024)
                     </span>
                   </>
                 )}
