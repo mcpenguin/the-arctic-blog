@@ -2,21 +2,21 @@
 // module containing experience data
 const data = [
   {
-    title: "Software Developer - Google Cloud (Incoming)",
+    title: "Software Developer Intern - Google Cloud",
     subtitle: "Google",
     date: "Sep 2024 - Dec 2024",
     content: null,
     tags: ["coop", "tech"],
   },
   {
-    title: "Software Developer - Computational Vision (Incoming)",
+    title: "Software Developer Intern - Computational Vision",
     subtitle: "Miovision",
     date: "May 2024 - Aug 2024",
     content: null,
     tags: ["coop", "tech"],
   },
   {
-    title: "Software Developer - Traffic Analytics",
+    title: "Software Developer Intern - Traffic Analytics",
     subtitle: "Miovision",
     date: "Sep 2023 - Dec 2023",
     content: (
@@ -80,7 +80,7 @@ const data = [
     tags: ["ec"],
   },
   {
-    title: "R&D Engineer",
+    title: "R&D Engineer Intern",
     subtitle: "Ansys",
     date: "Jan 2023 - Apr 2023",
     content: (
@@ -98,7 +98,7 @@ const data = [
     tags: ["coop", "tech"],
   },
   {
-    title: "MATH 137/138 Tutor",
+    title: "MATH 137/138 Tutor Intern",
     subtitle: "UW Tutorial Centre",
     date: "Sep 2022 - Dec 2022",
     content: null,
@@ -112,7 +112,7 @@ const data = [
     tags: ["ec"],
   },
   {
-    title: "Software Developer",
+    title: "Software Developer Intern",
     subtitle: "Geotab",
     date: "May 2022 - Aug 2022",
     content: (
@@ -285,7 +285,7 @@ const data = [
     tags: ["ec", "tech"],
   },
   {
-    title: "Data Analyst",
+    title: "Data Analyst Intern",
     subtitle: "eMedAsia",
     date: "May 2021 - Aug 2021",
     content: (
