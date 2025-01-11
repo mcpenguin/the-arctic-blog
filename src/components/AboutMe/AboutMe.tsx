@@ -12,7 +12,7 @@ import personalPhoto from "./personal-photo.jpg";
 
 import "./AboutMe.scss";
 
-const CURRENT_TERM = "3B";
+const CURRENT_TERM = "4B";
 
 interface personalFactProps {
   iconName: string;
@@ -92,7 +92,7 @@ const AboutMe = (props) => (
               /> */}
               <PersonalFact
                 iconName="fas fa-briefcase"
-                title="Incoming Co-Ops"
+                title="Most Recent Co-Ops"
                 body={(
                   <>
                     <span>
