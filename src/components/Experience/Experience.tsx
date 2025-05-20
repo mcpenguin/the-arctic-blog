@@ -56,8 +56,8 @@ const Experience = () => {
         <div className="timeline">
           <Timeline
             data={experienceData}
-            start={160}
-            range={120}
+            start={280}
+            range={-160}
             filters={{
               showTechJobs,
               showEC,

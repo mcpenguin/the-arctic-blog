@@ -2,6 +2,13 @@
 // module containing experience data
 const data = [
   {
+    title: "Software Developer - Google Chat",
+    subtitle: "Google",
+    date: "Aug 2025 - Present",
+    content: null,
+    tags: ["ft", "tech"],
+  },
+  {
     title: "Software Developer Intern - Google Cloud",
     subtitle: "Google",
     date: "Sep 2024 - Dec 2024",

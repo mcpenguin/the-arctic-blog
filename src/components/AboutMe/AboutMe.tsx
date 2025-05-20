@@ -12,8 +12,6 @@ import personalPhoto from "./personal-photo.jpg";
 
 import "./AboutMe.scss";
 
-const CURRENT_TERM = "4B";
-
 interface personalFactProps {
   iconName: string;
   title: string;
@@ -92,23 +90,22 @@ const AboutMe = (props) => (
               /> */}
               <PersonalFact
                 iconName="fas fa-briefcase"
-                title="Most Recent Co-Op"
-                body={(
-                  <>
+                title="Employment"
+                body={
+                  (
                     <span>
-                      Software Developer - Google Cloud @ Google, Sunnyvale (Fall 2024)
+                      Incoming Software Developer @ Google, Waterloo
                     </span>
-                  </>
-                )}
+                  )
+                }
                 show
               />
               <PersonalFact
                 iconName="fas fa-graduation-cap"
-                title="Current Education"
+                title="Education"
                 body={(
                   <span>
-                    BCS Computer Science (Data Science), Honours, Co-op (
-                    {CURRENT_TERM})
+                    BCS Computer Science (Data Science), Honours, Co-op
                     <br />
                     University of Waterloo @ Ontario, Canada
                     <br />
@@ -126,33 +123,37 @@ const AboutMe = (props) => (
               <PersonalFact
                 iconName="fas fa-code"
                 title="Programming Expertise"
-                body={(
-                  <>
-                    <span className="pro-title">Languages:</span>{" "}
-                    JavaScript/TypeScript, SQL (MySQL, PostgreSQL, SQLite),
-                    Python, C/C++, C#/.NET, Java, Bash, HTML, CSS (Sass/SCSS)
-                    <br />
-                    <span className="pro-title">Frameworks:</span> Node.js,
-                    Express.js, React, Angular, Next.js, Pandas, NumPy,
-                    Matplotlib, Seaborn, SciKitLearn, PyTorch, BeautifulSoup, Selenium,
-                    MongoDB
-                    <br />
-                    <span className="pro-title">Tools:</span> Linux, Google
-                    Cloud Platform, Docker, Git, JetBrains Rider, Metabase,
-                    Heroku, Tableau, Microsoft Azure
-                  </>
-                )}
+                body={
+                  (
+                    <>
+                      <span className="pro-title">Languages:</span>{" "}
+                      JavaScript/TypeScript, SQL (MySQL, PostgreSQL, SQLite),
+                      Python, C/C++, C#/.NET, Java, Bash, HTML, CSS (Sass/SCSS)
+                      <br />
+                      <span className="pro-title">Frameworks:</span> Node.js,
+                      Express.js, React, Angular, Next.js, Pandas, NumPy,
+                      Matplotlib, Seaborn, SciKitLearn, PyTorch, BeautifulSoup,
+                      Selenium, MongoDB
+                      <br />
+                      <span className="pro-title">Tools:</span> Linux, Google
+                      Cloud Platform, Docker, Git, JetBrains Rider, Metabase,
+                      Heroku, Tableau, Microsoft Azure
+                    </>
+                  )
+                }
                 show
               />
               <PersonalFact
                 iconName="far fa-futbol"
                 title="Hobbies"
-                body={(
-                  <span>
-                    Mathematics, coding, arranging/composing piano pieces, rock
-                    climbing, anime
-                  </span>
-                )}
+                body={
+                  (
+                    <span>
+                      Mathematics, coding, arranging/composing piano pieces, rock
+                      climbing, anime
+                    </span>
+                  )
+                }
                 show
               />
             </div>

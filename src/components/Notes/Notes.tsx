@@ -122,9 +122,11 @@ const Notes = () => (
             Here I post my notes for both my university and high school
             courses, which were handwritten on my iPad using the app GoodNotes
             5. These are adapted from the original professor's / lecturer's
-            notes, and will often contain diagrams, screenshots from the
+            notes, and will often contain diagrams and screenshots from the
             reference materials. I get each professor's permission prior to posting my notes
             for the course on my website, and credit them at the front of the notes.
+            Unfortunately, my notes from 4A and 4B could not be publicly posted due to
+            numerous IP restrictions (e.g. diagrams from third-party textbooks).
           </p>
         </Col>
       </Row>
