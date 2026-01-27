@@ -94,7 +94,7 @@ const AboutMe = (props) => (
                 body={
                   (
                     <span>
-                      Incoming Software Developer @ Google, Waterloo
+                      Software Developer @ Google, Waterloo
                     </span>
                   )
                 }

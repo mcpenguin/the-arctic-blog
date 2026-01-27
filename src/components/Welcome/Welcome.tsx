@@ -11,20 +11,20 @@ const TopCarousel = (): JSX.Element => (
       </Fade>
       <Fade bottom delay={500} opposite>
         <h5>
-          I'm an incoming Software Developer at Google, based in Waterloo,
-          Canada! I graduated from the University of Waterloo with a joint major
-          in Computer Science and Statistics (i.e. Data Science) in 2025.
+          I'm a Software Developer at Google, based in Waterloo, Canada! I
+          graduated from the University of Waterloo with a joint major in
+          Computer Science and Statistics (i.e. Data Science) in 2025.
         </h5>
       </Fade>
-      <Fade bottom delay={1000} opposite>
+      <Fade bottom delay={1300} opposite>
         <h5>
           In my spare time I enjoy working on software projects, messing around
           with data on Kaggle, learning more about machine learning and AI,
-          going rock climbing, composing and improvising new pieces on the
-          piano, or just binging the latest anime show I got hooked on.
+          going rock climbing, skiing, composing and improvising new pieces on
+          the piano, or just binging the latest anime show I got hooked on.
         </h5>
       </Fade>
-      <Fade bottom delay={1500} opposite>
+      <Fade bottom delay={1800} opposite>
         <h5>Scroll down to learn more about me!</h5>
       </Fade>
     </div>
